@@ -1,0 +1,41 @@
+image: debian:buster
+
+stages:
+  - test_deploy
+
+main:
+  stage: test_deploy
+  script:
+    - apt update
+    - apt install -y python3-pip
+    - python3 -m pip install --user -r requirements.txt
+
+.deploy_defaults: &deploy_defaults
+  stage: test_deploy
+  script:
+    # Install system dependencies
+    - apt update
+    - apt install -y composer rsync python3-pip
+    - python3 -m pip install --user -r requirements.txt
+    # Add ssh key
+    - mkdir -p ~/.ssh
+    - echo "${DEPLOY_KEY}" | tr -d '\r' > ~/.ssh/id_rsa
+    - chmod 700 ~/.ssh && chmod 600 ~/.ssh/id_rsa
+    - ssh-keyscan -t rsa "${DEPLOY_HOST}" >> ~/.ssh/known_hosts
+    # Install PHP dependencies
+    - "composer require --no-progress 'deployer/deployer: ^6.4' 'deployer/recipes: ^6.2'"
+    # Deploy
+    - ./vendor/bin/dep deploy "${CI_ENVIRONMENT_NAME}"
+    - echo "Deployed to ${CI_ENVIRONMENT_URL}"
+
+deploy_dev:
+  only:
+    refs:
+      - main
+  environment:
+    name: development
+    url: https://mw-frontend-dev.tugraz.at
+  variables:
+    DEPLOY_HOST: mw01-dev.tugraz.at
+    DEPLOY_KEY: "$DEPLOY_SSH_KEY"
+  <<: *deploy_defaults

@@ -1,0 +1,40 @@
+site_name: TU Graz System Architecture Handbook
+theme:
+    name: material
+    logo: 'logo.png'
+    palette:
+        primary: 'indigo'
+        accent: 'indigo'
+    features:
+        - instant
+
+extra_css:
+    - 'extra.css'
+
+repo_url: https://gitlab.tugraz.at/VPU/handbook
+edit_uri: edit/main/docs/
+
+markdown_extensions:
+    - attr_list
+    - codehilite
+    - sane_lists
+    - admonition
+    - pymdownx.arithmatex
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+    - pymdownx.inlinehilite
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.tilde
+
+nav:
+  - index.md
