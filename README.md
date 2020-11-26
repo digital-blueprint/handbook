@@ -1,1 +1,4 @@
-# TU Graz Digital Projects Handbook
+# Digital Blueprint Handbook
+
+* `poetry install`
+* `poetry run mkdocs serve`

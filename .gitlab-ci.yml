@@ -8,7 +8,9 @@ main:
   script:
     - apt update
     - apt install -y python3-pip
-    - python3 -m pip install --user -r requirements.txt
+    - pip3 install poetry
+    - poetry install
+    - poetry run mkdocs build -d dist
 
 .deploy_defaults: &deploy_defaults
   stage: test_deploy
@@ -16,7 +18,9 @@ main:
     # Install system dependencies
     - apt update
     - apt install -y composer rsync python3-pip
-    - python3 -m pip install --user -r requirements.txt
+    - pip3 install poetry
+    - poetry install
+    - poetry run mkdocs build -d dist
     # Add ssh key
     - mkdir -p ~/.ssh
     - echo "${DEPLOY_KEY}" | tr -d '\r' > ~/.ssh/id_rsa

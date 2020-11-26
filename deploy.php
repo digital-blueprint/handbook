@@ -27,15 +27,9 @@ host('development')
     -> set('rsync_src', __DIR__ . '/dist')
     -> set('rsync_dest','{{release_path}}');
 
-// Demo dev task
-task('build-dev', function () {
-    runLocally("python3 -m mkdocs build -d dist");
-})->onStage('development');
-
 // Deploy task
 task('deploy', [
     'deploy:info',
-    'build-dev',
     'deploy:prepare',
     'deploy:lock',
     'deploy:release',
