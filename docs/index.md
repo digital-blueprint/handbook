@@ -1,4 +1,4 @@
-# Welcome!
+# Welcome to the Digital Blueprint Project!
 
 This document contains various information that's not strictly tied to a specific
 project.

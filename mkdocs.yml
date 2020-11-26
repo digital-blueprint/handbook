@@ -1,12 +1,17 @@
-site_name: TU Graz Digital Projects Handbook
+site_name: Digital Blueprint Handbook
 theme:
     name: material
-    logo: 'logo.png'
+    logo: 'assets/logo.png'
     features:
         - instant
 
 extra_css:
-    - 'extra.css'
+  - assets/styles/styles.css
+  - assets/styles/extra.css
+
+extra_javascript:
+  - assets/js/mermaid.min.js
+  - assets/js/main.js
 
 repo_url: https://gitlab.tugraz.at/dbp/handbook
 edit_uri: edit/main/docs/
@@ -28,7 +33,11 @@ markdown_extensions:
     - pymdownx.magiclink
     - pymdownx.mark
     - pymdownx.smartsymbols
-    - pymdownx.superfences
+    - pymdownx.superfences:
+        custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_div_format
     - pymdownx.tasklist:
         custom_checkbox: true
     - pymdownx.tilde
