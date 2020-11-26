@@ -1,17 +1,14 @@
-site_name: TU Graz System Architecture Handbook
+site_name: TU Graz Digital Projects Handbook
 theme:
     name: material
     logo: 'logo.png'
-    palette:
-        primary: 'indigo'
-        accent: 'indigo'
     features:
         - instant
 
 extra_css:
     - 'extra.css'
 
-repo_url: https://gitlab.tugraz.at/VPU/handbook
+repo_url: https://gitlab.tugraz.at/dbp/handbook
 edit_uri: edit/main/docs/
 
 markdown_extensions:
@@ -38,3 +35,7 @@ markdown_extensions:
 
 nav:
   - index.md
+  - docker.md
+  - forks.md
+  - licenses.md
+  - deployment.md

@@ -1,1 +1,1 @@
-# TU Graz System Architecture Handbook
+# TU Graz Digital Projects Handbook

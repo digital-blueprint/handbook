@@ -1,5 +1,8 @@
 # Welcome!
 
+This document contains various information that's not strictly tied to a specific
+project.
+
 The goals of this handbook:
 
 * Give an overview over all the projects we work on
