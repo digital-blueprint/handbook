@@ -47,5 +47,6 @@ nav:
   - docker.md
   - forks.md
   - licenses.md
+  - opensource.md
   - deployment.md
   - vpn/vpn.md
