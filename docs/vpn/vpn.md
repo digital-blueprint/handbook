@@ -58,7 +58,7 @@ to setup some routes in your VPN client and ignore the automatically obtained ro
 
 These are route to the servers the dev team uses:
 
-| Adress        | Netmask     | Gateway | Metric |
+| Address        | Netmask     | Gateway | Metric |
 | ------------- | ----------- | ------- | ------ |
 | 129.27.79.149 | 255.255.0.0 | 0.0.0.0 | 0      |
 | 129.27.79.158 | 255.255.0.0 | 0.0.0.0 | 0      |
