@@ -50,3 +50,16 @@ shows you how to best set up a VPN connection on your machine/phone.
 ![image](vpn-oc-2.png){: style="width:400px"}
 
 ![image](vpn-oc-3.png){: style="width:400px"}
+
+## Routes
+
+In case you don't want to route your whole network traffic via the VPN it is adviced to setup some routes in your VPN client.
+
+These are route to the servers the dev team uses:
+
+| Adress        | Netmask     | Gateway | Metric |
+| ------------- | ----------- | ------- | ------ |
+| 129.27.79.149 | 255.255.0.0 | 0.0.0.0 | 0      |
+| 129.27.79.158 | 255.255.0.0 | 0.0.0.0 | 0      |
+| 129.27.79.159 | 255.255.0.0 | 0.0.0.0 | 0      |
+| 129.27.2.209  | 255.255.0.0 | 0.0.0.0 | 0      |
