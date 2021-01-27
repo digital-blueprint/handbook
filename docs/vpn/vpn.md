@@ -53,7 +53,8 @@ shows you how to best set up a VPN connection on your machine/phone.
 
 ## Routes
 
-In case you don't want to route your whole network traffic via the VPN it is adviced to setup some routes in your VPN client.
+In case you don't want to route your whole network traffic via the VPN it is adviced
+to setup some routes in your VPN client and ignore the automatically obtained routes.
 
 These are route to the servers the dev team uses:
 
