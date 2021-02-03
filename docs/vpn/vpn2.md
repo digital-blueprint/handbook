@@ -32,6 +32,7 @@ For example andOTP:
 -   Gateway: `vpn2p.tugraz.at/tugraz`
 -   Username: `<tug-username>`
 -   Password: `<eduroam-password>`
+-   VPN Protocol: `Juniper Network Connect`
 
 ![image](vpn2_oc.png){: style="width:400px"}
 
