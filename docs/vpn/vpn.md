@@ -1,4 +1,4 @@
-# TU Graz VPN Setup
+# vpn.tugraz.at
 
 Some of our internal services require you be connected via our VPN. This page
 shows you how to best set up a VPN connection on your machine/phone.

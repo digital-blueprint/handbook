@@ -49,4 +49,6 @@ nav:
   - licenses.md
   - opensource.md
   - deployment.md
-  - vpn/vpn.md
+  - TU Graz VPN Setup:
+    - vpn/vpn.md
+    - vpn/vpn2.md
