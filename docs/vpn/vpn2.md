@@ -38,10 +38,6 @@ For example andOTP:
 
 ![image](vpn2_config.png){: style="width:400px"}
 
-Fore some reason DNS is broken, disable it:
-
-![image](vpn2_oc_dns_fix.png){: style="width:400px"}
-
 ## Enable the connection
 
 ![image](vpn2_login.png){: style="width:400px"}
