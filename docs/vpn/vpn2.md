@@ -3,7 +3,7 @@
 Some of our even more internal services are only reachable via a separate VPN
 and 2FA.
 
-## GNOME using OpenConnect 
+## TOTP Setup
 
 ### Install a TOTP app on your phone
 
@@ -12,7 +12,7 @@ For example andOTP:
 * https://f-droid.org/en/packages/org.shadowice.flocke.andotp
 * https://play.google.com/store/apps/details?id=org.shadowice.flocke.andotp
 
-### Fetch the OTP key into your app
+### Store the TOTP key in your app
 
 * Visit https://vpn2p.tugraz.at/tugraz
 * Enter your
@@ -24,6 +24,9 @@ For example andOTP:
 * Scan the QR code with your app
 
   ![image](vpn2_otp_setup.jpg){: style="width:400px"}
+
+
+## GNOME using OpenConnect 
 
 ### Set up the VPN connection in GNOME
 
@@ -43,3 +46,23 @@ For example andOTP:
 ![image](vpn2_login.png){: style="width:400px"}
 
 ![image](vpn2_token_input.png){: style="width:400px"}
+
+
+## Using the OpenConnect CLI directly
+
+```console
+> sudo openconnect --protocol=pulse vpn2p.tugraz.at/tugraz
+Connected to 129.27.200.11:443
+SSL negotiation with vpn2p.tugraz.at
+Connected to HTTPS on vpn2p.tugraz.at with ciphersuite (TLS1.2)-(ECDHE-SECP256R1)-(RSA-SHA512)-(AES-128-GCM)
+Got HTTP response: HTTP/1.1 101 Switching Protocols
+Enter user credentials:
+Username:christoph_reiter
+# enter <eduroam-password> here
+Password:
+Token code request:
+# enter OTP from app here
+Secondary password:
+Set up UDP failed; using SSL instead
+Connected as <IP>, using SSL, with ESP disabled
+```
