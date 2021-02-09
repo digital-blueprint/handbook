@@ -3,6 +3,11 @@
 Some of our even more internal services are only reachable via a separate VPN
 and 2FA.
 
+TU Graz users by default don't have access to this VPN. Please contact ZID
+with your account information and information about which services you want to access.
+
+In case you lose your TOTP key please contact the VPN service team or ZID.
+
 ## TOTP Setup
 
 ### Install a TOTP app on your phone
@@ -12,7 +17,7 @@ For example andOTP:
 * https://f-droid.org/en/packages/org.shadowice.flocke.andotp
 * https://play.google.com/store/apps/details?id=org.shadowice.flocke.andotp
 
-For example Fast 2F‪A‬ for ios
+For example Fast 2FA for ios
 * https://apps.apple.com/de/app/totp-authenticator-fast-2fa/id1404230533
 
 ### Store the TOTP key in your app
