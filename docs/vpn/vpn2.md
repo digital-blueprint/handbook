@@ -12,6 +12,9 @@ For example andOTP:
 * https://f-droid.org/en/packages/org.shadowice.flocke.andotp
 * https://play.google.com/store/apps/details?id=org.shadowice.flocke.andotp
 
+For example Fast 2F‪A‬ for ios
+* https://apps.apple.com/de/app/totp-authenticator-fast-2fa/id1404230533
+
 ### Store the TOTP key in your app
 
 * Visit https://vpn2p.tugraz.at/tugraz
