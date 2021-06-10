@@ -27,6 +27,7 @@ main:
     - chmod 700 ~/.ssh && chmod 600 ~/.ssh/id_rsa
     - ssh-keyscan -t rsa "${DEPLOY_HOST}" >> ~/.ssh/known_hosts
     # Install PHP dependencies
+    - cd ./.gitlab-ci
     - "composer require --no-progress 'deployer/deployer: ^6.4' 'deployer/recipes: ^6.2'"
     # Deploy
     - ./vendor/bin/dep deploy "${CI_ENVIRONMENT_NAME}"
