@@ -40,6 +40,9 @@ deploy_dev:
   environment:
     name: development
     url: https://mw-frontend-dev.tugraz.at
+  artifacts:
+    paths:
+      - dist
   variables:
     DEPLOY_HOST: mw01-dev.tugraz.at
     DEPLOY_KEY: "$DEPLOY_SSH_KEY"
