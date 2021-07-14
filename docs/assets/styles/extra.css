@@ -12,3 +12,7 @@
 .md-typeset ul li, .md-typeset ol li {
     margin-bottom: 0.3em;
 }
+
+.md-logo img {
+    border-radius: 2px;
+}
