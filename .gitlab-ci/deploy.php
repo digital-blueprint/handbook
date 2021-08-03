@@ -10,8 +10,8 @@ set('allow_anonymous_stats', false);
 // Hosts
 host('development')
     ->stage('development')
-    ->hostname('mw@mw01-dev.tugraz.at')
-    ->set('deploy_path', '/home/mw/dev/deploy/handbook')
+    ->hostname('mw@vpu01-demo.tugraz.at')
+    ->set('deploy_path', '/home/mw/demo/deploy/handbook')
     -> set('rsync',[
         'exclude'      => [],
         'exclude-file' => false,

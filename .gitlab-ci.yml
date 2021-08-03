@@ -39,11 +39,11 @@ deploy_dev:
       - main
   environment:
     name: development
-    url: https://mw-frontend-dev.tugraz.at
+    url: https://dbp-demo.tugraz.at/handbook
   artifacts:
     paths:
       - dist
   variables:
-    DEPLOY_HOST: mw01-dev.tugraz.at
+    DEPLOY_HOST: vpu01-demo.tugraz.at
     DEPLOY_KEY: "$DEPLOY_SSH_KEY"
   <<: *deploy_defaults
