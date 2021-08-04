@@ -13,3 +13,7 @@
 
   * https://github.com/IDCI-Consulting/IDCIKeycloakSecurityBundle/pulls?q=is%3Apr+author%3Apbek
   * https://github.com/IDCI-Consulting/IDCIKeycloakSecurityBundle/pulls?q=is%3Apr+author%3Alazka
+
+[highkite/pdfAnnotate](https://github.com/highkite/pdfAnnotate)
+
+  * https://github.com/highkite/pdfAnnotate/pulls?q=is%3Apr+author%3Apbek
