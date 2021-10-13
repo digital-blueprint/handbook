@@ -1,16 +1,17 @@
-# GIT Fork Strategy
+# How to Fork an Upstream Project
 
-In some cases we want to fork an existing Project (usually git based),
-partly because we want to fix and implement things which can be
-up-streamed later on or for VPU specific changes that will stay around
-forever.
+In some cases we want to fork an existing Project (usually git based), partly
+because we want to fix and implement things which can be up-streamed later on or
+for DBP specific changes that will stay around forever.
 
-For this use case we define two strategies so that for every project the
-naming and steps are similar.
+Our goals are:
 
-!!! note
-    This is only 90% tested, some things might be slightly off, feel free
-    to update when following the steps.
+* We want our changes to be in a format suitable for upstreaming, so separate
+  commits for separate changes.
+* We want a linear history so it's clearly visible which changes we added on top.
+* We want updating to a new upstream release to be easy.
+* We want reverting to a previous release to be easy in case the rebase step
+  introduced an error.
 
 
 ## How to represent our changes in the git fork

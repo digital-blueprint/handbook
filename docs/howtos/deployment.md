@@ -1,4 +1,4 @@
-# Deployment with GitLab
+# Auto-Deployment with GitLab & Deployer
 
 -   Each git repo has different deployment environments. Each
     environment is a list basically of servers where the same code is

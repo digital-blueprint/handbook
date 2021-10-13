@@ -1,4 +1,4 @@
-# Setting up Docker
+# Setting up Docker & Docker-Compose
 
 We use docker and docker-compose extensively for development, so it's
 recommended to set it up in all cases.

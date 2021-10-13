@@ -1,4 +1,4 @@
-site_name: Digital Blueprint Handbook
+site_name: Digital Blueprint Developer Guide
 theme:
     name: material
     logo: 'assets/logo.png'
@@ -44,10 +44,10 @@ markdown_extensions:
 
 nav:
   - index.md
-  - git.md
-  - docker.md
-  - forks.md
   - licenses.md
   - opensource.md
-  - deployment.md
   - logo/logo.md
+  - How-Tos:
+    - howtos/deployment.md
+    - howtos/docker.md
+    - howtos/forks.md
