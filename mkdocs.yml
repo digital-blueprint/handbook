@@ -111,6 +111,7 @@ nav:
   - opensource.md
   - logo/logo.md
   - How-Tos:
+    - howtos/about.md
     - howtos/deployment.md
     - howtos/docker.md
     - howtos/forks.md

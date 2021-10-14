@@ -45,7 +45,7 @@ automatic API documentation, integration with the Symfony and API Platform
 frameworks etc.
 
 The core bundle is not functional by itself but requires an authentication
-bundle, for example our Keycloak bundle, which validates Keycloak access tokens
+bundle, for example our "auth" bundle, which validates OAuth2 access tokens
 and integrates them with the Symfony security system.
 
 All other functionality is implemented in extra bundles which can add new
@@ -68,7 +68,7 @@ access data via the [API](#api). The user authentication is done via an OIDC
 server like Keycloak.
 
 An example for a web application would be the [Library
-application](https://ibib.tugraz.at/en).
+application](https://dbp-demo.tugraz.at/apps/library/en).
 
 External services like server applications that don't act on behalf of a user
 can access the API via "Client Credential" grants, also available in Keycloak
