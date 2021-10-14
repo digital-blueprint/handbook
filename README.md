@@ -1,4 +1,4 @@
-# Digital Blueprint Handbook
+# Digital Blueprint Developer Guide
 
 This documentation is targeted at people who want to contribute to the DBP
 project. It explains various things regarding the infrastructure, development

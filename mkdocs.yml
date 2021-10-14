@@ -13,7 +13,7 @@ extra_javascript:
   - assets/js/mermaid.min.js
   - assets/js/main.js
 
-repo_url: https://gitlab.tugraz.at/dbp/handbook
+repo_url: https://gitlab.tugraz.at/dbp/dev-guide
 edit_uri: edit/main/docs/
 
 markdown_extensions:

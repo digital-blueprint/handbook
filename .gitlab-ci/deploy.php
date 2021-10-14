@@ -11,7 +11,7 @@ set('allow_anonymous_stats', false);
 host('development')
     ->stage('development')
     ->hostname('mw@vpu01-demo.tugraz.at')
-    ->set('deploy_path', '/home/mw/demo/deploy/handbook')
+    ->set('deploy_path', '/home/mw/demo/deploy/dev-guide')
     -> set('rsync',[
         'exclude'      => [],
         'exclude-file' => false,
