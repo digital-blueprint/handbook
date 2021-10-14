@@ -4,6 +4,9 @@ We try to communicate with upstream projects where possible by filing bug
 reports, taking part in discussions and contributing changes upstream. Here is a
 list of of patches which got accepted upstream:
 
+* [hcert-kotlin](https://github.com/ehn-dcc-development/hcert-kotlin)
+  * https://github.com/ehn-dcc-development/hcert-kotlin/commits?author=lazka
+
 * [Campus QR](https://github.com/studo-app/campus-qr)
 
   * https://github.com/studo-app/campus-qr/pulls?q=is%3Apr+author%3Apbek
