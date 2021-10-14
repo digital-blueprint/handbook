@@ -1,7 +1,7 @@
 site_name: Digital Blueprint Developer Guide
 theme:
     name: material
-    logo: 'assets/logo.png'
+    logo: assets/logo.png
     features:
         - instant
 
@@ -51,3 +51,48 @@ nav:
     - howtos/deployment.md
     - howtos/docker.md
     - howtos/forks.md
+  - Relay API Gateway:
+    - relay/index.md
+    - relay/getting_started.md
+    - relay/create_api.md
+    - relay/new_bundle.md
+    - relay/bundle_config.md
+    - Existing Bundles:
+      - Core Bundle:
+        - relay/bundles/core/index.md
+      - Auth Bundle:
+        - relay/bundles/auth/index.md
+      - Base Bundle:
+        - relay/bundles/base/index.md
+      - Starter Bundle:
+        - relay/bundles/starter/index.md
+      - Electronic Signature Bundle:
+        - relay/bundles/esign/index.md
+        - relay/bundles/esign/config.md
+        - relay/bundles/esign/advanced_flow.md
+        - relay/bundles/esign/advanced_pdf_signing.md
+        - relay/bundles/esign/qualified_flow.md
+      - ALMA Bundle:
+        - relay/bundles/alma/index.md
+      - Nextcloud Bundle:
+        - relay/bundles/nextcloud/index.md
+      - Authentic Document Bundle:
+        - relay/bundles/authentic-document/index.md
+      - Knowledgebase Bundle:
+        - relay/bundles/knowledgebase/index.md
+      - Location Check In Bundle:
+        - relay/bundles/location-check-in/index.md
+      - EU DCC Bundle:
+        - relay/bundles/eu-dcc/index.md
+    - relay/ide_integration.md
+    - relay/access_control.md
+    - relay/naming.md
+    - Keycloak Integration:
+      - relay/keycloak/index.md
+      - relay/keycloak/keycloak_scopes.md
+      - relay/keycloak/keycloak_audience.md
+      - relay/keycloak/scopes.md
+      - relay/keycloak/non_user_access.md
+    - relay/cron.md
+    - relay/errors.md
+    - relay/faq.md
