@@ -1,0 +1,19 @@
+:root {
+    --md-primary-fg-color: #245B78;
+    --md-primary-fg-color--dark: #173a4d;
+    --md-accent-fg-color: #245B78;
+
+    font-size: 1.2rem;
+}
+
+.md-typeset {
+    line-height: 1.5em;
+}
+
+.md-typeset ul li, .md-typeset ol li {
+    margin-bottom: 0.3em;
+}
+
+.md-logo img {
+    border-radius: 2px;
+}

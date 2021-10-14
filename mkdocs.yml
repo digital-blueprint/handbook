@@ -44,13 +44,20 @@ markdown_extensions:
 
 nav:
   - index.md
-  - licenses.md
-  - opensource.md
-  - logo/logo.md
-  - How-Tos:
-    - howtos/deployment.md
-    - howtos/docker.md
-    - howtos/forks.md
+  - Web Component Framework:
+    - frontend/index.md
+    - frontend/getting_started.md
+    - frontend/components.md
+    - frontend/activities.md
+    - frontend/topics.md
+    - frontend/configuration.md
+    - frontend/theming.md
+    - frontend/assets.md
+    - frontend/remote_firefox_debugging.md
+    - frontend/testing.md
+    - frontend/browser_support.md
+    - frontend/build_tooling.md
+    - frontend/frontend_auth.md
   - Relay API Gateway:
     - relay/index.md
     - relay/getting_started.md
@@ -96,3 +103,10 @@ nav:
     - relay/cron.md
     - relay/errors.md
     - relay/faq.md
+  - licenses.md
+  - opensource.md
+  - logo/logo.md
+  - How-Tos:
+    - howtos/deployment.md
+    - howtos/docker.md
+    - howtos/forks.md
