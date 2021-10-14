@@ -1,6 +1,9 @@
 site_name: Digital Blueprint Developer Guide
 theme:
     name: material
+    palette:
+      primary: teal
+      accent: teal
     logo: assets/logo.png
     features:
         - instant
@@ -44,6 +47,7 @@ markdown_extensions:
 
 nav:
   - index.md
+  - contribute.md
   - Web Component Framework:
     - frontend/index.md
     - frontend/getting_started.md
@@ -110,3 +114,4 @@ nav:
     - howtos/deployment.md
     - howtos/docker.md
     - howtos/forks.md
+  - contact.md
