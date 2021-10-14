@@ -5,8 +5,6 @@ theme:
       primary: teal
       accent: teal
     logo: assets/logo.png
-    features:
-      - navigation.instant
 
 extra_css:
   - assets/styles/styles.css
