@@ -6,7 +6,7 @@ theme:
       accent: teal
     logo: assets/logo.png
     features:
-        - instant
+      - navigation.instant
 
 extra_css:
   - assets/styles/styles.css
