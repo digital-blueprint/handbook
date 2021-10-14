@@ -1,0 +1,3 @@
+[submodule "submodules/dbp-relay-auth-bundle"]
+	path = submodules/dbp-relay-auth-bundle
+	url = https://gitlab.tugraz.at/dbp/relay/dbp-relay-auth-bundle.git
