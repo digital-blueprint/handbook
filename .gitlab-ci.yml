@@ -1,5 +1,8 @@
 image: debian:bullseye
 
+before_script:
+  - git submodule update --init
+
 stages:
   - test_deploy
 
