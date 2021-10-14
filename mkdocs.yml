@@ -5,6 +5,7 @@ theme:
       primary: teal
       accent: teal
     logo: assets/logo.png
+    favicon: assets/logo.png
 
 extra_css:
   - assets/styles/styles.css
