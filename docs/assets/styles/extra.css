@@ -16,7 +16,7 @@
 
 @media only screen and (min-width:76.1875em) {
     .md-grid {
-        max-width: 80rem;
+        max-width: 70rem;
     }
     .md-sidebar.md-sidebar--primary {
         width: 15rem;
