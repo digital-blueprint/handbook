@@ -96,8 +96,6 @@ nav:
         - relay/bundles/knowledgebase/index.md
       - Location Check In Bundle:
         - relay/bundles/location-check-in/index.md
-      - EU DCC Bundle:
-        - relay/bundles/eu-dcc/index.md
     - relay/ide_integration.md
     - relay/access_control.md
     - relay/naming.md
