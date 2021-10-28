@@ -66,6 +66,7 @@ nav:
     - relay/getting_started.md
     - relay/new_bundle.md
     - relay/bundle_config.md
+    - relay/production.md
     - API Bundles:
       - Core Bundle:
         - relay/bundles/core/index.md
