@@ -4,3 +4,6 @@
 [submodule "submodules/dbp-relay-esign-bundle"]
 	path = submodules/dbp-relay-esign-bundle
 	url = https://gitlab.tugraz.at/dbp/esign/dbp-relay-esign-bundle.git
+[submodule "submodules/dbp-relay-core-bundle"]
+	path = submodules/dbp-relay-core-bundle
+	url = https://gitlab.tugraz.at/dbp/relay/dbp-relay-core-bundle.git
