@@ -69,6 +69,9 @@ nav:
     - API Bundles:
       - Core Bundle:
         - relay/bundles/core/index.md
+        - relay/bundles/core/config.md
+        - relay/bundles/core/cron.md
+        - relay/bundles/core/errors.md
       - Auth Bundle:
         - relay/bundles/auth/index.md
         - relay/bundles/auth/config.md
@@ -104,8 +107,6 @@ nav:
       - relay/keycloak/keycloak_audience.md
       - relay/keycloak/scopes.md
       - relay/keycloak/non_user_access.md
-    - relay/cron.md
-    - relay/errors.md
     - relay/faq.md
   - licenses.md
   - opensource.md
