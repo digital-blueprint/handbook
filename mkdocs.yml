@@ -64,7 +64,6 @@ nav:
   - Relay API Gateway:
     - relay/index.md
     - relay/getting_started.md
-    - relay/create_api.md
     - relay/new_bundle.md
     - relay/bundle_config.md
     - API Bundles:
