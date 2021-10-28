@@ -67,7 +67,7 @@ nav:
     - relay/create_api.md
     - relay/new_bundle.md
     - relay/bundle_config.md
-    - Existing Bundles:
+    - API Bundles:
       - Core Bundle:
         - relay/bundles/core/index.md
       - Auth Bundle:
