@@ -80,6 +80,8 @@ nav:
         - relay/bundles/base-person/index.md
       - Base Organization Bundle:
         - relay/bundles/base-organization/index.md
+      - Checking Bundle:
+        - relay/bundles/checkin/index.md
       - Electronic Signature Bundle:
         - relay/bundles/esign/index.md
         - relay/bundles/esign/config.md
