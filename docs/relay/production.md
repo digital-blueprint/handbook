@@ -29,7 +29,7 @@ a recommended supervisor configuration.
 
 * `composer dump-env prod` to write out a `.env.local.php` file constructed from the `.env` file and the `.env.local` file. This avoids parsing the `.env` files in the future.
 
-* `php bin/console cache:clear` and `php bin/console cache:warmup` to clear the cache and warm it up again
+* `php bin/console cache:clear` to clear the cache and warm it up again
 
 * (optional) `php bin/console messenger:stop-workers` in case you have workers
    running (via supervisor) they need to be stopped, so the next task they
