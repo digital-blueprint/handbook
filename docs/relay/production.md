@@ -17,11 +17,11 @@ Set up the following supervisor job which runs continuously in the background
 handling various tasks:
 
 ```
-php /srv/api/bin/console messenger:consume async --time-limit=3600
+php /srv/api/bin/console dbp:relay:core:queue:work my-worker-01
 ```
 
-See https://symfony.com/doc/current/messenger.html#supervisor-configuration for
-a recommended supervisor configuration.
+See ['Queued Tasks'](./bundles/core/queue.md) for a recommended supervisor
+configuration.
 
 ### On Every Deployment
 
@@ -31,9 +31,9 @@ a recommended supervisor configuration.
 
 * `php bin/console cache:clear` to clear the cache and warm it up again
 
-* (optional) `php bin/console messenger:stop-workers` in case you have workers
-   running (via supervisor) they need to be stopped, so the next task they
-   execute uses the newly deployed code.
+* (optional) `php bin/console dbp:relay:core:queue:restart` in case you have
+   workers running (via supervisor) they need to be stopped, so the next task
+   they execute uses the newly deployed code.
 
 * (optional) Use [cachetool](https://github.com/gordalina/cachetool) to clear
   the opcache. This is required if you use php-fpm and don't restart it between
