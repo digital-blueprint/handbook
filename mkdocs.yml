@@ -73,6 +73,7 @@ nav:
         - relay/bundles/core/config.md
         - relay/bundles/core/cron.md
         - relay/bundles/core/queue.md
+        - relay/bundles/core/locks.md
         - relay/bundles/core/errors.md
       - Auth Bundle:
         - relay/bundles/auth/index.md
