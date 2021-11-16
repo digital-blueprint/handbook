@@ -87,11 +87,17 @@ Example: `Location Check In`
 * Usage: As section headers in the API docs and user for sorting there. Used as
   key for looking up API resource paths in the frontend.
 
+Base Bundle Exception: In case `UniqueName` starts with `Base` then `UniqueName` =
+`Base` in this case.
+
 ### Resource Paths
 
 * Schema: `/<UniqueName, KebapCase>/<EntityName, KebapCase, Pluralized>`
 * Example: `/check-in/rooms` (UniqueName=CheckIn, EntityName=Room)
 * Usage: Path prefix for all resource operations
+
+Base Bundle Exception: In case `UniqueName` starts with `Base` then `UniqueName` =
+`Base` in this case.
 
 ### Schema.org IRIs
 
@@ -107,6 +113,9 @@ See https://api-platform.com/docs/core/serialization/#using-serialization-groups
 * Usage: in `normalization_context` and `denormalization_context`
 
 The extra namespacing is needed since Entities can be embedded and we want to avoid inheriting serialization groups from the embedding entities.
+
+Base Bundle Exception: In case `UniqueName` starts with `Base` then `UniqueName` =
+`Base` in this case.
 
 ### Open API Tags
 
