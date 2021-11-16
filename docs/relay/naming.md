@@ -136,7 +136,13 @@ Should error codes be strictly numbers, or are identifiers allowed (`42` vs
 
 ## Symfony Command Naming
 
-*TBD* (See in `./bin/console`)
+* Schema:
+    * `<Vendor, KebapCase>:<Category, KebapCase>:<UniqueName, KebapCase>:<Command, KebapCase>`
+    * `<Vendor, KebapCase>:<Category, KebapCase>:<UniqueName, KebapCase>:<CommandTopic, KebapCase>:<Command, KebapCase>`
+* Example:
+    * `dbp:relay:core:test`
+    * `dbp:relay:core:queue:work`
+* Usage: Shown when running ./bin/console`
 
 ## Open Questions
 
