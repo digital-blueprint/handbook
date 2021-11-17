@@ -119,4 +119,5 @@ nav:
     - howtos/deployment.md
     - howtos/docker.md
     - howtos/forks.md
+  - demo_access.md
   - contact.md
