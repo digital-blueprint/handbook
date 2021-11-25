@@ -17,9 +17,7 @@ Despite our goal to not hard-depend on a specific Javascript framework we use a
 common set of helper libraries which we have found useful. We try to not make
 them leak out any internals so we can switch to different ones in the future.
 
-* [lit-element](https://lit-element.polymer-project.org/) and
-  [lit-html](https://lit-html.polymer-project.org/): Makes writing web
-  components easier.
+* [lit](https://lit.dev/): Makes writing web components easier.
 
 * [i18next](https://www.i18next.com): Handles translations and
   internationalization.
