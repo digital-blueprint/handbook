@@ -23,6 +23,27 @@ php /srv/api/bin/console dbp:relay:core:queue:work my-worker-01
 See ['Queued Tasks'](./bundles/core/queue.md) for a recommended supervisor
 configuration.
 
+### Enabling Production Mode and setting an App Secret
+
+By default debugging and the development configuration is enabled which is not
+suitable for production use (security leaks and performance issues). In addition
+you need to set `APP_SECRET` which is used to add entropy to various things and
+encrypt cookies etc. You need to make sure that that the following is set in
+your `.env.local`:
+
+```ini
+# https://symfony.com/doc/current/configuration.html#selecting-the-active-environment
+APP_ENV=prod
+# https://symfony.com/doc/current/reference/configuration/framework.html#secret
+APP_SECRET=<some-random-string>
+```
+
+You can generate a suitable random string via
+
+```bash
+php -r 'echo bin2hex(random_bytes(20))."\n";'
+```
+
 ### On Every Deployment
 
 * `composer install --no-dev --classmap-authoritative` to install only non-dev dependencies and optimize the class loader for static sources.
