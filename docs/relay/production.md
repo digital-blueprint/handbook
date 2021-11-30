@@ -23,7 +23,7 @@ php /srv/api/bin/console dbp:relay:core:queue:work my-worker-01
 See ['Queued Tasks'](./bundles/core/queue.md) for a recommended supervisor
 configuration.
 
-### Enabling Production Mode and setting an App Secret
+### Disabling Debug Mode and setting an App Secret
 
 By default debugging and the development configuration is enabled which is not
 suitable for production use (security leaks and performance issues). In addition
