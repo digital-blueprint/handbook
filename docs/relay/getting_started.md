@@ -92,7 +92,10 @@ In some cases some of the above steps need to be repeated:
 
 ## Extra Features
 
-The api server uses [Redis](https://redis.io/) as queue (for example for the
-Symfony messenger queue) and cache. The `docker-compose.yml` includes an
-instance of [Redis-Commander](https://joeferner.github.io/redis-commander/) to
-monitor the service. You can reach it at <http://127.0.0.1:8101>.
+The api server can use [Redis](https://redis.io/) as well as
+[MariaDB](https://mariadb.org/) for locking and for message queuing. The
+`docker-compose.yml` includes an instance of
+[Redis-Commander](https://joeferner.github.io/redis-commander/) to monitor the
+service which you can reach at <http://127.0.0.1:8101>. It also includes an
+instance of [phpMyAdmin](https://www.phpmyadmin.net/) which can reach at
+<http://127.0.0.1:8102>.
