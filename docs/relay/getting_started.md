@@ -69,8 +69,8 @@ Optional (In case you want to work outside of docker):
 Note: If you don't have `bash` you can execute the commands in the shell scripts (`*.sh`) manually.
 
 ```shell
-git clone https://gitlab.tugraz.at/dbp/middleware/dbp-api/api-server-template
-cd api-server-template
+composer create-project dbp/relay-server-template my-api "dev-main"
+cd my-api
 cd docker-dev
 ./build.sh          # to build the required docker images
 ./run.sh            # to get a shell in the main docker container
@@ -90,7 +90,16 @@ In some cases some of the above steps need to be repeated:
 * `composer install` to clear caches, or to install new dependencies
 * `./build.sh` in case the Dockerfile has changed
 
-## Extra Features
+## Next steps
+
+Now you have a working Symfony application. Some potential next steps are:
+
+* Convert your app to a git repository to easily track changes
+* Install existing feature bundles to expose new API and configure them
+* Create your own feature bundle, see [Creating a New Bundle](./new_bundle.md)
+* Deploy your application, see [Running in Production](./production.md)
+
+## Docker-Compose Extra Services
 
 The api server can use [Redis](https://redis.io/) as well as
 [MariaDB](https://mariadb.org/) for locking and for message queuing. The
