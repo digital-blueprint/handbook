@@ -18,7 +18,7 @@ In addition you can create a `.env.local` file which the API gateway will
 combine with the `.env`file. There you can include secrets which will not be
 checked into source control.
 
-For more details on the different `.env`, see [
+For more details on the different `.env` files, see [
 Configuring Symfony
 ](https://symfony.com/doc/current/configuration.html)
 
