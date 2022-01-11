@@ -1,4 +1,4 @@
-# API Gateway Configuration
+# Gateway Configuration
 
 The source of all configuration is the `.env` file in the root directory which
 looks like this:

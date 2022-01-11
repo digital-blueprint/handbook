@@ -64,7 +64,9 @@ nav:
   - Relay API Gateway:
     - relay/index.md
     - relay/getting_started.md
+    - relay/extending_with_bundles.md
     - relay/config.md
+    - relay/health_checks.md
     - relay/production.md
     - Available Bundles:
       - Core Bundle:
