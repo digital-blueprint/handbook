@@ -66,6 +66,7 @@ nav:
     - relay/getting_started.md
     - relay/extending_with_bundles.md
     - relay/config.md
+    - relay/bundle_config.md
     - relay/health_checks.md
     - relay/production.md
     - Available Bundles:
@@ -104,8 +105,8 @@ nav:
         - relay/bundles/location-check-in/index.md
     - Developer Guide:
       - relay/new_bundle.md
-      - relay/bundle_config.md
-      - relay/ide_integration.md
+      - relay/dev/bundle_config.md
+      - relay/dev/ide_integration.md
       - relay/access_control.md
       - relay/naming.md
       - relay/faq.md
