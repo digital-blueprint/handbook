@@ -109,6 +109,8 @@ nav:
       - relay/dev/ide_integration.md
       - relay/access_control.md
       - relay/naming.md
+      - relay/dev/bundle_architecture.md
+      - relay/dev/coding_standard.md
       - relay/faq.md
       - Keycloak Integration:
         - relay/keycloak/index.md
