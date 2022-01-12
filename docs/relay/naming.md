@@ -155,18 +155,16 @@ Should error codes be strictly numbers, or are identifiers allowed (`42` vs
 
 ## Event naming
 
-Don't use any `_` in the event name, it will make listener function names hard to predict.
-
-`BundleName`: Name of the bundle where the event will be used (e.g. `greenlightconnectorcampusonline` for the bundle `GreenlightConnectorCampusonlineBundle`)  
-`ClassName`: Name of the class where the event will be used (e.g. `personphotoprovider` for the class `PersonPhotoProvider`)  
+`BundleName`: Name of the bundle where the event will be used (e.g. `greenlight_connector_campusonline` for the bundle `GreenlightConnectorCampusonlineBundle`)  
+`ClassName`: Name of the class where the event will be used (e.g. `person_photo_provider` for the class `PersonPhotoProvider`)  
 `EventName`: Name of the event in `ClassName` (e.g. `pre` or `post`)  
 
 * Schema:
-  * `<Vendor, Lowercase>:<Category, Lowercase>:<BundleName, Lowercase>:<ClassName, Lowercase>:<EventName, Lowercase>`
+  * `<Vendor, SnakeCase>:<Category, SnakeCase>.<BundleName, SnakeCase>.<ClassName, SnakeCase>.<EventName, SnakeCase>`
 * Example:
-  * Event name: `dbp.relay.greenlightconnectorcampusonline.personphotoprovider.pre`
+  * Event name: `dbp.relay.greenlight_connector_campusonline.person_photo_provider.pre`
     * This results in a listener function name: `onDbpRelayGreenlightconnectorcampusonlinePersonphotoproviderPre`
-  * Event name: `dbp.relay.greenlightconnectorcampusonline.personphotoprovider.post`
+  * Event name: `dbp.relay.greenlight_connector_campusonline.person_photo_provider.post`
     * This results in a listener function name: `onDbpRelayGreenlightconnectorcampusonlinePersonphotoproviderPost`
 
 ## Open Questions
