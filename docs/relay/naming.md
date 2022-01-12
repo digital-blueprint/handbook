@@ -156,7 +156,7 @@ Should error codes be strictly numbers, or are identifiers allowed (`42` vs
 ## Open Questions
 
 * We use `API` -> `Api` for PascalCase because Symfony derives the config key
-  from it and we want it to be `api_` and not `a_p_i_`. We could define an
+  from it, and we want it to be `api_` and not `a_p_i_`. We could define an
   alternative PascalCase where `API` -> `API` for everything except the bundle
   name.
 
