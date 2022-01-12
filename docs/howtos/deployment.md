@@ -4,7 +4,7 @@
     environment is a list basically of servers where the same code is
     deployed to. Usually "development", "test", "demo",
     "staging", "production" etc.
--   The "master" branch always gets deployed to "development". The
+-   The "master"/"main" branch always gets deployed to "development". The
     "test" branch gets deployed to "test" etc.
 
 ## Example Deployment Flow for a "test" deployment
@@ -40,3 +40,12 @@ hosts per environment.
 - Run `ssh-copy-id -i mykey serveruser@someserver.tugraz.at` (the key
   is now in \~/.ssh/authorized\_keys on the server)
 - Put the content of 'mykey' into gitlab
+
+## How to deploy to a non-development environment
+
+We simply make the `demo` branch point to the commit we want to deploy and push it (force push is allowed too). In the common case where we just want to deploy the current development state as is:
+
+- `git checkout demo`
+- `git rebase main` (or master if master is the default)
+- `git push`
+- `git checkout -`
