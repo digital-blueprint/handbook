@@ -153,6 +153,22 @@ Should error codes be strictly numbers, or are identifiers allowed (`42` vs
     * `dbp:relay:core:queue:work`
 * Usage: Shown when running ./bin/console`
 
+## Event naming
+
+Don't use any `_` in the event name, it will make listener function names hard to predict.
+
+`BundleName`: Name of the bundle where the event will be used (e.g. `greenlightconnectorcampusonline` for the bundle `GreenlightConnectorCampusonlineBundle`)  
+`ClassName`: Name of the class where the event will be used (e.g. `personphotoprovider` for the class `PersonPhotoProvider`)  
+`EventName`: Name of the event in `ClassName` (e.g. `pre` or `post`)  
+
+* Schema:
+  * `<Vendor, Lowercase>:<Category, Lowercase>:<BundleName, Lowercase>:<ClassName, Lowercase>:<EventName, Lowercase>`
+* Example:
+  * Event name: `dbp.relay.greenlightconnectorcampusonline.personphotoprovider.pre`
+    * This results in a listener function name: `onDbpRelayGreenlightconnectorcampusonlinePersonphotoproviderPre`
+  * Event name: `dbp.relay.greenlightconnectorcampusonline.personphotoprovider.post`
+    * This results in a listener function name: `onDbpRelayGreenlightconnectorcampusonlinePersonphotoproviderPost`
+
 ## Open Questions
 
 * We use `API` -> `Api` for PascalCase because Symfony derives the config key
