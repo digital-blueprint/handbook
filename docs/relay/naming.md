@@ -160,12 +160,12 @@ Should error codes be strictly numbers, or are identifiers allowed (`42` vs
 `EventName`: Name of the event in `ClassName` (e.g. `pre` or `post`)  
 
 * Schema:
-  * `<Vendor, SnakeCase>:<Category, SnakeCase>.<BundleName, SnakeCase>.<ClassName, SnakeCase>.<EventName, SnakeCase>`
+    * `<Vendor, SnakeCase>:<Category, SnakeCase>.<BundleName, SnakeCase>.<ClassName, SnakeCase>.<EventName, SnakeCase>`
 * Example:
-  * Event name: `dbp.relay.greenlight_connector_campusonline.person_photo_provider.pre`
-    * This results in a listener function name: `onDbpRelayGreenlightconnectorcampusonlinePersonphotoproviderPre`
-  * Event name: `dbp.relay.greenlight_connector_campusonline.person_photo_provider.post`
-    * This results in a listener function name: `onDbpRelayGreenlightconnectorcampusonlinePersonphotoproviderPost`
+    * Event name: `dbp.relay.greenlight_connector_campusonline.person_photo_provider.pre`
+        * This results in a listener function name: `onDbpRelayGreenlightConnectorCampusonlinePersonPhotoProviderPre`
+    * Event name: `dbp.relay.greenlight_connector_campusonline.person_photo_provider.post`
+        * This results in a listener function name: `onDbpRelayGreenlightConnectorCampusonlinePersonPhotoProviderPost`
 
 ## Open Questions
 
