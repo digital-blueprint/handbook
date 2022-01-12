@@ -1,13 +1,13 @@
 # Extending with Bundles
 
-By default a fresh API server does not provide any API or other client facing
-functionality. You can extend the server with features by adding so called
+By default, a fresh API server does not provide any API or other client facing
+functionality. You can extend the server with features by adding so-called
 bundles.
 
 There are four types of bundles:
 
 * **Core bundles** — bundles which provide core functionality
-* **API bundles** — self contained bundles which add API endpoints and
+* **API bundles** — self-contained bundles which add API endpoints and
   optionally connect with some external service
 * **Abstract API bundles** — bundles which provide API endpoints but leave the
   actual implementation up to a connector bundle
@@ -44,7 +44,7 @@ graph TD
 
 Adding a bundle is as simple as installing it with composer:
 
-```
+```shell
 composer require dbp/relay-greenlight-bundle
 ```
 
@@ -60,4 +60,4 @@ In case of an abstract bundle you also need to add a corresponding connector
 bundle.
 
 Once everything is configured you can check that everything is working correctly
-via the the [health check command](./health_checks.md).
+via the [health check command](./health_checks.md).
