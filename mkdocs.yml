@@ -69,6 +69,7 @@ nav:
     - relay/bundle_config.md
     - relay/health_checks.md
     - relay/production.md
+    - relay/update.md
     - Available Bundles:
       - Core Bundle:
         - relay/bundles/core/index.md
