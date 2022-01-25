@@ -73,6 +73,8 @@ To update recipes one by one you can run:
 
 Symfony tracks the versions of all installed/updated recipes in the `symfony.lock` file.
 
+For more details see https://symfony.com/doc/5.4/setup/upgrade_minor.html#3-updating-recipes
+
 ## Tips & Tricks
 
 * Always commit your changes after you are done so you can easily revert back if something went wrong.
