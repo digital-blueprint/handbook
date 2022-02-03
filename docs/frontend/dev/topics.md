@@ -1,4 +1,4 @@
-# Topics
+# Topics Metadata
 
 A topic is a collection of activities which are in some way related (e.g. all
 activities that provide functionality for the library system). A topic can have
