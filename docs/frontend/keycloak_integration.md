@@ -1,5 +1,4 @@
-
-# Frontend Authentication
+# Keycloak Integration
 
 For frontend authentication we use [OpenID
 Connect](https://openid.net/connect/). In practice we use

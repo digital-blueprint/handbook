@@ -54,7 +54,7 @@ nav:
     - frontend/activities.md
     - frontend/configuration.md
     - frontend/theming.md
-    - frontend/frontend_auth.md
+    - frontend/keycloak_integration.md
     - Developer Guide:
       - frontend/dev/testing.md
       - frontend/dev/build_tooling.md
