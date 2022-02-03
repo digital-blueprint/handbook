@@ -56,6 +56,7 @@ nav:
     - frontend/theming.md
     - frontend/keycloak_integration.md
     - Developer Guide:
+      - frontend/dev/coding_standard.md
       - frontend/dev/testing.md
       - frontend/dev/build_tooling.md
       - frontend/dev/browser_support.md
