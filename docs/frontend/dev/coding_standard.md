@@ -39,3 +39,5 @@ Thus we set the Prettier config to ignore whitespace in all cases (html-whitespa
 <!-- prettier-ignore -->
 <div>Foo<span>bar</span></div>
 ```
+
+Once https://github.com/prettier/prettier/issues/12218 is fixed/released you can also use `<!-- display: inline -->` in front of the inline tag.
