@@ -17,6 +17,16 @@ A random selection of guidelines for how we write web components.
     }
     ```
 
+Instead of `document.createElement()` when creating nested custom elements use `getShadowRootDocument()`
+
+```js
+import {getShadowRootDocument} from '@dbp-toolkit/common';
+
+func() {
+    let elm = getShadowRootDocument(this).createElement('dbp-my-tag');
+}
+```
+
 
 ## Internal State
 
