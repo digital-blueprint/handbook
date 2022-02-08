@@ -53,77 +53,63 @@ To make the colors as customizable as possible, there is a dbp color system.
 
 For universities, these colors should have a contrast level of at least AA in contrast to the base color.
 
+alle farben ohne postfix sollen funktionieren auf base,
+sonst auf den on surfaces
+
 
 The following variables must be set, when you use multiple themes or special colors.
 The default oft these colors would be always the dbp colors.
 
-alle farben ohne postfix sollen funktionieren auf base,
- sonst auf den on surfaces
-
---dbp-override-default
-
+#### Color Variables:
 | Name               | Variable                           | Usage | Recommendation | Default |
-| ------------------ | ---------------------------------- | ----- | ------------| ------- |
+| ------------------ | ---------------------------------- | ----- | -------------- | ------- |
 | Background         |`--dbp-override-background`         | Background color | A neutral light or dark color | `#ffffff` |
-| Content            |`--dbp-override-content`            | Used as the text color or anything on the base, except surfaces | Black or white, depending on the base, WCAG Level to `--dbp-override-background` should be AA | `#000000` |
-| Content surface    |`--dbp-override-content-surface`    | Used as the text color or anything on the base, except surfaces | Black or white, depending on the base, no WCAG Level needed. | `#000000` |
-| On content surface |`--dbp-override-on-content-surface` | The default color for all elements above a surface | A color with high contrast, e.g. black or white| `#ffffff` |
+| Content            |`--dbp-override-content`            | Used as the text color or any element on the `--dbp-override-background`, except surfaces | Black or white, depending on the base, WCAG Level to `--dbp-override-background` should be AA | `#000000` |
+| Content surface    |`--dbp-override-content-surface`    | Used for surfaces | Used flat surfaces in front of the background, e.g. modal overlay | Black/white, No WCAG Level needed. | `#000000` |
+| On content surface |`--dbp-override-on-content-surface` | The color for all elements above the content surface | White/black, WCAG Level to `--dbp-override-content` should be AA | `#ffffff` |
 | |
-| Hover Background Color | `--dbp-override-hover-background-color`    |
-| Hover color            | `--dbp-override-hover-color` |
-| Border radius          | `--dbp-override-border-radius`    |
-| border                 | `--dbp-override-border`    |
+| Muted            |`--dbp-override-muted`            | Muted text, or speration items on the `--dbp-override-background` | Neutral gray, WCAG Level to `--dbp-override-background` should be AA | `#767676` |
+| Muted surface    |`--dbp-override-muted-surface`    | Neutral flat surfaces | Neutral gray, WCAG Level to `--dbp-override-base` should be AA | `#767676` |
+| On muted surface |`--dbp-override-on-muted-surface` | Elements on muted surfaces | white, WCAG Level to `--dbp-override-muted-surface` should be AA | `#ffffff` |
 | |
-| Muted            |`--dbp-override-muted`          | Muted text, or speration items on base | Neutral gray, WCAG Level to `--dbp-override-base` should be AA | `#767676` |
-| Muted surface    |`--dbp-override-muted`          | Muted text, or speration items on base | Neutral gray, WCAG Level to `--dbp-override-base` should be AA | `#767676` |
-| On muted surface |`--dbp-override-muted`          | Muted text, or speration items on base | Neutral gray, WCAG Level to `--dbp-override-base` should be AA | `#767676` |
-| |
-| Primary            | `--dbp-override-primary`            | Used for Text in Primary color on base | WCAG Level to `--dbp-override-base` should be AA | `#2a4491`
+| Primary            | `--dbp-override-primary`            | Used for elements in primary color on the `--dbp-override-background` | WCAG Level to `--dbp-override-background` should be AA | `#2a4491`
 | Primary surface    | `--dbp-override-primary-surface`    | Is used for surface in the primary color, like buttons that are responsible for the flow of the UI |   No WCAG Level needed. | `#2a4491` |
 | On primary surface | `--dbp-override-on-primary-surface` | Is used for elements above a primary surfaces, like text in primary buttons |  WCAG Level to `--dbp-override-primary-surface` should be AA | `#ffffff` |
-| Primary boarder    | `--dbp-override-primary-border`     | Is used for primary buttons as border |  | `1px solid #000000` |
+| Primary boarder    | `--dbp-override-primary-border`     | Is used for primary buttons border | Set to same color as the primary button or an contrast color | `--dbp-override-border-radius`, `1px solid #000000` |
 | |
-| Accent             |`--dbp-override-accent`            | Used in the menu, for active elements, focus effect or for some icons, anything which should have an accent. | Should a color with a recognition value for the university.  WCAG Level to `--dbp-override-base` should be AA| `#c24f68` |
-| Accent surface     |`--dbp-override-accent-surface`    | Used when the accent color is needed as an surface | Should a color with a recognition value for the university. No WCAG Level needed. | `#c24f68` |
-| Accent on surface  |`--dbp-override-on-accent-surface` | Used on accent surfaces | WCAG Level to `--dbp-override-accent` should be AA | `#ffffff` |
+| Secondary            | `--dbp-override-secondary`            | Used for elements in secondary color on the `--dbp-override-background` | WCAG Level to `--dbp-override-background` should be AA | `#2a4491`
+| Secondary surface    | `--dbp-override-secondary-surface`    | Is used for surfaces in the secondary color, for additional buttons, functions, navigation options |   No WCAG Level needed. | `#2a4491` |
+| On secondary surface | `--dbp-override-on-secondary-surface` | Is used for elements above a secondary surfaces, like text in secondary buttons |  WCAG Level to `--dbp-override-primary-surface` should be AA | `#ffffff` |
+| secondary boarder    | `--dbp-override-secondary-border`     | Is used for secondary buttons as border | Set to same color as the secondary button or an contrast color | `--dbp-override-border-radius`, `1px solid #000000` |
 | |
+| Accent            |`--dbp-override-accent`            | Used in the menu, for active elements, focus effect or for some icons, anything which should have an accent on the `--dbp-override-background`. | Should a color with a recognition value for the university.  WCAG Level to `--dbp-override-background` should be AA| `#c24f68` |
+| Accent surface    |`--dbp-override-accent-surface`    | Used when the accent color is needed as an surface | Should a color with a recognition value for the university. No WCAG Level needed. | `#c24f68` |
+| On accent surface |`--dbp-override-on-accent-surface` | Used on accent surfaces | WCAG Level to `--dbp-override-accent` should be AA | `#ffffff` |
+| |
+| Info            |`--dbp-override-info`            | Used for informational elements, like text, hints, on the `--dbp-override-background` | Blue, violett  WCAG Level to `--dbp-override-background` should be AA | `#2a4491` |
+| Info surface    |`--dbp-override-info-surface`    | Used when the informational color is needed as an surface, like hints, info boxes, info notifications | Blue, violett, No WCAG Level needed. | `#2a4491` |
+| On info surface |`--dbp-override-on-info-surface` | Used on info surfaces | WCAG Level to `--dbp-override-info` should be AA | `#ffffff` |
+| |
+| Success            |`--dbp-override-success`            | Used for success elements, like text, on the `--dbp-override-background` | Green,  WCAG Level to `--dbp-override-background` should be AA | `#188018` |
+| Success surface    |`--dbp-override-success-surface`    | Used when the success color is needed as an surface, like success boxes, success notifications | Green, No WCAG Level needed. | `#188018` |
+| On success surface |`--dbp-override-on-success-surface` | Used on success surfaces | WCAG Level to `--dbp-override-success` should be AA | `#ffffff` |
+| |
+| Warning            |`--dbp-override-warning`            | Used for warning elements, like text, on the `--dbp-override-background` | Yellow/orange/brown,  WCAG Level to `--dbp-override-background` should be AA | `#c15500` |
+| Warning surface    |`--dbp-override-warning-surface`    | Used when the warning color is needed as an surface, like warning boxes, warning notifications | Yellow/orange/brown, No WCAG Level needed. | `#ffad4d` |
+| On warning surface |`--dbp-override-on-warning-surface` | Used on warning surfaces | WCAG Level to `--dbp-override-warning` should be AA | `#000000` |
+| |
+| Danger            |`--dbp-override-danger`            | Used for danger elements, like text, error messages, incorrect feedback, on the `--dbp-override-background` | Orange/Red/Pink,  WCAG Level to `--dbp-override-background` should be AA | `#de3535` |
+| Danger surface    |`--dbp-override-danger-surface`    | Used when the danger color is needed as an surface, like danger boxes, danger notifications, error messages or incorrect feedback | Orange/Red/Pink, No WCAG Level needed. | `#de3535` |
+| On danger surface |`--dbp-override-on-danger-surface` | Used on danger surfaces | WCAG Level to `--dbp-override-danger` should be AA | `#ffffff` |
 
-``
+#### Other vars:
+| Name               | Variable                           | Usage | Recommendation | Default |
+| ------------------ | ---------------------------------- | ----- | -------------- | ------- |
+| Hover Background Color | `--dbp-override-hover-background-color` | Used for hover effects. If this var is set, all buttons, navigation elements and links have this color as background on hover. | | not set|
+| Hover color            | `--dbp-override-hover-color`            | Used for hover effects. If this var is set, all buttons, navigation elements and links have this color on hover. |  | not set |
+| Border radius          | `--dbp-override-border-radius`          | Applies a border radius to element which can have a border, like buttons, boxes, notifications, modal ... | | `0px` |
+| border                 | `--dbp-override-border`                 | Applies a border to elements, like buttons, boxes, links, modals, boxes, seperationlines | You can set here the border-width, border-style and border-color. A WCAG Level to `--dbp-override-background` of AA is recommended | `1px solid #000000` |
 
-**Accent:** Akzentfarbe, wird im Menü, oder für manche Icons verwendet
-*dbp-accent-light-theme*, *dbp-accent-dark-theme*
-
-**Primary:** wird für Buttons die für den Flow der UI verantwortlich sind verwendet
-*dbp-primary-light-theme*, *dbp-primary-dark-theme*
-
-**Secondary:** Wird für zusätzliche Buttons, Funktionen, Navigations Möglichkeiten verwendet
-*dbp-secondary-light-theme*, *dbp-secondary-dark-theme*
-
-**Success:** eine success Farbe (Empfohlen: Grün) wird für Notifikationen und erfolgreiche oder auch korrekte Rückmeldungen benutzt.
-*dbp-success-light-theme*, *dbp-success-dark-theme*
-
-**Warning:** Eine warnign Farbe (Empfohlen: Orange/Gelb/Braun), wird verwendet für Notifikationen oder warnende Elemente (!!! Achtung, bei den warning notifications wird die Farbe vom dark theme (*dbp-warning-dark-theme*) als Hintergrund genommen, da es keine angenehme Warning Farbe gibt, die ausreichend kontrastreich zu weiß ist)
-*dbp-warning-light-theme*, *dbp-warning-dark-theme*
-
-**Danger:** Eine danger color (Empfohlen: Rot/Orange/Pink), wird für Notifikationen und nicht erfolgreich oder inkorrekte Rückmeldungen benutzt.
-*dbp-danger-light-theme*, *dbp-danger-dark-theme*
-
-**Info:** Eine Info color (Empfohlen: Blau/Violett), wird für Notifikationen und Hinweise benutzt
-*dbp-info-light-theme*, *dbp-info-dark-theme*
-
-**Boarder:** gibt an welchen Rahmen man haben möchte. z.b. *boarder-light-theme*: 1px solid #000000, wird verwendet für Buttons, diverse Trenner zwischen unterschiedlichen Sektionen, Unterstreichungen von Links
-*dbp-boarder-light-theme*, *dbp-boarder-dark-theme*
-
-**border-radius:** gibt den Boarden Radius von Buttons an.
-*dbp-boarder-radius*, *dbp-boarder-radius*
-
-**Hover-base:** Gibt die Hintergrundfarbe eines Buttons oder Links wenn man das Element hovert an
-*dbp-hover-base-light-theme*, *dbp-hover-base-dark-theme*
-
-**Hover-text:** Gibt die Textfarbe eines Buttons oder Links wenn man das Element mit der Maus hovert an
-*dbp-hover-text-light-theme*, *dbp-hover-text-dark-theme*
-
-Diese Farben gibt es, wie am Anfang beschrieben, für ein Light und für ein Darktheme. (z.b.: *dbp-primary-light-theme*, *dbp-primary-dark-theme* **(bessere Namen willkommen)**), für das Light Theme verwendet man vorzugsweise kräftige Farben, deren Kontrast zu der *dbp-base-light-theme* Farbe (Empfohlen: Weiß) hoch genug ist (AA Level). Für das Dark Theme verwendet man kontrastreiche Farben, deren Kontrast zu der *dbp-base-dark-theme* Farbe (Empfohlen: Schwarz) hoch genug ist (AA Level).
 
 **Hinweis:** Werden Variablen nicht deklariert, werden die default Farbwerte benutzt. Auch müssen nicht alle Farben unterschiedlich sein. Z.B.: Die Primary color kann auch die Accent color sein.
 
