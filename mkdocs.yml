@@ -122,7 +122,7 @@ nav:
         - relay/keycloak/keycloak_scopes.md
         - relay/keycloak/keycloak_audience.md
         - relay/keycloak/scopes.md
-        - relay/keycloak/non_user_access.md
+        - relay/keycloak/client_credentials.md
   - licenses.md
   - opensource.md
   - logo/logo.md
