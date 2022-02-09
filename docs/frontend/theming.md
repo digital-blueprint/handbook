@@ -74,12 +74,12 @@ The default oft these colors would be always the dbp colors.
 | ✓ | Primary            | `--dbp-override-primary`            | Used for elements in primary color on the `--dbp-override-background` | WCAG Level to `--dbp-override-background` should be AA | `#2a4491`
 |   | Primary surface    | `--dbp-override-primary-surface`    | Is used for surface in the primary color, like buttons that are responsible for the flow of the UI |   No WCAG Level needed. | `--dbp-override-primary`, `#2a4491` |
 |   | On primary surface | `--dbp-override-on-primary-surface` | Is used for elements above a primary surfaces, like text in primary buttons |  WCAG Level to `--dbp-override-primary-surface` should be AA | `--dbp-override-on-content-surface`, `#ffffff` |
-|   | Primary boarder color    | `--dbp-override-primary-border-color`     | Is used for primary buttons border color | Set to same color as the primary button or an contrast color | `--dbp-override-border`, `#000000` |
+|   | Primary border color    | `--dbp-override-primary-border-color`     | Is used for primary buttons border color | Set to same color as the primary button or an contrast color | `--dbp-override-border`, `#000000` |
 | |
 | ✓ | Secondary            | `--dbp-override-secondary`            | Used for elements in secondary color on the `--dbp-override-background` | WCAG Level to `--dbp-override-background` should be AA | `#2a4491`
 |   | Secondary surface    | `--dbp-override-secondary-surface`    | Is used for surfaces in the secondary color, for additional buttons, functions, navigation options |   No WCAG Level needed. | `--dbp-override-secondary`, `#2a4491` |
 |   | On secondary surface | `--dbp-override-on-secondary-surface` | Is used for elements above a secondary surfaces, like text in secondary buttons |  WCAG Level to `--dbp-override-primary-surface` should be AA | `--dbp-override-on-content-surface`, `#ffffff` |
-|   | Secondary boarder color    | `--dbp-override-secondary-border-color`     | Is used for secondary buttons as border color | Set to same color as the secondary button or an contrast color | `--dbp-override-border`, `#000000` |
+|   | Secondary border color    | `--dbp-override-secondary-border-color`     | Is used for secondary buttons as border color | Set to same color as the secondary button or an contrast color | `--dbp-override-border`, `#000000` |
 | |
 | ✓ | Muted              |`--dbp-override-muted`            | Muted text, or speration items on the `--dbp-override-background` | Neutral gray, WCAG Level to `--dbp-override-background` should be AA | `#767676` |
 |   | Muted surface      |`--dbp-override-muted-surface`    | Neutral flat surfaces | Neutral gray, WCAG Level to `--dbp-override-base` should be AA | `--dbp-override-muted`, `#767676` |
