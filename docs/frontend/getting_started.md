@@ -1,6 +1,6 @@
 # Getting Started
 
-1. Install Yarn 1.x and Node 12.x
+1. Install Yarn 1.x and Node 14+
 
 * https://classic.yarnpkg.com/en/docs/install/#debian-stable
 * https://nodejs.org/en/download/package-manager
