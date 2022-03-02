@@ -71,7 +71,7 @@ nav:
     - relay/extending_with_bundles.md
     - relay/config.md
     - relay/bundle_config.md
-    - relay/health_checks.md
+    - relay/debugging.md
     - relay/production.md
     - relay/update.md
     - Available Bundles:

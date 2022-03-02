@@ -71,4 +71,4 @@ composer require dbp/relay-greenlight-connector-campusonline-bundle
 ```
 
 Once everything is configured you can check that everything is working correctly
-via the [health check command](./health_checks.md).
+via the [health check command](./debugging.md#health-checks).

@@ -1,4 +1,6 @@
-# Health Checks
+# Debugging
+
+## Health Checks
 
 The relay API gateway provides a command for checking the overall health of the
 system as well as all installed bundles. This includes:
@@ -31,3 +33,20 @@ If everything is working it should print something like:
   Check if DNS is working: [SUCCESS]
   Check if TLS is working: [SUCCESS]
 ```
+
+## Logs
+
+The logging configuration is stored under `config/packages/prod/monolog.yaml`. It defaults to storing the logs with a level higher than "info" for 10 days (for privacy reasons) under `var/log`.
+
+## Debug Mode
+
+!!! warning "Never enable debug mode in production!"
+
+    Debug mode allows users to access all configuration including all secrets. Never enable it in production!
+
+By enabling the `dev` environment via `APP_ENV=dev` you can active the debug mode in Symfony.
+This will:
+
+* Enable the Symfony debug toolbar which is visible at the bottom of the API documentation page.
+  It gives access to all the recent API requests, including logs, warnings, and context, timing information and much more.
+* Enable richer error messages. Unhandled API errors will include a stack trace, including the content of variables on the stack at the time of the error.
