@@ -53,9 +53,7 @@ To make the colors as customizable as possible, there is a dbp color system.
 
 For universities, these colors should have a contrast level of at least AA in contrast to the base color.
 
-alle farben ohne postfix sollen funktionieren auf base,
-sonst auf den on surfaces
-
+All colors without a postfix need to work on top of the "base" color. All others need to work on top of their respective surface colors.
 
 The following variables must be set, when you use multiple themes or special colors.
 The default oft these colors would be always the dbp colors.
@@ -68,7 +66,7 @@ The default oft these colors would be always the dbp colors.
 |   | Content surface    |`--dbp-override-content-surface`    | Used flat surfaces in front of the background, e.g. modal overlay | Black/white, No WCAG Level needed. | `--dbp-override-content` |
 |   | On content surface |`--dbp-override-on-content-surface` | The color for all elements above the content surface | White/black, WCAG Level to `--dbp-override-content` should be AA | `--dbp-override-background` |
 | |
-|   | Border             | `--dbp-override-border`                 | Applies a border to elements, like buttons, boxes, links, modals, boxes, seperationlines | You can set here the border-width, border-style and border-color. A WCAG Level to `--dbp-override-background` of AA is recommended | `1px solid #000000` |
+|   | Border             | `--dbp-override-border`                 | Applies a border to elements, like buttons, boxes, links, modals, boxes, separation lines | You can set here the border-width, border-style and border-color. A WCAG Level to `--dbp-override-background` of AA is recommended | `1px solid #000000` |
 |   | Border radius      | `--dbp-override-border-radius`          | Applies a border radius to element which can have a border, like buttons, boxes, notifications, modal ... | | `0px` |
 |   |
 | ✓ | Primary            | `--dbp-override-primary`            | Used for elements in primary color on the `--dbp-override-background` | WCAG Level to `--dbp-override-background` should be AA | `#2a4491`
@@ -81,7 +79,7 @@ The default oft these colors would be always the dbp colors.
 |   | On secondary surface | `--dbp-override-on-secondary-surface` | Is used for elements above a secondary surfaces, like text in secondary buttons |  WCAG Level to `--dbp-override-primary-surface` should be AA | `--dbp-override-on-content-surface` |
 |   | Secondary surface border color | `--dbp-override-secondary-surface-border-color` | Is used for secondary buttons as border color | Set this var only if you want another color for the border | `--dbp-override-secondary-surface` |
 | |
-| ✓ | Muted              |`--dbp-override-muted`            | Muted text, or speration items on the `--dbp-override-background` | Neutral gray, WCAG Level to `--dbp-override-background` should be AA | `#767676` |
+| ✓ | Muted              |`--dbp-override-muted`            | Muted text, or separation items on the `--dbp-override-background` | Neutral gray, WCAG Level to `--dbp-override-background` should be AA | `#767676` |
 |   | Muted surface      |`--dbp-override-muted-surface`    | Neutral flat surfaces | Neutral gray, WCAG Level to `--dbp-override-base` should be AA | `--dbp-override-muted` |
 |   | On muted surface   |`--dbp-override-on-muted-surface` | Elements on muted surfaces | white, WCAG Level to `--dbp-override-muted-surface` should be AA | `--dbp-override-on-content-surface` |
 |   | Muted surface border color | `--dbp-override-muted-surface-border-color` | Is used for border color at muted surfaces | Set this var only if you want another color for the border of the surface | `--dbp-override-muted-surface` |
@@ -116,8 +114,7 @@ The default oft these colors would be always the dbp colors.
 
 <b>*</b> These attributes are required, if you have more than one theme or a dark theme. 
 
-
-**Hinweis:** Werden Variablen nicht deklariert, werden die default Farbwerte benutzt. Auch müssen nicht alle Farben unterschiedlich sein. Z.B.: Die Primary color kann auch die Accent color sein.
+**Note:** Default colors will be used in case of undeclared variables. Colors don't have to be different in all cases, for example the primary color can be the same as the accent color.
 
 ### WCAG Level
 
