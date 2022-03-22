@@ -110,6 +110,10 @@ nav:
         - relay/bundles/knowledgebase/index.md
       - Location Check In Bundle:
         - relay/bundles/location-check-in/index.md
+      - Greenlight Bundle:
+        - CAMPUSonline Connector:
+          - relay/bundles/greenlight-connector-campusonline/index.md
+          - relay/bundles/greenlight-connector-campusonline/config.md
     - Developer Guide:
       - relay/new_bundle.md
       - relay/dev/bundle_config.md

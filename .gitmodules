@@ -7,3 +7,6 @@
 [submodule "submodules/dbp-relay-core-bundle"]
 	path = submodules/dbp-relay-core-bundle
 	url = https://gitlab.tugraz.at/dbp/relay/dbp-relay-core-bundle.git
+[submodule "submodules/dbp-relay-greenlight-connector-campusonline-bundle"]
+	path = submodules/dbp-relay-greenlight-connector-campusonline-bundle
+	url = https://gitlab.tugraz.at/dbp/greenlight/dbp-relay-greenlight-connector-campusonline-bundle.git
