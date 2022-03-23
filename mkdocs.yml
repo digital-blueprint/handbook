@@ -111,6 +111,8 @@ nav:
       - Location Check In Bundle:
         - relay/bundles/location-check-in/index.md
       - Greenlight Bundle:
+        - relay/bundles/greenlight/index.md
+        - relay/bundles/greenlight/config.md
         - CAMPUSonline Connector:
           - relay/bundles/greenlight-connector-campusonline/index.md
           - relay/bundles/greenlight-connector-campusonline/config.md
