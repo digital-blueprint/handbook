@@ -130,18 +130,19 @@ Base Bundle Exception: In case `UniqueName` starts with `Base` then `UniqueName`
 
 ## Database Table Prefix
 
-(In case multiple bundles want to use the same DB we want to avoid any conflicts)
+In case multiple bundles want to use the same DB we want to avoid any conflicts.
 
-**TBD** (`<UniqueName, SnakeCase>_<*, SnakeCase>` -> `check_in_my_table` might be an option)
+* Schema: `<UniqueName, SnakeCase>_<*, SnakeCase>`
+* Naming: `check_in_things`, `greenlight_permits`, `formalize_submissions`
+
+Note, we share the namespace with Symonfy, which already defines things like `lock_keys`, `messenger_messages` and `doctrine_migration_versions`.
 
 ## Error Codes Prefix
 
-(To avoid conflicts with other bundles we could prefix error codes as well)
+This is used in `ApiError::withDetails()`, for example: `ApiError::withDetails(Response::HTTP_NOT_FOUND, 'Not Found', 'greenlight:permit-not-found')`
 
-**TBD** (`<UniqueName, KebapCase>:<*, ???>` -> `check-in:42` might be an option)
-
-Should error codes be strictly numbers, or are identifiers allowed (`42` vs
-`invalid-question`)
+* Schema: `<UniqueName, KebapCase>:<*, KebapCase>`
+* Naming: `greenlight:permit-not-found`, `check-in:some-special-error`
 
 ## Symfony Command Naming
 
