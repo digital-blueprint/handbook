@@ -14,7 +14,7 @@ first. Ideally they are short, unique enough, and self describing :)
 
 **Vendor**
 
-The organization that created the package, one ore more words.
+The organization that created the package, one or more words.
 
 Example: `dbp`, `uni-graz`, `mffs`
 
@@ -22,13 +22,13 @@ In our case this is always `dbp`
 
 **Category**
 
-The name of the project managed by `vendor`, one ore more words.
+The name of the project managed by `vendor`, one or more words.
 
 In our case this is always `relay`
 
 **UniqueName**
 
-The name of the bundle, one ore more words. Needs to be unique, so care has to
+The name of the bundle, one or more words. Needs to be unique, so care has to
 be taken to avoid conflicts with other developers creating similar bundles.
 
 Example: `check-in`
