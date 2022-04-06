@@ -124,6 +124,7 @@ nav:
       - relay/naming.md
       - relay/dev/bundle_architecture.md
       - relay/dev/coding_standard.md
+      - relay/dev/guidelines.md
       - relay/faq.md
       - Keycloak Integration:
         - relay/keycloak/index.md
