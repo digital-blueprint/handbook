@@ -34,3 +34,7 @@ Here is a short summary for the common case:
   framework:
       trusted_headers: ['x-forwarded-for', 'x-forwarded-port', 'x-forwarded-proto']
   ```
+
+To make sure that everything is working, you can visit the API website, and
+check the bottom right corner, where it should show the host, ip, scheme, port
+of the request, as the gateway sees them.
