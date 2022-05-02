@@ -96,7 +96,7 @@ Now you have a working Symfony application. Some potential next steps are:
 
 * Convert your app to a git repository to easily track changes
 * Install existing feature bundles to expose new API and configure them
-* Create your own feature bundle, see [Creating a New Bundle](./new_bundle.md)
+* Create your own feature bundle, see [Creating a New Bundle](./dev/new_bundle.md)
 * Deploy your application, see [Running in Production](./production.md)
 
 ## Docker-Compose Extra Services
