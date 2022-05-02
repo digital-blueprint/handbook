@@ -156,12 +156,12 @@ This is used in `ApiError::withDetails()`, for example: `ApiError::withDetails(R
 
 ## Event naming
 
-`BundleName`: Name of the bundle where the event will be used (e.g. `greenlight_connector_campusonline` for the bundle `GreenlightConnectorCampusonlineBundle`)  
-`ClassName`: Name of the class where the event will be used (e.g. `person_photo_provider` for the class `PersonPhotoProvider`)  
-`EventName`: Name of the event in `ClassName` (e.g. `pre` or `post`)  
+`BundleName`: Name of the bundle where the event will be used (e.g. `greenlight_connector_campusonline` for the bundle `GreenlightConnectorCampusonlineBundle`)
+`EventCategoryName`: Name of the event category. Can also be a class name if wanted (e.g. `person_photo_provider` for the class `PersonPhotoProvider`)
+`EventName`: Name of the event in `ClassName` (e.g. `pre` or `post`)
 
 * Schema:
-    * `<Vendor, SnakeCase>.<Category, SnakeCase>.<BundleName, SnakeCase>.<ClassName, SnakeCase>.<EventName, SnakeCase>`
+    * `<Vendor, SnakeCase>.<Category, SnakeCase>.<BundleName, SnakeCase>.<EventCategoryName, SnakeCase>.<EventName, SnakeCase>`
 * Example:
     * Event name: `dbp.relay.greenlight_connector_campusonline.person_photo_provider.pre`
         * This results in a listener function name: `onDbpRelayGreenlightConnectorCampusonlinePersonPhotoProviderPre`
