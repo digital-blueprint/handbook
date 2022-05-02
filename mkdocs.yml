@@ -76,6 +76,7 @@ nav:
     - relay/production.md
     - relay/update.md
     - relay/reverse_proxies.md
+    - relay/faq.md
     - Available Bundles:
       - Core Bundle:
         - relay/bundles/core/index.md
