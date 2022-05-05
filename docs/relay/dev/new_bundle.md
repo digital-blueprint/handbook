@@ -52,3 +52,4 @@ code won't have any effect on the application. You can clear the cache via
 https://symfony.com/doc/current/bundles/best_practices.html
 * For details on the `@digital-blueprint/cli` tool see https://gitlab.tugraz.at/dbp/cli
 * For details on the bundle template see https://gitlab.tugraz.at/dbp/relay/dbp-relay-template-bundle
+* If you want an example implementation of a relay-api bundle with an entity, a command and some services see https://gitlab.tugraz.at/dbp/relay/dbp-relay-example-bundle
