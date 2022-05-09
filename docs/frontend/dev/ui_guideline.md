@@ -1,5 +1,5 @@
 # UI Guidelines
-In this guide we these topics:
+In this guide we discover these topics:
 
 - [Acticity UI Guide](#activity-ui-guide)
 - [UI Flow](#ui-flow)
@@ -16,7 +16,7 @@ In this guide we these topics:
 An Activity follows the order:
 
 1. H2 title 
-2. Subtitle with ``class="subheadline"`` - Short explanation of the acitivty
+2. Subtitle with ``class="subheadline"`` - Short explanation of the activity
 3. Intro Text - Overview of the activity if needed (Optional)
 4. Activity Stuff
 
@@ -38,9 +38,7 @@ An Activity follows the order:
 ## UI Flow
 
 The user interface always follows similar rules.
-We distinguish between
-- Information views
-- Click-through flow
+We distinguish between Informational views and Click-through flow.
 
 ### Informational views
 For **informational views**, all UI elements are weighted equally.
@@ -113,6 +111,20 @@ We distinguish between
 
 #### Tables with fix content
 
+<figure id="fixedTable">
+    <img src="/dev-guide/frontend/assets/Table-fix-content.png" alt="Table with fix and selectable content" style="width:100%; border: 1px solid black;">
+    <figcaption align = "center">
+        <b>Table with fix and selectable content</b>
+    </figcaption>
+</figure>
+
+<figure id="fixedTableMobile">
+    <img src="/dev-guide/frontend/assets/table-fix-content-mobile.png" alt="Table with fix and selectable content on mobile devices" style="width:50%; border: 1px solid black;">
+    <figcaption align = "center">
+        <b>Table with fix and selectable content on mobile devices</b>
+    </figcaption>
+</figure>
+
 #### Datatables
 
 <figure id="datatable">
@@ -122,6 +134,12 @@ We distinguish between
     </figcaption>
 </figure>
 
+<figure id="datatableMobile">
+    <img src="/dev-guide/frontend/assets/datatable-mobile.png" alt="Datatable on mobile devices" style="width:50%; border: 1px solid black;">
+    <figcaption align = "center">
+        <b>Datatable on mobile devices</b>
+    </figcaption>
+</figure>
 
 ### Modals
 We distinguish between
