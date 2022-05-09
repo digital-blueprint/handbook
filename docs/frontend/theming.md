@@ -121,11 +121,25 @@ The default oft these colors would be always the dbp colors.
 ## Icons
 
 ## Slots
-You can use various slots to customize your application. The code for the slots is based between the 
-`<template id="global-override">` tag of your application. 
+You can use various slots to customize your application. 
 
 
 ### Appshell slots
+
+<figure>
+    <img src="/frontend/assets/ui_images/Appshell.png" alt="Appshell Slots" style="width:100%; border: 1px solid black;">
+    <figcaption align = "center">
+        <b>Appshell slots visualization</b>
+    </figcaption>
+</figure>
+
+<figure>
+    <img src="/frontend/assets/ui_images/Appshell_mobile.png" alt="Appshell Slots mobile" style="width:50%; border: 1px solid black; margin: auto;">
+    <figcaption align = "center">
+        <b>Appshell slots mobile visualization</b>
+    </figcaption>
+</figure>
+
 You can adapt the **name**, **title**, **logo** or exchange the whole **header**, the **footer-links** 
 or exchange the whole **footer**. 
 The nearer description can be found in the documentation of the [appshell](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master/packages/app-shell).
@@ -152,6 +166,9 @@ For example:
 </template>
 
 ```
+
+
+
 
 ### App specific Slots
 Often there are app-specific slots or rather, activity-specific slots. These slots are often used for text customization. 

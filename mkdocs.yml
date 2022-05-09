@@ -58,6 +58,7 @@ nav:
     - Developer Guide:
       - frontend/dev/coding_standard.md
       - frontend/dev/accessibility.md
+      - frontend/dev/ui_guideline.md
       - frontend/dev/web_components_guidelines.md
       - frontend/dev/testing.md
       - frontend/dev/build_tooling.md
