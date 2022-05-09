@@ -104,12 +104,27 @@ Buttons that contain text are expanded to the full width and have a min height o
 For more information see [Accessibility](/frontend/dev/accessibility/).
 
 ### Tables
-We distinguish between
+We distinguish between tables with fix content and datatables.
 
-- tables with fix content
-- datatables
+Depending on the operation area you can decide between endless scroll or pagination.
+An example for endless scroll can be found in the [Nextcloudfilepicker Webcomponent](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/blob/master/packages/file-handling/src/nextcloud-file-picker.js).
+An example for pagination can be found in [Formalize](https://gitlab.tugraz.at/dbp/formalize/formalize).
+
+If you have an endless scroll, you can also show up a `select all` button as it was done in the Nextcloudfilepicker Webcomponent.
+
+If you have row action buttons you can distinguish between: selecting a row and connect these rows with a button or
+you can create a call to actions column in the last column of the table. Here can row action buttons placed. E.g.: Open the row in Detail,
+edit a row, delete a row...
+
+The table footer only appears if you have pagination. In these section, the pagionation, the next/prev/last/first buttons and the actual page is shown.
+This footer appears sticky in the table on mobile devices.
 
 #### Tables with fix content
+
+Tables with fix contents are tables where we know the columns, where we can estimate the weight of these columns.
+Because we can estimate the weight, we can collapse some columns on mobile devices and the rest of the table full can take the full width.
+These columns can be collapsed or expanded on these devices.
+The collapse Icon is placed in the first column of the row.
 
 <figure id="fixedTable">
     <img src="/dev-guide/frontend/assets/Table-fix-content.png" alt="Table with fix and selectable content" style="width:100%; border: 1px solid black;">
@@ -126,6 +141,11 @@ We distinguish between
 </figure>
 
 #### Datatables
+
+Table with unknown Data or an high amount of data are datatables. We don't know the weight of each column, so we can't collapse any of them.
+So we need a horizontal scroll and a short preview of a row. This is done with an "show in detail" button.
+This button takes place in the last column - the action column.
+The action column is frozen.
 
 <figure id="datatable">
     <img src="/dev-guide/frontend/assets/ui_images/Datatable.png" alt="Datatable" style="width:100%; border: 1px solid black;">
