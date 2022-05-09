@@ -100,7 +100,7 @@ See [secondary and primary buttons](#secondary-and-primary-buttons).
 In mobile views, buttons can be combined and reduced to an additional actions menu.
 An additional options menu consists of a `menu-dots` icon and a dropdown menu. This is opened by clicking and the additional buttons are displayed there as entries in the dropdown list.
 
-Buttons that contain text are expanded to the full width and have a min height of 40px. Buttons that contain icons have a width and height of 40px.
+Buttons which contain text are expanded to the full width and have a min height of 40px. Buttons which contain icons have a width and height of 40px.
 For more information see [Accessibility](/frontend/dev/accessibility/).
 
 ### Tables
