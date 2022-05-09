@@ -3,12 +3,12 @@ In this guide we these topics:
 
 - [Acticity UI Guide](#activity-ui-guide)
 - [UI Flow](#ui-flow)
-  - [Informational views](#informational-views)
-  - [Click-through flow](#click-through-flow)
+    -  [Informational views](#informational-views)
+    - [Click-through flow](#click-through-flow)
 - [UI Elements](#ui-elements)
-  - [Buttons](#buttons)
-  - [Tables](#tables)
-  - [Modals](#modals)
+    - [Buttons](#buttons)
+    - [Tables](#tables)
+    - [Modals](#modals)
   
 
 ## Activity UI Guide
@@ -22,14 +22,14 @@ An Activity follows the order:
 
 
 <figure>
-    <img src="/frontend/assets/ui_images/Appshell.png" alt="Appshell Slots" style="width:100%; border: 1px solid black;">
+    <img src="/dev-guide/frontend/assets/ui_images/Appshell.png" alt="Appshell Slots" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Appshell slots visualization</b>
     </figcaption>
 </figure>
 
 <figure>
-    <img src="/frontend/assets/ui_images/Appshell_mobile.png" alt="Appshell Slots mobile" style="width:50%; border: 1px solid black; margin: auto;">
+    <img src="/dev-guide/frontend/assets/ui_images/Appshell_mobile.png" alt="Appshell Slots mobile" style="width:50%; border: 1px solid black; margin: auto;">
     <figcaption align = "center">
         <b>Appshell slots mobile visualization</b>
     </figcaption>
@@ -74,7 +74,7 @@ These logical groups are then not distributed but combined in one element (`div`
 See [buttongroups](#buttongroups).
 
 <figure id="buttongroups">
-    <img src="/frontend/assets/ui_images/Activity_UI_flow_3.png" alt="Buttongroups" style="width:100%; border: 1px solid black;">
+    <img src="/dev-guide/frontend/assets/ui_images/Activity_UI_flow_3.png" alt="Buttongroups" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Buttongroups</b>
     </figcaption>
@@ -92,7 +92,7 @@ This button is used for all actions which are not required for the flow.
 See [secondary and primary buttons](#secondary-and-primary-buttons).
 
 <figure id="secondary-and-primary-buttons">
-    <img src="/frontend/assets/ui_images/Activity_UI_flow_3_v2.png" alt="secondary and primary buttons" style="width:100%; border: 1px solid black;">
+    <img src="/dev-guide/frontend/assets/ui_images/Activity_UI_flow_3_v2.png" alt="secondary and primary buttons" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Secondary and primary buttons</b>
     </figcaption>
@@ -103,7 +103,7 @@ In mobile views, buttons can be combined and reduced to an additional actions me
 An additional options menu consists of a `menu-dots` icon and a dropdown menu. This is opened by clicking and the additional buttons are displayed there as entries in the dropdown list.
 
 Buttons that contain text are expanded to the full width and have a min height of 40px. Buttons that contain icons have a width and height of 40px.
-For more information see [Accessibility](#/fronten/dev/accesibility.md)
+For more information see [Accessibility](/frontend/dev/accessibility/).
 
 ### Tables
 We distinguish between
@@ -116,7 +116,7 @@ We distinguish between
 #### Datatables
 
 <figure id="datatable">
-    <img src="/frontend/assets/ui_images/Datatable.png" alt="Datatable" style="width:100%; border: 1px solid black;">
+    <img src="/dev-guide/frontend/assets/ui_images/Datatable.png" alt="Datatable" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Datatable</b>
     </figcaption>
