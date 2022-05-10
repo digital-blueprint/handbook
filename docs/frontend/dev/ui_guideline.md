@@ -29,7 +29,7 @@ An Activity follows the order:
 </figure>
 
 <figure>
-    <img src="../../assets/ui_images/p1g2n0jc9u1ao2d4sttm1q54ohd4_page_05.svg" alt="Appshell Slots mobile" style="width:50%; border: 1px solid black; margin: auto;">
+    <img src="../../assets/ui_images/p1g2n0jc9u1ao2d4sttm1q54ohd4_page_05.svg" alt="Appshell Slots mobile" style="width:70%; border: 1px solid black; margin: auto;">
     <figcaption align = "center">
         <b>Appshell slots mobile visualization</b>
     </figcaption>
@@ -136,7 +136,7 @@ The collapse Icon is placed in the first column of the row.
 </figure>
 
 <figure id="fixedTableMobile">
-    <img src="../../assets/ui_images/p1g2n0jc9u1ao2d4sttm1q54ohd4_page_13.svg" alt="Table with fix and selectable content on mobile devices" style="width:50%; border: 1px solid black; margin: auto;">
+    <img src="../../assets/ui_images/p1g2n0jc9u1ao2d4sttm1q54ohd4_page_13.svg" alt="Table with fix and selectable content on mobile devices" style="width:70%; border: 1px solid black; margin: auto;">
     <figcaption align = "center">
         <b>Table with fix and selectable content on mobile devices</b>
     </figcaption>
@@ -157,7 +157,7 @@ The action column is frozen.
 </figure>
 
 <figure id="datatableMobile">
-    <img src="../../assets/ui_images/p1g2n0jc9u1ao2d4sttm1q54ohd4_page_14.svg" alt="Datatable on mobile devices" style="width:50%; border: 1px solid black; margin: auto;">
+    <img src="../../assets/ui_images/p1g2n0jc9u1ao2d4sttm1q54ohd4_page_14.svg" alt="Datatable on mobile devices" style="width:70%; border: 1px solid black; margin: auto;">
     <figcaption align = "center">
         <b>Datatable on mobile devices</b>
     </figcaption>
