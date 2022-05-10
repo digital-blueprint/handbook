@@ -173,6 +173,18 @@ This is used in `ApiError::withDetails()`, for example: `ApiError::withDetails(R
     * Event name: `dbp.relay.greenlight_connector_campusonline.person_photo_provider.post`
         * This results in a listener function name: `onDbpRelayGreenlightConnectorCampusonlinePersonPhotoProviderPost`
 
+## Symfony Service Tags Naming
+
+* Schema:
+    * `<Vendor, SnakeCase>.<Category, SnakeCase>.<BundleName, SnakeCase>.<ServiceTagName, SnakeCase>`
+
+`ServiceTagName` is freely selectable
+
+* Example:
+    * Service tag name: `dbp.relay.core.cron_job`, `dbp.relay.core.health_check`
+
+* Usage: when tagging Symfony services
+
 ## Open Questions
 
 * We use `API` -> `Api` for PascalCase because Symfony derives the config key
