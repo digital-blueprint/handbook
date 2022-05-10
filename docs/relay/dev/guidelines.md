@@ -42,7 +42,6 @@ Here you see a list of `Request` methods and the underlying HTTP headers they
 utilize, if behind a reverse proxy:
 
 ```php
-<?php
 // Inject RequestStack into your service via auto-wiring
 RequestStack $requestStack = ...;
 $request = $requestStack->getCurrentRequest(); // get the active request

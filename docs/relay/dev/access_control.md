@@ -33,7 +33,6 @@ the [Symfony documentation](https://symfony.com/doc/current/security.html#).
 Check roles in custom controllers or data providers/persisters:
 
 ```php
-<?php
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 final class MySuperController extends AbstractController
@@ -55,7 +54,6 @@ checked. If that is a problem you should check the roles in you data provider
 as well (or only there, since that is enough)
 
 ```php
-<?php
 /**
  * Secured resource.
  *

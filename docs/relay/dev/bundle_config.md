@@ -66,7 +66,6 @@ The bundle provides a `ImageStorageInterface` and the integrator implements it a
 Implementation:
 
 ```php
-<?php
 use DBP\API\ImageBundle\API\ImageStorageInterface;
 
 class MyImageStorage implements ImageStorageInterface
