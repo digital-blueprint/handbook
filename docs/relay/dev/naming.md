@@ -33,6 +33,11 @@ be taken to avoid conflicts with other developers creating similar bundles.
 
 Example: `check-in`
 
+In case of of a connector bundle the unique name follows the following format:
+`<feature-bundle>-connector-<external-system-name>`, for example
+`greenlight-connector-campusonline`. All other rules apply the same as with
+every other unique name.
+
 **FriendlyName**
 
 A friendly version of UniqueName meant for displaying to the user or for
