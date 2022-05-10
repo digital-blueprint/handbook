@@ -33,7 +33,6 @@ flowchart LR
             direction LR
             locking("Locking")
             message_queue("Message Queue")
-            health_checking("Health Checking")
             authentfication("Authentification")
             cron_jobs_management("Cron Jobs")
             logging("Logging")
