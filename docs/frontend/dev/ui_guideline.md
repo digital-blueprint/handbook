@@ -22,14 +22,14 @@ An Activity follows the order:
 
 
 <figure>
-    <img src="../../assets/ui_images/p1g2n0jc9u1ao2d4sttm1q54ohd4_page_02.svg" alt="Appshell Slots" style="width:100%; border: 1px solid black;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_02.svg" alt="Appshell Slots" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Appshell slots visualization</b>
     </figcaption>
 </figure>
 
 <figure>
-    <img src="../../assets/ui_images/p1g2n0jc9u1ao2d4sttm1q54ohd4_page_05.svg" alt="Appshell Slots mobile" style="width:70%; border: 1px solid black; margin: auto;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_05.svg" alt="Appshell Slots mobile" style="width:70%; border: 1px solid black; margin: auto;">
     <figcaption align = "center">
         <b>Appshell slots mobile visualization</b>
     </figcaption>
@@ -72,7 +72,7 @@ These logical groups are then not distributed but combined in one element (`div`
 See [buttongroups](#buttongroups).
 
 <figure id="buttongroups">
-    <img src="../../assets/ui_images/p1g2n0jc9u1ao2d4sttm1q54ohd4_page_03.svg" alt="Buttongroups" style="width:100%; border: 1px solid black;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_03.svg" alt="Buttongroups" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Buttongroups</b>
     </figcaption>
@@ -90,7 +90,7 @@ This button is used for all actions which are not required for the flow.
 See [secondary and primary buttons](#secondary-and-primary-buttons).
 
 <figure id="secondary-and-primary-buttons">
-    <img src="../../assets/ui_images/p1g2n0jc9u1ao2d4sttm1q54ohd4_page_06.svg" alt="secondary and primary buttons" style="width:100%; border: 1px solid black;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_06.svg" alt="secondary and primary buttons" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Secondary and primary buttons</b>
     </figcaption>
@@ -129,14 +129,14 @@ These columns can be collapsed or expanded on these devices.
 The collapse Icon is placed in the first column of the row.
 
 <figure id="fixedTable">
-    <img src="../../assets/ui_images/p1g2n0jc9u1ao2d4sttm1q54ohd4_page_09.svg" alt="Table with fix and selectable content" style="width:100%; border: 1px solid black;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_09.svg" alt="Table with fix and selectable content" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Table with fix and selectable content</b>
     </figcaption>
 </figure>
 
 <figure id="fixedTableMobile">
-    <img src="../../assets/ui_images/p1g2n0jc9u1ao2d4sttm1q54ohd4_page_13.svg" alt="Table with fix and selectable content on mobile devices" style="width:70%; border: 1px solid black; margin: auto;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_13.svg" alt="Table with fix and selectable content on mobile devices" style="width:70%; border: 1px solid black; margin: auto;">
     <figcaption align = "center">
         <b>Table with fix and selectable content on mobile devices</b>
     </figcaption>
@@ -150,14 +150,14 @@ This button takes place in the last column - the action column.
 The action column is frozen.
 
 <figure id="datatable">
-    <img src="../../assets/ui_images/p1g2n0jc9u1ao2d4sttm1q54ohd4_page_10.svg" alt="Datatable" style="width:100%; border: 1px solid black;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_10.svg" alt="Datatable" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Datatable</b>
     </figcaption>
 </figure>
 
 <figure id="datatableMobile">
-    <img src="../../assets/ui_images/p1g2n0jc9u1ao2d4sttm1q54ohd4_page_14.svg" alt="Datatable on mobile devices" style="width:70%; border: 1px solid black; margin: auto;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_14.svg" alt="Datatable on mobile devices" style="width:70%; border: 1px solid black; margin: auto;">
     <figcaption align = "center">
         <b>Datatable on mobile devices</b>
     </figcaption>
@@ -177,7 +177,7 @@ An example for a detailed modal can be found in our application [Formalize](http
 we used the detail modal to show a whole data entry row in a compact way.
 
 <figure id="detail-modal">
-    <img src="../../assets/ui_images/p1g2n0jc9u1ao2d4sttm1q54ohd4_page_07.svg" alt="Detail Modal" style="width:100%; border: 1px solid black;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_07.svg" alt="Detail Modal" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Detail Modal</b>
     </figcaption>
@@ -192,7 +192,7 @@ We also have a modal title which indicates the context of this dialogue and a cl
 An example for a modal with tabs can be found in the [filehandling webcomponent](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/blob/master/packages/file-handling/src/file-source.js).
 
 <figure id="modal-tabs">
-    <img src="../../assets/ui_images/p1g2n0jc9u1ao2d4sttm1q54ohd4_page_08.svg" alt="Modal with Tabs" style="width:100%; border: 1px solid black;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_08.svg" alt="Modal with Tabs" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Modal with Tabs</b>
     </figcaption>
