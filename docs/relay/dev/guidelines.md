@@ -1,6 +1,20 @@
-# API Guidelines
+# Guidelines
 
 A random list of things we try to keep consistent.
+
+## Naming of Connector Bundles
+
+The name should point to the system it connects to. In case there are multiple
+systems it connects to, then the name of the "main" system is used. The main
+system is the system which provides the data that ends up at the API bundle. If
+there are multiple "main" systems then this has to be decided on a case by case
+basis.
+
+Example:
+
+It connects to a database and LDAP to map some IDs, since LDAP is only used to
+translate IDs and the real data it forwards comes from the database, the main
+system is the database.
 
 ## Filtering based on resource IDs
 
