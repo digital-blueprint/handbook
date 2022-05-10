@@ -129,14 +129,14 @@ These columns can be collapsed or expanded on these devices.
 The collapse Icon is placed in the first column of the row.
 
 <figure id="fixedTable">
-    <img src="/dev-guide/frontend/assets/Table-fix-content.png" alt="Table with fix and selectable content" style="width:100%; border: 1px solid black;">
+    <img src="/dev-guide/frontend/assets/ui_images/Table-fix-content.png" alt="Table with fix and selectable content" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Table with fix and selectable content</b>
     </figcaption>
 </figure>
 
 <figure id="fixedTableMobile">
-    <img src="/dev-guide/frontend/assets/table-fix-content-mobile.png" alt="Table with fix and selectable content on mobile devices" style="width:50%; border: 1px solid black;">
+    <img src="/dev-guide/frontend/assets/ui_images/table-fix-content-mobile.png" alt="Table with fix and selectable content on mobile devices" style="width:50%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Table with fix and selectable content on mobile devices</b>
     </figcaption>
@@ -157,7 +157,7 @@ The action column is frozen.
 </figure>
 
 <figure id="datatableMobile">
-    <img src="/dev-guide/frontend/assets/datatable-mobile.png" alt="Datatable on mobile devices" style="width:50%; border: 1px solid black;">
+    <img src="/dev-guide/frontend/assets/ui_images/datatable-mobile.png" alt="Datatable on mobile devices" style="width:50%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Datatable on mobile devices</b>
     </figcaption>
