@@ -113,10 +113,10 @@ An example for pagination can be found in [Formalize](https://gitlab.tugraz.at/d
 If you have an endless scroll, you can also show up a `select all` button as it was done in the Nextcloudfilepicker Webcomponent.
 
 If you have row action buttons you can distinguish between: selecting a row and connect these rows with a button or
-you can create a call to actions column in the last column of the table. Here can row action buttons placed. E.g.: Open the row in Detail,
+you can create a call to actions column in the last column of the table. The row action buttons can placed there. E.g.: Open the row in Detail,
 edit a row, delete a row...
 
-The table footer only appears if you have pagination. In these section, the pagionation, the next/prev/last/first buttons and the actual page is shown.
+The table footer only appears if you have pagination enabled. In this section, the pagination, the next/prev/last/first buttons and the actual page is shown.
 This footer appears sticky in the table on mobile devices.
 
 We are using [tabulator](http://tabulator.info/) for building our tables.
@@ -124,7 +124,7 @@ We are using [tabulator](http://tabulator.info/) for building our tables.
 #### Tables with fix content
 
 Tables with fix contents are tables where we know the columns, where we can estimate the weight of these columns.
-Because we can estimate the weight, we can collapse some columns on mobile devices and the rest of the table full can take the full width.
+Because we can estimate the weight, we can collapse some columns on mobile devices and the rest of the table can take the full width.
 These columns can be collapsed or expanded on these devices.
 The collapse Icon is placed in the first column of the row.
 
@@ -144,8 +144,8 @@ The collapse Icon is placed in the first column of the row.
 
 #### Datatables
 
-Table with unknown Data or an high amount of data are datatables. We don't know the weight of each column, so we can't collapse any of them.
-So we need a horizontal scroll and a short preview of a row. This is done with an "show in detail" button.
+Tables with unknown Data or an high amount of data are datatables. We don't know the weight of each column, so we can't collapse any of them.
+We need a horizontal scroll and a short preview of a row. This is done with a "show in detail" button.
 This button takes place in the last column - the action column.
 The action column is frozen.
 
@@ -185,7 +185,7 @@ we used the detail modal to show a whole data entry row in a compact way.
 
 #### Modal with Tabs
 If we have an additional Menu e.g. different locations for filesaving, then we can have tabs in the modal dialogue.
-These tabs are placed at the left sde of the modal dialogue. On mobile devices these tabs are placed at the top of the screen.
+These tabs are placed on the left side of the modal dialogue. On mobile devices these tabs are placed at the top of the screen.
 
 We also have a modal title which indicates the context of this dialogue and a closing sign on the right upper corner.
 
