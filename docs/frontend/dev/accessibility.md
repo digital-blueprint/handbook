@@ -1,8 +1,6 @@
 # Accessibility
 A simple and basic accessibility guide can be found on [www.w3.org](https://www.w3.org/WAI/test-evaluate/preliminary/).
 
-
-
 ## Keyboard-friendly
 Our application should be keyboard-friendly. That means you can use the app without a mouse.
 The most common way of navigating using a keyboard is with the tab key. You can jump beetween areas and 
@@ -33,7 +31,7 @@ error message. The message itself should state that an error occurs.
 
 ## Fontsize
 The minimal font size of our application should be **16pt**.
-Avoid absolute units like pixels. Instead use **relative sites**(em, rem), which enable the text to scale depending on other content and screen size.
+Avoid absolute units like pixels. Instead, use **relative sites**(em, rem), which enable the text to scale depending on other content and screen size.
 
 A user should be able to resize the text up to 400% or change text spacing and no information should be lost.
 
@@ -41,14 +39,11 @@ A user should be able to resize the text up to 400% or change text spacing and n
 The minimal touch target size of WCAG Level AAA is at least 44 by 44 css pixels.
 The minimal touch target size of WCAG Level AA is at least 24 by 24 CSS pixels.
 
-In our application we had to fullfill WCAG Level AA, but we want to meet in the middle with the touchtarget.
+In our application we had to fulfill WCAG Level AA, but we want to meet in the middle with the touchstart.
 
-So our minimal touch target size is 40px. To achieve that with an aspect to 
+So our minimal touch target size is 40px. To achieve that with an aspect to design you can make the content smaller than the actual touchtarget.
+So you wrap the target with a padding. E.g.: an icon with the size of 30px and a padding of 5 px at each side.
 
-// TODO
-
-Minimal Touch target : 40px;
-better: icon ~30px and a padding around
 
 For more information you can read the article about [touch target size](https://www.w3.org/WAI/WCAG21/Understanding/target-size.html) of w3.org.
 
