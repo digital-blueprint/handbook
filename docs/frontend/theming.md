@@ -45,8 +45,6 @@ For example:
 
 ```
 
-### Colors System
-
 ### Color System
 
 To make the colors as customizable as possible, there is a dbp color system.
@@ -116,9 +114,12 @@ The default oft these colors would be always the dbp colors.
 
 **Note:** Default colors will be used in case of undeclared variables. Colors don't have to be different in all cases, for example the primary color can be the same as the accent color.
 
-### WCAG Level
+### Minimal contrast Level
+You can read about the minimal contrast level in [Accessibility](../dev/accessibility#minimal-contrast-level).
 
 ## Icons
+// TODO overriding icons isn't implemented yet
+
 
 ## Slots
 You can use various slots to customize your application. 
