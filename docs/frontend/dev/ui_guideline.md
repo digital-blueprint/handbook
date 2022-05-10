@@ -97,7 +97,7 @@ See [secondary and primary buttons](#secondary-and-primary-buttons).
 </figure>
 
 #### Responsibility
-In mobile views, buttons can be combined and reduced to an additional actions menu.
+In mobile views, buttons can be combined and reduced to an additional actions-menu.
 An additional options menu consists of a `menu-dots` icon and a dropdown menu. This is opened by clicking and the additional buttons are displayed there as entries in the dropdown list.
 
 Buttons which contain text are expanded to the full width and have a min height of 40px. Buttons which contain icons have a width and height of 40px.
@@ -112,8 +112,8 @@ An example for pagination can be found in [Formalize](https://gitlab.tugraz.at/d
 
 If you have an endless scroll, you can also show up a `select all` button as it was done in the Nextcloudfilepicker Webcomponent.
 
-If you have row action buttons you can distinguish between: selecting a row and connect these rows with a button or
-you can create a call to actions column in the last column of the table. The row action buttons can placed there. E.g.: Open the row in Detail,
+If you have row action buttons you can distinguish between: selecting a row and connect these rows with a button, or
+you can create a call to actions column in the last column of the table. The row action buttons can be placed there. E.g.: Open the row in Detail,
 edit a row, delete a row...
 
 The table footer only appears if you have pagination enabled. In this section, the pagination, the next/prev/last/first buttons and the actual page is shown.
@@ -144,7 +144,7 @@ The collapse Icon is placed in the first column of the row.
 
 #### Datatables
 
-Tables with unknown Data or an high amount of data are datatables. We don't know the weight of each column, so we can't collapse any of them.
+Tables with unknown Data or a high amount of data are datatables. We don't know the weight of each column, so we can't collapse any of them.
 We need a horizontal scroll and a short preview of a row. This is done with a "show in detail" button.
 This button takes place in the last column - the action column.
 The action column is frozen.
@@ -184,7 +184,7 @@ we used the detail modal to show a whole data entry row in a compact way.
 </figure>
 
 #### Modal with Tabs
-If we have an additional Menu e.g. different locations for filesaving, then we can have tabs in the modal dialogue.
+If we have an additional Menu e.g. different locations for file-saving, then we can have tabs in the modal dialogue.
 These tabs are placed on the left side of the modal dialogue. On mobile devices these tabs are placed at the top of the screen.
 
 We also have a modal title which indicates the context of this dialogue and a closing sign on the right upper corner.
