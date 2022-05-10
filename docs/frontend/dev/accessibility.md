@@ -1,9 +1,7 @@
 # Accessibility
+A simple and basic accessibility guide can be found on [www.w3.org](https://www.w3.org/WAI/test-evaluate/preliminary/).
 
-// TODO
 
-Minimal Touch target : 40px;
-better: icon ~30px and a padding around
 
 ## Keyboard-friendly
 Our application should be keyboard-friendly. That means you can use the app without a mouse.
@@ -40,20 +38,48 @@ Avoid absolute units like pixels. Instead use **relative sites**(em, rem), which
 A user should be able to resize the text up to 400% or change text spacing and no information should be lost.
 
 ## Touchtarget Size
+The minimal touch target size of WCAG Level AAA is at least 44 by 44 css pixels.
+The minimal touch target size of WCAG Level AA is at least 24 by 24 CSS pixels.
 
+In our application we had to fullfill WCAG Level AA, but we want to meet in the middle with the touchtarget.
+
+So our minimal touch target size is 40px. To achieve that with an aspect to 
+
+// TODO
+
+Minimal Touch target : 40px;
+better: icon ~30px and a padding around
+
+For more information you can read the article about [touch target size](https://www.w3.org/WAI/WCAG21/Understanding/target-size.html) of w3.org.
 
 ## Hierarchy of Headlines
+Heading levels should have a meaningful hierarchy, e.g.:
+
+    Heading Level 1 <h1>
+        Heading Level 2 <h2>
+            Heading Level 3 <h3>
+            Heading Level 3 <h3>
+        Heading Level 2 <h2>
+            Heading Level 3 <h3>
+                Heading Level 4 <h4>
+                Heading Level 4 <h4>
+        Heading Level 2 <h2>
+
+In almost all pages there should be at least one heading.
+The heading hierarchy should be meaningful. 
+Ideally the page starts with a "h1" — which is usually similar to the page title — and does not skip levels.
 
 
 ## Text alternatives
 
 ### Non Text content: ALT attribute
-
 You must add an ALT attribute to each non text content, including image, buttons, graphics, icons, video, audio files. 
 This improves the SEO and also the accessibility.
 You should briefly describe the image in an ALT attribute.
 
 ### Link titles
+All links should have a meaningful title attribute.
+
 
 ### Labels for Userinput
 You should use labels for form controls, input and other user interface components
