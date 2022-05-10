@@ -123,6 +123,7 @@ nav:
       - relay/dev/index.md
       - relay/dev/new_bundle.md
       - relay/dev/bundle_config.md
+      - relay/dev/extending.md
       - relay/dev/ide_integration.md
       - relay/dev/access_control.md
       - relay/dev/naming.md
