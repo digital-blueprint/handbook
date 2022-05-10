@@ -8,7 +8,7 @@ Assuming you have a bundle which provides an API for a backend service there are
 * Configuration for which cache/lock/message bus backend to use
 * Or if all that isn't enough, PHP code for communicating with a completely custom backend
 
-The "API Starter Bundle" contains examples for both variants explained here.
+The [API Example Bundle](https://gitlab.tugraz.at/dbp/relay/dbp-relay-example-bundle) contains examples for both variants explained here.
 
 ## Symfony Bundle Configuration (Simple)
 
