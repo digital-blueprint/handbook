@@ -101,7 +101,7 @@ In mobile views, buttons can be combined and reduced to an additional actions me
 An additional options menu consists of a `menu-dots` icon and a dropdown menu. This is opened by clicking and the additional buttons are displayed there as entries in the dropdown list.
 
 Buttons which contain text are expanded to the full width and have a min height of 40px. Buttons which contain icons have a width and height of 40px.
-For more information see [Accessibility](/frontend/dev/accessibility/).
+For more information see [Accessibility](/dev-guide/frontend/dev/accessibility/).
 
 ### Tables
 We distinguish between tables with fix content and datatables.
@@ -118,6 +118,8 @@ edit a row, delete a row...
 
 The table footer only appears if you have pagination. In these section, the pagionation, the next/prev/last/first buttons and the actual page is shown.
 This footer appears sticky in the table on mobile devices.
+
+We are using [tabulator](http://tabulator.info/) for building our tables.
 
 #### Tables with fix content
 
@@ -162,10 +164,36 @@ The action column is frozen.
 </figure>
 
 ### Modals
-We distinguish between
+We distinguish between detail Modals and Modals with tabs.
 
-- detail Modals
-- Modals with tabs
+We are using a tiny lib for building these modals: [micromodal](https://micromodal.vercel.app/).
 
-#### DetailModal
+#### Detail Modal
+Ein detail Modal wird verwendet um Datensätze als gesamtes anzusehen oder weitere Details zu erfahren.
+The modal has a title in the left upper corner and a close sign in the right upper corner(see [detail modal](#detail-modal)).
+The buttons are placed at the bottom of the modal dialogue.
+
+An example for a detailed modal can be found in our application [Formalize](https://gitlab.tugraz.at/dbp/formalize/formalize), where 
+we used the detail modal to show a whole data entry row in a compact way.
+
+<figure id="detail-modal">
+    <img src="/dev-guide/frontend/assets/ui_images/Detail_Modal.png" alt="Detail Modal" style="width:100%; border: 1px solid black;">
+    <figcaption align = "center">
+        <b>Detail Modal</b>
+    </figcaption>
+</figure>
+
 #### Modal with Tabs
+If we have an additional Menu e.g. different locations for filesaving, then we can have tabs in the modal dialogue.
+These tabs are placed at the left sde of the modal dialogue. On mobile devices these tabs are placed at the top of the screen.
+
+We also have a modal title which indicates the context of this dialogue and a closing sign on the right upper corner.
+
+An example for a modal with tabs can be found in the [filehandling webcomponent](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/blob/master/packages/file-handling/src/file-source.js).
+
+<figure id="modal-tabs">
+    <img src="/dev-guide/frontend/assets/ui_images/modal_tabs.png" alt="Modal with Tabs" style="width:100%; border: 1px solid black;">
+    <figcaption align = "center">
+        <b>Modal with Tabs</b>
+    </figcaption>
+</figure>
