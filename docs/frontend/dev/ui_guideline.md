@@ -169,7 +169,7 @@ We distinguish between detail Modals and Modals with tabs.
 We are using a tiny lib for building these modals: [micromodal](https://micromodal.vercel.app/).
 
 #### Detail Modal
-Ein detail Modal wird verwendet um Datensätze als gesamtes anzusehen oder weitere Details zu erfahren.
+A detail modal is used to view records as a whole or to get more details.
 The modal has a title in the left upper corner and a close sign in the right upper corner(see [detail modal](#detail-modal)).
 The buttons are placed at the bottom of the modal dialogue.
 
