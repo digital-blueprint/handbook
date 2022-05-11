@@ -145,7 +145,13 @@ nav:
         - relay/keycloak/client_credentials.md
   - licenses.md
   - opensource.md
-  - logo/logo.md
+  - Coperate design:
+    - cd/logo.md
+    - cd/colors.md
+    - cd/fonts.md
+    - cd/secondary-design-elements.md
+    - cd/icons.md
+    - cd/apps.md
   - How-Tos:
     - howtos/about.md
     - howtos/deployment.md
