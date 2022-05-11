@@ -76,13 +76,12 @@ flowchart LR
     connector_interface --> impl
 ```
 
-The core bundle provides various common functionality to all bundles, so they can:
+The core bundle provides various common functionality to all bundles and also
+allows bundles to extend the API gateway in various ways, so they can:
 
 * use the logging system
 * use the locking system
-
-It also allows bundles to extend the API gateway in various ways, so they can:
-
+* expose the added API in the generated OpenAPI documentation
 * register new API resources
 * register new health checks
 * register new cron jobs
