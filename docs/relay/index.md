@@ -48,9 +48,6 @@ endpoints. For example a bundle providing a library management API can add new
 endpoints for working with books by talking to an external library system. It
 can depend on the core bundle for user management and authentication.
 
-See [Extending with Bundles](./extending_with_bundles.md) for more details on
-the types of bundles that are available.
-
 ### API Clients
 
 External apps, like browser or mobile applications can be written easily to
