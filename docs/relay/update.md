@@ -80,3 +80,5 @@ For more details see https://symfony.com/doc/5.4/setup/upgrade_minor.html#3-upda
 * Always commit your changes after you are done so you can easily revert back if something went wrong.
 * Run the ['Health Checks'](./debugging.md#health-checks) after an update to see if the basics are still working.
 * Test the update in a staging environment before deploying it to production.
+
+See the [FAQs](./faq.md#installation-updates) for common related problems & solutions.
