@@ -1,0 +1,60 @@
+{
+  "_args": [
+    [
+      "@fontsource/roboto-mono@4.5.1",
+      "/home/lazka/Desktop/dbp/dev-guide/fonts"
+    ]
+  ],
+  "_from": "@fontsource/roboto-mono@4.5.1",
+  "_id": "@fontsource/roboto-mono@4.5.1",
+  "_inBundle": false,
+  "_integrity": "sha512-uP/GMF9N2XaxrB9flM1LiZUdcrG/3YdYpGJddY2d7rvsqqitZ8fWBckbdW717WMty4V96N+k1EArilYwQOvN3A==",
+  "_location": "/@fontsource/roboto-mono",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@fontsource/roboto-mono@4.5.1",
+    "name": "@fontsource/roboto-mono",
+    "escapedName": "@fontsource%2froboto-mono",
+    "scope": "@fontsource",
+    "rawSpec": "4.5.1",
+    "saveSpec": null,
+    "fetchSpec": "4.5.1"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@fontsource/roboto-mono/-/roboto-mono-4.5.1.tgz",
+  "_spec": "4.5.1",
+  "_where": "/home/lazka/Desktop/dbp/dev-guide/fonts",
+  "author": {
+    "name": "Lotus",
+    "email": "declininglotus@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/fontsource/fontsource/issues"
+  },
+  "description": "Self-host the Roboto Mono font in a neatly bundled NPM package.",
+  "homepage": "https://github.com/fontsource/fontsource/tree/master/packages/roboto-mono#readme",
+  "keywords": [
+    "fontsource",
+    "font",
+    "font family",
+    "google fonts",
+    "Roboto Mono",
+    "roboto-mono"
+  ],
+  "license": "MIT",
+  "main": "index.css",
+  "name": "@fontsource/roboto-mono",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fontsource/fontsource.git",
+    "directory": "packages/roboto-mono"
+  },
+  "version": "4.5.1"
+}

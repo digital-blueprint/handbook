@@ -1,15 +1,18 @@
 site_name: Digital Blueprint Developer Guide
 theme:
+    font: false
     name: material
     palette:
       primary: teal
       accent: teal
     logo: assets/logo.png
     favicon: assets/logo.png
+    custom_dir: overrides
 
 extra_css:
   - assets/styles/styles.css
   - assets/styles/extra.css
+  - assets/styles/fonts.css
 
 extra_javascript:
   - assets/js/mermaid.min.js
