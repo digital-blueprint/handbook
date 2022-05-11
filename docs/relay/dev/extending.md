@@ -6,6 +6,9 @@ The main entry point for extending is the "Extension" file under
 `DependencyInjection/*Extension.php`. The `ExtensionTrait` used there provides
 various methods for registering things.
 
+You can also have a look at the [dbp-relay-example-bundle](https://gitlab.tugraz.at/dbp/relay/dbp-relay-example-bundle) which uses many of the here listed features.
+
+
 ## Registering API Resources
 
 Use `addResourceClassDirectory()` to register a directory with API-Platform entities which are annotated with `APIResource`.
