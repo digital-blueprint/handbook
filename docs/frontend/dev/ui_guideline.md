@@ -9,11 +9,14 @@ In this guide we discover these topics:
     - [Buttons](#buttons)
     - [Tables](#tables)
     - [Modals](#modals)
+- [Colors](#colors)
+- [Fontsize](#fontsize)
+- [And more](#and-more-to-consider)
   
 
 ## Activity UI Guide
 
-An Activity follows the order:
+An Activity follows the order [[Fig. 1]](#fig1)[[Fig. 2]](#fig2):
 
 1. H2 title 
 2. Subtitle with ``class="subheadline"`` - Short explanation of the activity
@@ -21,35 +24,34 @@ An Activity follows the order:
 4. Activity Stuff
 
 
-<figure>
-    <img src="../../assets/ui_images/DBP-UI-Design_page_02.svg" alt="Appshell Slots" style="width:100%; border: 1px solid black;">
+<figure id="fig1">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_01.svg" alt="Appshell Slots" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
-        <b>Appshell slots visualization</b>
+        <b>Fig. 1: Appshell slots visualization</b>
     </figcaption>
 </figure>
 
-<figure>
+<figure id="fig2">
     <img src="../../assets/ui_images/DBP-UI-Design_page_05.svg" alt="Appshell Slots mobile" style="width:70%; border: 1px solid black; margin: auto;">
     <figcaption align = "center">
-        <b>Appshell slots mobile visualization</b>
+        <b>Fig. 2: Appshell slots mobile visualization</b>
     </figcaption>
 </figure>
 
 ## UI Flow
-
 The user interface always follows similar rules.
 We distinguish between Informational views and Click-through flow.
 
 ### Informational views
 For **informational views**, all UI elements are weighted equally.
 The user himself must decide what he wants to do next.
-All buttons are then equivalent ([Secondary Button](#secondary-button)). The user is not guided through the activity/section.
-E.g.: Clipboardmanagement activity or see picture [Datatable](#datatable).
+All buttons are then equivalent [[Secondary Button]](#secondary-button). The user is not guided through the activity/section.
+E.g.: [Clipboardmanagement activity](https://dbp-demo.tugraz.at/apps/common/de/clipboard){:target="_blank"} or see picture [Fig. 7](#fig9).
 
 ### Click-through flow
 In the click-through flow you want to guide the user through an activity/an element.
 The developer decides which steps are taken to "move forward".
-This is achieved by setting a "call-to-action"([Primary-Button](#primary-button)) button.
+This is achieved by setting a "call-to-action" [[Primary-Button]](#primary-button) button [[Fig. 3]](#fig3).
 This button always marks the next step. How the button is set see [Buttons](#buttons).
 
 
@@ -68,13 +70,12 @@ If text elements are used in button groups, they must be treated in the same way
 
 If there are several buttons in the UI, they are distributed evenly over the entire width of the section.
 Buttons can also be combined into logical groups. (e.g. similar functions)
-These logical groups are then not distributed but combined in one element (`div`) and this element is then distributed evenly with the other buttons.
-See [buttongroups](#buttongroups).
+These logical groups are then not distributed but combined in one element (`div`) and this element is then distributed evenly with the other buttons. [[Fig. 3]](#fig3)
 
-<figure id="buttongroups">
+<figure id="fig3">
     <img src="../../assets/ui_images/DBP-UI-Design_page_03.svg" alt="Buttongroups" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
-        <b>Buttongroups</b>
+        <b>Fig. 3: Buttongroups</b>
     </figcaption>
 </figure>
 
@@ -82,33 +83,47 @@ See [buttongroups](#buttongroups).
 A primary button has the css classes `button` and `is-primary`.
 This button always denotes a "call-to-action" or "next-step" button, i.e. how to proceed in the UI.
 
-If a primary button is used in a button group, it is placed on the far right.
+If a primary button is used in a button group, it is placed on the far right. [[Fig. 4]](#fig4)
 
 #### Secondary Button
 A secondary button has the css classes `button` and `is-secondary`.
-This button is used for all actions which are not required for the flow.
-See [secondary and primary buttons](#secondary-and-primary-buttons).
+This button is used for all actions which are not required for the flow. [[Fig. 4]](#fig4)
 
-<figure id="secondary-and-primary-buttons">
+<figure id="fig4">
     <img src="../../assets/ui_images/DBP-UI-Design_page_06.svg" alt="secondary and primary buttons" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
-        <b>Secondary and primary buttons</b>
+        <b>Fig. 4: Secondary and primary buttons</b>
     </figcaption>
 </figure>
 
 #### Responsibility
 In mobile views, buttons can be combined and reduced to an additional actions-menu.
-An additional options menu consists of a `menu-dots` icon and a dropdown menu. This is opened by clicking and the additional buttons are displayed there as entries in the dropdown list.
+An additional options menu consists of a `menu-dots` icon [[Fig. 5]](#fig5) and a dropdown menu [[Fig. 6]](#fig6).
+This is opened by clicking and the additional buttons are displayed there as entries in the dropdown list.
 
 Buttons which contain text are expanded to the full width and have a min height of 40px. Buttons which contain icons have a width and height of 40px.
-For more information see [Accessibility](/dev-guide/frontend/dev/accessibility/).
+For more information see [Accessibility](/../frontend/dev/accessibility/).
+
+<figure id="fig5">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_12.svg" alt="secondary and primary buttons" style="width:50%; border: 1px solid black; margin:auto;">
+    <figcaption align = "center">
+        <b>Fig. 5: Buttons hide behind additional "dots" menu</b>
+    </figcaption>
+</figure>
+
+<figure id="fig6">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_11.svg" alt="secondary and primary buttons" style="width:50%; border: 1px solid black;margin:auto;">
+    <figcaption align = "center">
+        <b>Fig. 6: Buttons are visible in dropdown menu</b>
+    </figcaption>
+</figure>
 
 ### Tables
-We distinguish between tables with fix content and datatables.
+We distinguish between tables with fix content [[Fig. 7]](#fig7) and datatables [[Fig. 9]](#fig9).
 
 Depending on the operation area you can decide between endless scroll or pagination.
-An example for endless scroll can be found in the [Nextcloudfilepicker Webcomponent](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/blob/master/packages/file-handling/src/nextcloud-file-picker.js).
-An example for pagination can be found in [Formalize](https://gitlab.tugraz.at/dbp/formalize/formalize).
+An example for endless scroll can be found in the [Nextcloudfilepicker Webcomponent](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/blob/master/packages/file-handling/src/nextcloud-file-picker.js){:target="_blank"}.
+An example for pagination can be found in [Formalize](https://gitlab.tugraz.at/dbp/formalize/formalize){:target="_blank"}.
 
 If you have an endless scroll, you can also show up a `select all` button as it was done in the Nextcloudfilepicker Webcomponent.
 
@@ -119,81 +134,102 @@ edit a row, delete a row...
 The table footer only appears if you have pagination enabled. In this section, the pagination, the next/prev/last/first buttons and the actual page is shown.
 This footer appears sticky in the table on mobile devices.
 
-We are using [tabulator](http://tabulator.info/) for building our tables.
+We are using [tabulator](http://tabulator.info/){:target="_blank"} for building our tables.
 
 #### Tables with fix content
 
-Tables with fix contents are tables where we know the columns, where we can estimate the weight of these columns.
-Because we can estimate the weight, we can collapse some columns on mobile devices and the rest of the table can take the full width.
+Tables with fix contents [[Fig. 7]](#fig7) are tables where we know the columns, where we can estimate the weight of these columns.
+Because we can estimate the weight, we can collapse some columns on mobile devices [[Fig. 8]](#fig8) and the rest of the table can take the full width.
 These columns can be collapsed or expanded on these devices.
 The collapse Icon is placed in the first column of the row.
 
-<figure id="fixedTable">
+<figure id="fig7">
     <img src="../../assets/ui_images/DBP-UI-Design_page_09.svg" alt="Table with fix and selectable content" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
-        <b>Table with fix and selectable content</b>
+        <b>Fig. 7: Table with fix and selectable content</b>
     </figcaption>
 </figure>
 
-<figure id="fixedTableMobile">
+<figure id="fig8">
     <img src="../../assets/ui_images/DBP-UI-Design_page_13.svg" alt="Table with fix and selectable content on mobile devices" style="width:70%; border: 1px solid black; margin: auto;">
     <figcaption align = "center">
-        <b>Table with fix and selectable content on mobile devices</b>
+        <b>Fig. 8: Table with fix and selectable content on mobile devices</b>
     </figcaption>
 </figure>
 
 #### Datatables
 
-Tables with unknown Data or a high amount of data are datatables. We don't know the weight of each column, so we can't collapse any of them.
+Tables with unknown Data or a high amount of data are datatables [[Fig. 9]](#fig9) [[Fig. 10]](#fig10). We don't know the weight of each column, so we can't collapse any of them.
 We need a horizontal scroll and a short preview of a row. This is done with a "show in detail" button.
 This button takes place in the last column - the action column.
 The action column is frozen.
 
-<figure id="datatable">
+<figure id="fig9">
     <img src="../../assets/ui_images/DBP-UI-Design_page_10.svg" alt="Datatable" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
-        <b>Datatable</b>
+        <b>Fig. 9: Datatable</b>
     </figcaption>
 </figure>
 
-<figure id="datatableMobile">
+<figure id="fig10">
     <img src="../../assets/ui_images/DBP-UI-Design_page_14.svg" alt="Datatable on mobile devices" style="width:70%; border: 1px solid black; margin: auto;">
     <figcaption align = "center">
-        <b>Datatable on mobile devices</b>
+        <b>Fig. 10: Datatable on mobile devices</b>
     </figcaption>
 </figure>
 
 ### Modals
-We distinguish between detail Modals and Modals with tabs.
+We distinguish between detail Modals [[Fig. 11]](#fig11) and Modals with tabs [[Fig. 12]](#fig12).
 
-We are using a tiny lib for building these modals: [micromodal](https://micromodal.vercel.app/).
+We are using a tiny lib for building these modals: [micromodal](https://micromodal.vercel.app/){:target="_blank"}.
 
 #### Detail Modal
 A detail modal is used to view records as a whole or to get more details.
-The modal has a title in the left upper corner and a close sign in the right upper corner(see [detail modal](#detail-modal)).
+The modal has a title in the left upper corner and a close sign in the right upper corner [[Fig. 11]](#fig11).
 The buttons are placed at the bottom of the modal dialogue.
 
-An example for a detailed modal can be found in our application [Formalize](https://gitlab.tugraz.at/dbp/formalize/formalize), where 
+An example for a detailed modal can be found in our application [Formalize](https://gitlab.tugraz.at/dbp/formalize/formalize){:target="_blank"}, where 
 we used the detail modal to show a whole data entry row in a compact way.
 
-<figure id="detail-modal">
+<figure id="fig11">
     <img src="../../assets/ui_images/DBP-UI-Design_page_07.svg" alt="Detail Modal" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
-        <b>Detail Modal</b>
+        <b>Fig. 11: Detail Modal</b>
     </figcaption>
 </figure>
 
 #### Modal with Tabs
-If we have an additional Menu e.g. different locations for file-saving, then we can have tabs in the modal dialogue.
+If we have an additional Menu e.g. different locations for file-saving, then we can have tabs in the modal dialogue  [[Fig. 12]](#fig12).
 These tabs are placed on the left side of the modal dialogue. On mobile devices these tabs are placed at the top of the screen.
 
 We also have a modal title which indicates the context of this dialogue and a closing sign on the right upper corner.
 
-An example for a modal with tabs can be found in the [filehandling webcomponent](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/blob/master/packages/file-handling/src/file-source.js).
+An example for a modal with tabs can be found in the [filehandling webcomponent](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/blob/master/packages/file-handling/src/file-source.js){:target="_blank"}.
 
-<figure id="modal-tabs">
+<figure id="fig12">
     <img src="../../assets/ui_images/DBP-UI-Design_page_08.svg" alt="Modal with Tabs" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
-        <b>Modal with Tabs</b>
+        <b>Fig. 12: Modal with Tabs</b>
     </figcaption>
 </figure>
+
+## Colors
+DBP Apps have declared different CSS variables. You should avoid using hard coded colors or borders. 
+Instead, use these CSS variables. 
+You can find a brief description of the color system and the variables at the [theming page](../../theming/#color-system).
+
+CSS variables are accessed using the `var()` function.
+You can use all of these CSS variables without the 'override' in the code. E.g.: if you want to use
+`--dbp-override-accent` as a font color, you can use it in your code like
+``
+  color: var(--dbp-accent);
+``.
+
+Further information about CSS variables in general can be found at [developer.mozila.org](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties){:target="_blank"}.
+
+## Fontsize
+You should not use a font size smaller than 16 CSS px. You should also avoid absolut units, use relative, like em, rem instead.
+Read more in the [Accessibility guide](../accessibility/#fontsize).
+
+## And more to consider
+Regarding design and structure you have considering much more. You can find a short overview in the [Accessibility guide](../accessibility/).

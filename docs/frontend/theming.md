@@ -50,6 +50,7 @@ For example:
 To make the colors as customizable as possible, there is a dbp color system.
 
 For universities, these colors should have a contrast level of at least AA in contrast to the base color.
+You can read more about the minimal contrast level in [Accessibility](../dev/accessibility#minimal-contrast-level).
 
 All colors without a postfix need to work on top of the "base" color. All others need to work on top of their respective surface colors.
 
@@ -114,9 +115,6 @@ The default oft these colors would be always the dbp colors.
 
 **Note:** Default colors will be used in case of undeclared variables. Colors don't have to be different in all cases, for example the primary color can be the same as the accent color.
 
-### Minimal contrast Level
-You can read about the minimal contrast level in [Accessibility](../dev/accessibility#minimal-contrast-level).
-
 ## Icons
 // TODO overriding icons isn't implemented yet
 
@@ -127,23 +125,23 @@ You can use various slots to customize your application.
 
 ### Appshell slots
 
-<figure>
-    <img src="/dev-guide/frontend/assets/ui_images/Appshell.png" alt="Appshell Slots" style="width:100%; border: 1px solid black;">
+<figure id="fig1">
+    <img src="/../frontend/assets/ui_images/Appshell.png" alt="Appshell Slots" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
-        <b>Appshell slots visualization</b>
+        <b>Fig. 1: Appshell slots visualization</b>
     </figcaption>
 </figure>
 
-<figure>
-    <img src="/dev-guide/frontend/assets/ui_images/Appshell_mobile.png" alt="Appshell Slots mobile" style="width:50%; border: 1px solid black; margin: auto;">
+<figure id="fig2">
+    <img src="/../frontend/assets/ui_images/DBP-UI-Design_page_15.svg" alt="Appshell Slots mobile" style="width:50%; border: 1px solid black; margin: auto;">
     <figcaption align = "center">
-        <b>Appshell slots mobile visualization</b>
+        <b>Fig. 2: Appshell slots mobile visualization</b>
     </figcaption>
 </figure>
 
 You can adapt the **name**, **title**, **logo** or exchange the whole **header**, the **footer-links** 
-or exchange the whole **footer**. 
-The nearer description can be found in the documentation of the [appshell](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master/packages/app-shell).
+or exchange the whole **footer**. [[Fig. 1]](#fig1) [[Fig. 2]](#fig2)
+The nearer description can be found in the documentation of the [appshell](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master/packages/app-shell){:target="_blank"}.
 
 You should place these slots in the `<template id= "global-override">` tag of your `index.html`.
 
