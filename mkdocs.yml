@@ -84,6 +84,7 @@ nav:
     - relay/bundle_config.md
     - relay/debugging.md
     - relay/production.md
+    - relay/queue.md
     - relay/update.md
     - relay/reverse_proxies.md
     - relay/hooks.md
@@ -91,12 +92,6 @@ nav:
     - Available Bundles:
       - Core Bundle:
         - relay/bundles/core/index.md
-        - relay/bundles/core/config.md
-        - relay/bundles/core/cron.md
-        - relay/bundles/core/queue.md
-        - relay/bundles/core/locks.md
-        - relay/bundles/core/errors.md
-        - relay/bundles/core/local_data.md
       - Auth Bundle:
         - relay/bundles/auth/index.md
         - relay/bundles/auth/config.md
@@ -137,9 +132,13 @@ nav:
       - relay/dev/extending.md
       - relay/dev/ide_integration.md
       - relay/dev/access_control.md
+      - relay/dev/cron.md
       - relay/dev/naming.md
+      - relay/dev/errors.md
       - relay/dev/bundle_architecture.md
       - relay/dev/coding_standard.md
+      - relay/dev/local_data.md
+      - relay/dev/locks.md
       - relay/dev/guidelines.md
       - relay/dev/faq.md
       - Keycloak Integration:

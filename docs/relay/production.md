@@ -20,7 +20,7 @@ handling various tasks:
 php /srv/api/bin/console dbp:relay:core:queue:work my-worker-01
 ```
 
-See ['Queued Tasks'](./bundles/core/queue.md) for a recommended supervisor
+See ['Queued Tasks'](./queue.md) for a recommended supervisor
 configuration.
 
 ### Disabling Debug Mode and setting an App Secret
