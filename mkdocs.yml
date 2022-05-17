@@ -81,7 +81,6 @@ nav:
     - relay/getting_started.md
     - relay/extending_with_bundles.md
     - relay/config.md
-    - relay/bundle_config.md
     - relay/debugging.md
     - relay/production.md
     - relay/queue.md
