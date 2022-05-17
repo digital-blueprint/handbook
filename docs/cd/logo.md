@@ -12,11 +12,21 @@
 
 
 ## The Logo
+*Hier kommt das Logo hin*
+
+Das DBP Logo wird entweder mittig oder in der rechten oberen Ecke platziert.
+
+### Auf Schwarz
 
 ### Whitespace
+Das Logo muss immer mit genügend Whitespace platziert werden siehe fig 2.
+
+Zudem darf das Logo nicht auf einem anderen Hintergrund als Weiß oder schwarz
 
 ### Größen
 
 #### Favicon
 
 ### Monochrom
+
+### Adaptionen
