@@ -20,7 +20,7 @@ Initialized empty Git repository in /home/user/relay-api/.git/
 
 For more details on how to use Git see the [Pro Git Book](https://git-scm.com/book/en/v2).
 
-## Updating Packages managed via Composer
+## Updating Packages managed via Composer (frequently)
 
 Everything under `/vendor` is managed by composer. If you delete it and run `composer install` everything will be re-instated as before.
 
@@ -34,7 +34,7 @@ If a package doesn't get updated despite a newer version being available you can
 
 For more details on composer see the [composer book](https://getcomposer.org/doc/)
 
-## Updating Symfony recipes
+## Updating Symfony Recipes (infrequently / after major updates)
 
 Some packages installed in `vendor` are connected to a so called "recipe". A recipe contains default configuration files, default environment variables, and even PHP files that are installed outside of `vendor` when the connected package is installed.
 
