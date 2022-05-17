@@ -2,11 +2,11 @@
 
 To receive bug fixes and security updates of all the components you regularly need to update the API gateway. Due to the modular nature of the API gateway, and it being based on Symfony this requires multiple steps.
 
-## Prerequisite: Use GIT
+## Use GIT (optional)
 
 If you have created your project using the `composer create-project` command you will have a directory full of lose files. Ideally you would want to track changes in that directory to see what you have changed and to easily revert changes if needed.
 
-We strongly recommend that you use the version control system "Git" for this. It is also required for some of the following steps.
+We strongly recommend that you use the version control system "Git" for this.
 
 To convert your project to a Git repository:
 
