@@ -24,15 +24,15 @@ An Activity follows the order [[Fig. 1]](#fig1)[[Fig. 2]](#fig2):
 4. Activity Stuff
 
 
-<figure id="fig1">
+<figure id="fig1" style="width:100%;">
     <img src="../../assets/ui_images/DBP-UI-Design_page_01.svg" alt="Appshell Slots" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Fig. 1: Appshell slots visualization</b>
     </figcaption>
 </figure>
 
-<figure id="fig2">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_05.svg" alt="Appshell Slots mobile" style="width:70%; border: 1px solid black; margin: auto;">
+<figure id="fig2" style="width:50%;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_06.svg" alt="Appshell Slots mobile" style="width:100%; border: 1px solid black; margin: auto;">
     <figcaption align = "center">
         <b>Fig. 2: Appshell slots mobile visualization</b>
     </figcaption>
@@ -72,8 +72,8 @@ If there are several buttons in the UI, they are distributed evenly over the ent
 Buttons can also be combined into logical groups. (e.g. similar functions)
 These logical groups are then not distributed but combined in one element (`div`) and this element is then distributed evenly with the other buttons. [[Fig. 3]](#fig3)
 
-<figure id="fig3">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_03.svg" alt="Buttongroups" style="width:100%; border: 1px solid black;">
+<figure id="fig3" style="width:100%;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_04.svg" alt="Buttongroups" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Fig. 3: Buttongroups</b>
     </figcaption>
@@ -89,8 +89,8 @@ If a primary button is used in a button group, it is placed on the far right. [[
 A secondary button has the css classes `button` and `is-secondary`.
 This button is used for all actions which are not required for the flow. [[Fig. 4]](#fig4)
 
-<figure id="fig4">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_06.svg" alt="secondary and primary buttons" style="width:100%; border: 1px solid black;">
+<figure id="fig4" style="width:100%;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_03.svg" alt="secondary and primary buttons" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Fig. 4: Secondary and primary buttons</b>
     </figcaption>
@@ -104,15 +104,15 @@ This is opened by clicking and the additional buttons are displayed there as ent
 Buttons which contain text are expanded to the full width and have a min height of 40px. Buttons which contain icons have a width and height of 40px.
 For more information see [Accessibility](/../frontend/dev/accessibility/).
 
-<figure id="fig5">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_12.svg" alt="secondary and primary buttons" style="width:50%; border: 1px solid black; margin:auto;">
+<figure id="fig5" style="width:50%;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_13.svg" alt="secondary and primary buttons" style="width:100%; border: 1px solid black; margin:auto;">
     <figcaption align = "center">
         <b>Fig. 5: Buttons hide behind additional "dots" menu</b>
     </figcaption>
 </figure>
 
-<figure id="fig6">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_11.svg" alt="secondary and primary buttons" style="width:50%; border: 1px solid black;margin:auto;">
+<figure id="fig6" style="width:50%;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_12.svg" alt="secondary and primary buttons" style="width:100%; border: 1px solid black;margin:auto;">
     <figcaption align = "center">
         <b>Fig. 6: Buttons are visible in dropdown menu</b>
     </figcaption>
@@ -143,15 +143,15 @@ Because we can estimate the weight, we can collapse some columns on mobile devic
 These columns can be collapsed or expanded on these devices.
 The collapse Icon is placed in the first column of the row.
 
-<figure id="fig7">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_09.svg" alt="Table with fix and selectable content" style="width:100%; border: 1px solid black;">
+<figure id="fig7" style="width:100%;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_10.svg" alt="Table with fix and selectable content" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Fig. 7: Table with fix and selectable content</b>
     </figcaption>
 </figure>
 
-<figure id="fig8">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_13.svg" alt="Table with fix and selectable content on mobile devices" style="width:70%; border: 1px solid black; margin: auto;">
+<figure id="fig8" style="width:50%;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_14.svg" alt="Table with fix and selectable content on mobile devices" style="width:100%; border: 1px solid black; margin: auto;">
     <figcaption align = "center">
         <b>Fig. 8: Table with fix and selectable content on mobile devices</b>
     </figcaption>
@@ -164,15 +164,15 @@ We need a horizontal scroll and a short preview of a row. This is done with a "s
 This button takes place in the last column - the action column.
 The action column is frozen.
 
-<figure id="fig9">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_10.svg" alt="Datatable" style="width:100%; border: 1px solid black;">
+<figure id="fig9" style="width:100%;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_11.svg" alt="Datatable" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Fig. 9: Datatable</b>
     </figcaption>
 </figure>
 
-<figure id="fig10">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_14.svg" alt="Datatable on mobile devices" style="width:70%; border: 1px solid black; margin: auto;">
+<figure id="fig10" style="width:50%;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_15.svg" alt="Datatable on mobile devices" style="width:100%; border: 1px solid black; margin: auto;">
     <figcaption align = "center">
         <b>Fig. 10: Datatable on mobile devices</b>
     </figcaption>
@@ -191,8 +191,8 @@ The buttons are placed at the bottom of the modal dialogue.
 An example for a detailed modal can be found in our application [Formalize](https://gitlab.tugraz.at/dbp/formalize/formalize){:target="_blank"}, where 
 we used the detail modal to show a whole data entry row in a compact way.
 
-<figure id="fig11">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_07.svg" alt="Detail Modal" style="width:100%; border: 1px solid black;">
+<figure id="fig11" style="width:100%;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_08.svg" alt="Detail Modal" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Fig. 11: Detail Modal</b>
     </figcaption>
@@ -206,8 +206,8 @@ We also have a modal title which indicates the context of this dialogue and a cl
 
 An example for a modal with tabs can be found in the [filehandling webcomponent](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/blob/master/packages/file-handling/src/file-source.js){:target="_blank"}.
 
-<figure id="fig12">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_08.svg" alt="Modal with Tabs" style="width:100%; border: 1px solid black;">
+<figure id="fig12" style="width:100%;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_10.svg" alt="Modal with Tabs" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Fig. 12: Modal with Tabs</b>
     </figcaption>

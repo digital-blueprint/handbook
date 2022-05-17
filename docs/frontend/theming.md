@@ -125,7 +125,7 @@ You can use various slots to customize your application.
 
 ### Appshell slots
 
-<figure id="fig1">
+<figure id="fig1" style="width:100%;">
     <img src="../assets/ui_images/Appshell.png" alt="Appshell Slots" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Fig. 1: Appshell slots visualization</b>
@@ -133,7 +133,7 @@ You can use various slots to customize your application.
 </figure>
 
 <figure id="fig2">
-    <img src="../assets/ui_images/DBP-UI-Design_page_15.svg" alt="Appshell Slots mobile" style="width:50%; border: 1px solid black; margin: auto;">
+    <img src="../assets/ui_images/DBP-UI-Design_page_05.svg" alt="Appshell Slots mobile" style="width:100%; border: 1px solid black; margin: auto;">
     <figcaption align = "center">
         <b>Fig. 2: Appshell slots mobile visualization</b>
     </figcaption>
