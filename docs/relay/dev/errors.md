@@ -1,4 +1,4 @@
-# API Errors and Error Handling
+# API Errors
 
 By default Symfony and API Platform convert `HttpException` and all subclasses
 to HTTP errors with a matching status code. See

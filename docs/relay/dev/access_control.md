@@ -1,5 +1,5 @@
 ---
-title: Implementing Access Control
+title: Access Control
 ---
 
 Assuming you have a "my-scope" that gets somehow mapped into the access token

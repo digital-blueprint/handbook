@@ -23,6 +23,9 @@ php /srv/api/bin/console dbp:relay:core:queue:work my-worker-01
 See ['Queued Tasks'](./queue.md) for a recommended supervisor
 configuration.
 
+In case your API runs on multiple servers you also have to provide a central
+locking backend, see ['Locks'](./locks.md) for how to configure it.
+
 ### Disabling Debug Mode and setting an App Secret
 
 By default debugging and the development configuration is enabled which is not
