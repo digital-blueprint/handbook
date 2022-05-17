@@ -90,6 +90,7 @@ nav:
     - relay/reverse_proxies.md
     - relay/hooks.md
     - relay/faq.md
+    - relay/api_guide.md
     - Available Bundles:
       - Core Bundle:
         - relay/bundles/core/index.md
