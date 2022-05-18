@@ -1,4 +1,7 @@
 # Secondary Design Elements
+A secondary design element is part of the brand design, the corporate design. It is a design element, often derived from the logo design, which runs through all means of communication like a visual constant and homogeneously “holds together” a brand design.
+Secondary design elements are not used for replacing the logo. They are used to decorating means of communication in the corporate design.
+
 
 ## The squares
 The Squares can be used as design element for sujets, patterns, backgrounds or headers.
