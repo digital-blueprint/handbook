@@ -62,14 +62,14 @@ Repeat this process with *logo_black.pdf* *logo_monochrom_white.pdf* and *logo_m
 
 
 #### Icons
-If the logo is used in an application, which has an app icon[[Apps]](../apps/), the logo can be extended with that icon [[Fig. 1]](#fig1)
+If the logo is used in an application, which has an app icon[[Apps]](../apps/), the logo can be extended with that icon (e.g. [Fig. 1](#fig1))
 by placing the app-icon in front of the squares and in the middle of the first square. The padding of this icon shouldn't extend the padding declared in [Appicons](../apps/#Appicons).
 
 ##### How to adjust the icons
 Make sure you have installed the [fonts](../fonts/) on your working device.
 Open the initial file *logo_white.pdf* in Inkscape. Place the previously created icon in the middle on the rightmost top square.
 The color of the icon depends on the background of the logo file. 
-If the file is for black background then the icon should have the color `#000000` and if the file is for white background the app icon should have the color `#ffffff`.
+If the file is for black background then the icon should have the color `#222120` and if the file is for white background the app icon should have the color `#ffffff`.
 Save it named *yourapplication_logo_white* as pdf, svg, eps in an own folder called youraplication in the logo folder.
 
 Repeat this process with *logo_black.pdf* *logo_monochrom_white.pdf*, *logo_monochrom_black.pdf*, *logo_small_white.pdf*, logo_small_black.pdf, *logo_monochrom_small_white.pdf* and logo_monochrom_small_black.pdf.
@@ -80,6 +80,7 @@ All variations of the logo, all design elements are given in the following file 
 svg, pdf, eps.
 
 The following logo versions initially exist:
+
 - logo_white
 - logo_black
 - logo_small_white
