@@ -96,7 +96,7 @@ This button is used for all actions which are not required for the flow. [[Fig. 
     </figcaption>
 </figure>
 
-#### Responsibility
+#### Responsive Webdesign
 In mobile views, buttons can be combined and reduced to an additional actions-menu.
 An additional options menu consists of a `menu-dots` icon [[Fig. 5]](#fig5) and a dropdown menu [[Fig. 6]](#fig6).
 This is opened by clicking and the additional buttons are displayed there as entries in the dropdown list.
@@ -207,7 +207,7 @@ We also have a modal title which indicates the context of this dialogue and a cl
 An example for a modal with tabs can be found in the [filehandling webcomponent](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/blob/master/packages/file-handling/src/file-source.js){:target="_blank"}.
 
 <figure id="fig12" style="width:100%;">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_10.svg" alt="Modal with Tabs" style="width:100%; border: 1px solid black;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_9.svg" alt="Modal with Tabs" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Fig. 12: Modal with Tabs</b>
     </figcaption>
@@ -221,9 +221,11 @@ You can find a brief description of the color system and the variables at the [t
 CSS variables are accessed using the `var()` function.
 You can use all of these CSS variables without the 'override' in the code. E.g.: if you want to use
 `--dbp-override-accent` as a font color, you can use it in your code like
-``
+```css
+.any-selector {
   color: var(--dbp-accent);
-``.
+}
+```
 
 Further information about CSS variables in general can be found at [developer.mozila.org](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties){:target="_blank"}.
 
