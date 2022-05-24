@@ -1,4 +1,4 @@
-# About
+# Overview
 
 The relay API gateway is written in [PHP](https://www.php.net/) and is based on
 the [API Platform](https://api-platform.com) framework as well as the

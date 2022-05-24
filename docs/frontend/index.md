@@ -1,4 +1,4 @@
-# About
+# Overview
 
 Our goal is to create re-usable, self contained UI components, that are not tied
 to a particular frontend framework, which can be easily integrated into any
