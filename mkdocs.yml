@@ -154,8 +154,6 @@ nav:
       - relay/keycloak/keycloak_audience.md
       - relay/keycloak/scopes.md
       - relay/keycloak/client_credentials.md
-  - licenses.md
-  - opensource.md
   - Corporate Design:
     - cd/logo.md
     - cd/colors.md
@@ -169,4 +167,6 @@ nav:
     - howtos/docker.md
     - howtos/forks.md
   - demo_access.md
+  - licenses.md
+  - opensource.md
   - contact.md
