@@ -59,7 +59,7 @@ Installing will do the following things:
 
 * Register the bundle in the `config/bundles.php` file.
 * Write an example configuration file under `config/packages`. See the [bundle
-  configuration page](./bundle_config.md) for details.
+  configuration page](./config.md) for details.
 * Write various example configuration environment variables into the `.env`
   file. See the [configuration page](./config.md) for details.
 
