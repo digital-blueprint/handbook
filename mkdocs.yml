@@ -156,7 +156,7 @@ nav:
       - relay/keycloak/client_credentials.md
   - licenses.md
   - opensource.md
-  - Coporate design:
+  - Corporate design:
     - cd/logo.md
     - cd/colors.md
     - cd/fonts.md
