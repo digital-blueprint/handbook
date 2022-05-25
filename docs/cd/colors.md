@@ -1,6 +1,6 @@
 # Colors
 
-## DBP ColorSytstem
+## DBP Color System
 
 
 | Name               | Variable                            | Color | 

@@ -8,7 +8,7 @@
 You can adapt the **[fonts](#fonts)**, the **[colors](#color-system)**, and some **parts** in the form of [slots](#slots).
 Moreover, you can also change favicons and browser specific items ([Favicons, Search Engine and more](#favicons-search-engine-and-more)).
 
-DBP also supports multiple themes. To create multiple themes look in the [readme](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master/packages/theme-switcher#usage-in-an-application-with-appshell) of the theme-switcher web component.
+DBP also supports multiple themes. To create multiple themes look in the [readme](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master/packages/theme-switcher#usage-in-an-application-with-appshell){:target="_blank"} of the theme-switcher web component.
 
 ## Fonts
 You can apply a font by adding the font-family to the `html` or `body` in an css `<style>` tag. 
@@ -56,6 +56,9 @@ For example:
 
 
 ```
+
+* If this doesn't work out of the box, check the CSP settings in the `.htaccess`.
+
 
 ## Color System
 
