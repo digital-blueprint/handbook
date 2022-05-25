@@ -16,6 +16,21 @@
     </figcaption>
 </figure>
 
+<figure id="fig3" style="width:100%;">
+    <img src="../assets/logo/dbp_logo_small_on_white.svg" alt="dbp logo small on white background" style="max-width:200px;box-shadow: 1px 1px 3px grey; margin:auto;">
+    <figcaption align = "center">
+        <b>Fig. 3: *dbp_logo_small_on_white.svg* dbp logo small on white background</b>
+    </figcaption>
+</figure>
+
+<figure id="fig4" style="width:100%;">
+    <img src="../assets/logo/dbp_logo_small_on_black.svg" alt="dbp logo small on dark background" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:#222120; margin:auto;">
+    <figcaption align = "center">
+        <b>Fig. 4:  *dbp_logo_small_on_black.svg* dbp logo small on black background</b>
+    </figcaption>
+</figure>
+
+
 
 You can find all logo files in the gitlab repository [dbp-ci](https://gitlab.tugraz.at/dbp/dbp-ci/-/tree/main/){:target="_blank"}
 The DBP logo is preferably placed in the upper left corner or in the middle [[Fig. 1]](#fig1).
@@ -30,31 +45,59 @@ The logo is not allowed to use on a different background than black, HEX `#22212
 The correct file depending on the background must be used: *dbp_logo_on_white.svg* [[Fig. 1]](#fig1) or *dbp_logo_on_black.svg* [[Fig. 2]](#fig2).
 
 ### Whitespace
-The logo must always be placed with sufficient padding. For the exact paddings see [Fig. 3](#fig3). 
+The logo must always be placed with sufficient padding. For the exact paddings see [Fig. 5](#fig5). 
 For easier usage the logo in the file has exact these surrounding paddings.
 
-<figure id="fig3" style="width:100%;">
+<figure id="fig5" style="width:100%;">
     <img src="../assets/logo/dbp_logo_padding.svg" alt="dbp logo with correct paddings" style="box-shadow: 1px 1px 3px grey; margin:auto;">
     <figcaption align = "center">
-        <b>Fig. 3: dbp logo with correct paddings</b>
+        <b>Fig. 5: dbp logo with correct paddings</b>
     </figcaption>
 </figure>
 
 
 ### Size
 #### Print
-The minimal height of the logo is **1 cm**. // TODO proof this
-If the logo should be placed smaller than xxx cm than only the squares should be displayed.
-The minimal presentation of the squares are 0.5 cm.
+The minimal height of the logo is **1 cm**. // TODO proof this //
+If the logo should be placed smaller than **1 cm** than only the squares should be displayed [[Fig. 3]](#fig3)[[Fig. 4]](#fig4)[[Fig. 8]](#fig8)[[Fig. 9]](#fig9).
+The minimal presentation of the **squares** are **0.5 cm**.
 
 #### Digital 
 The minimal height of the logo is **70 px**.
-If the logo height should be smaller than **70 px** than only the **squares** should be displayed (dbp_logo_small_*).
+If the logo height should be smaller than **70 px** than only the **squares** should be displayed [[Fig. 3]](#fig3)[[Fig. 4]](#fig4)[[Fig. 8]](#fig8)[[Fig. 9]](#fig9).
 The minimal presentation of the **squares** are **45 px**.
 
 ### Monochrom
+<figure id="fig6" style="width:100%;">
+    <img src="../assets/logo/dbp_logo_monochrom_on_white.svg" alt="dbp logo monochrom on white background" style="box-shadow: 1px 1px 3px grey; margin:auto;">
+    <figcaption align = "center">
+        <b>Fig. 6: *dbp_logo_on_white.svg* dbp logo monochrom on white background</b>
+    </figcaption>
+</figure>
+
+<figure id="fig7" style="width:100%;">
+    <img src="../assets/logo/dbp_logo_monochrom_on_black.svg" alt="dbp logo monochrom on dark background" style="box-shadow: 1px 1px 3px grey; background-color:#222120; margin:auto;">
+    <figcaption align = "center">
+        <b>Fig. 7:  *dbp_logo_monochrom_on_black.svg* dbp logo monochrom on black background</b>
+    </figcaption>
+</figure>
+
+<figure id="fig8" style="width:100%;">
+    <img src="../assets/logo/dbp_logo_small_monochrom_on_white.svg" alt="dbp logo small monochrom on white background" style="max-width:200px;box-shadow: 1px 1px 3px grey; margin:auto;">
+    <figcaption align = "center">
+        <b>Fig. 8: *dbp_logo_small_monochrom_on_white.svg* dbp logo small monochrom on white background</b>
+    </figcaption>
+</figure>
+
+<figure id="fig9" style="width:100%;">
+    <img src="../assets/logo/dbp_logo_small_monochrom_on_black.svg" alt="dbp logo small monochrom on dark background" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:#222120; margin:auto;">
+    <figcaption align = "center">
+        <b>Fig. 9:  *dbp_logo_small_monochrom_on_black.svg* dbp logo small monochrom black background</b>
+    </figcaption>
+</figure>
+
 There is also a monochrom set provided of the logo.
-Depending on the background the correct file must be used: *logo_monochrom_white.svg* [[Fig. 1]](#fig1) or *logo_monochrom_black.svg* [[Fig. 2]](#fig2).
+Depending on the background the correct file must be used: *dbp_logo_monochrom_on_white.svg* [[Fig. 6]](#fig6) or *dbp_logo_monochrom_on_black.svg* [[Fig. 7]](#fig7).
 
 ### Adaption
 The logo can adjust depending on some uses. To adjust the logo we recommend the vector based open source program [InkScape](https://inkscape.org/de/){:target="_blank"}.
