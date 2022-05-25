@@ -105,8 +105,15 @@ If a logo is adjusted, the versions for both backgrounds(white, black) and also 
 
 #### Adjust the Text
 The headline on the right side of the logo should never change. The subheading can change depending on the usecase. The default subheading is "a university toolbox".
-If the subheading changes, it should be lowercase and should start under the "a" of digital [[Fig. 1]](#fig1). It should short and formative and should not too long.
-The maximal length can see in [Fig. 1](#fig1).
+If the subheading changes, it should be lowercase and should start under the "a" of digital [[Fig. 10]](#fig10). It should short and formative and should not too long.
+The maximal length can see in [Fig. 10](#fig1).
+
+<figure id="fig10" style="width:100%;">
+    <img src="../assets/logo/dbp_logo_subheading.svg" alt="Placement of the subheading" style="box-shadow: 1px 1px 3px grey; margin:auto;">
+    <figcaption align = "center">
+        <b>Fig. 10:  Placement of the subheading</b>
+    </figcaption>
+</figure>
 
 ##### How to adjust the text
 Make sure you have installed the [fonts](../fonts/) on your working device.
