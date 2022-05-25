@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "dbp-dev-guide"
+name = "dbp-handbook"
 version = "1.0"
 description = ""
 authors = ["Christoph Reiter <reiter.christoph@gmail.com>"]

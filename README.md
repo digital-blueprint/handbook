@@ -1,6 +1,6 @@
-# Digital Blueprint Developer Guide
+# Digital Blueprint Handbook
 
-[Website](https://dbp-demo.tugraz.at/dev-guide/)
+[Website](https://dbp-demo.tugraz.at/handbook/)
 
 This documentation is targeted at people who want to contribute to the DBP
 project. It explains various things regarding the infrastructure, development

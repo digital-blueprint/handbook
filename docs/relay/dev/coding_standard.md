@@ -18,6 +18,6 @@ In some cases we run the linters as a git pre-commit hook using
 [brainmaestro/composer-git-hooks](https://github.com/BrainMaestro/composer-git-hooks)
 
 You can see an example configuration for all the linters and the pre-commit hook
-in our core bundle:
+in our example bundle:
 
-https://gitlab.tugraz.at/dbp/relay/dbp-relay-core-bundle
+https://gitlab.tugraz.at/dbp/relay/dbp-relay-example-bundle

@@ -1,4 +1,4 @@
-# Creating Cron Jobs
+# Cron Jobs
 
 Each bundle can defined their own cron job commands by creating a service which
 implements the `CronJobInterface` interface. The service will be invoked at the
@@ -33,3 +33,6 @@ class MyCronJob implements CronJobInterface
     }
 }
 ```
+
+See https://crontab.guru/ for information on the syntax used in the interval
+string.

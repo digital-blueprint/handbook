@@ -1,4 +1,4 @@
-site_name: Digital Blueprint Developer Guide
+site_name: Digital Blueprint Handbook
 theme:
     font: false
     name: material
@@ -18,7 +18,7 @@ extra_javascript:
   - assets/js/mermaid.min.js
   - assets/js/main.js
 
-repo_url: https://gitlab.tugraz.at/dbp/dev-guide
+repo_url: https://gitlab.tugraz.at/dbp/handbook
 edit_uri: edit/main/docs/
 
 markdown_extensions:
@@ -81,14 +81,15 @@ nav:
     - relay/getting_started.md
     - relay/extending_with_bundles.md
     - relay/config.md
-    - relay/bundle_config.md
     - relay/debugging.md
     - relay/production.md
     - relay/queue.md
+    - relay/locks.md
     - relay/update.md
     - relay/reverse_proxies.md
     - relay/hooks.md
     - relay/faq.md
+    - relay/api_guide.md
     - Available Bundles:
       - Core Bundle:
         - relay/bundles/core/index.md
@@ -125,31 +126,35 @@ nav:
         - CAMPUSonline Connector:
           - relay/bundles/greenlight-connector-campusonline/index.md
           - relay/bundles/greenlight-connector-campusonline/config.md
+
     - Developer Guide:
       - relay/dev/index.md
       - relay/dev/new_bundle.md
       - relay/dev/bundle_config.md
-      - relay/dev/extending.md
-      - relay/dev/ide_integration.md
       - relay/dev/access_control.md
       - relay/dev/cron.md
-      - relay/dev/naming.md
       - relay/dev/errors.md
-      - relay/dev/bundle_architecture.md
-      - relay/dev/coding_standard.md
+      - relay/dev/queue.md
+      - relay/dev/logging.md
       - relay/dev/local_data.md
       - relay/dev/locks.md
+      - relay/dev/api.md
+      - relay/dev/cors_headers.md
+      - relay/dev/cli_commands.md
+      - relay/dev/health_checks.md
+      - relay/dev/naming.md
       - relay/dev/guidelines.md
       - relay/dev/faq.md
-      - Keycloak Integration:
-        - relay/keycloak/index.md
-        - relay/keycloak/keycloak_scopes.md
-        - relay/keycloak/keycloak_audience.md
-        - relay/keycloak/scopes.md
-        - relay/keycloak/client_credentials.md
-  - licenses.md
-  - opensource.md
-  - Coporate design:
+      - relay/dev/coding_standard.md
+      - relay/dev/ide_integration.md
+
+    - Keycloak Integration:
+      - relay/keycloak/index.md
+      - relay/keycloak/keycloak_scopes.md
+      - relay/keycloak/keycloak_audience.md
+      - relay/keycloak/scopes.md
+      - relay/keycloak/client_credentials.md
+  - Corporate Design:
     - cd/logo.md
     - cd/colors.md
     - cd/fonts.md
@@ -162,4 +167,6 @@ nav:
     - howtos/docker.md
     - howtos/forks.md
   - demo_access.md
+  - licenses.md
+  - opensource.md
   - contact.md

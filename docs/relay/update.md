@@ -2,11 +2,11 @@
 
 To receive bug fixes and security updates of all the components you regularly need to update the API gateway. Due to the modular nature of the API gateway, and it being based on Symfony this requires multiple steps.
 
-## Prerequisite: Use GIT
+## Use GIT (optional)
 
 If you have created your project using the `composer create-project` command you will have a directory full of lose files. Ideally you would want to track changes in that directory to see what you have changed and to easily revert changes if needed.
 
-We strongly recommend that you use the version control system "Git" for this. It is also required for some of the following steps.
+We strongly recommend that you use the version control system "Git" for this.
 
 To convert your project to a Git repository:
 
@@ -20,7 +20,7 @@ Initialized empty Git repository in /home/user/relay-api/.git/
 
 For more details on how to use Git see the [Pro Git Book](https://git-scm.com/book/en/v2).
 
-## Updating Packages managed via Composer
+## Updating Packages managed via Composer (frequently)
 
 Everything under `/vendor` is managed by composer. If you delete it and run `composer install` everything will be re-instated as before.
 
@@ -34,7 +34,7 @@ If a package doesn't get updated despite a newer version being available you can
 
 For more details on composer see the [composer book](https://getcomposer.org/doc/)
 
-## Updating Symfony recipes
+## Updating Symfony Recipes (infrequently / after major updates)
 
 Some packages installed in `vendor` are connected to a so called "recipe". A recipe contains default configuration files, default environment variables, and even PHP files that are installed outside of `vendor` when the connected package is installed.
 

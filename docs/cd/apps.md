@@ -1,8 +1,21 @@
 # Apps
 
-## Appicons
+## Create a new app icons
+### new icon
+see icons
 
-## Adaption for universities
+### apply new icon
+square icon
 
-### Icon on Square
-for icons see icons
+### Adjust the Text
+see adjust the Text in logo
+
+## Applying own colors
+gradient on squares
+file-> adapt squares specific app file
+adapt the gradient
+save
+
+## usage as favicon
+see favicon
+
