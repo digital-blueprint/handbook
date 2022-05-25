@@ -42,7 +42,7 @@ deploy_dev:
       - main
   environment:
     name: development
-    url: https://dbp-demo.tugraz.at/dev-guide
+    url: https://dbp-demo.tugraz.at/handbook
   artifacts:
     paths:
       - dist

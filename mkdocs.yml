@@ -1,4 +1,4 @@
-site_name: Digital Blueprint Developer Guide
+site_name: Digital Blueprint Handbook
 theme:
     font: false
     name: material
@@ -18,7 +18,7 @@ extra_javascript:
   - assets/js/mermaid.min.js
   - assets/js/main.js
 
-repo_url: https://gitlab.tugraz.at/dbp/dev-guide
+repo_url: https://gitlab.tugraz.at/dbp/handbook
 edit_uri: edit/main/docs/
 
 markdown_extensions:
