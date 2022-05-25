@@ -1,10 +1,23 @@
 # Logo
 
 ## The Logo
-![image](assets/logo/dbp_logo_on_white.svg){: style="max-width:400px;box-shadow: 1px 1px 3px grey;"}
 
-![image](assets/logo/dbp_logo_on_black.svg){: style="max-width:400px;box-shadow: 1px 1px 3px grey; background-color:#222120"}
+<figure id="fig1" style="width:100%;">
+    <img src="../assets/logo/dbp_logo_on_white.svg" alt="dbp logo on white background" style="box-shadow: 1px 1px 3px grey; margin:auto;">
+    <figcaption align = "center">
+        <b>Fig. 1: *dbp_logo_on_white.svg* dbp logo on white background</b>
+    </figcaption>
+</figure>
 
+<figure id="fig2" style="width:100%;">
+    <img src="../assets/logo/dbp_logo_on_black.svg" alt="dbp logo on dark background" style="box-shadow: 1px 1px 3px grey; background-color:#222120; margin:auto;">
+    <figcaption align = "center">
+        <b>Fig. 2:  *dbp_logo_on_black.svg* dbp logo on black background</b>
+    </figcaption>
+</figure>
+
+
+You can find all logo files in the gitlab repository [dbp-ci](https://gitlab.tugraz.at/dbp/dbp-ci/-/tree/main/){:target="_blank"}
 The DBP logo is preferably placed in the upper left corner or in the middle [[Fig. 1]](#fig1).
 
 ### The text
@@ -13,35 +26,43 @@ The headline should never change. The subheading can change depending on the use
 Read more under [Adapt the Text](#adapt-the-text).
 
 ### Background
-The logo is not allowed to use on a different background than black or white.
+The logo is not allowed to use on a different background than black, HEX `#222120` (instead of black) or white.
 The correct file depending on the background must be used: *dbp_logo_on_white.svg* [[Fig. 1]](#fig1) or *dbp_logo_on_black.svg* [[Fig. 2]](#fig2).
 
 ### Whitespace
 The logo must always be placed with sufficient padding. For the exact paddings see [Fig. 3](#fig3). 
 For easier usage the logo in the file has exact these surrounding paddings.
 
+<figure id="fig3" style="width:100%;">
+    <img src="../assets/logo/dbp_logo_padding.svg" alt="dbp logo with correct paddings" style="box-shadow: 1px 1px 3px grey; margin:auto;">
+    <figcaption align = "center">
+        <b>Fig. 3: dbp logo with correct paddings</b>
+    </figcaption>
+</figure>
+
+
 ### Size
 #### Print
-The minimal size of the logo is xxx cm.
+The minimal height of the logo is **1 cm**. // TODO proof this
 If the logo should be placed smaller than xxx cm than only the squares should be displayed.
-The minimal presentation of the squares are xxx cm.
+The minimal presentation of the squares are 0.5 cm.
 
 #### Digital 
-The minimal size of the logo is xxx px.
-If the logo should be placed smaller than xxx px than only the squares should be displayed.
-The minimal presentation of the squares are xxx px.
+The minimal height of the logo is **70 px**.
+If the logo height should be smaller than **70 px** than only the **squares** should be displayed (dbp_logo_small_*).
+The minimal presentation of the **squares** are **45 px**.
 
 ### Monochrom
 There is also a monochrom set provided of the logo.
 Depending on the background the correct file must be used: *logo_monochrom_white.svg* [[Fig. 1]](#fig1) or *logo_monochrom_black.svg* [[Fig. 2]](#fig2).
 
 ### Adaption
-The logo can adjust depending on some uses. To adjust the logo we recommend the vector based open source program [InkScape](https://inkscape.org/de/).
+The logo can adjust depending on some uses. To adjust the logo we recommend the vector based open source program [InkScape](https://inkscape.org/de/){:target="_blank"}.
 If a logo is adjusted, the versions for both backgrounds(white, black) and also the monochrom versions(white, black) have to be created.
 
 #### Adjust the Text
 The headline on the right side of the logo should never change. The subheading can change depending on the usecase. The default subheading is "a university toolbox".
-If the subheading changes, it should be lowercase and should start under the "a" of digit*a*l [[Fig. 1]](#fig1). It should short and formative and should not too long.
+If the subheading changes, it should be lowercase and should start under the "a" of digital [[Fig. 1]](#fig1). It should short and formative and should not too long.
 The maximal length can see in [Fig. 1](#fig1).
 
 ##### How to adjust the text
