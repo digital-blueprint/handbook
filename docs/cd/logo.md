@@ -1,20 +1,11 @@
 # Logo
 
-## Cropped
-
-![image](assets/logo-cropped.svg){: style="max-width:400px;box-shadow: 1px 1px 3px grey;"}
-
-![image](assets/logo-cropped-invert.svg){: style="max-width:400px;box-shadow: 1px 1px 3px grey;"}
-
-## Source
-
-![image](assets/logo-source.svg){: style="max-width:400px;box-shadow: 1px 1px 3px grey;"}
-
-
 ## The Logo
-*Hier kommt das Logo hin*
+![image](assets/logo/dbp_logo_on_white.svg){: style="max-width:400px;box-shadow: 1px 1px 3px grey;"}
 
-The DBP logo is preferably placed in the upper right corner or in the middle [[Fig. 1]](#fig1).
+![image](assets/logo/dbp_logo_on_black.svg){: style="max-width:400px;box-shadow: 1px 1px 3px grey; background-color:#222120"}
+
+The DBP logo is preferably placed in the upper left corner or in the middle [[Fig. 1]](#fig1).
 
 ### The text
 The text on the right side of the Logo consists of two parts. A headline "digital blueprint" and a subheading.
@@ -23,7 +14,7 @@ Read more under [Adapt the Text](#adapt-the-text).
 
 ### Background
 The logo is not allowed to use on a different background than black or white.
-The correct file depending on the background must be used: *logo_white.svg* [[Fig. 1]](#fig1) or *logo_black.svg* [[Fig. 2]](#fig2).
+The correct file depending on the background must be used: *dbp_logo_on_white.svg* [[Fig. 1]](#fig1) or *dbp_logo_on_black.svg* [[Fig. 2]](#fig2).
 
 ### Whitespace
 The logo must always be placed with sufficient padding. For the exact paddings see [Fig. 3](#fig3). 
