@@ -97,8 +97,9 @@ This button is used for all actions which are not required for the flow. [[Fig. 
 </figure>
 
 #### Responsive Webdesign
-In mobile views, buttons can be combined and reduced to an additional actions-menu.
-An additional options menu consists of a `menu-dots` icon [[Fig. 5]](#fig5) and a dropdown menu [[Fig. 6]](#fig6).
+In mobile views, buttons can be combined and reduced to an additional options-menu.
+An additional-options menu is presented with a **kebab menu**[[Fig. 5]](#fig5) (three vertical aligned dots) and a dropdown menu [[Fig. 6]](#fig6). 
+We use the `menu-dots` icon from our icon set for the **kebab menu**.
 This is opened by clicking and the additional buttons are displayed there as entries in the dropdown list.
 
 Buttons which contain text are expanded to the full width and have a min height of 40px. Buttons which contain icons have a width and height of 40px.
