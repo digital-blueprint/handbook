@@ -1,4 +1,4 @@
-# About
+# Overview
 
 The "Relay API Gateway" is a framework for creating a REST API server for
 building applications and workflows on top of it. It abstracts away various
