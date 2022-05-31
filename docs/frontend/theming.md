@@ -275,3 +275,7 @@ In the **index.html**:
 In the **app.manifest.json**:
 
 - Adapt the `"short_name": ""` and the `"name": ""` with the name of your application.
+
+
+## Use the dbp-app-icon with your brand colors
+//TODO
