@@ -1,39 +1,52 @@
 # Icons
-
 ## Icon style
-Wie müssen unsere icons ausschauen
+Our icons have to follow these rules:
 
-**Maxsize:** 8.367 mm x 8.467 mm
+- **Canvas size:** 8.467 mm x 8.467 mm
+- **Max size:** 7 mm x 7 mm
+- **Stroke size:** 1.5 pt
+- **Rounding for edges:** 0.212 mm
+- **Edges:** rounded
+- **Ends of lines:** rounded 
+- **Color:** monochromatic black (except [appicons](#appicon))
 
-**Rounding:** 0.212 mm
 
-Rundungsradius:
-
-Line width: 1.5 pt
-
-Rundung linien
-
-farbe: einfärbig weiß/schwarz 
-außnahme appicons: 40% opactiy von farbe für highlight
+<figure id="fig1" style="width:100%;">
+    <img src="../assets/source_pacman.svg" alt="Icon example" style="width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
+    <figcaption align = "center">
+        <b>Fig. 1: Icon example</b>
+    </figcaption>
+</figure>
 
 ## Icon libs
+We are using the open source icon set [iconoir](https://iconoir.com/){:target="_blank"}.
 
-https://iconoir.com/
+## Creating an icon
+If you don't find a suitable icon in the lib, you have to make a new one or adapt an existing one.
 
-## Creating a new Icon
-If you don't find a suitable icon in the lib you have to make a new one or adapt a existing one.
+### Create a new icon
 
-To create a new icon there
+1. Download an existing icon and open it with inkscape
+2. Delete it and draw your own icon with the correct [icon styles](#icon-style)
+3. save as svg with a `dbp-` prefix and a meaningful name
 
+### Adapt an existing icon
 
-Download the svg what you want to adapt.
-Open it in inkscape and adapt it.
+1. Download an existing icon and open it with inkscape
+2. Make your changes
+3. 3. save as svg with a `dbp-` prefix and a meaningful name
 
+    
+## Appicon
 
-1. neue zeichenfläche in inkscape Größe:
-2. Strichstärke
-3. rundung wenn ecken
-4. dann zeichnen
+If you create a new app icon you have to follow the above [rules](#icon-style), except the rule regarding the color.
+App icons are allowed to have another color: **black with 40% opacity** as a highlight color[[Fig. 2]](#fig2).
 
-### appicon
-see [Appicon]
+For further information see [Appicon](../apps).
+
+<figure id="fig2" style="width:100%;">
+    <img src="../assets/appicon_example.svg" alt="App icon example" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
+    <figcaption align = "center">
+        <b>Fig. 2: App icon example</b>
+    </figcaption>
+</figure>

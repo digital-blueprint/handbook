@@ -6,7 +6,7 @@ The logo uses the open source font [Montserrat](https://github.com/JulietaUla/Mo
 - **Headline**: Montserrat Semibold 600
 - **Subheadline**: Montserrat Light 300
 
-If you want to [adapt](../logo/adaption)) the logo then you have to [install](#install-fonts-on-your-developing-device) this font on your device.
+If you want to [adapt](../logo/adaption) the logo then you have to [install](#install-fonts-on-your-developing-device) this font on your device.
 You can also find the Font in gitlab [DBP-CI](https://gitlab.tugraz.at/dbp/dbp-ci/-/tree/main/fonts/Montserrat){:target="_blank"}.
 
 ## Text/Web/Print font
