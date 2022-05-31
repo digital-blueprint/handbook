@@ -1,5 +1,5 @@
 # Logo
-
+name
 ## The Logo
 
 <figure id="fig1" style="width:100%;">

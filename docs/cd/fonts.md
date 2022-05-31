@@ -27,13 +27,45 @@ Simply open the *\*.ttf* file with a double click, then click `install`.
 ### Import your font for theming
 Take a look at [fonts](../frontend/theming/#fonts) in the "theming and individualizing your application" section for further information about using your own fonts and other adaptions. 
 
-### Import fonts in an index.html.ejs in development
+### Import fonts in an repository
 
-//TODO frag Christoph for best practice
-1. Font webcomponent wie Source sans pro
-2. einfach in assets folder rein kopieren
-3. yarn add @fontsource/lato & rollup anpassen
+To add a font to your repository simply call
+```bash
+yarn add @fontsource/lato
+ ```
+Now you have to adapt the `rollup.config.js`, 
+so that the fonts are loaded in the dist folder.
 
+Add 
+```js
+{
+    src: await getPackagePath('@fontsource/lato', '*'),
+    dest: 'dist/' + (await getDistPath(pkg.name, 'fonts/lato')),
+}
+```
+in the copy function.
+
+
+Now you can use the font like this:
+
+```ejs
+ <style>
+
+        @import "<%= getPrivateUrl('fonts/lato/300.css') %>";
+        @import "<%= getPrivateUrl('fonts/lato/300-italic.css') %>";
+        @import "<%= getPrivateUrl('fonts/lato/700.css') %>";
+        @import "<%= getPrivateUrl('fonts/lato/700-italic.css') %>";
+
+
+        body {
+            font-family: 'Lato', 'Calibri', 'Arial', 'sans-serif';
+            line-height: 1.4em;
+            font-weight: 300;
+            margin: 0;
+        }
+</style>
+```
+in your `index.html.ejs`.
 
 
 

@@ -25,16 +25,16 @@ An Activity follows the order [[Fig. 1]](#fig1)[[Fig. 2]](#fig2):
 
 
 <figure id="fig1" style="width:100%;">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_01.svg" alt="Appshell Slots" style="width:100%; border: 1px solid black;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_01.svg" alt="Basic activity GUI visualization" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
-        <b>Fig. 1: Appshell slots visualization</b>
+        <b>Fig. 1: Basic activity GUI visualization</b>
     </figcaption>
 </figure>
 
 <figure id="fig2" style="width:50%;">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_06.svg" alt="Appshell Slots mobile" style="width:100%; border: 1px solid black; margin: auto;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_06.svg" alt="Basic activity mobile GUI visualization" style="width:100%; border: 1px solid black; margin: auto;">
     <figcaption align = "center">
-        <b>Fig. 2: Appshell slots mobile visualization</b>
+        <b>Fig. 2: Basic activity mobile GUI visualization</b>
     </figcaption>
 </figure>
 
@@ -106,16 +106,16 @@ Buttons which contain text are expanded to the full width and have a min height 
 For more information see [Accessibility](/../frontend/dev/accessibility/).
 
 <figure id="fig5" style="width:50%;">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_13.svg" alt="secondary and primary buttons" style="width:100%; border: 1px solid black; margin:auto;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_13.svg" alt="Buttons hide behind an additional menu (kebab menu)" style="width:100%; border: 1px solid black; margin:auto;">
     <figcaption align = "center">
-        <b>Fig. 5: Buttons hide behind additional "dots" menu</b>
+        <b>Fig. 5: Buttons hide behind an additional menu (kebab menu) on small devices</b>
     </figcaption>
 </figure>
 
 <figure id="fig6" style="width:50%;">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_12.svg" alt="secondary and primary buttons" style="width:100%; border: 1px solid black;margin:auto;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_12.svg" alt="Buttons are visible in dropdown menu" style="width:100%; border: 1px solid black;margin:auto;">
     <figcaption align = "center">
-        <b>Fig. 6: Buttons are visible in dropdown menu</b>
+        <b>Fig. 6: Buttons are visible in dropdown menu on small devices</b>
     </figcaption>
 </figure>
 
@@ -208,7 +208,7 @@ We also have a modal title which indicates the context of this dialogue and a cl
 An example for a modal with tabs can be found in the [filehandling webcomponent](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/blob/master/packages/file-handling/src/file-source.js){:target="_blank"}.
 
 <figure id="fig12" style="width:100%;">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_9.svg" alt="Modal with Tabs" style="width:100%; border: 1px solid black;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_09.svg" alt="Modal with Tabs" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Fig. 12: Modal with Tabs</b>
     </figcaption>
