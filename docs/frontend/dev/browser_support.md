@@ -42,3 +42,9 @@ In case our modules are used with a too old browser this can lead to the followi
 To avoid such scenarios and to give the user proper feedback, we provide a standalone feature-detection script which gets loaded alongside the application and replaces the whole page with an information overlay in case a required feature is missing:
 
 https://gitlab.tugraz.at/dbp/web-components/toolkit/-/blob/master/packages/common/misc/browser-check.js
+
+## Device Resolution Support
+
+We currently try to target "iPhone SE 1st gen" as the lowest supported (CSS) resolution: 320 x 568
+
+See https://www.ios-resolution.com, https://www.mydevice.io/#compare-devices and https://en.wikipedia.org/wiki/IPhone_SE_(1st_generation) for more information.
