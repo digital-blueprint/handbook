@@ -1,5 +1,4 @@
 # Logo
-name
 ## The Logo
 
 <figure id="fig1" style="width:100%;">
@@ -38,6 +37,7 @@ The DBP logo is preferably placed in the upper left corner or in the middle [[Fi
 ### The text
 The text on the right side of the Logo consists of two parts. A headline "digital blueprint" and a subheading.
 The headline should never change. The subheading can change depending on the use. The default subheading is "a university toolbox". 
+More information for the brand name can be found [here](../naming).
 Read more under [Adapt the Text](#adapt-the-text).
 
 ### Background

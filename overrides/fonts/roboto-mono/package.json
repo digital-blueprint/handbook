@@ -2,7 +2,7 @@
   "_args": [
     [
       "@fontsource/roboto-mono@4.5.1",
-      "/home/lazka/Desktop/dbp/dev-guide/fonts"
+      "/home/tamara/VPU/doku/dev-guide/fonts"
     ]
   ],
   "_from": "@fontsource/roboto-mono@4.5.1",
@@ -27,7 +27,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/@fontsource/roboto-mono/-/roboto-mono-4.5.1.tgz",
   "_spec": "4.5.1",
-  "_where": "/home/lazka/Desktop/dbp/dev-guide/fonts",
+  "_where": "/home/tamara/VPU/doku/dev-guide/fonts",
   "author": {
     "name": "Lotus",
     "email": "declininglotus@gmail.com"

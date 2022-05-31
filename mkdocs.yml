@@ -3,10 +3,11 @@ theme:
     font: false
     name: material
     palette:
-      primary: teal
-      accent: teal
-    logo: assets/logo.png
-    favicon: assets/logo.png
+      - scheme: default
+        primary: black
+        accent: pink
+    logo: cd/assets/logo/dbp_logo_small_on_black.svg
+    favicon: cd/assets/logo/dbp_logo_small_on_white.svg
     custom_dir: overrides
 
 extra_css:
@@ -156,6 +157,7 @@ nav:
       - relay/keycloak/client_credentials.md
   - Corporate Design:
     - cd/logo.md
+    - cd/naming.md
     - cd/colors.md
     - cd/fonts.md
     - cd/secondary-design-elements.md

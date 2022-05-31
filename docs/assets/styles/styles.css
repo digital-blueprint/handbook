@@ -2,3 +2,16 @@
 .mermaid svg { height: auto }
 .mermaid:not([data-processed=true]) { display: none; }
 .mermaidTooltip { position: absolute; background-color: #0B7FC7; color: white; padding: 2px; }
+
+/* Other style changes for dbp style */
+:root {
+    font-size: 1.35rem;
+}
+
+.md-header__button.md-logo :is(img, svg) {
+    height: 2.2rem;
+}
+
+.md-main__inner{
+    margin-top: 2rem;
+}

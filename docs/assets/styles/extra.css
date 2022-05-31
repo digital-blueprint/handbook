@@ -1,7 +1,5 @@
 :root {
-    font-size: 1.25rem;
-
-    --md-text-font:"Roboto";
+    --md-text-font:"Lato";
     --md-code-font:"Roboto Mono";
 }
 
