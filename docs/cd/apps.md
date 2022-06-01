@@ -11,12 +11,12 @@ The branding for a specific app consists of three parts: the name, the friendly 
 
 ## App name
 The app name is a creative almost unique title. It should be recognizable and simple.
-E.g.: mono, esign, formalize, greenlight, check-in... It also should not exceed an maxlength of xx characters and should have a minimum of 4 characters.
+E.g.: mono, esign, formalize, greenlight, check-in... It also should not exceed a maxlength of 15 characters and should have a minimum of 4 characters.
 
 ## App friendly name
 Because the app name can be creative and brandend we need an explanation of it. The friendly name of an app is a description of the app name. 
-E.g.: mono - digital paymentservice, esign - electronical signature service, formalize - electronic forms. greenlight - a ticket system, check-in - a contact tracing system...
-It also should not exceed an maxlength of xx characters and should have a minimum of xx characters.
+E.g.: mono - digital payment service, esign - electronic signature service, formalize - electronic forms. greenlight - a ticket system, check-in - a contact tracing system...
+It also should not exceed a maxlength of 30 characters and should have a minimum of 10 characters.
 
 ## App icon
 An app icon consists of two parts: the icon itself and the dbp squares behind them.

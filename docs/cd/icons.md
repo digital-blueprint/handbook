@@ -3,7 +3,7 @@
 Our icons have to follow these rules:
 
 - **Canvas size:** 8.467 mm x 8.467 mm
-- **Max size:** 7 mm x 7 mm
+- **Max size:** 7.5 mm x 7.5 mm
 - **Stroke size:** 1.5 pt
 - **Rounding for edges:** 0.212 mm
 - **Edges:** rounded
@@ -40,7 +40,7 @@ If you don't find a suitable icon in the lib, you have to make a new one or adap
 ## Appicon
 
 If you create a new app icon you have to follow the above [rules](#icon-style), except the rule regarding the color.
-App icons are allowed to have another color: **black with 40% opacity** as a highlight color[[Fig. 2]](#fig2).
+App icons are allowed to have another color: **black with 50% opacity** as a highlight color[[Fig. 2]](#fig2).
 
 For further information see [Appicon](../apps).
 

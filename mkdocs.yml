@@ -4,9 +4,9 @@ theme:
     name: material
     palette:
       - scheme: default
-        primary: black
-        accent: pink
-    logo: cd/assets/logo/dbp_logo_small_on_black.svg
+        primary: white
+        accent: indigo
+    logo: cd/assets/logo/dbp_logo_small_on_white.svg
     favicon: cd/assets/logo/dbp_logo_small_on_white.svg
     custom_dir: overrides
 
