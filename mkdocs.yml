@@ -111,8 +111,8 @@ nav:
         - relay/bundles/esign/advanced_pdf_signing.md
         - relay/bundles/esign/qualified_flow.md
         - relay/bundles/esign/positioning.md
-      - ALMA Bundle:
-        - relay/bundles/alma/index.md
+      - Sublibrary Bundle:
+        - relay/bundles/sublibrary/index.md
       - Nextcloud Bundle:
         - relay/bundles/nextcloud/index.md
       - Authentic Document Bundle:

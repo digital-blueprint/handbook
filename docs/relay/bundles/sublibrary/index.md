@@ -1,15 +1,16 @@
 # Overview
 
+Source: https://gitlab.tugraz.at/dbp/library/dbp-relay-sublibrary-bundle
+
 ```mermaid
 graph TD
     style api fill:#d0d0ff,stroke:#333,stroke-width:4px
-    style alma_bundle fill:#606096,color:#fff
+    style sublibrary_bundle fill:#606096,color:#fff
 
     subgraph API Gateway
         api(("API"))
         core_bundle("Core Bundle")
-        alma_bundle("ALMA Bundle")
-        base_bundle("Base Bundle")
+        sublibrary_bundle("Sublibrary Bundle")
     end
 
     subgraph Ex Libris
@@ -18,14 +19,11 @@ graph TD
     end
 
     api --> core_bundle
-    api --> alma_bundle
-    api --> base_bundle
-    base_bundle --> core_bundle
-    alma_bundle --> core_bundle
-    alma_bundle --> base_bundle
+    api --> sublibrary_bundle
+    sublibrary_bundle --> core_bundle
     alma_analytics --> alma_api
-    alma_bundle --> alma_api
-    alma_bundle --> alma_analytics
+    sublibrary_bundle --> alma_api
+    sublibrary_bundle --> alma_analytics
 
     click alma_api "./#alma-api"
     click alma_analytics "./#alma-analytics"
