@@ -1,5 +1,8 @@
 # Overview
 
+[GitLab](https://gitlab.tugraz.at/dbp/check-in/dbp-relay-checkin-bundle) |
+[Packagist](https://packagist.org/packages/dbp/relay-checkin-bundle)
+
 This bundle provides an API for interacting with a [Campus QR](https://github.com/studo-app/campus-qr) server. It allows to:
 
 * Query locations

@@ -102,8 +102,6 @@ nav:
         - relay/bundles/base-person/index.md
       - Base Organization Bundle:
         - relay/bundles/base-organization/index.md
-      - Checking Bundle:
-        - relay/bundles/checkin/index.md
       - Electronic Signature Bundle:
         - relay/bundles/esign/index.md
         - relay/bundles/esign/config.md
@@ -115,10 +113,8 @@ nav:
         - relay/bundles/sublibrary/index.md
       - Authentic Document Bundle:
         - relay/bundles/authentic-document/index.md
-      - Knowledgebase Bundle:
-        - relay/bundles/knowledgebase/index.md
-      - Location Check In Bundle:
-        - relay/bundles/location-check-in/index.md
+      - Check In Bundle:
+        - relay/bundles/check-in/index.md
       - Greenlight Bundle:
         - relay/bundles/greenlight/index.md
         - relay/bundles/greenlight/config.md
