@@ -113,8 +113,6 @@ nav:
         - relay/bundles/esign/positioning.md
       - Sublibrary Bundle:
         - relay/bundles/sublibrary/index.md
-      - Nextcloud Bundle:
-        - relay/bundles/nextcloud/index.md
       - Authentic Document Bundle:
         - relay/bundles/authentic-document/index.md
       - Knowledgebase Bundle:
