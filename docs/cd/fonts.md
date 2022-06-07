@@ -10,13 +10,13 @@ If you want to [adapt](../logo/adaption) the logo then you have to [install](#in
 You can also find the Font in gitlab [DBP-CI](https://gitlab.tugraz.at/dbp/dbp-ci/-/tree/main/fonts/Montserrat){:target="_blank"}.
 
 ## Text/Web/Print font
-For all other uses except the logo we use the open source font [Lato](https://www.latofonts.com/de/){:target="_blank"}
+For all other uses except the logo we use the open source font [Nunito Sans](https://github.com/googlefonts/NunitoSans){:target="_blank"}
 
-- **Headlines**: Lato Light 300, Lato Bold 700
-- **Subheadlines** Lato Light 300 Italic,
-- **Text**: Lato Light (300), Lato Bold (700)
+- **Headlines**: Nunito Sans ExtraLight 200, Nunito Sans SemiBold 600
+- **Subheadlines** Nunito Sans ExtraLight 200 Italic,
+- **Text**: Nunito Sans ExtraLight (200), Nunito Sans SemiBold (600)
 
-You can also find the Font in gitlab [DBP-CI](https://gitlab.tugraz.at/dbp/dbp-ci/-/tree/main/fonts/Lato){:target="_blank"}.
+You can also find the Font in gitlab [DBP-CI](https://gitlab.tugraz.at/dbp/dbp-ci/-/tree/main/fonts/Nunito_Sans){:target="_blank"}.
 
 ## Install and Import fonts
 
@@ -31,7 +31,7 @@ Take a look at [fonts](../frontend/theming/#fonts) in the "theming and individua
 
 To add a font to your repository simply call
 ```bash
-yarn add @fontsource/lato
+yarn add @fontsource/nunito-sans
  ```
 Now you have to adapt the `rollup.config.js`, 
 so that the fonts are loaded in the dist folder.
@@ -39,8 +39,8 @@ so that the fonts are loaded in the dist folder.
 Add 
 ```js
 {
-    src: await getPackagePath('@fontsource/lato', '*'),
-    dest: 'dist/' + (await getDistPath(pkg.name, 'fonts/lato')),
+    src: await getPackagePath('@fontsource/nunito-sans', '*'),
+    dest: 'dist/' + (await getDistPath(pkg.name, 'fonts/nunito-sans')),
 }
 ```
 in the copy function.
@@ -51,16 +51,16 @@ Now you can use the font like this:
 ```ejs
  <style>
 
-        @import "<%= getPrivateUrl('fonts/lato/300.css') %>";
-        @import "<%= getPrivateUrl('fonts/lato/300-italic.css') %>";
-        @import "<%= getPrivateUrl('fonts/lato/700.css') %>";
-        @import "<%= getPrivateUrl('fonts/lato/700-italic.css') %>";
+        @import "<%= getPrivateUrl('fonts/nunito-sans/200.css') %>";
+        @import "<%= getPrivateUrl('fonts/nunito-sans/200-italic.css') %>";
+        @import "<%= getPrivateUrl('fonts/nunito-sans/600.css') %>";
+        @import "<%= getPrivateUrl('fonts/nunito-sans/600-italic.css') %>";
 
 
         body {
-            font-family: 'Lato', 'Calibri', 'Arial', 'sans-serif';
+            font-family: 'Nunito Sans', 'Calibri', 'Arial', 'sans-serif';
             line-height: 1.4em;
-            font-weight: 300;
+            font-weight: 200;
             margin: 0;
         }
 </style>

@@ -9,7 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@fontsource/lato": "^4.5.2",
+    "@fontsource/nunito-sans": "^4.5.8",
     "@fontsource/roboto-mono": "^4.5.1"
   }
 }

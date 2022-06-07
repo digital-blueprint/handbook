@@ -4,28 +4,28 @@
 <figure id="fig1" style="width:100%;">
     <img src="../assets/logo/dbp_logo_on_white.svg" alt="dbp logo on white background" style="box-shadow: 1px 1px 3px grey; margin:auto;">
     <figcaption align = "center">
-        <b>Fig. 1: *dbp_logo_on_white.svg* dbp logo on white background</b>
+        <b>Fig. 1: dbp_logo_on_white.svg dbp logo on white background</b>
     </figcaption>
 </figure>
 
 <figure id="fig2" style="width:100%;">
     <img src="../assets/logo/dbp_logo_on_black.svg" alt="dbp logo on dark background" style="box-shadow: 1px 1px 3px grey; background-color:#222120; margin:auto;">
     <figcaption align = "center">
-        <b>Fig. 2: *dbp_logo_on_black.svg* dbp logo on black background</b>
+        <b>Fig. 2: dbp_logo_on_black.svg dbp logo on black background</b>
     </figcaption>
 </figure>
 
 <figure id="fig3" style="width:100%;">
     <img src="../assets/logo/dbp_logo_small_on_white.svg" alt="dbp logo small on white background" style="max-width:200px;box-shadow: 1px 1px 3px grey; margin:auto;">
     <figcaption align = "center">
-        <b>Fig. 3: *dbp_logo_small_on_white.svg* dbp logo small on white background</b>
+        <b>Fig. 3: dbp_logo_small_on_white.svg dbp logo small on white background</b>
     </figcaption>
 </figure>
 
 <figure id="fig4" style="width:100%;">
     <img src="../assets/logo/dbp_logo_small_on_black.svg" alt="dbp logo small on dark background" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:#222120; margin:auto;">
     <figcaption align = "center">
-        <b>Fig. 4: *dbp_logo_small_on_black.svg* dbp logo small on black background</b>
+        <b>Fig. 4: dbp_logo_small_on_black.svg dbp logo small on black background</b>
     </figcaption>
 </figure>
 
@@ -41,7 +41,7 @@ More information for the brand name can be found [here](../naming).
 Read more under [Adapt the Text](#adapt-the-text).
 
 ### Background
-The logo is not allowed to use on a different background than black, HEX `#222120` (instead of black) or white.
+The logo is not allowed to use on a different background than **True black** (HEX `#222120` - instead of black) or white.
 The correct file depending on the background must be used: *dbp_logo_on_white.svg* [[Fig. 1]](#fig1) or *dbp_logo_on_black.svg* [[Fig. 2]](#fig2).
 
 ### Whitespace
@@ -71,28 +71,28 @@ The minimal presentation of the **squares** are **45 px**.
 <figure id="fig6" style="width:100%;">
     <img src="../assets/logo/dbp_logo_monochrom_on_white.svg" alt="dbp logo monochrom on white background" style="box-shadow: 1px 1px 3px grey; margin:auto;">
     <figcaption align = "center">
-        <b>Fig. 6: *dbp_logo_on_white.svg* dbp logo monochrom on white background</b>
+        <b>Fig. 6: dbp_logo_on_white.svg dbp logo monochrom on white background</b>
     </figcaption>
 </figure>
 
 <figure id="fig7" style="width:100%;">
     <img src="../assets/logo/dbp_logo_monochrom_on_black.svg" alt="dbp logo monochrom on dark background" style="box-shadow: 1px 1px 3px grey; background-color:#222120; margin:auto;">
     <figcaption align = "center">
-        <b>Fig. 7: *dbp_logo_monochrom_on_black.svg* dbp logo monochrom on black background</b>
+        <b>Fig. 7: dbp_logo_monochrom_on_black.svg dbp logo monochrom on black background</b>
     </figcaption>
 </figure>
 
 <figure id="fig8" style="width:100%;">
     <img src="../assets/logo/dbp_logo_small_monochrom_on_white.svg" alt="dbp logo small monochrom on white background" style="max-width:200px;box-shadow: 1px 1px 3px grey; margin:auto;">
     <figcaption align = "center">
-        <b>Fig. 8: *dbp_logo_small_monochrom_on_white.svg* dbp logo small monochrom on white background</b>
+        <b>Fig. 8: dbp_logo_small_monochrom_on_white.svg dbp logo small monochrom on white background</b>
     </figcaption>
 </figure>
 
 <figure id="fig9" style="width:100%;">
     <img src="../assets/logo/dbp_logo_small_monochrom_on_black.svg" alt="dbp logo small monochrom on dark background" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:#222120; margin:auto;">
     <figcaption align = "center">
-        <b>Fig. 9: *dbp_logo_small_monochrom_on_black.svg* dbp logo small monochrom black background</b>
+        <b>Fig. 9: dbp_logo_small_monochrom_on_black.svg dbp logo small monochrom black background</b>
     </figcaption>
 </figure>
 

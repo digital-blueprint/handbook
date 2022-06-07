@@ -9,6 +9,7 @@ Our icons have to follow these rules:
 - **Edges:** rounded
 - **Ends of lines:** rounded 
 - **Color:** monochromatic black (except [appicons](#appicon))
+- **Surface:** Generally not filled, expect the surface gets too small, then it should be filled
 
 
 <figure id="fig1" style="width:100%;">
@@ -34,13 +35,17 @@ If you don't find a suitable icon in the lib, you have to make a new one or adap
 
 1. Download an existing icon and open it with inkscape
 2. Make your changes
-3. 3. save as svg with a `dbp-` prefix and a meaningful name
+3. Save as svg with a `dbp-` prefix and a meaningful name
 
     
 ## Appicon
 
-If you create a new app icon you have to follow the above [rules](#icon-style), except the rule regarding the color.
-App icons are allowed to have another color: **black with 50% opacity** as a highlight color[[Fig. 2]](#fig2).
+If you create a new app icon you have to follow the above [rules](#icon-style).
+
+App icons has additional these rules:
+
+- **Highlight Color:** black with 50% opacity[[Fig. 2]](#fig2)
+- **Stroke size:** 1 pt
 
 For further information see [Appicon](../apps).
 

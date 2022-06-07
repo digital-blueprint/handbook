@@ -1,0 +1,57 @@
+{
+  "_from": "@fontsource/nunito-sans@^4.5.8",
+  "_id": "@fontsource/nunito-sans@4.5.8",
+  "_inBundle": false,
+  "_integrity": "sha512-a725clWrshbo8nNGraAiX+DdI684JTUAMqcdBIldvbFVccWSjGzIJC6q7lXSEtsAGaEm/4h2FeMhgs4tS6UZEw==",
+  "_location": "/@fontsource/nunito-sans",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@fontsource/nunito-sans@^4.5.8",
+    "name": "@fontsource/nunito-sans",
+    "escapedName": "@fontsource%2fnunito-sans",
+    "scope": "@fontsource",
+    "rawSpec": "^4.5.8",
+    "saveSpec": null,
+    "fetchSpec": "^4.5.8"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@fontsource/nunito-sans/-/nunito-sans-4.5.8.tgz",
+  "_shasum": "3e30f1c5143018834163b6e4e6f27e89dc927f45",
+  "_spec": "@fontsource/nunito-sans@^4.5.8",
+  "_where": "/home/tamara/VPU/doku/dev-guide/fonts",
+  "author": {
+    "name": "Lotus",
+    "email": "declininglotus@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/fontsource/fontsource/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Self-host the Nunito Sans font in a neatly bundled NPM package.",
+  "homepage": "https://github.com/fontsource/fontsource/tree/main/fonts/google/nunito-sans#readme",
+  "keywords": [
+    "fontsource",
+    "font",
+    "font family",
+    "google fonts",
+    "Nunito Sans",
+    "nunito-sans"
+  ],
+  "license": "MIT",
+  "main": "index.css",
+  "name": "@fontsource/nunito-sans",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fontsource/fontsource.git",
+    "directory": "fonts/google/nunito-sans"
+  },
+  "version": "4.5.8"
+}
