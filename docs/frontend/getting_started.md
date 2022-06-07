@@ -8,8 +8,8 @@
 2. Check out the starter app
 
 ```
-git clone https://gitlab.tugraz.at/dbp/web-components/dbp-starter-app
-cd dbp-starter-app
+git clone https://gitlab.tugraz.at/dbp/web-components/dbp-template-app
+cd dbp-template-app
 git submodule update --init
 ```
 
