@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 402.96 402.96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-3 {
+        fill: #222120;
+      }
+
+      .cls-4 {
+        fill: url(#Unbenannter_Verlauf_7);
+      }
+
+      .cls-5 {
+        fill: url(#Unbenannter_Verlauf_18);
+        opacity: .9;
+      }
+
+      .cls-5, .cls-6 {
+        isolation: isolate;
+      }
+
+      .cls-6 {
+        fill: url(#Unbenannter_Verlauf_17);
+        opacity: .5;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect id="rect62862-7" class="cls-1" x="102.73" y="102.74" width="197.49" height="197.49" transform="translate(-83.46 201.48) rotate(-45)"/>
+    </clipPath>
+    <linearGradient id="Unbenannter_Verlauf_18" data-name="Unbenannter Verlauf 18" x1="-1748.62" y1="-498.1" x2="-1551.13" y2="-498.1" gradientTransform="translate(1851.35 -296.62) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#073d84"/>
+      <stop offset=".84" stop-color="#003c8b" stop-opacity=".64"/>
+      <stop offset="1" stop-color="#004eb5" stop-opacity=".6"/>
+    </linearGradient>
+    <radialGradient id="Unbenannter_Verlauf_17" data-name="Unbenannter Verlauf 17" cx="-707.47" cy="-478.82" fx="-707.47" fy="-478.82" r="98.74" gradientTransform="translate(617.73 -2003.96) rotate(-4.61) scale(.69 -4.38)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2295ff" stop-opacity=".65"/>
+      <stop offset="1" stop-color="#2295ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="Unbenannter_Verlauf_7" data-name="Unbenannter Verlauf 7" cx="1401.71" cy="-596.2" fx="1401.71" fy="-596.2" r="98.74" gradientTransform="translate(-11977.36 -7194.96) rotate(16.19) scale(9.86 -6.01)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b34d4d" stop-opacity="0"/>
+      <stop offset="1" stop-color="red"/>
+    </radialGradient>
+  </defs>
+  <rect id="background" class="cls-3" x="102.73" y="102.74" width="197.49" height="197.49" transform="translate(-83.46 201.48) rotate(-45)"/>
+  <g id="square_top" data-name="square top">
+    <g class="cls-2">
+      <rect id="rect62862-8" class="cls-5" x="102.73" y="102.74" width="197.49" height="197.49" transform="translate(-83.46 201.48) rotate(-45)"/>
+      <rect id="rect62862" class="cls-6" x="102.73" y="102.74" width="197.49" height="197.49" transform="translate(-83.46 201.48) rotate(-45)"/>
+      <rect id="rect62862-7-2" data-name="rect62862-7" class="cls-4" x="102.73" y="102.74" width="197.49" height="197.49" transform="translate(-83.46 201.48) rotate(-45)"/>
+    </g>
+  </g>
+</svg>

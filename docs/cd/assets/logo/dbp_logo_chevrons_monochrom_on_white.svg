@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 402.96 402.96">
   <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: url(#Unbenannter_Verlauf_5);
+        opacity: .83;
+      }
+
+      .cls-3 {
+        fill: url(#Unbenannter_Verlauf_127);
+        opacity: .3;
+      }
+    </style>
     <linearGradient id="Unbenannter_Verlauf_127" data-name="Unbenannter Verlauf 127" x1="108.65" y1="-2664.86" x2="108.65" y2="-2944.18" gradientTransform="translate(0 3006)" gradientUnits="userSpaceOnUse">
       <stop offset=".01" stop-color="#000"/>
       <stop offset=".84" stop-color="#999"/>
@@ -10,6 +25,8 @@
       <stop offset=".84" stop-color="#999"/>
     </linearGradient>
   </defs>
-  <polygon points="170.82 61.82 31.16 201.48 170.82 341.14 185.87 326.09 61.82 201.48 186.15 77.15 170.82 61.82" style="fill: url(#Unbenannter_Verlauf_127); opacity: .3;"/>
-  <polygon points="232.13 61.82 216.81 77.15 341.14 201.48 216.81 325.81 232.13 341.14 371.8 201.48 232.13 61.82" style="fill: url(#Unbenannter_Verlauf_5); opacity: .83;"/>
+  <polygon class="cls-1" points="170.82 61.82 31.16 201.48 170.82 341.14 185.87 326.09 61.82 201.48 186.15 77.15 170.82 61.82"/>
+  <polygon class="cls-1" points="232.13 61.82 216.81 77.15 341.14 201.48 216.81 325.81 232.13 341.14 371.8 201.48 232.13 61.82"/>
+  <polygon class="cls-3" points="170.82 61.82 31.16 201.48 170.82 341.14 185.87 326.09 61.82 201.48 186.15 77.15 170.82 61.82"/>
+  <polygon class="cls-2" points="232.13 61.82 216.81 77.15 341.14 201.48 216.81 325.81 232.13 341.14 371.8 201.48 232.13 61.82"/>
 </svg>

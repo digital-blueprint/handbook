@@ -176,7 +176,7 @@ You can use various slots to customize your application.
 ### Appshell slots
 
 <figure id="fig1" style="width:100%;">
-    <img src="../assets/ui_images/Appshell.png" alt="Appshell Slots" style="width:100%; border: 1px solid black;">
+    <img src="../assets/ui_images/DBP-UI-Design_page_02.svg" alt="Appshell Slots" style="width:100%; border: 1px solid black;">
     <figcaption align = "center">
         <b>Fig. 1: Appshell slots visualization</b>
     </figcaption>
