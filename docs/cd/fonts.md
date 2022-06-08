@@ -24,10 +24,10 @@ You can also find the Font in gitlab [DBP-CI](https://gitlab.tugraz.at/dbp/dbp-c
 For developing or designing you may have to install some fonts on your working device.
 Simply open the *\*.ttf* file with a double click, then click `install`.
 
-### Import your font for theming
+### Import your own font for theming
 Take a look at [fonts](../frontend/theming/#fonts) in the "theming and individualizing your application" section for further information about using your own fonts and other adaptions. 
 
-### Import fonts in an repository
+### Import fonts in a repository
 
 To add a font to your repository simply call
 ```bash
