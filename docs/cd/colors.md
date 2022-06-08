@@ -72,5 +72,5 @@
 <div>Berry<div style="width: 20px; height: 20px; background: #a12057;border: 1px solid black;display: inline-block;margin-left: 10px;"></div></div>
 `20% Cyan | 100% Magenta | 30% Yellow | 20% Black`
 
-<div>Cobalt<div style="width: 20px; height: 20px; background: #3970b2;border: 1px solid black;display: inline-block;margin-left: 10px;"></div></div>div>
+<div>Cobalt<div style="width: 20px; height: 20px; background: #3970b2;border: 1px solid black;display: inline-block;margin-left: 10px;"></div></div>
 `80% Cyan | 50% Magenta | 0% Yellow | 0% Black`

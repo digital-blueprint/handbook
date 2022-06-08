@@ -40,27 +40,27 @@ If you don't find a suitable icon in the lib, you have to make a new one or adap
     
 ## Appicon
 
-If you create a new app icon you have to follow the above [rules](#icon-style).
+If you create a new app icon[[Fig. 2]](#fig2)[[Fig. 3]](#fig3) you have to follow the above [rules](#icon-style).
 
 App icons has additional these rules:
 
-- **Highlight Color:** black with 50% opacity[[Fig. 2]](#fig2)
+- **Highlight Color:** black with 50% opacity
 - **Stroke size:** 1 pt
 
 For further information see [Appicon](../apps).
 
 <figure id="fig2" style="width:100%;">
-    <img src="../assets/appicon_example.svg" alt="App icon example" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
+    <img src="../assets/appicon_example_clean.svg" alt="App icon example" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
     <figcaption align = "center">
         <b>Fig. 2: App icon example</b>
     </figcaption>
 </figure>
 
-##### How to adjust the icons
-Make sure you have installed the [fonts](../fonts/) on your working device.
-Open the initial file *dbp_logo_on_white.pdf* in Inkscape. Place the previously created icon in the middle on the rightmost top square.
-The color of the icon depends on the background of the logo file.
-If the file is for black background then the icon should have the color `#222120` and if the file is for white background the app icon should have the color `#ffffff`.
-Save it named *dbp_yourapplication_logo_on_white* as pdf, svg, eps in an own folder called `youraplication` in the logo folder.
+<figure id="fig3" style="width:100%;">
+    <img src="../assets/appicon_example.svg" alt="App icon example with dbp background" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
+    <figcaption align = "center">
+        <b>Fig. 3: App icon example as pwa</b>
+    </figcaption>
+</figure>
 
-Repeat this process with the all other pages and export them to the appropriate files.
+

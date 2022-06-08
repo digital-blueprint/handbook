@@ -3,6 +3,10 @@
     --md-code-font:"Roboto Mono";
 }
 
+.notbold{
+    font-weight: lighter;
+}
+
 .md-typeset {
     line-height: 1.5em;
 }

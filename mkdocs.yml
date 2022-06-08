@@ -1,4 +1,4 @@
-site_name: Digital Blueprint Handbook
+site_name: digital blueprint <span class='notbold'>handbook</span>
 theme:
     font: false
     name: material
@@ -7,7 +7,7 @@ theme:
         primary: white
         accent: indigo
     logo: cd/assets/logo/dbp_logo_small_on_white.svg
-    favicon: cd/assets/logo/dbp_logo_small_on_white.svg
+    favicon: cd/assets/apple-touch-icon.png
     custom_dir: overrides
 
 extra_css:

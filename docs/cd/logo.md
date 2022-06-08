@@ -103,7 +103,7 @@ If a logo is adjusted, the versions for both backgrounds(white, black) and also 
 
 #### Icons
 If the logo is used in an application, which has an app icon[[Apps]](../apps/#app-icon), the small logo can be extended with that icon (e.g. [Fig. 1](#fig1))
-by placing the app-icon in front of the squares and in the middle of the first square. The padding of this icon shouldn't extend the padding declared in [Appicons](../apps/#app-icon).
+by placing the app icon in front of the squares and in the middle of the first square. How to do this and for the rules take a look at [app icons](../apps/#app-icon).
 
 <figure id="fig11" style="width:100%;">
     <img src="../assets/logo/dbp_logo_appicon_example.svg" alt="Logo with app icon example" style="box-shadow: 1px 1px 3px grey; margin:auto;">

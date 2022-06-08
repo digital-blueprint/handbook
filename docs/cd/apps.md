@@ -42,6 +42,15 @@ file-> adapt squares specific app file
 adapt the gradient
 save
 
-## usage as favicon
+## Usage as favicon
 mal gucken was da hinkommt
 
+
+##### How to adjust the icons
+Make sure you have installed the [fonts](../fonts/) on your working device.
+Open the initial file *dbp_logo_on_white.pdf* in Inkscape. Place the previously created icon in the middle on the rightmost top square.
+The color of the icon depends on the background of the logo file.
+If the file is for black background then the icon should have the color `#222120` and if the file is for white background the app icon should have the color `#ffffff`.
+Save it named *dbp_yourapplication_logo_on_white* as pdf, svg, eps in an own folder called `youraplication` in the logo folder.
+
+Repeat this process with the all other pages and export them to the appropriate files.

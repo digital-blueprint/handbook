@@ -12,9 +12,9 @@ You can also find the Font in gitlab [DBP-CI](https://gitlab.tugraz.at/dbp/dbp-c
 ## Text/Web/Print font
 For all other uses except the logo we use the open source font [Nunito Sans](https://github.com/googlefonts/NunitoSans){:target="_blank"}
 
-- **Headlines**: Nunito Sans ExtraLight 200, Nunito Sans SemiBold 600
-- **Subheadlines** Nunito Sans ExtraLight 200 Italic,
-- **Text**: Nunito Sans ExtraLight (200), Nunito Sans SemiBold (600)
+- **Headlines**: Nunito Sans Light 300, Nunito Sans Bold 700
+- **Subheadlines** Nunito Sans Light 300 Italic,
+- **Text**: Nunito Sans Light 300, Nunito Sans Bold 700
 
 You can also find the Font in gitlab [DBP-CI](https://gitlab.tugraz.at/dbp/dbp-ci/-/tree/main/fonts/Nunito_Sans){:target="_blank"}.
 
@@ -51,16 +51,16 @@ Now you can use the font like this:
 ```ejs
  <style>
 
-        @import "<%= getPrivateUrl('fonts/nunito-sans/200.css') %>";
-        @import "<%= getPrivateUrl('fonts/nunito-sans/200-italic.css') %>";
-        @import "<%= getPrivateUrl('fonts/nunito-sans/600.css') %>";
-        @import "<%= getPrivateUrl('fonts/nunito-sans/600-italic.css') %>";
+        @import "<%= getPrivateUrl('fonts/nunito-sans/300.css') %>";
+        @import "<%= getPrivateUrl('fonts/nunito-sans/300-italic.css') %>";
+        @import "<%= getPrivateUrl('fonts/nunito-sans/700.css') %>";
+        @import "<%= getPrivateUrl('fonts/nunito-sans/700-italic.css') %>";
 
 
         body {
             font-family: 'Nunito Sans', 'Calibri', 'Arial', 'sans-serif';
             line-height: 1.4em;
-            font-weight: 200;
+            font-weight: 300;
             margin: 0;
         }
 </style>
