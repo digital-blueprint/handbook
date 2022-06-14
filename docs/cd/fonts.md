@@ -32,7 +32,7 @@ Take a look at [fonts](../frontend/theming/#fonts) in the "theming and individua
 To add a font to your repository simply call
 ```bash
 yarn add @fontsource/nunito-sans
- ```
+```
 Now you have to adapt the `rollup.config.js`, 
 so that the fonts are loaded in the dist folder.
 
@@ -48,7 +48,7 @@ in the copy function.
 
 Now you can use the font like this:
 
-```ejs
+```html
  <style>
 
         @import "<%= getPrivateUrl('fonts/nunito-sans/300.css') %>";
@@ -60,7 +60,7 @@ Now you can use the font like this:
         body {
             font-family: 'Nunito Sans', 'Calibri', 'Arial', 'sans-serif';
             line-height: 1.4em;
-            font-weight: 300;
+            font-weight: 400;
             margin: 0;
         }
 </style>
