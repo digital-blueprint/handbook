@@ -54,3 +54,105 @@ If the file is for black background then the icon should have the color `#222120
 Save it named *dbp_yourapplication_logo_on_white* as pdf, svg, eps in an own folder called `youraplication` in the logo folder.
 
 Repeat this process with the all other pages and export them to the appropriate files.
+
+
+## Favicons of apps
+There exists many favicons in different sizes and formats for different devices and uses.
+use https://realfavicongenerator.net/ to generate appicons
+use: https://maskable.app/ to generate maskable icons
+and
+
+
+Wir brauchen:
+| Filename | Size | Usecase | With appicon | 
+| -------- | ---- | ------- | ------------ |
+| favicon.ico | | Default, IE | |
+| favicon.svg | | For all modern browsers | |
+| favicon-16x16.png | 16x16 px | Classic favicon displayed in the tabs | |
+| favicon-32x32.png | 32x32 px | For safari on Mac OS | |
+| android-chrome-192x192.png | 192x192 px | For Android Chrome M39+ with 4.0 screen density | ✓ |
+| android-chrome-512x512.png | 512x512 px | For Android Chrome M47+ Splash screen with 4.0 screen density | ✓ |
+| mstile-144x144.png | 144x144 px | For Windows 8 / IE10 | ✓ |
+| mstile-150x150.png | 150x150 px | For Windows phone | ✓ |
+| apple-touch-icon.png | 152x152 px | For Apple iPhones | ✓ |
+| safari-pinned-tab.svg |  | For safari tabs | ✓ |
+| maskable-icon-512x512.png | 512x512 px | For newer android devices | ✓ |
+| maskable-icon-144x144.png | 144x144 px | For newer android devices | ✓ |
+
+Other files:
+
+site.webmanifest for android phones
+```json
+{
+    "name": "dbp playground",
+    "short_name": "dbp playground",
+    "icons": [
+        {
+            "src": "local/dbp-activity-showcase/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "local/dbp-activity-showcase/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "local/dbp-activity-showcase/maskable-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "local/dbp-activity-showcase/maskable-icon.png",
+            "sizes": "640x640",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "start_url": "./",
+    "display": "standalone"
+}
+```
+browserconfig.xml for windows and windowsphones
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square150x150logo src="local/dbp-activity-showcase/mstile-150x150.png"/>
+            <TileColor>#ffffff</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>
+```
+
+in rollup:
+
+```js
+{src: 'assets/favicons/*.png', dest: 'dist/' + (await getDistPath(pkg.name))},
+{src: 'assets/favicons/*.svg', dest: 'dist/' + (await getDistPath(pkg.name))},
+{src: 'assets/favicons/*.ico', dest: 'dist/' + (await getDistPath(pkg.name))},
+{src: 'assets/favicons/site.webmanifest', dest: 'dist', rename: pkg.name + '.webmanifest'},
+{src: 'assets/favicons/browserconfig.xml', dest: 'dist', rename: pkg.name + '_browserconfig.xml'}
+```
+
+in html.ejs
+
+```html
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="<%= getPrivateUrl('favicon.svg') %>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<%= getPrivateUrl('apple-touch-icon.png') %>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<%= getPrivateUrl('favicon-32x32.png') %>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<%= getPrivateUrl('favicon-16x16.png') %>">
+    <link rel="manifest" href="<%= getUrl(name + '.webmanifest') %>">
+    <link rel="mask-icon" href="<%= getPrivateUrl('safari-pinned-tab.svg') %>" color="#3775c1">
+    <meta name="msapplication-config" content="<%= getUrl(name + '_browserconfig.xml') %>" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+```
