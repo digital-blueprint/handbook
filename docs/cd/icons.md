@@ -64,3 +64,23 @@ For further information see [Appicon](../apps).
 </figure>
 
 
+### Creating an app icon
+To create an app take a look at [Creating an icon](#creating-an-icon) in the section above.
+And apply a stroke size with **1pt** and a part with 50% opactity.
+
+You need to create the following files: (replace `appname` with the shortname of your application)
+
+- `appname_appicon_dbp.svg`: The app icon with the digital blueprint squares as background*
+- `appname_appicon.svg`: The app icon in `#222120`
+- `appname_appicon_dbp.png`: The app icon with the digital blueprint squares as background, 600x600px and 72 ppi
+- `appname_appicon.png`: The app icon in `#222120`, 600x600px and 72 ppi
+
+\* The icon should be placed in front of the `dbp_logo_squares_on_white.svg`. 
+The icon should be in the middle of the first square. The maximum size can be taken from [fig4](#fig4).
+
+<figure id="fig4" style="width:100%;">
+    <img src="../assets/appicon_example_placement.svg" alt="App icon example with dbp background correct placement" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
+    <figcaption align = "center">
+        <b>Fig. 4: App icon example as pwa with correct placement</b>
+    </figcaption>
+</figure>

@@ -1,14 +1,6 @@
 # Apps
 The branding for a specific app consists of three parts: the name, the friendly name and an app icon.
 
-<figure id="fig1" style="width:100%;">
-    <img src="../assets/appheader_example.svg" alt="App header example" style="max-width:100%; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
-    <figcaption align = "center">
-        <b>Fig. 1: App header example</b>
-    </figcaption>
-</figure>
-
-
 ## App name
 The app name is a creative almost unique title. It should be recognizable and simple.
 E.g.: mono, esign, formalize, greenlight, check-in... It also should not exceed a maxlength of 15 characters and should have a minimum of 4 characters.
@@ -19,7 +11,18 @@ E.g.: mono - digital payment service, esign - electronic signature service, form
 It also should not exceed a maxlength of 30 characters and should have a minimum of 10 characters.
 
 ## App icon
+Das app icon erscheint an zwei Orten in der dbp-branded versionen der apps: im appshell header und als pwa icon.
+
+### Appshell header
+Das icon im appshell header[fig3](#fig3) ist das einfache icon ohne quadrate in True black und 50% opacity. [fig1](#fig1)
+Für mehr informationen über das aussehehn siehe [appicon](/icons/#appicons) unter icons. 
+
+### PWA Icon
+Als pwa icon icon wird genau dieses icon in weiß auf den quadraten verwendet[fig2](#fig2).
 An app icon consists of two parts: the icon itself and the dbp squares behind them.
+
+The icon has to be placed infront of the first square
+
 
 Wo erscheint das appicon. (header, appicon, favicon?)
 
@@ -28,13 +31,30 @@ Platzierung vom icon in den squares
 color, icon styles, einfach
 wie & wo muss mans speichern
 
-<figure id="fig2" style="width:100%;">
+<figure id="fig1" style="width:100%;">
     <img src="../assets/appicon_example.svg" alt="App icon example" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
     <figcaption align = "center">
         <b>Fig. 2: App icon example</b>
     </figcaption>
 </figure>
 
+<figure id="fig2" style="width:100%;">
+    <img src="../assets/appicon_exmaple.svg" alt="App pwa example" style="max-width:100%; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
+    <figcaption align = "center">
+        <b>Fig. 1: App pwa example</b>
+    </figcaption>
+</figure>
+
+
+<figure id="fig3" style="width:100%;">
+    <img src="../assets/appheader_example.svg" alt="App header example" style="max-width:100%; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
+    <figcaption align = "center">
+        <b>Fig. 1: App header example</b>
+    </figcaption>
+</figure>
+
+### Usage as pwa
+mal gucken was da hinkommt
 
 ## Applying own colors
 gradient on squares
@@ -42,8 +62,7 @@ file-> adapt squares specific app file
 adapt the gradient
 save
 
-## Usage as favicon
-mal gucken was da hinkommt
+
 
 
 ##### How to adjust the icons
