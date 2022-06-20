@@ -34,6 +34,16 @@
         fill: #fff;
       }
 
+      .cls-2 {
+        stroke-dasharray: 0 0 12.83 12.83;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke: #f20d00;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
       .cls-12 {
         clip-path: url(#clippath-1);
       }
@@ -54,12 +64,6 @@
         clip-path: url(#clippath-5);
       }
 
-      .cls-2, .cls-3, .cls-4 {
-        stroke: #f20d00;
-        stroke-miterlimit: 10;
-        stroke-width: 2px;
-      }
-
       .cls-17 {
         opacity: .23;
       }
@@ -70,6 +74,10 @@
 
       .cls-19, .cls-20 {
         opacity: .5;
+      }
+
+      .cls-4 {
+        stroke-dasharray: 0 0 12.83 12.83;
       }
 
       .cls-21 {
@@ -108,16 +116,8 @@
         fill: url(#Unbenannter_Verlauf_20);
       }
 
-      .cls-3 {
-        stroke-dasharray: 0 0 12.59 12.59;
-      }
-
       .cls-30 {
         fill: url(#Unbenannter_Verlauf_7);
-      }
-
-      .cls-4 {
-        stroke-dasharray: 0 0 12.59 12.59;
       }
 
       .cls-31 {
@@ -309,13 +309,13 @@
     </g>
   </g>
   <g>
-    <polyline class="cls-2" points="188.34 57.17 192.59 52.92 196.83 57.17"/>
-    <line class="cls-3" x1="205.73" y1="66.07" x2="308.13" y2="168.47"/>
-    <polyline class="cls-2" points="312.59 172.92 316.83 177.17 312.59 181.41"/>
-    <line class="cls-4" x1="303.68" y1="190.31" x2="201.28" y2="292.71"/>
-    <polyline class="cls-2" points="196.83 297.17 192.59 301.41 188.34 297.17"/>
-    <line class="cls-4" x1="179.44" y1="288.26" x2="77.04" y2="185.86"/>
-    <polyline class="cls-2" points="72.59 181.41 68.34 177.17 72.59 172.92"/>
-    <line class="cls-4" x1="81.49" y1="164.02" x2="183.89" y2="61.62"/>
+    <polyline class="cls-3" points="203.75 73.13 207.99 68.89 212.23 73.13"/>
+    <line class="cls-2" x1="221.3" y1="82.2" x2="307.49" y2="168.39"/>
+    <polyline class="cls-3" points="312.02 172.92 316.27 177.17 312.02 181.41"/>
+    <line class="cls-4" x1="302.95" y1="190.48" x2="216.77" y2="276.66"/>
+    <polyline class="cls-3" points="212.23 281.2 207.99 285.44 203.75 281.2"/>
+    <line class="cls-4" x1="194.67" y1="272.13" x2="108.49" y2="185.94"/>
+    <polyline class="cls-3" points="103.95 181.41 99.71 177.17 103.95 172.92"/>
+    <line class="cls-4" x1="113.03" y1="163.85" x2="199.21" y2="77.67"/>
   </g>
 </svg>
