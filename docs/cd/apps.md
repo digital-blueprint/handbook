@@ -11,37 +11,19 @@ E.g.: mono - digital payment service, esign - electronic signature service, form
 It also should not exceed a maxlength of 30 characters and should have a minimum of 10 characters.
 
 ## App icon
-Das app icon erscheint an zwei Orten in der dbp-branded versionen der apps: im appshell header und als pwa icon.
-
-### Appshell header
-Das icon im appshell header[fig3](#fig3) ist das einfache icon ohne quadrate in True black und 50% opacity. [fig1](#fig1)
-Für mehr informationen über das aussehehn siehe [appicon](/icons/#appicons) unter icons. 
-
-### PWA Icon
-Als pwa icon icon wird genau dieses icon in weiß auf den quadraten verwendet[fig2](#fig2).
-An app icon consists of two parts: the icon itself and the dbp squares behind them.
-
-The icon has to be placed infront of the first square
-
-
-Wo erscheint das appicon. (header, appicon, favicon?)
-
-wie soll ein app icon aussehen:
-Platzierung vom icon in den squares
-color, icon styles, einfach
-wie & wo muss mans speichern
+The app icon appears at two places in the dbp-branded versions of the apps: in the app shell header and as a PWA icon.
 
 <figure id="fig1" style="width:100%;">
-    <img src="../assets/appicon_example.svg" alt="App icon example" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
+    <img src="../assets/appicon_example_clean.svg" alt="App icon example" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
     <figcaption align = "center">
-        <b>Fig. 2: App icon example</b>
+        <b>Fig. 1: App icon example</b>
     </figcaption>
 </figure>
 
 <figure id="fig2" style="width:100%;">
-    <img src="../assets/appicon_exmaple.svg" alt="App pwa example" style="max-width:100%; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
+    <img src="../assets/appicon_example.svg" alt="App pwa example" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
     <figcaption align = "center">
-        <b>Fig. 1: App pwa example</b>
+        <b>Fig. 2: App pwa example</b>
     </figcaption>
 </figure>
 
@@ -49,40 +31,24 @@ wie & wo muss mans speichern
 <figure id="fig3" style="width:100%;">
     <img src="../assets/appheader_example.svg" alt="App header example" style="max-width:100%; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
     <figcaption align = "center">
-        <b>Fig. 1: App header example</b>
+        <b>Fig. 3: App header example</b>
     </figcaption>
 </figure>
 
-### Usage as pwa
-mal gucken was da hinkommt
 
-## Applying own colors
-gradient on squares
-file-> adapt squares specific app file
-adapt the gradient
-save
+### App shell header
+The icon in the app shell header[fig3](#fig3) is the plain icon with no squares and in true black and 50% opacity. [fig1](#fig1)
+For more information about the appearance and how to create an app icon, see [appicon](/icons/#appicons) under icons.
 
-
-
-
-##### How to adjust the icons
-Make sure you have installed the [fonts](../fonts/) on your working device.
-Open the initial file *dbp_logo_on_white.pdf* in Inkscape. Place the previously created icon in the middle on the rightmost top square.
-The color of the icon depends on the background of the logo file.
-If the file is for black background then the icon should have the color `#222120` and if the file is for white background the app icon should have the color `#ffffff`.
-Save it named *dbp_yourapplication_logo_on_white* as pdf, svg, eps in an own folder called `youraplication` in the logo folder.
-
-Repeat this process with the all other pages and export them to the appropriate files.
-
+### PWA Icon
+The icon in the color white and on the squares is used as the pwa icon[fig2](#fig2).
+For further information and placement take a look at [appicon](/icons/#appicons).
 
 ## Favicons of apps
 There exists many favicons in different sizes and formats for different devices and uses.
-use https://realfavicongenerator.net/ to generate appicons
-use: https://maskable.app/ to generate maskable icons
-and
 
+We need following files: 
 
-Wir brauchen:
 | Filename | Size | Usecase | With appicon | 
 | -------- | ---- | ------- | ------------ |
 | favicon.ico | | Default, IE | |
@@ -96,7 +62,7 @@ Wir brauchen:
 | apple-touch-icon.png | 152x152 px | For Apple iPhones | ✓ |
 | safari-pinned-tab.svg |  | For safari tabs | ✓ |
 | maskable-icon-512x512.png | 512x512 px | For newer android devices | ✓ |
-| maskable-icon-144x144.png | 144x144 px | For newer android devices | ✓ |
+| maskable-icon-640x640.png | 640x640 px | For newer android devices | ✓ |
 
 Other files:
 
@@ -150,7 +116,47 @@ browserconfig.xml for windows and windowsphones
 </browserconfig>
 ```
 
-in rollup:
+We use the favicon generator with MIT license [realfaviongenerator](https://realfavicongenerator.net/){:target="_blank"} to generate the favicons and appicons.
+After that we have to create the maskable icons. For that we use the [maskable.app](https://maskable.app/){:target="_blank"}.
+
+#### Realfavicon generator
+How to use the [realfaviongenerator](https://realfavicongenerator.net/){:target="_blank"}:
+
+1. Upload the initial favicon file *favicon.svg*. You can find this in the gitlab repository [dbp-ci](https://gitlab.tugraz.at/dbp/dbp-ci/-/tree/main/){:target="_blank"}.
+2. **Favicon for iOS** Section: 
+    1. Add a `dedicated picture`, the app icon. 
+    2. Select the option "Add a solid, plain background to fill the transparent regions."
+    3. Background-color: `#ffffff`
+    4. Margin-size: 4px
+3. **Favicon for Android Chrome** Section:
+    1. Add a `dedicated picture`, the app icon.
+    2. Select the option "No change, keep the master picture as it is."
+    3. App name: "dbp *shortname-of-the-app*"
+    4. Theme color: `#ffffff`
+4. **Windows Metro** Section:
+    1. Add a `dedicated picture`, the app icon.
+    2. Use this color ... : `#ffffff`
+5. **macOS Safari** Section:
+    1. Add the favicon file *safari-pinned-tab.svg*. You can find this in the gitlab repository [dbp-ci](https://gitlab.tugraz.at/dbp/dbp-ci/-/tree/main/){:target="_blank"}.
+    2. Theme color: `#3775c1`
+6. Generate the icons and delete icons which we don't need
+7. Place them in the `assets/favicons/` directory
+
+#### Maskable.app
+How to use the [maskable.app](https://maskable.app/){:target="_blank"}:
+
+1. Click "Editor"
+2. Upload the appicon(png) in the "layers section" on the right
+3. Add `20%` padding to the icon
+4. Select a white background on the left
+5. Click export
+    1. Select `Max size (640x640)` and `512x512`
+6. Download them and name them correctly (*maskable-icon-512x512.png* and *maskable-icon-640x640.png)
+7. Place them in the `assets/favicons/` directory
+
+### Add the favicons to your project
+1. Add all previous generated and [needed](#favicons-of-apps) files in the `àssets/favicons/` directory. 
+2. Add in rollup in the copy section:
 
 ```js
 {src: 'assets/favicons/*.png', dest: 'dist/' + (await getDistPath(pkg.name))},
@@ -159,8 +165,7 @@ in rollup:
 {src: 'assets/favicons/site.webmanifest', dest: 'dist', rename: pkg.name + '.webmanifest'},
 {src: 'assets/favicons/browserconfig.xml', dest: 'dist', rename: pkg.name + '_browserconfig.xml'}
 ```
-
-in html.ejs
+3. Add in html.ejs
 
 ```html
     <!-- Favicons -->
@@ -175,3 +180,8 @@ in html.ejs
     <meta name="theme-color" content="#ffffff">
     <meta name="apple-mobile-web-app-status-bar-style" content="white">
 ```
+
+
+## Applying own colors
+For not dbp uses, you might want to use the appicon and favicons from dbp, but with your brand colors.
+This and other changes can be read in the [Theming documentation](../../frontend/theming/#use-the-dbp-app-icon-with-your-brand-colors).

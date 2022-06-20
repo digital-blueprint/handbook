@@ -285,4 +285,7 @@ In the **app.manifest.json**:
 
 
 ## Use the dbp-app-icon with your brand colors
-//TODO
+gradient on squares
+file-> adapt squares specific app file
+adapt the gradient
+save

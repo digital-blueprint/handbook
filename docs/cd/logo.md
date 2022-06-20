@@ -30,7 +30,7 @@
 </figure>
 
 
-You can find all logo files in the gitlab repository [dbp-ci](https://gitlab.tugraz.at/dbp/dbp-ci/-/tree/main/){:target="_blank"}
+You can find all logo files in the gitlab repository [dbp-ci](https://gitlab.tugraz.at/dbp/dbp-ci/-/tree/main/){:target="_blank"}.
 
 ### The text
 The text on the right side of the Logo consists of two parts. A headline "digital blueprint" and a subheading "a university toolbox".
@@ -101,12 +101,12 @@ Depending on the background the correct file must be used: *dbp_logo_monochrom_o
 The logo can adjust depending on some uses(e.g. creating an appicon). To adjust the logo we recommend the vector based open source program [InkScape](https://inkscape.org/de/){:target="_blank"}.
 If a logo is adjusted, the versions for both backgrounds(white, black) and also the monochrom versions(white, black) have to be created.
 
-#### Icons
-If the logo is used in an application, which has an app icon[[Apps]](../apps/#app-icon), the small logo can be extended with that icon (e.g. [Fig. 1](#fig1))
+#### App icons
+If the logo is used in an application, which has an app icon[[Apps]](../apps/#app-icon), the small logo can be extended with that icon (e.g. [Fig. 11](#fig11))
 by placing the app icon in front of the squares and in the middle of the first square. How to do this and for the rules take a look at [app icons](../apps/#app-icon).
 
 <figure id="fig11" style="width:100%;">
-    <img src="../assets/logo/dbp_logo_appicon_example.svg" alt="Logo with app icon example" style="box-shadow: 1px 1px 3px grey; margin:auto;">
+    <img src="../assets/appicon_example.svg" alt="Logo with app icon example" style="max-width:200px; box-shadow: 1px 1px 3px grey; margin:auto;">
     <figcaption align = "center">
         <b>Fig. 11: Logo with app icon example</b>
     </figcaption>
