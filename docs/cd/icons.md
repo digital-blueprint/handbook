@@ -24,6 +24,8 @@ We are using the open source icon set [iconoir](https://iconoir.com/){:target="_
 
 ## Creating an icon
 If you don't find a suitable icon in the lib, you have to make a new one or adapt an existing one.
+You can use the free & open source vector based image editor [inkscape](https://inkscape.org/de/){:target="_blank"}.
+
 
 ### Create a new icon
 

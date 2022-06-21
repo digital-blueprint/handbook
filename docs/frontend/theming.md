@@ -274,10 +274,12 @@ For example:
 ## Favicons, Search Engine and more
 
 ### Favicons
-To change the favicons you have to replace the files in *images* directory. Don't rename them! They should have the same name and the same size as the default files. 
+#### Replace favicons & PWA icon
+If you want to replace the favicons and PWA icons you have simple to replace them. We have generated all favicons or appicon sizes for supported browsers.
+To change the favicons you have to replace the files in *images* directory. Don't rename them! They should have the same name and the same size as the default files.
 You can use the free & open source Image editor [gimp](https://www.gimp.org/){:target="_blank"} for resizing and exporting your favicon.
 
-#### How to resize your logo with gimp
+##### How to resize your logo with gimp
 1. Open you logo as svg with 300dpi and a large resolution.
 2. Clip your layer to the logo: `layer -> Clip to content`
 3. Crop the image to the layer: `ìmage -> fit canvas to layer`
@@ -286,12 +288,29 @@ You can use the free & open source Image editor [gimp](https://www.gimp.org/){:t
 6. Export the image with the correct name `file -> export to` select standards and export it
 7. Replace the old favicon file with your favicon file
 
+#### Use the dbp favicon and app-icon with your brand colors
+If you don't want to create an own PWA icon or an own favicon, we provided the possibility to simple change the colors of the digital blueprint favicon/app icon to your brand colors.
+For that you have to edit the [whitelabel app icon](https://gitlab.tugraz.at/dbp/dbp-ci/-/tree/main/favicon_appicon/app_icons/whitelabel){:target="_blank"} (which you need) and the [whitelabel favicon](https://gitlab.tugraz.at/dbp/dbp-ci/-/tree/main/favicon_appicon/favicon/whitelabel){:target="_blank"}. You can find the im the [dbp Corporate Identity](https://gitlab.tugraz.at/dbp/dbp-ci){:target="_blank"} gitlab repository.
+You can use the free & open source vector based image editor [inkscape](https://inkscape.org/de/){:target="_blank"} for editing your icons.
+
+##### How to change the colors of the icon
+The following steps has to be done for the whitelabel favicon and the whitelabel app icon.
+You can read [here](../cd/apps/#favicons-of-apps) which resolutions and formats are used by the two files.
+
+1. Open the needed svg whitelabel icon file in inkscape
+2. double click on the first square, then a line in the middle of the square should appear: the gradient line
+3. Right click on the square and open the window "fill and outline", now you can see the gradient with two colors
+4. In the window(fill and outline -> fill) you can choose one point on the gradient by clicking on it. then you can change the color of it. Make your color changes in the first square
+5. Repeat these steps for the other squares
+6. Save the file
+
+For creating the right resolution take a look at the section [How to resize your logo with gimp](#how-to-resize-your-logo-with-gimp) above.
+
 
 ### Preview
 You also can change the name and description of each application to change the preview of it on some browsers or devices.(e.g. google preview and search engine, mobile preview, pwas)
 
 In the **index.html**:
-
 
 - Adapt the ` <meta property="og:site_name" content="">` with your site title in the `content` attribute.
 - Adapt the `<meta property="og:url" content="" />`with your site url  in the `content` attribute. 
@@ -305,8 +324,3 @@ In the **app.manifest.json**:
 - Adapt the `"short_name": ""` and the `"name": ""` with the name of your application.
 
 
-## Use the dbp-app-icon with your brand colors
-gradient on squares
-file-> adapt squares specific app file
-adapt the gradient
-save
