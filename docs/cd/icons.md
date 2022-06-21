@@ -40,7 +40,7 @@ You can use the free & open source vector based image editor [inkscape](https://
 3. Save as svg with a `dbp-` prefix and a meaningful name
 
     
-## Appicon
+## App icon
 
 If you create a new app icon[[Fig. 2]](#fig2)[[Fig. 3]](#fig3) you have to follow the above [rules](#icon-style).
 
@@ -49,7 +49,7 @@ App icons has additional these rules:
 - **Highlight Color:** black with 50% opacity
 - **Stroke size:** 1 pt
 
-For further information see [Appicon](../apps).
+For further information see [App icon](../apps).
 
 <figure id="fig2" style="width:100%;">
     <img src="../assets/appicon_example_clean.svg" alt="App icon example" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">

@@ -15,14 +15,14 @@ The app icon appears at two places in the dbp-branded versions of the apps: in t
 
 <figure id="fig1" style="width:100%;">
     <img src="../assets/appicon_example_clean.svg" alt="App icon example" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
-    <figcaption align = "center">
+    <figcaption>
         <b>Fig. 1: App icon example</b>
     </figcaption>
 </figure>
 
 <figure id="fig2" style="width:100%;">
     <img src="../assets/appicon_example.svg" alt="App pwa example" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
-    <figcaption align = "center">
+    <figcaption>
         <b>Fig. 2: App pwa example</b>
     </figcaption>
 </figure>
@@ -30,26 +30,26 @@ The app icon appears at two places in the dbp-branded versions of the apps: in t
 
 <figure id="fig3" style="width:100%;">
     <img src="../assets/appheader_example.svg" alt="App header example" style="max-width:100%; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
-    <figcaption align = "center">
+    <figcaption>
         <b>Fig. 3: App header example</b>
     </figcaption>
 </figure>
 
 
 ### App shell header
-The icon in the app shell header[fig3](#fig3) is the plain icon with no squares and in true black and 50% opacity. [fig1](#fig1)
-For more information about the appearance and how to create an app icon, see [appicon](/icons/#appicons) under icons.
+The icon in the app shell header[[fig3]](#fig3) is the plain icon with no squares and in true black and 50% opacity. [[fig1]](#fig1)
+For more information about the appearance and how to create an app icon, see [app icon](../icons/#app-icon) under icons.
 
 ### PWA Icon
-The icon in the color white and on the squares is used as the pwa icon[fig2](#fig2).
-For further information and placement take a look at [appicon](/icons/#appicons).
+The icon in the color white and on the squares is used as the pwa icon[[fig2]](#fig2).
+For further information and placement take a look at [app icon](../icons/#app-icon).
 
 ## Favicons of apps
 There exists many favicons in different sizes and formats for different devices and uses.
 
 We need following files: 
 
-| Filename | Size | Usecase | With appicon | 
+| Filename | Size | Use Case | With app icon | 
 | -------- | ---- | ------- | ------------ |
 | favicon.ico | | Default, IE | |
 | favicon.svg | | For all modern browsers | |
@@ -103,7 +103,7 @@ site.webmanifest for android phones
     "display": "standalone"
 }
 ```
-browserconfig.xml for windows and windowsphones
+browserconfig.xml for windows and Windows phones
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <browserconfig>
@@ -116,7 +116,7 @@ browserconfig.xml for windows and windowsphones
 </browserconfig>
 ```
 
-We use the favicon generator with MIT license [realfaviongenerator](https://realfavicongenerator.net/){:target="_blank"} to generate the favicons and appicons.
+We use the favicon generator with MIT license [realfaviongenerator](https://realfavicongenerator.net/){:target="_blank"} to generate the favicons and app icons.
 After that we have to create the maskable icons. For that we use the [maskable.app](https://maskable.app/){:target="_blank"}.
 
 #### Realfavicon generator
@@ -146,7 +146,7 @@ How to use the [realfaviongenerator](https://realfavicongenerator.net/){:target=
 How to use the [maskable.app](https://maskable.app/){:target="_blank"}:
 
 1. Click "Editor"
-2. Upload the appicon(png) in the "layers section" on the right
+2. Upload the app icon(png) in the "layers section" on the right
 3. Add `20%` padding to the icon
 4. Select a white background on the left
 5. Click export
@@ -155,7 +155,7 @@ How to use the [maskable.app](https://maskable.app/){:target="_blank"}:
 7. Place them in the `assets/favicons/` directory
 
 ### Add the favicons to your project
-1. Add all previous generated and [needed](#favicons-of-apps) files in the `àssets/favicons/` directory. 
+1. Add all previous generated and [needed](#favicons-of-apps) files in the `assets/favicons/` directory. 
 2. Add in rollup in the copy section:
 
 ```js
@@ -183,5 +183,5 @@ How to use the [maskable.app](https://maskable.app/){:target="_blank"}:
 
 
 ## Applying own colors
-For not dbp uses, you might want to use the appicon and favicons from dbp, but with your brand colors.
+For not dbp uses, you might want to use the app icon and favicons from dbp, but with your brand colors.
 This and other changes can be read in the [Theming documentation](../../frontend/theming/#use-the-dbp-app-icon-with-your-brand-colors).
