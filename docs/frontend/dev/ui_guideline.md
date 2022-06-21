@@ -218,6 +218,9 @@ An example for a modal with tabs can be found in the [file handling webcomponent
 Each modal has a closing button marked with an "X" in the upper right corner. This button closes the modal.
 
 If the modal requires user interaction (e.g. overwrite file, save filter, ...) then there must be an additional "Cancel" button and a "Save"/"Apply"/"OK" button.
+The "Cancel" button interacts like the "X" button. It stops the active process and closes the modal. No changes are made. 
+The "Save"/"Apply"/"OK" button saves the active changes and closes the modal.
+
 If the modal is used for purely informative purposes (e.g.: preview, directory select, ...) the modal does not need a "Cancel" button.
 However, an informal "OK" button may be provided to ensure once again that the user has read the information.
 
