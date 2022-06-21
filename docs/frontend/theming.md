@@ -11,11 +11,11 @@ Moreover, you can also change favicons and browser specific items ([Favicons, Se
 DBP also supports multiple themes. To create multiple themes look in the [readme](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master/packages/theme-switcher#usage-in-an-application-with-appshell){:target="_blank"} of the theme-switcher web component.
 
 ## Fonts
-You can apply a font by adding the font-family to the `html` or `body` in an css `<style>` tag. 
+You can apply a font by adding the font-family to the `html` or `body` in a css `<style>` tag. 
 
 If you want to apply multiple fonts for multiple themes then add the `font-family` property to the appropriate css class.
 
-### Selfhosted Fonts
+### Self-hosted fonts
 You can host your fonts locally and import them in the `<style>` tag of the `index.html`. 
 Then you can apply it to the style with adding the `font-family` to body, html or a specific theme.
 
@@ -165,7 +165,7 @@ E.g.:
 }
 ```
 
-Further information about CSS variables in general can be found at [developer.mozila.org](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties){:target="_blank"}.
+Further information about CSS variables in general can be found at [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties){:target="_blank"}.
 
 
 
@@ -188,7 +188,7 @@ Example:
 
 The new icon should be type of **svg**.
 
-Further information about CSS variables in general can be found at [developer.mozila.org](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties){:target="_blank"}.
+Further information about CSS variables in general can be found at [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties){:target="_blank"}.
 
 You can change these icons for all themes or only for one theme.
 If you want to override variables in multiple themes read the [readme](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master/packages/theme-switcher#usage-in-an-application-with-appshell){:target="_blank"} of the theme-switcher web component.
@@ -201,25 +201,25 @@ If you want to override variables in multiple themes read the [readme](https://g
 ## Slots
 You can use various slots to customize your application.
 
-### Appshell slots
+### App shell slots
 
 <figure id="fig1" style="width:100%;">
-    <img src="../assets/ui_images/DBP-UI-Design_page_02.svg" alt="Appshell Slots" style="width:100%; border: 1px solid black;">
-    <figcaption align = "center">
-        <b>Fig. 1: Appshell slots visualization</b>
+    <img src="../assets/ui_images/DBP-UI-Design_page_02.svg" alt="App shell Slots" style="width:100%; border: 1px solid black;">
+    <figcaption>
+        <b>Fig. 1: App shell slots visualization</b>
     </figcaption>
 </figure>
 
 <figure id="fig2">
-    <img src="../assets/ui_images/DBP-UI-Design_page_05.svg" alt="Appshell Slots mobile" style="width:100%; border: 1px solid black; margin: auto;">
-    <figcaption align = "center">
-        <b>Fig. 2: Appshell slots mobile visualization</b>
+    <img src="../assets/ui_images/DBP-UI-Design_page_05.svg" alt="App shell Slots mobile" style="width:100%; border: 1px solid black; margin: auto;">
+    <figcaption>
+        <b>Fig. 2: App shell slots mobile visualization</b>
     </figcaption>
 </figure>
 
 You can adapt the **name**, **title**, **logo** or exchange the whole **header**, the **footer-links** 
 or exchange the whole **footer**. [[Fig. 1]](#fig1) [[Fig. 2]](#fig2)
-The nearer description can be found in the documentation of the [appshell](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master/packages/app-shell){:target="_blank"}.
+The nearer description can be found in the documentation of the [app shell](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master/packages/app-shell){:target="_blank"}.
 
 You should place these slots in the `<template id= "global-override">` tag of your `index.html`.
 
@@ -247,7 +247,7 @@ For example:
 
 ### App specific Slots
 Often there are app-specific slots or rather, activity-specific slots. These slots are often used for text customization. 
-In the activity description, in the `src` folder of the application you can read which slots are avaiable.
+In the activity description, in the `src` folder of the application you can read which slots are available.
 
 You should place these slots in the `<template id= "global-override">` tag of your `index.html`.
 
@@ -262,7 +262,7 @@ For example:
                     Erstellt ein Ticket für den Zugang zu Räumlichkeiten der TU Graz.
                 </div>
                 <div slot="en">
-                    Creates a ticket for access to premises of TU Graz.
+                    Creates a ticket for access to premise of TU Graz.
                 </div>
             </dbp-translated>
         </template>
@@ -275,7 +275,7 @@ For example:
 
 ### Favicons
 #### Replace favicons & PWA icon
-If you want to replace the favicons and PWA icons you have simple to replace them. We have generated all favicons or appicon sizes for supported browsers.
+If you want to replace the favicons and PWA icons you have simple to replace them. We have generated all favicons or app icon sizes for supported browsers.
 To change the favicons you have to replace the files in *images* directory. Don't rename them! They should have the same name and the same size as the default files.
 You can use the free & open source Image editor [gimp](https://www.gimp.org/){:target="_blank"} for resizing and exporting your favicon.
 
@@ -295,11 +295,11 @@ You can use the free & open source vector based image editor [inkscape](https://
 
 ##### How to change the colors of the icon
 The following steps has to be done for the whitelabel favicon and the whitelabel app icon.
-You can read [here](../cd/apps/#favicons-of-apps) which resolutions and formats are used by the two files.
+You can read [here](../../cd/apps/#favicons-of-apps) which resolutions and formats are used by the two files.
 
 1. Open the needed svg whitelabel icon file in inkscape
-2. double click on the first square, then a line in the middle of the square should appear: the gradient line
-3. Right click on the square and open the window "fill and outline", now you can see the gradient with two colors
+2. Double-click on the first square, then a line in the middle of the square should appear: the gradient line
+3. Right-click on the square and open the window "fill and outline", now you can see the gradient with two colors
 4. In the window(fill and outline -> fill) you can choose one point on the gradient by clicking on it. then you can change the color of it. Make your color changes in the first square
 5. Repeat these steps for the other squares
 6. Save the file
@@ -308,7 +308,7 @@ For creating the right resolution take a look at the section [How to resize your
 
 
 ### Preview
-You also can change the name and description of each application to change the preview of it on some browsers or devices.(e.g. google preview and search engine, mobile preview, pwas)
+You also can change the name and description of each application to change the preview of it on some browsers or devices.(e.g. google preview and search engine, mobile preview, PWA's)
 
 In the **index.html**:
 

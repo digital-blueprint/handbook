@@ -1,7 +1,7 @@
 # UI Guidelines
 In this guide we discover these topics:
 
-- [Acticity UI Guide](#activity-ui-guide)
+- [Activity UI Guide](#activity-ui-guide)
 - [UI Flow](#ui-flow)
     -  [Informational views](#informational-views)
     - [Click-through flow](#click-through-flow)
@@ -26,14 +26,14 @@ An Activity follows the order [[Fig. 1]](#fig1)[[Fig. 2]](#fig2):
 
 <figure id="fig1" style="width:100%;">
     <img src="../../assets/ui_images/DBP-UI-Design_page_01.svg" alt="Basic activity GUI visualization" style="width:100%; border: 1px solid black;">
-    <figcaption align = "center">
+    <figcaption>
         <b>Fig. 1: Basic activity GUI visualization</b>
     </figcaption>
 </figure>
 
 <figure id="fig2" style="width:50%;">
     <img src="../../assets/ui_images/DBP-UI-Design_page_06.svg" alt="Basic activity mobile GUI visualization" style="width:100%; border: 1px solid black; margin: auto;">
-    <figcaption align = "center">
+    <figcaption>
         <b>Fig. 2: Basic activity mobile GUI visualization</b>
     </figcaption>
 </figure>
@@ -74,7 +74,7 @@ These logical groups are then not distributed but combined in one element (`div`
 
 <figure id="fig3" style="width:100%;">
     <img src="../../assets/ui_images/DBP-UI-Design_page_04.svg" alt="Buttongroups" style="width:100%; border: 1px solid black;">
-    <figcaption align = "center">
+    <figcaption>
         <b>Fig. 3: Buttongroups</b>
     </figcaption>
 </figure>
@@ -91,7 +91,7 @@ This button is used for all actions which are not required for the flow. [[Fig. 
 
 <figure id="fig4" style="width:100%;">
     <img src="../../assets/ui_images/DBP-UI-Design_page_03.svg" alt="secondary and primary buttons" style="width:100%; border: 1px solid black;">
-    <figcaption align = "center">
+    <figcaption>
         <b>Fig. 4: Secondary and primary buttons</b>
     </figcaption>
 </figure>
@@ -107,14 +107,14 @@ For more information see [Accessibility](/../frontend/dev/accessibility/).
 
 <figure id="fig5" style="width:50%;">
     <img src="../../assets/ui_images/DBP-UI-Design_page_13.svg" alt="Buttons hide behind an additional menu (kebab menu)" style="width:100%; border: 1px solid black; margin:auto;">
-    <figcaption align = "center">
+    <figcaption>
         <b>Fig. 5: Buttons hide behind an additional menu (kebab menu) on small devices</b>
     </figcaption>
 </figure>
 
 <figure id="fig6" style="width:50%;">
     <img src="../../assets/ui_images/DBP-UI-Design_page_12.svg" alt="Buttons are visible in dropdown menu" style="width:100%; border: 1px solid black;margin:auto;">
-    <figcaption align = "center">
+    <figcaption>
         <b>Fig. 6: Buttons are visible in dropdown menu on small devices</b>
     </figcaption>
 </figure>
@@ -123,10 +123,10 @@ For more information see [Accessibility](/../frontend/dev/accessibility/).
 We distinguish between tables with fix content [[Fig. 7]](#fig7) and datatables [[Fig. 9]](#fig9).
 
 Depending on the operation area you can decide between endless scroll or pagination.
-An example for endless scroll can be found in the [Nextcloudfilepicker Webcomponent](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/blob/master/packages/file-handling/src/nextcloud-file-picker.js){:target="_blank"}.
+An example for endless scroll can be found in the [Nextcloud file picker Webcomponents](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/blob/master/packages/file-handling/src/nextcloud-file-picker.js){:target="_blank"}.
 An example for pagination can be found in [Formalize](https://gitlab.tugraz.at/dbp/formalize/formalize){:target="_blank"}.
 
-If you have an endless scroll, you can also show up a `select all` button as it was done in the Nextcloudfilepicker Webcomponent.
+If you have an endless scroll, you can also show up a `select all` button as it was done in the Nextcloud file picker Webcomponents.
 
 If you have row action buttons you can distinguish between: selecting a row and connect these rows with a button, or
 you can create a call to actions column in the last column of the table. The row action buttons can be placed there. E.g.: Open the row in Detail,
@@ -146,14 +146,14 @@ The collapse Icon is placed in the first column of the row.
 
 <figure id="fig7" style="width:100%;">
     <img src="../../assets/ui_images/DBP-UI-Design_page_10.svg" alt="Table with fix and selectable content" style="width:100%; border: 1px solid black;">
-    <figcaption align = "center">
+    <figcaption>
         <b>Fig. 7: Table with fix and selectable content</b>
     </figcaption>
 </figure>
 
 <figure id="fig8" style="width:50%;">
     <img src="../../assets/ui_images/DBP-UI-Design_page_14.svg" alt="Table with fix and selectable content on mobile devices" style="width:100%; border: 1px solid black; margin: auto;">
-    <figcaption align = "center">
+    <figcaption>
         <b>Fig. 8: Table with fix and selectable content on mobile devices</b>
     </figcaption>
 </figure>
@@ -167,14 +167,14 @@ The action column is frozen.
 
 <figure id="fig9" style="width:100%;">
     <img src="../../assets/ui_images/DBP-UI-Design_page_11.svg" alt="Datatable" style="width:100%; border: 1px solid black;">
-    <figcaption align = "center">
+    <figcaption>
         <b>Fig. 9: Datatable</b>
     </figcaption>
 </figure>
 
 <figure id="fig10" style="width:50%;">
     <img src="../../assets/ui_images/DBP-UI-Design_page_15.svg" alt="Datatable on mobile devices" style="width:100%; border: 1px solid black; margin: auto;">
-    <figcaption align = "center">
+    <figcaption>
         <b>Fig. 10: Datatable on mobile devices</b>
     </figcaption>
 </figure>
@@ -194,7 +194,7 @@ we used the detail modal to show a whole data entry row in a compact way.
 
 <figure id="fig11" style="width:100%;">
     <img src="../../assets/ui_images/DBP-UI-Design_page_08.svg" alt="Detail Modal" style="width:100%; border: 1px solid black;">
-    <figcaption align = "center">
+    <figcaption>
         <b>Fig. 11: Detail Modal</b>
     </figcaption>
 </figure>
@@ -205,11 +205,11 @@ These tabs are placed on the left side of the modal dialogue. On mobile devices 
 
 We also have a modal title which indicates the context of this dialogue and a closing sign on the right upper corner.
 
-An example for a modal with tabs can be found in the [filehandling webcomponent](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/blob/master/packages/file-handling/src/file-source.js){:target="_blank"}.
+An example for a modal with tabs can be found in the [file handling webcomponents](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/blob/master/packages/file-handling/src/file-source.js){:target="_blank"}.
 
 <figure id="fig12" style="width:100%;">
     <img src="../../assets/ui_images/DBP-UI-Design_page_09.svg" alt="Modal with Tabs" style="width:100%; border: 1px solid black;">
-    <figcaption align = "center">
+    <figcaption>
         <b>Fig. 12: Modal with Tabs</b>
     </figcaption>
 </figure>
@@ -228,7 +228,7 @@ You can use all of these CSS variables without the 'override' in the code. E.g.:
 }
 ```
 
-Further information about CSS variables in general can be found at [developer.mozila.org](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties){:target="_blank"}.
+Further information about CSS variables in general can be found at [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties){:target="_blank"}.
 
 ## Fontsize
 You should not use a font size smaller than 16 CSS px. You should also avoid absolut units, use relative, like em, rem instead.

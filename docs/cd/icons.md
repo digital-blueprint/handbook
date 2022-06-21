@@ -8,13 +8,13 @@ Our icons have to follow these rules:
 - **Rounding for edges:** 0.212 mm
 - **Edges:** rounded
 - **Ends of lines:** rounded 
-- **Color:** monochromatic black (except [appicons](#appicon))
+- **Color:** monochromatic black (except [app icons](#app-icon))
 - **Surface:** Generally not filled, expect the surface gets too small, then it should be filled
 
 
 <figure id="fig1" style="width:100%;">
     <img src="../assets/source_pacman.svg" alt="Icon example" style="width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
-    <figcaption align = "center">
+    <figcaption>
         <b>Fig. 1: Icon example</b>
     </figcaption>
 </figure>
@@ -53,14 +53,14 @@ For further information see [App icon](../apps).
 
 <figure id="fig2" style="width:100%;">
     <img src="../assets/appicon_example_clean.svg" alt="App icon example" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
-    <figcaption align = "center">
+    <figcaption>
         <b>Fig. 2: App icon example</b>
     </figcaption>
 </figure>
 
 <figure id="fig3" style="width:100%;">
     <img src="../assets/appicon_example.svg" alt="App icon example with dbp background" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
-    <figcaption align = "center">
+    <figcaption>
         <b>Fig. 3: App icon example as pwa</b>
     </figcaption>
 </figure>
@@ -68,7 +68,7 @@ For further information see [App icon](../apps).
 
 ### Creating an app icon
 To create an app take a look at [Creating an icon](#creating-an-icon) in the section above.
-And apply a stroke size with **1pt** and a part with 50% opactity.
+And apply a stroke size with **1pt** and a part with 50% opacity.
 
 You need to create the following files: (replace `appname` with the shortname of your application)
 
@@ -82,7 +82,7 @@ The icon should be in the middle of the first square. The maximum size can be ta
 
 <figure id="fig4" style="width:100%;">
     <img src="../assets/appicon_example_placement.svg" alt="App icon example with dbp background correct placement" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
-    <figcaption align = "center">
+    <figcaption>
         <b>Fig. 4: App icon example as pwa with correct placement</b>
     </figcaption>
 </figure>

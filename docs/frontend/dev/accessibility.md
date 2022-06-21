@@ -43,7 +43,7 @@ The minimal touch target size of WCAG Level AA is at least 24 by 24 CSS pixels.
 
 In our application we had to fulfill WCAG Level AA, but we want to meet in the middle with the touchstart.
 
-So our minimal touch target size is 40px. To achieve that with an aspect to design you can make the content smaller than the actual touchtarget.
+So our minimal touch target size is 40px. To achieve that with an aspect to design you can make the content smaller than the actual touch target.
 So you wrap the target with a padding. E.g.: an icon with the size of 30px and a padding of 5 px at each side.
 
 
