@@ -170,7 +170,28 @@ Further information about CSS variables in general can be found at [developer.mo
 
 
 ## Icons
-// TODO overriding icons isn't implemented yet
+In digital blueprint frontends you can also change icons. (E.g. if you have your own icon set or want to change specific icons).
+
+The icon override work similar to the color override - with css variables.
+To override an icon you have to write in a css selector the prefix `--dbp-override-icon-` + the icon name.
+You can find the icon name of a specific icon with the site-inspector, e.g. from [mozilla firefox](https://developer.mozilla.org/de/docs/Tools/Page_Inspector){:target="_blank"}  or the [chrome DevTools](https://developer.chrome.com/docs/devtools/){:target="_blank"}.
+You can also take a look at the [icon vendor](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master/packages/common/assets/icons){:target="_blank"} in the toolkit repository.
+
+Now you can override any icon with that css variable. Simply pass the new icon with its relative path to the css variable with `url()`.
+
+Example:
+```css
+.html {
+    --dbp-override-icon-iconname: url("pathto/newicon.svg");
+}
+```
+
+The new icon should be type of **svg**.
+
+Further information about CSS variables in general can be found at [developer.mozila.org](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties){:target="_blank"}.
+
+You can change these icons for all themes or only for one theme.
+If you want to override variables in multiple themes read the [readme](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master/packages/theme-switcher#usage-in-an-application-with-appshell){:target="_blank"} of the theme-switcher web component.
 
 
 ## Translation
