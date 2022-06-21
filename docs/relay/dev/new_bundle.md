@@ -1,55 +1,46 @@
 # Creating a New Bundle
 
-The easiest way to create a new bundle is by using our bundle creator.
+The easiest way to start a new bundle is by using our bundle creator. The API server comes with a command which creates a new bundle according to your specified naming and installs/registers it with your application, so you can start developing/testing right away.
 
-If you want to create a DBP Symfony bundle in a subdirectory of the current folder you can call:
+```console
+> ./bin/console dbp:relay:maker:make:bundle \
+    --vendor myuni \
+    --unique-name=my-bundle \
+    --friendly-name="My Bundle" \
+    --example-entity=Entity
 
-```bash
-npx @digital-blueprint/cli generate-bundle --unique-name=my-bundle --friendly-name="My Bundle" --example-entity=Entity
+    Composer Package Name: myuni/relay-my-bundle-bundle
+            PHP Namespace: Myuni\Relay\MyBundleBundle
+      Symfony Bundle Name: MyuniRelayMyBundleBundle
+        Bundle Config Key: myuni_relay_my_bundle
+           PHP Class Name: Entity
+  API-Platform Short Name: MyBundleEntity
+            Resource Path: /my-bundle/entitys
+      Serialization Group: MyBundleEntity:some-group
+             Open API Tag: My Bundle
+      GIT Repository Name: myuni-relay-my-bundle-bundle
+Continue? (y/n)
+
+* The package 'myuni/relay-my-bundle-bundle' was created under 'bundles/myuni-relay-my-bundle'
+* The package was added to your composer.json and installed
+* The containing bundle was registered with your application
 ```
 
-This will create a new a directory called `relay-my-bundle-bundle` containing a
-Symfony bundle that is ready to go. We recommend that you make this a git
-repository and push it to a git server:
+This will create a new composer package under `./bundles`, register it in your `composer.json` and register the containing bundle in your `bundles.php`. After restarting the server you will see example API endpoints added by the bundle.
 
-* `git init .`
-* `git checkout -b main`
-* `git add .`
-* `git commit [...]`
-* `git push [...]`
+## Publishing your Bundle
 
-The next step is to integrate the bundle into your Symfony application. You can
-either publish your package to https://packagist.org or register your git repo
-with your Symfony app by adding it to your composer.json:
+Ideally at some point in the future you will want to share your bundle publicly, so other users can install and benefit from it as well. For this you need to
 
-```json
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://gitlab.tugraz.at/dbp/relay/my-custom-bundle.git"
-        },
-    ]
-```
+* Extract the bundle directory into its own git repository (see https://docs.github.com/en/get-started/using-git/splitting-a-subfolder-out-into-a-new-repository for example, in case you want to preserve the history)
+* Publish the new package to https://packagist.org/
+* Remove the local repository in your `composer.json` under `repositories`, so the package is installed from packagist.
 
-
-Then you can install your bundle just like every other package:
-
-`composer require dbp/my-custom-bundle=dev-main`
-
-Now you can continue developing your bundle for example by pointing your IDE to
-`vendor/dbp/my-custom-bundle`.
-
-Note that in many cases Symfony cashes various things so changes to the bundle
-code won't have any effect on the application. You can clear the cache via
-
-```bash
-./bin/console cache:clear
-```
+If you just want to extract the package, but don't want to publish it publicly you can also install from a private git repository instead. See https://getcomposer.org/doc/05-repositories.md#vcs for more information.
 
 ## Further Information
 
 * For best practices on how to create a Symfony bundle see
 https://symfony.com/doc/current/bundles/best_practices.html
-* For details on the `@digital-blueprint/cli` tool see https://gitlab.tugraz.at/dbp/cli
-* For details on the bundle template see https://gitlab.tugraz.at/dbp/relay/dbp-relay-template-bundle
-* If you want an example implementation of a relay-api bundle with an entity, a command and some services see https://gitlab.tugraz.at/dbp/relay/dbp-relay-example-bundle
+* The new bundle is based on our bundle template, see https://gitlab.tugraz.at/dbp/relay/dbp-relay-template-bundle for more information
+* If you want to look at a more fully featured bundle as a reference see https://gitlab.tugraz.at/dbp/relay/dbp-relay-example-bundle which contains various examples of what you can do and implement inside of a bundle.

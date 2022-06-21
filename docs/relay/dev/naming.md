@@ -194,33 +194,14 @@ This is used in `ApiError::withDetails()`, for example: `ApiError::withDetails(R
 
 ## Generate DBP Symfony bundle
 
-If you want to create a DBP Symfony bundle in a subdirectory of the current folder you can call:
+If you want to create a DBP Symfony bundle in the root directory of the server you can call:
 
 ```bash
-npx @digital-blueprint/cli generate-bundle --unique-name=greenlight --friendly-name="Electronic Covid Access Permits" --example-entity=Permit
+./bin/console dbp:relay:maker:make:bundle --unique-name=greenlight --friendly-name="Electronic Covid Access Permits" --example-entity=Permit
 ```
 
-If you also want to set the vendor and category you can use two more parameters:
+If you also want to set the "vendor" and "category" you can use two more parameters:
 
 ```bash
-npx @digital-blueprint/cli generate-bundle --vendor=myvendor --category=mycategory --unique-name=greenlight --friendly-name="Electronic Covid Access Permits" --example-entity=Permit
+./bin/console dbp:relay:maker:make:bundle --vendor=myvendor --category=mycategory --unique-name=greenlight --friendly-name="Electronic Covid Access Permits" --example-entity=Permit
 ```
-
-## Show DBP Symfony bundle names
-
-If you want to just want to show the names of a DBP Symfony bundle you can call:
-
-```bash
-npx @digital-blueprint/cli show-bundle-names --unique-name=greenlight --friendly-name="Electronic Covid Access Permits" --example-entity=Permit
-```
-
-If you also want to set the vendor and category you can use two more parameters:
-
-```bash
-npx @digital-blueprint/cli show-bundle-names --vendor=myvendor --category=mycategory --unique-name=greenlight --friendly-name="Electronic Covid Access Permits" --example-entity=Permit
-```
-
-## PHP Script
-
-You can find a script that codifies above rules here:
-[bundle-generator.php](https://gitlab.tugraz.at/dbp/cli/-/blob/main/bin/bundle-generator.php)
