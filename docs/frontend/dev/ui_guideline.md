@@ -214,6 +214,13 @@ An example for a modal with tabs can be found in the [file handling webcomponent
     </figcaption>
 </figure>
 
+#### X and cancel buttons
+Each modal has a closing button marked with an "X" in the upper right corner. This button closes the modal.
+
+If the modal requires user interaction (e.g. overwrite file, save filter, ...) then there must be an additional "Cancel" button and a "Save"/"Apply"/"OK" button.
+If the modal is used for purely informative purposes (e.g.: preview, directory select, ...) the modal does not need a "Cancel" button.
+However, an informal "OK" button may be provided to ensure once again that the user has read the information.
+
 ## Colors
 DBP Apps have declared different CSS variables. You should avoid using hard coded colors or borders. 
 Instead, use these CSS variables. 
