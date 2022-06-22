@@ -66,31 +66,31 @@ We need following files:
 
 Other files:
 
-site.webmanifest for android phones
+site.webmanifest for android phones (Replace `your-app-name` with the name of your app)
 ```json
 {
     "name": "dbp playground",
     "short_name": "dbp playground",
     "icons": [
         {
-            "src": "local/dbp-activity-showcase/android-chrome-192x192.png",
+            "src": "local/your-app-name/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "local/dbp-activity-showcase/android-chrome-512x512.png",
+            "src": "local/your-app-name/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "local/dbp-activity-showcase/maskable-icon-512x512.png",
+            "src": "local/your-app-name/maskable-icon-512x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "local/dbp-activity-showcase/maskable-icon.png",
+            "src": "local/your-app-namee/maskable-icon.png",
             "sizes": "640x640",
             "type": "image/png",
             "purpose": "maskable"
@@ -103,13 +103,13 @@ site.webmanifest for android phones
     "display": "standalone"
 }
 ```
-browserconfig.xml for windows and Windows phones
+browserconfig.xml for windows and Windows phones (Replace `your-app-name` with the name of your app)
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <browserconfig>
     <msapplication>
         <tile>
-            <square150x150logo src="local/dbp-activity-showcase/mstile-150x150.png"/>
+            <square150x150logo src="local/your-app-name/mstile-150x150.png"/>
             <TileColor>#ffffff</TileColor>
         </tile>
     </msapplication>
@@ -169,6 +169,7 @@ How to use the [maskable.app](https://maskable.app/){:target="_blank"}:
 
 ```html
     <!-- Favicons -->
+    <link rel="shortcut icon" type="image/x-icon" href="<%= getPrivateUrl('favicon.ico') %>">
     <link rel="icon" type="image/svg+xml" href="<%= getPrivateUrl('favicon.svg') %>">
     <link rel="apple-touch-icon" sizes="180x180" href="<%= getPrivateUrl('apple-touch-icon.png') %>">
     <link rel="icon" type="image/png" sizes="32x32" href="<%= getPrivateUrl('favicon-32x32.png') %>">
