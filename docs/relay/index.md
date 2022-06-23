@@ -8,31 +8,28 @@ bundles. Various bundles are readily available and can be configured to your
 needs, or you can write your own bundles to extend the system/API.
 
 ```mermaid
-graph TD
-    style ext_apps fill:#606096,color:#fff
-    style ext_service1 fill:#46A046,color:#fff
-    style ext_service2 fill:#C1665A,color:#fff
+flowchart TB
+    style api_gateway stroke:#338555,color:#338555
 
-    ext_apps[\"External Desktop/Mobile/Server/Web Applications"/]
-    oidc_server("OpenID Connect Server (e.g. Keycloak)")
-    ext_service1("External Service A")
-    ext_service2("External Service B")
+    ext_apps["External Desktop/Mobile/Server/Web Applications"]
+    oidc_server["OpenID Connect Server (e.g. Keycloak)"]
+    ext_service1["External Service A"]
+    ext_service2["External Service B"]
 
-    subgraph API Gateway
-        api(("API"))
-        core_bundle("Core Bundle")
-        custom_bundle1("Custom Bundle A")
-        custom_bundle2("Custom Bundle B")
+    subgraph api_gateway["API Gateway"]
+        api["API"]
+        core_bundle["Core Bundle"]
+        custom_bundle1["Bundle A"]
+        custom_bundle2["Bundle B"]
     end
 
     api --> core_bundle
     api --> custom_bundle1
     api --> custom_bundle2
-    custom_bundle1 --> core_bundle
+
     custom_bundle1 --> ext_service1
-    custom_bundle2 --> core_bundle
     custom_bundle2 --> ext_service2
-    ext_apps --> api
+    ext_apps --> api_gateway
     ext_apps --> oidc_server
     core_bundle --> oidc_server
 ```
