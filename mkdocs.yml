@@ -56,7 +56,7 @@ markdown_extensions:
 
 nav:
   - index.md
-  - Web Component Framework:
+  - Frontend Framework:
     - frontend/index.md
     - frontend/getting_started.md
     - frontend/components.md
