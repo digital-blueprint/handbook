@@ -1,8 +1,14 @@
 # Overview
 
-Our goal is to create re-usable, self contained UI components, that are not tied
-to a particular frontend framework, which can be easily integrated into any
-website without conflicting with any other components.
+The DBP frontend framework is a web component based micro frontend framework
+with the goal to provide re-usable, self contained UI components, that are not
+tied to a particular frontend technology, which can be easily integrated into
+any existing website without conflicting with any other components or
+technologies. In addition it provides all the components needed to build full
+features web applications with state management, login handling, client side
+routing, and more.
+
+![screenshot](./index.png){: style="max-width:250px; width: 100%; border: 1px solid #aaa" }
 
 For example including a library checkout widget into a wiki page, or a typo3
 served page without needing to modify the wiki or typo3 backend and without
