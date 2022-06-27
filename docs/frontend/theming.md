@@ -325,3 +325,8 @@ In the **app.manifest.json**:
   - It is a short version of the app's name and is displayed where not enough space for the full name, such as: app launcher, new tab page in chrome
   
 For more information about the app.manifest.json you can read under [developer.mozilla.org](https://developer.mozilla.org/de/docs/Web/Manifest){:target="_blank"}.
+
+
+### Not for using the activities embedded
+
+To ensure a uniform and responsive design activities should occupy 100% width of the window when the activities width are under 768 px.
