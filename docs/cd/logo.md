@@ -37,7 +37,7 @@ The text on the right side of the Logo consists of two parts. A headline "digita
 More information for the brand name can be found [here](../naming).
 
 ### Background
-The logo is not allowed to use on a different background than **True black** (HEX `#222120` - instead of black) or white.
+The logo must not be displayed on a different background than **True black** (HEX `#222120` - instead of black) or white.
 The correct file depending on the background must be used: *dbp_logo_on_white.svg* [[Fig. 1]](#fig1) or *dbp_logo_on_black.svg* [[Fig. 2]](#fig2).
 
 ### Placement and whitespace

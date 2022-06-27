@@ -140,7 +140,7 @@ We are using [tabulator](http://tabulator.info/){:target="_blank"} for building 
 #### Tables with fix content
 
 Tables with fix contents [[Fig. 7]](#fig7) are tables where we know the columns, where we can estimate the weight of these columns.
-Because we can estimate the weight, we can collapse some columns on mobile devices [[Fig. 8]](#fig8) and the rest of the table can take the full width.
+Because we can estimate the weight, we can collapse some columns on mobile devices [[Fig. 8]](#fig8) and the rest of the table can expand to full width.
 These columns can be collapsed or expanded on these devices.
 The collapse Icon is placed in the first column of the row.
 
@@ -237,6 +237,9 @@ You can use all of these CSS variables without the 'override' in the code. E.g.:
   color: var(--dbp-accent);
 }
 ```
+The  css variables with the `override` prefix are for integrators and explicit for the `index.html`. 
+The css variables in the `index.html` *overrides* the internal variables without the prefix `override`. 
+So multiple themes can be mapped to one variable and the css variables can internal used without the `override` prefix.
 
 Further information about CSS variables in general can be found at [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties){:target="_blank"}.
 

@@ -1,5 +1,9 @@
 # Icons
 ## Icon style
+The icon style is important if you want to create a new icon or adapt an existing one.
+The sizes are given in mm so that the icons can be designed uniformly.
+If you want to use a finished icon, you can choose any size for it, because it will be exported as a vector based file (svg).
+
 Our icons have to follow these rules:
 
 - **Canvas size:** 8.467 mm x 8.467 mm
@@ -21,21 +25,23 @@ Our icons have to follow these rules:
 
 ## Icon libs
 We are using the open source icon set [iconoir](https://iconoir.com/){:target="_blank"}.
+This library follows all of our rules.
+
 
 ## Creating an icon
 If you don't find a suitable icon in the lib, you have to make a new one or adapt an existing one.
-You can use the free & open source vector based image editor [inkscape](https://inkscape.org/de/){:target="_blank"}.
+You can use the free & open source vector based image editor [InkScape](https://inkscape.org/de/){:target="_blank"}.
 
 
 ### Create a new icon
 
-1. Download an existing icon and open it with inkscape
+1. Download an existing icon and open it with [InkScape](https://inkscape.org/de/){:target="_blank"}
 2. Delete it and draw your own icon with the correct [icon styles](#icon-style)
 3. save as svg with a `dbp-` prefix and a meaningful name
 
 ### Adapt an existing icon
 
-1. Download an existing icon and open it with inkscape
+1. Download an existing icon and open it with [InkScape](https://inkscape.org/de/){:target="_blank"}
 2. Make your changes
 3. Save as svg with a `dbp-` prefix and a meaningful name
 

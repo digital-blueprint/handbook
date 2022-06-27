@@ -2,7 +2,7 @@
 
 **Basic Knowledge:** CSS, HTML
 
-**Recommended Knowledge**: Gimp, Inkscape (or similar)
+**Recommended Knowledge**: [GIMP](https://www.gimp.org/){:target="_blank"}, [InkScape](https://inkscape.org/de/){:target="_blank"} (or similar)
 
 
 You can adapt the **[fonts](#fonts)**, the **[colors](#color-system)**, and some **parts** in the form of [slots](#slots).
@@ -167,8 +167,6 @@ E.g.:
 
 Further information about CSS variables in general can be found at [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties){:target="_blank"}.
 
-
-
 ## Icons
 In digital blueprint frontends you can also change icons. (E.g. if you have your own icon set or want to change specific icons).
 
@@ -275,12 +273,12 @@ For example:
 
 ### Favicons
 #### Replace favicons & PWA icon
-If you want to replace the favicons and PWA icons you have simple to replace them. We have generated all favicons or app icon sizes for supported browsers.
+If you want to change the favicons and PWA icons you have to simply replace the content of their files. We have generated all favicons or app icon sizes for supported browsers.
 To change the favicons you have to replace the files in *images* directory. Don't rename them! They should have the same name and the same size as the default files.
-You can use the free & open source Image editor [gimp](https://www.gimp.org/){:target="_blank"} for resizing and exporting your favicon.
+You can use the free & open source Image editor [GIMP](https://www.gimp.org/){:target="_blank"} for resizing and exporting your favicon.
 
-##### How to resize your logo with gimp
-1. Open you logo as svg with 300dpi and a large resolution.
+##### How to resize your logo with GIMP
+1. Open you logo as svg with 300dpi and a large resolution in [GIMP](https://www.gimp.org/){:target="_blank"}.
 2. Clip your layer to the logo: `layer -> Clip to content`
 3. Crop the image to the layer: `ìmage -> fit canvas to layer`
 4. Change canvas size to a square: `image -> canvassize ->` change the canvas size to a square, add a small padding and click `center` and `change size`
@@ -291,20 +289,20 @@ You can use the free & open source Image editor [gimp](https://www.gimp.org/){:t
 #### Use the dbp favicon and app-icon with your brand colors
 If you don't want to create an own PWA icon or an own favicon, we provided the possibility to simple change the colors of the digital blueprint favicon/app icon to your brand colors.
 For that you have to edit the [whitelabel app icon](https://gitlab.tugraz.at/dbp/dbp-ci/-/tree/main/favicon_appicon/app_icons/whitelabel){:target="_blank"} (which you need) and the [whitelabel favicon](https://gitlab.tugraz.at/dbp/dbp-ci/-/tree/main/favicon_appicon/favicon/whitelabel){:target="_blank"}. You can find the im the [dbp Corporate Identity](https://gitlab.tugraz.at/dbp/dbp-ci){:target="_blank"} gitlab repository.
-You can use the free & open source vector based image editor [inkscape](https://inkscape.org/de/){:target="_blank"} for editing your icons.
+You can use the free & open source vector based image editor [InkScape](https://inkscape.org/de/){:target="_blank"} for editing your icons.
 
 ##### How to change the colors of the icon
 The following steps has to be done for the whitelabel favicon and the whitelabel app icon.
 You can read [here](../../cd/apps/#favicons-of-apps) which resolutions and formats are used by the two files.
 
-1. Open the needed svg whitelabel icon file in inkscape
+1. Open the needed svg whitelabel icon file in [InkScape](https://inkscape.org/de/){:target="_blank"}
 2. Double-click on the first square, then a line in the middle of the square should appear: the gradient line
 3. Right-click on the square and open the window "fill and outline", now you can see the gradient with two colors
 4. In the window(fill and outline -> fill) you can choose one point on the gradient by clicking on it. then you can change the color of it. Make your color changes in the first square
 5. Repeat these steps for the other squares
 6. Save the file
 
-For creating the right resolution take a look at the section [How to resize your logo with gimp](#how-to-resize-your-logo-with-gimp) above.
+For creating the right resolution take a look at the section [How to resize your logo with GIMP](#how-to-resize-your-logo-with-gimp) above.
 
 
 ### Preview
@@ -312,15 +310,18 @@ You also can change the name and description of each application to change the p
 
 In the **index.html**:
 
-- Adapt the ` <meta property="og:site_name" content="">` with your site title in the `content` attribute.
+- Adapt the `<meta property="og:site_name" content="">` with your site title in the `content` attribute.
 - Adapt the `<meta property="og:url" content="" />`with your site url  in the `content` attribute. 
 - Adapt the `<meta title="">`, `<meta property="og:title" content="">` with your application title in the `title` and `content` attribute.
 - Adapt the `<meta title="">`, `<meta property="og:title" content="">` with your application title in the `title` and `content` attribute.
-- Adapt the ` <meta name="description" content="">`, ` <meta property="og:description content="">` with your application title in the `title` and `content` attribute.
+- Adapt the `<meta name="description" content="">`, ` <meta property="og:description content="">` with your application title in the `title` and `content` attribute.
 
 
 In the **app.manifest.json**:
 
-- Adapt the `"short_name": ""` and the `"name": ""` with the name of your application.
-
-
+- Adapt the `"name": ""` (max. of 45 characters)  with a human-readable name of your application.
+  - It is the primary identifier of the app and displayed everytime the name of the application is shown and enough space is given.
+- Adapt the `"short_name": ""` (max. of 12 characters recommended) with a short version of the human-readable name of your application.
+  - It is a short version of the app's name and is displayed where not enough space for the full name, such as: app launcher, new tab page in chrome
+  
+For more information about the app.manifest.json you can read under [developer.mozilla.org](https://developer.mozilla.org/de/docs/Web/Manifest){:target="_blank"}.
