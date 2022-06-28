@@ -57,8 +57,6 @@ We need following files:
 | favicon-32x32.png | 32x32 px | For safari on Mac OS | |
 | android-chrome-192x192.png | 192x192 px | For Android Chrome M39+ with 4.0 screen density | ✓ |
 | android-chrome-512x512.png | 512x512 px | For Android Chrome M47+ Splash screen with 4.0 screen density | ✓ |
-| mstile-144x144.png | 144x144 px | For Windows 8 / IE10 | ✓ |
-| mstile-150x150.png | 150x150 px | For Windows phone | ✓ |
 | apple-touch-icon.png | 152x152 px | For Apple iPhones | ✓ |
 | safari-pinned-tab.svg |  | For safari tabs | ✓ |
 | maskable-icon-512x512.png | 512x512 px | For newer android devices | ✓ |
@@ -103,18 +101,6 @@ site.webmanifest for android phones (Replace `your-app-name` with the name of yo
     "display": "standalone"
 }
 ```
-browserconfig.xml for windows and Windows phones (Replace `your-app-name` with the name of your app)
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<browserconfig>
-    <msapplication>
-        <tile>
-            <square150x150logo src="local/your-app-name/mstile-150x150.png"/>
-            <TileColor>#ffffff</TileColor>
-        </tile>
-    </msapplication>
-</browserconfig>
-```
 
 We use the favicon generator with MIT license [realfaviongenerator](https://realfavicongenerator.net/){:target="_blank"} to generate the favicons and app icons.
 After that we have to create the maskable icons. For that we use the [maskable.app](https://maskable.app/){:target="_blank"}.
@@ -133,14 +119,11 @@ How to use the [realfaviongenerator](https://realfavicongenerator.net/){:target=
     2. Select the option "No change, keep the master picture as it is."
     3. App name: "dbp *shortname-of-the-app*"
     4. Theme color: `#ffffff`
-4. **Windows Metro** Section:
-    1. Add a `dedicated picture`, the app icon.
-    2. Use this color ... : `#ffffff`
-5. **macOS Safari** Section:
-    1. Add the favicon file *safari-pinned-tab.svg*. You can find this in the gitlab repository [dbp-ci](https://gitlab.tugraz.at/dbp/dbp-ci/-/tree/main/){:target="_blank"}.
-    2. Theme color: `#3775c1`
-6. Generate the icons and delete icons which we don't need
-7. Place them in the `assets/favicons/` directory
+4. **macOS Safari** Section:
+    5. Add the favicon file *safari-pinned-tab.svg*. You can find this in the gitlab repository [dbp-ci](https://gitlab.tugraz.at/dbp/dbp-ci/-/tree/main/){:target="_blank"}.
+    6. Theme color: `#3775c1`
+5. Generate the icons and delete icons which we don't need
+6. Place them in the `assets/favicons/` directory
 
 #### Maskable.app
 How to use the [maskable.app](https://maskable.app/){:target="_blank"}:
@@ -163,7 +146,6 @@ How to use the [maskable.app](https://maskable.app/){:target="_blank"}:
 {src: 'assets/favicons/*.svg', dest: 'dist/' + (await getDistPath(pkg.name))},
 {src: 'assets/favicons/*.ico', dest: 'dist/' + (await getDistPath(pkg.name))},
 {src: 'assets/favicons/site.webmanifest', dest: 'dist', rename: pkg.name + '.webmanifest'},
-{src: 'assets/favicons/browserconfig.xml', dest: 'dist', rename: pkg.name + '_browserconfig.xml'}
 ```
 3. Add in html.ejs
 
@@ -176,8 +158,6 @@ How to use the [maskable.app](https://maskable.app/){:target="_blank"}:
     <link rel="icon" type="image/png" sizes="16x16" href="<%= getPrivateUrl('favicon-16x16.png') %>">
     <link rel="manifest" href="<%= getUrl(name + '.webmanifest') %>">
     <link rel="mask-icon" href="<%= getPrivateUrl('safari-pinned-tab.svg') %>" color="#3775c1">
-    <meta name="msapplication-config" content="<%= getUrl(name + '_browserconfig.xml') %>" />
-    <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <meta name="apple-mobile-web-app-status-bar-style" content="white">
 ```
