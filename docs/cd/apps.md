@@ -64,31 +64,31 @@ We need following files:
 
 Other files:
 
-site.webmanifest for android phones (Replace `your-app-name` with the name of your app)
+site.webmanifest for android phones (Replace `{{your-app-name}}` with the name of your app)
 ```json
 {
-    "name": "dbp playground",
-    "short_name": "dbp playground",
+    "name": "{{your-app-name}}",
+    "short_name": "{{your-app-name}}",
     "icons": [
         {
-            "src": "local/your-app-name/android-chrome-192x192.png",
+            "src": "local/{{your-app-name}}/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "local/your-app-name/android-chrome-512x512.png",
+            "src": "local/{{your-app-name}}/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "local/your-app-name/maskable-icon-512x512.png",
+            "src": "local/{{your-app-name}}/maskable-icon-512x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "local/your-app-namee/maskable-icon.png",
+            "src": "local/{{your-app-name}}/maskable-icon.png",
             "sizes": "640x640",
             "type": "image/png",
             "purpose": "maskable"
