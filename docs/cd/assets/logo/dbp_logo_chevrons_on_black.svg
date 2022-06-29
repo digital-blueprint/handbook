@@ -11,145 +11,35 @@
       }
 
       .cls-3 {
-        fill: #002a60;
+        fill: url(#Unbenannter_Verlauf_10-2);
+        opacity: .3;
       }
 
       .cls-4 {
-        fill: #222120;
+        fill: url(#Unbenannter_Verlauf_10);
+        opacity: .85;
       }
 
       .cls-5 {
         clip-path: url(#clippath-1);
       }
-
-      .cls-6 {
-        opacity: .23;
-      }
-
-      .cls-7 {
-        fill: url(#Unbenannter_Verlauf_25);
-      }
-
-      .cls-8 {
-        fill: url(#Unbenannter_Verlauf_24);
-      }
-
-      .cls-9 {
-        fill: url(#Unbenannter_Verlauf_26);
-      }
-
-      .cls-10 {
-        fill: url(#Unbenannter_Verlauf_29);
-      }
-
-      .cls-11 {
-        fill: url(#Unbenannter_Verlauf_27);
-      }
-
-      .cls-12 {
-        fill: url(#Unbenannter_Verlauf_28);
-      }
-
-      .cls-13 {
-        fill: url(#Unbenannter_Verlauf_7);
-      }
-
-      .cls-14 {
-        fill: url(#Unbenannter_Verlauf_18);
-        opacity: .9;
-      }
-
-      .cls-14, .cls-15 {
-        isolation: isolate;
-      }
-
-      .cls-15 {
-        fill: url(#Unbenannter_Verlauf_17);
-        opacity: .5;
-      }
     </style>
     <clipPath id="clippath">
-      <polygon class="cls-1" points="31.01 201.48 170.65 61.83 186.15 77.33 61.81 201.48 186.06 325.72 170.65 341.13 31.01 201.48"/>
+      <polygon class="cls-1" points="216.8 77.15 232.12 61.82 371.79 201.48 232.13 341.14 216.8 325.81 341.13 201.48 216.8 77.15"/>
     </clipPath>
-    <linearGradient id="Unbenannter_Verlauf_24" data-name="Unbenannter Verlauf 24" x1="113.84" y1="-794.55" x2="113.84" y2="-1126.95" gradientTransform="translate(57.31 1166.62)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#c2244e"/>
-      <stop offset=".03" stop-color="#b42855"/>
-      <stop offset=".15" stop-color="#8a346a"/>
-      <stop offset=".25" stop-color="#693d7a"/>
-      <stop offset=".36" stop-color="#524486"/>
-      <stop offset=".45" stop-color="#44488d"/>
-      <stop offset=".54" stop-color="#3f498f"/>
-      <stop offset=".88" stop-color="#2c8ae1"/>
-      <stop offset="1" stop-color="#25a1ff"/>
-    </linearGradient>
-    <linearGradient id="Unbenannter_Verlauf_29" data-name="Unbenannter Verlauf 29" x1="-165.83" y1="-964.7" x2="113.75" y2="-964.7" gradientTransform="translate(57.31 1166.62)" gradientUnits="userSpaceOnUse">
-      <stop offset=".22" stop-color="#0051b4"/>
-      <stop offset="1" stop-color="#37529c" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="Unbenannter_Verlauf_28" data-name="Unbenannter Verlauf 28" cx="7709.25" cy="-1204.91" fx="7709.25" fy="-1204.91" r="68.82" gradientTransform="translate(7165.31 16090.23) rotate(-105.23) scale(2.23 2.04) skewX(.89)" gradientUnits="userSpaceOnUse">
-      <stop offset=".1" stop-color="#002a60"/>
-      <stop offset=".32" stop-color="#042d65" stop-opacity=".76"/>
-      <stop offset=".57" stop-color="#113672" stop-opacity=".48"/>
-      <stop offset=".83" stop-color="#254589" stop-opacity=".19"/>
-      <stop offset="1" stop-color="#37529c" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="Unbenannter_Verlauf_27" data-name="Unbenannter Verlauf 27" x1="1663.06" y1="-1629.19" x2="1663.06" y2="-1782.12" gradientTransform="translate(-1584.2 2277.29) rotate(-9.17) scale(1.25 1)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#c2244e"/>
-      <stop offset=".54" stop-color="#703f7c" stop-opacity=".61"/>
-      <stop offset=".54" stop-color="#6e407d" stop-opacity=".6"/>
-      <stop offset=".88" stop-color="#37529c" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="Unbenannter_Verlauf_26" data-name="Unbenannter Verlauf 26" x1="1049.78" y1="270.57" x2="1037.22" y2="411.69" gradientTransform="translate(-1056.63 -566.93) rotate(4.97) scale(1.22 2.01)" gradientUnits="userSpaceOnUse">
-      <stop offset=".05" stop-color="#25a1ff"/>
-      <stop offset=".47" stop-color="#108fff" stop-opacity=".74"/>
-      <stop offset="1" stop-color="#0037d3" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="Unbenannter_Verlauf_25" data-name="Unbenannter Verlauf 25" x1="118.66" y1="-796.84" x2="118.66" y2="-986.06" gradientTransform="translate(57.31 1166.62)" gradientUnits="userSpaceOnUse">
-      <stop offset=".15" stop-color="#c2244e"/>
-      <stop offset=".61" stop-color="#703f7c" stop-opacity=".61"/>
-      <stop offset=".88" stop-color="#37529c" stop-opacity="0"/>
+    <linearGradient id="Unbenannter_Verlauf_10" data-name="Unbenannter Verlauf 10" x1="232.12" y1="-1500.86" x2="232.12" y2="-1780.18" gradientTransform="translate(-1092.04 1197.36) rotate(45)" gradientUnits="userSpaceOnUse">
+      <stop offset=".01" stop-color="#bfbfbf"/>
+      <stop offset=".7" stop-color="#fff"/>
     </linearGradient>
     <clipPath id="clippath-1">
-      <polygon id="rect62862-7" class="cls-1" points="341.14 201.48 216.9 77.24 232.3 61.83 371.95 201.48 232.3 341.13 216.78 325.61 341.14 201.48"/>
+      <polyline class="cls-1" points="170.81 61.82 186.14 77.15 61.81 201.48 186.14 325.81 170.81 341.14 31.15 201.48"/>
     </clipPath>
-    <linearGradient id="Unbenannter_Verlauf_18" data-name="Unbenannter Verlauf 18" x1="-2215.07" y1="-1698.62" x2="-2017.58" y2="-1698.62" gradientTransform="translate(2348.63 -1497.14) scale(1 -1)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#073d84"/>
-      <stop offset=".84" stop-color="#003c8b" stop-opacity=".64"/>
-      <stop offset="1" stop-color="#004eb5" stop-opacity=".6"/>
-    </linearGradient>
-    <radialGradient id="Unbenannter_Verlauf_17" data-name="Unbenannter Verlauf 17" cx="-787.07" cy="-774.26" fx="-787.07" fy="-774.26" r="98.74" gradientTransform="translate(599.49 -3297.42) rotate(-4.61) scale(.69 -4.38)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#2295ff" stop-opacity=".65"/>
-      <stop offset="1" stop-color="#2295ff" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="Unbenannter_Verlauf_7" data-name="Unbenannter Verlauf 7" cx="-114.43" cy="-732.29" fx="-114.43" fy="-732.29" r="98.74" gradientTransform="translate(2642.68 -3810.18) rotate(16.19) scale(9.86 -6.01)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#b34d4d" stop-opacity="0"/>
-      <stop offset="1" stop-color="red"/>
-    </radialGradient>
+    <linearGradient id="Unbenannter_Verlauf_10-2" data-name="Unbenannter Verlauf 10" x1="170.81" y1="-1500.86" x2="170.81" y2="-1780.18" gradientTransform="translate(-1110 1240.72) rotate(45)" xlink:href="#Unbenannter_Verlauf_10"/>
   </defs>
-  <polygon id="black_background_left" data-name="black background left" class="cls-4" points="31.01 201.48 170.65 61.83 186.15 77.33 61.81 201.48 186.06 325.72 170.65 341.13 31.01 201.48"/>
-  <polygon id="black_background_right" data-name="black background right" class="cls-4" points="341.14 201.48 216.9 77.24 232.3 61.83 371.95 201.48 232.3 341.13 216.78 325.61 341.14 201.48"/>
-  <g id="chevrons">
-    <g id="chevron_left" data-name="chevron left" class="cls-6">
-      <g class="cls-2">
-        <g id="g55882">
-          <g id="g55880">
-            <rect id="rect35896-3-4-6-6-2" class="cls-3" x="31.36" y="16.45" width="279.59" height="355.63"/>
-            <rect id="rect35917-90-7-5-4-2" class="cls-8" x="31.36" y="39.67" width="279.59" height="332.41"/>
-            <rect id="rect35924-9-9-9-42-2" class="cls-10" x="-108.52" y="62.13" width="279.59" height="279.59"/>
-            <polygon id="polygon35937-3-9-0-7-2" class="cls-12" points="199.72 410.27 119.89 111.41 397.36 37.26 477.25 336.06 199.72 410.27"/>
-            <polygon id="polygon35948-65-4-8-5-2" class="cls-11" points="11.85 214.45 356.22 158.86 380.63 309.84 36.25 365.42 11.85 214.45"/>
-            <polygon id="polygon35957-1-3-2-4-2" class="cls-9" points="-1.06 12.44 339.71 51.32 321.26 329.76 -19.51 290.79 -1.06 12.44"/>
-            <rect id="rect35968-1-9-3-10-2" class="cls-7" x="-7.66" y="180.56" width="367.25" height="189.22"/>
-          </g>
-        </g>
-      </g>
-    </g>
-    <g id="chevron_right" data-name="chevron right">
-      <g class="cls-5">
-        <rect id="rect62862-8" class="cls-14" x="133.56" y="102.74" width="197.49" height="197.49" transform="translate(-74.43 223.27) rotate(-45)"/>
-        <rect id="rect62862" class="cls-15" x="133.56" y="102.74" width="197.49" height="197.49" transform="translate(-74.43 223.27) rotate(-45)"/>
-        <rect id="rect62862-7-2" data-name="rect62862-7" class="cls-13" x="133.56" y="102.74" width="197.49" height="197.49" transform="translate(-74.43 223.27) rotate(-45)"/>
-      </g>
-    </g>
+  <g class="cls-2">
+    <rect class="cls-4" x="133.37" y="102.72" width="197.51" height="197.51" transform="translate(-74.48 223.15) rotate(-45)"/>
+  </g>
+  <g class="cls-5">
+    <rect class="cls-3" x="72.06" y="102.72" width="197.51" height="197.51" transform="translate(-92.44 179.79) rotate(-45)"/>
   </g>
 </svg>

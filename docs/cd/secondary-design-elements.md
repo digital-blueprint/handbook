@@ -72,13 +72,10 @@ The following secondary design elements versions initially exist:
 - dbp_logo_squares_on_white
 - dbp_logo_squares_on_black
 - dbp_logo_squares_monochrom_on_white
-- dbp_logo_squares_monochrom_on_black
 - dbp_logo_square_on_white
 - dbp_logo_square_on_black
 - dbp_logo_square_monochrom_on_white
-- dbp_logo_square_monochrom_on_black
 - dbp_logo_chevrons_on_white
 - dbp_logo_chevrons_on_black
 - dbp_logo_chevrons_monochrom_on_white
-- dbp_logo_chevrons_monochrom_on_black 
 

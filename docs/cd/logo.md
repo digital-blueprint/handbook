@@ -37,7 +37,10 @@ The text on the right side of the Logo consists of two parts. A headline "digita
 More information for the brand name can be found [here](../naming).
 
 ### Background
-The logo must not be displayed on a different background than **True black** (HEX `#222120` - instead of black) or white.
+The logo on white must not be displayed on a different background than white(`#ffffff`).
+The logo on black is allowed to be displayed on background, which has enough contrast(minimum contrast level of AA - 
+take a look at [accessibility guide](../#colors-&-minimal-contrast-level) for more information about contrast levels) to the logo,
+but the preferred background is **True black** (HEX `#222120` - instead of black). 
 The correct file depending on the background must be used: *dbp_logo_on_white.svg* [[Fig. 1]](#fig1) or *dbp_logo_on_black.svg* [[Fig. 2]](#fig2).
 
 ### Placement and whitespace
@@ -73,13 +76,6 @@ The minimal presentation of the **squares** are **45 px**.
     </figcaption>
 </figure>
 
-<figure id="fig7" style="width:100%;">
-    <img src="../assets/logo/dbp_logo_monochrom_on_black.svg" alt="dbp logo monochrom on dark background" style="box-shadow: 1px 1px 3px grey; background-color:#222120; margin:auto;">
-    <figcaption>
-        <b>Fig. 7: dbp logo monochrom on black background - dbp_logo_monochrom_on_black.svg</b>
-    </figcaption>
-</figure>
-
 <figure id="fig8" style="width:100%;">
     <img src="../assets/logo/dbp_logo_small_monochrom_on_white.svg" alt="dbp logo small monochrom on white background" style="max-width:200px;box-shadow: 1px 1px 3px grey; margin:auto;">
     <figcaption>
@@ -87,19 +83,12 @@ The minimal presentation of the **squares** are **45 px**.
     </figcaption>
 </figure>
 
-<figure id="fig9" style="width:100%;">
-    <img src="../assets/logo/dbp_logo_small_monochrom_on_black.svg" alt="dbp logo small monochrom on dark background" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:#222120; margin:auto;">
-    <figcaption>
-        <b>Fig. 9: dbp logo small monochrom black background - dbp_logo_small_monochrom_on_black.svg</b>
-    </figcaption>
-</figure>
-
-There is also a monochrom set provided of the logo.
-Depending on the background the correct file must be used: *dbp_logo_monochrom_on_white.svg* [[Fig. 6]](#fig6) or *dbp_logo_monochrom_on_black.svg* [[Fig. 7]](#fig7).
+There is also a monochrom set for white background provided of the logo.
+Depending on the background the correct file must be used: *dbp_logo_monochrom_on_white.svg* [[Fig. 6]](#fig6) or *dbp_logo_on_black.svg* [[Fig. 2]](#fig2).
 
 ### Adaption
 The logo can adjust depending on some uses(e.g. creating an app icon). To adjust the logo we recommend the vector based open source program [InkScape](https://inkscape.org/de/){:target="_blank"}.
-If a logo is adjusted, the versions for both backgrounds(white, black) and also the monochrom versions(white, black) have to be created.
+If a logo is adjusted, the versions for both backgrounds(white, black) and also the monochrom versions(on white) have to be created.
 
 #### App icons
 If the logo is used in an application, which has an app icon[[Apps]](../apps/#app-icon), the small logo can be extended with that icon (e.g. [Fig. 11](#fig11))
@@ -124,7 +113,5 @@ The following logo versions initially exist:
 - dbp_logo_small_on_white
 - dbp_logo_small_on_black
 - dbp_logo_monochrom_on_white
-- dbp_logo_monochrom_on_black
 - dbp_logo_small_monochrom_on_white
-- dbp_logo_small_monochrom_on_black
 
