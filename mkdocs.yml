@@ -159,7 +159,6 @@ nav:
     - cd/icons.md
     - cd/apps.md
   - How-Tos:
-    - howtos/about.md
     - howtos/docker.md
   - demo_access.md
   - contribute.md
