@@ -28,7 +28,7 @@
 -   Gitlab CI variables which are targeted at the "test" environment
     and are "protected" for secrets used during deployment.
 
-See <https://gitlab.tugraz.at/dbp/middleware/esign/pdf-as-server-qualified> for a
+See <https://gitlab.tugraz.at/dbp/esign/pdf-as-server-qualified> for a
 good example which uses multiple deployment environments and multiple
 hosts per environment.
 
