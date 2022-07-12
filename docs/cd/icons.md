@@ -6,8 +6,8 @@ If you want to use a finished icon, you can choose any size for it, because it w
 
 Our icons have to follow these rules:
 
-- **Canvas size:** 8.467 mm x 8.467 mm
-- **Max size:** 7.5 mm x 7.5 mm
+- **Canvas size:** 8.467 mm x 8.467 mm / 24 px x 24 px
+- **Max size:** 7.5 mm x 7.5 mm / 21.3 px x 21.3 px
 - **Stroke size:** 1.5 pt
 - **Rounding for edges:** 0.212 mm
 - **Edges:** rounded
