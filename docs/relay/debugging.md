@@ -50,3 +50,7 @@ This will:
 * Enable the Symfony debug toolbar which is visible at the bottom of the API documentation page.
   It gives access to all the recent API requests, including logs, warnings, and context, timing information and much more.
 * Enable richer error messages. Unhandled API errors will include a stack trace, including the content of variables on the stack at the time of the error.
+
+## Re-creating the Symfony Cache
+
+In some cases a corrupt Symfony cache can lead to hard to debug errors or to behaviour that doesn't match the current source code. It's a good idea to clear the Symfony cache to rule out any problems in that area, either via manually deleting `var/cache` or by calling `./bin/console cache:clear`.
