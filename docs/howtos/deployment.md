@@ -39,13 +39,13 @@ hosts per environment.
 - Rename the `user@hostname` part in 'mykey.pub' to indicate what the key is used for, for example 'gitlab-deployment-key'
 - Run `ssh-copy-id -i mykey serveruser@someserver.tugraz.at` (the key
   is now in \~/.ssh/authorized\_keys on the server)
-- Put the content of 'mykey' into gitlab
+- Put the content of 'mykey' into gitlab as a protected variable, targeting the specific deployment environment
 
 ## How to deploy to a non-development environment
 
-We simply make the `demo` branch point to the commit we want to deploy and push it (force push is allowed too). In the common case where we just want to deploy the current development state as is:
+We simply make the `test` branch point to the commit we want to deploy and push it (force push is allowed too). In the common case where we just want to deploy the current development state as is:
 
-- `git checkout demo`
+- `git checkout test`
 - `git rebase main` (or master if master is the default)
 - `git push`
 - `git checkout -`
