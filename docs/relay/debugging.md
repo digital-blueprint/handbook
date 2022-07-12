@@ -53,4 +53,4 @@ This will:
 
 ## Re-creating the Symfony Cache
 
-In some cases a corrupt Symfony cache can lead to hard to debug errors or to behaviour that doesn't match the current source code. It's a good idea to clear the Symfony cache to rule out any problems in that area, either via manually deleting `var/cache` or by calling `./bin/console cache:clear`.
+In some cases a corrupt or out-of-date Symfony cache can lead to hard to debug errors or to behaviour that doesn't match the current source code. It's a good idea to clear the Symfony cache to rule out any problems in that area, either by manually deleting `var/cache` or by calling `./bin/console cache:clear`.
