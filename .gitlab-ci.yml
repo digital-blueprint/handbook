@@ -6,7 +6,7 @@ variables:
 stages:
   - test_deploy
 
-main:
+test:
   stage: test_deploy
   script:
     - apt update
@@ -15,38 +15,19 @@ main:
     - poetry install
     - poetry run mkdocs build -d dist
 
-.deploy_defaults: &deploy_defaults
+deploy:
   stage: test_deploy
-  script:
-    # Install system dependencies
-    - apt update
-    - apt install -y composer rsync python3-pip
-    - pip3 install poetry
-    - poetry install
-    - poetry run mkdocs build -d dist
-    # Add ssh key
-    - mkdir -p ~/.ssh
-    - echo "${DEPLOY_KEY}" | tr -d '\r' > ~/.ssh/id_rsa
-    - chmod 700 ~/.ssh && chmod 600 ~/.ssh/id_rsa
-    - ssh-keyscan -t rsa "${DEPLOY_HOST}" >> ~/.ssh/known_hosts
-    # Install PHP dependencies
-    - cd ./.gitlab-ci
-    - "composer require --no-progress 'deployer/deployer: ^6.4' 'deployer/recipes: ^6.2'"
-    # Deploy
-    - ./vendor/bin/dep deploy "${CI_ENVIRONMENT_NAME}"
-    - echo "Deployed to ${CI_ENVIRONMENT_URL}"
-
-deploy_dev:
+  except:
+    - schedules
   only:
     refs:
       - main
-  environment:
-    name: development
-    url: https://dbp-demo.tugraz.at/handbook
-  artifacts:
-    paths:
-      - dist
+  inherit:
+    variables: false
   variables:
-    DEPLOY_HOST: vpu01-demo.tugraz.at
-    DEPLOY_KEY: "$DEPLOY_SSH_KEY"
-  <<: *deploy_defaults
+    UPSTREAM_PROJECT_PATH: ${CI_PROJECT_PATH}
+    UPSTREAM_COMMIT_BRANCH: ${CI_COMMIT_BRANCH}
+    UPSTREAM_COMMIT_SHA: ${CI_COMMIT_SHA}
+  trigger:
+    project: dbp/deployer
+    strategy: depend
