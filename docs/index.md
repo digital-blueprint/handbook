@@ -19,22 +19,30 @@ flowchart LR
 
     subgraph gateway["Relay API Gateway"]
         api["API Gateway"]
-        bundle_1["Bundle"]
-        bundle_2["Bundle"]
+        subgraph bundle_1["Bundle"]
+          bundle_1a["Bundle"]
+        end
+        subgraph bundle_2["Bundle with Connector"]
+          direction TB
+          bundle_2a["Bundle 2"]
+          connector["Connector"]
+        end
     end
 
-    backend_1["Backend"]
-    backend_2["Backend"]
+    backend_1["Backend 1"]
+    backend_2["Backend 2"]
+    
+    bundle_1a ---> backend_1
+    connector --> backend_2
 
-    bundle_1 --> backend_1
-    bundle_2 --> backend_2
-
-    api --> bundle_1
-    api --> bundle_2
+    api --> bundle_1a
+    api --> bundle_2a
 
     webapp --> gateway
     activitiy --> gateway
     apiclient --> gateway
+
+    bundle_2a["Bundle"] --> connector["Connector"]
 ```
 
 The DBP framework is open source and consists of a modular [API gateway](./relay) providing a REST
