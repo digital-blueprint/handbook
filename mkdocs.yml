@@ -89,6 +89,7 @@ nav:
         - relay/bundles/esign/advanced_pdf_signing.md
         - relay/bundles/esign/qualified_flow.md
         - relay/bundles/esign/positioning.md
+        - relay/bundles/esign/cli_commands.md
       - Sublibrary Bundle:
         - relay/bundles/sublibrary/index.md
       - Authentic Document Bundle:
