@@ -102,6 +102,12 @@ nav:
         - CAMPUSonline Connector:
           - relay/bundles/greenlight-connector-campusonline/index.md
           - relay/bundles/greenlight-connector-campusonline/config.md
+      - Mono Bundle:
+        - relay/bundles/mono/index.md
+        - CAMPUSonline Connector:
+          - relay/bundles/mono-connector-campusonline/index.md
+        - PayUnity Connector:
+          - relay/bundles/mono-connector-payunity/index.md
 
     - Developer Guide:
       - relay/dev/index.md
