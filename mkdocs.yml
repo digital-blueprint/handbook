@@ -108,6 +108,8 @@ nav:
           - relay/bundles/mono-connector-campusonline/index.md
         - PayUnity Connector:
           - relay/bundles/mono-connector-payunity/index.md
+        - Generic Connector:
+          - relay/bundles/mono-connector-generic/index.md
 
     - Developer Guide:
       - relay/dev/index.md

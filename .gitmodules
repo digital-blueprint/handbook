@@ -22,3 +22,6 @@
 [submodule "submodules/dbp-relay-mono-connector-payunity-bundle"]
 	path = submodules/dbp-relay-mono-connector-payunity-bundle
 	url = https://gitlab.tugraz.at/dbp/mono/dbp-relay-mono-connector-payunity-bundle
+[submodule "submodules/dbp-relay-mono-connector-generic-bundle"]
+	path = submodules/dbp-relay-mono-connector-generic-bundle
+	url = https://gitlab.tugraz.at/dbp/mono/dbp-relay-mono-connector-generic-bundle
