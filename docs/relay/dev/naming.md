@@ -185,6 +185,17 @@ This is used in `ApiError::withDetails()`, for example: `ApiError::withDetails(R
 
 * Usage: when tagging Symfony services
 
+## Monolog Channel Names
+
+* Schema:
+    * `<Vendor, SnakeCase>_<Category, SnakeCase>_<BundleName, SnakeCase>_<ChannelName, SnakeCase>`
+
+`ChannelName` is freely selectable, e.g. `audit`
+
+* Example: `dbp_relay_mono_audit`
+
+* Usage: when creating new monolog logging channels in Symfony
+
 ## Open Questions
 
 * We use `API` -> `Api` for PascalCase because Symfony derives the config key
