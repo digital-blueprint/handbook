@@ -158,6 +158,7 @@ nav:
       - frontend/dev/remote_firefox_debugging.md
       - frontend/dev/assets.md
       - frontend/dev/topics.md
+      - frontend/dev/faq.md
 
   - Corporate Design:
     - cd/logo.md
