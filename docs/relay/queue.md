@@ -46,14 +46,14 @@ then create a doctrine connection and point the `queue_dsn` to that connection:
 doctrine:
   dbal:
     connections:
-      my-queue-connection-name:
+      worker_queue_connection_name:
         url: 'mysql://db:secret@mariadb:3306/db'
 ```
 
 ```yaml
 # config/packages/dbp_relay_core.yaml
 dbp_relay_core:
-  queue_dsn: 'doctrine://my-queue-connection-name'
+  queue_dsn: 'doctrine://worker_queue_connection_name'
 ```
 
 I will automatically create a new database table when active.
