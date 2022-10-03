@@ -2,6 +2,8 @@
 
 The easiest way to start a new bundle is by using our bundle creator. The API server comes with a command which creates a new bundle according to your specified naming and installs/registers it with your application, so you can start developing/testing right away.
 
+CExecute this command in the console in the directory of the api.
+
 ```console
 > ./bin/console dbp:relay:maker:make:bundle \
     --vendor myuni \
