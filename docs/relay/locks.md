@@ -33,3 +33,7 @@ dbp_relay_core:
 
 This will create a `lock_keys` table in your database where the lock information
 will be stored.
+
+!!! warning "Keep your secrets in the .env.local file"
+
+    To provide easier maintainability for your project it is recommended to keep all secrets in the .env.local file. In this case, you could add a variable LOCK_DSN='mysql://user:secret@mariadb:3306/dbname' to your .env.local file, and reference it using lock_dsn: '%env(LOCK_DSN)%'
