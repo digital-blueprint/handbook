@@ -56,7 +56,11 @@ dbp_relay_core:
   queue_dsn: 'doctrine://worker_queue_connection_name'
 ```
 
-I will automatically create a new database table when active.
+It will automatically create a new database table when active.
+
+!!! warning "Keep your secrets in the .env.local file"
+
+    To provide easier maintainability for your project it is recommended to keep all secrets in the .env.local file. In this case, you could add a variable QUEUE_URL='mysql://db:secret@mariadb:3306/db' to your .env.local file, and reference it using url: '%env(QUEUE_URL)%'
 
 ## Run the workers
 
