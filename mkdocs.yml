@@ -132,6 +132,7 @@ nav:
       - relay/dev/coding_standard.md
       - relay/dev/ide_integration.md
       - relay/dev/datetime.md
+      - relay/dev/pagination.md
 
     - Keycloak Integration:
       - relay/keycloak/index.md
