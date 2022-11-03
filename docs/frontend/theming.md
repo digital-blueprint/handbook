@@ -11,12 +11,12 @@ Moreover, you can also change favicons and browser specific items ([Favicons, Se
 DBP also supports multiple themes. To create multiple themes look in the [readme](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master/packages/theme-switcher#usage-in-an-application-with-appshell){:target="_blank"} of the theme-switcher web component.
 
 ## Fonts
-You can apply a font by adding the font-family to the `html` or `body` in a css `<style>` tag. 
+You can apply a font by adding the font-family to the `html` or `body` in a css `<style>` tag.
 
 If you want to apply multiple fonts for multiple themes then add the `font-family` property to the appropriate css class.
 
 ### Self-hosted fonts
-You can host your fonts locally and import them in the `<style>` tag of the `index.html`. 
+You can host your fonts locally and import them in the `<style>` tag of the `index.html`.
 Then you can apply it to the style with adding the `font-family` to body, html or a specific theme.
 
 For example:
@@ -63,7 +63,7 @@ For example:
 * If this doesn't work out of the box, check the CSP settings in the `.htaccess`.
 
 ### Font weights
-We use the css property font-weight with the relative weight values lighter and bolder. 
+We use the css property font-weight with the relative weight values lighter and bolder.
 So be carefully with the initial font weight. Take a look at this documentation about relative font weight at [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#meaning_of_relative_weights){:target="_blank"}.
 
 
@@ -132,7 +132,7 @@ The default oft these colors would be always the dbp colors.
 |   | Hover Background Color | `--dbp-override-hover-background-color` | Used for hover effects. If this var is set, all buttons, navigation elements and links have this color as background on hover. | If `--dbp-override-hover-color` is set, the WCAG Level to `--dbp-override-hover-color` should be AA, else WCAG Level to `--dbp-override-content` should be AA | not set|
 |   | Hover color            | `--dbp-override-hover-color`            | Used for hover effects. If this var is set, all buttons, navigation elements and links have this color on hover. | If `--dbp-override-hover-background-color` is set, the WCAG Level to `--dbp-override-hover-background-color` should be AA, else WCAG Level to `--dbp-override-background` should be AA | not set |
 
-<b>*</b> These attributes are required, if you have more than one theme or a dark theme. 
+<b>*</b> These attributes are required, if you have more than one theme or a dark theme.
 
 **Note:** Default colors will be used in case of undeclared variables. Colors don't have to be different in all cases, for example the primary color can be the same as the accent color.
 
@@ -192,9 +192,47 @@ You can change these icons for all themes or only for one theme.
 If you want to override variables in multiple themes read the [readme](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master/packages/theme-switcher#usage-in-an-application-with-appshell){:target="_blank"} of the theme-switcher web component.
 
 
-## Translation
-// TODO overriding Translation isn't implemented yet
+## Overriding default translations
+!!! warning "Currently in development"
 
+    This feature is currently in development, thus not everything may work as explained here. Translation overrides are not yet supported in the main versions of the apps!
+
+You can override the default translations provided by us in your application at spots that subscribe to the `lang-dir` attribute.
+To override the default translations, a few things have to be done.
+
+ * The spot where you want to insert your translation has to support overrides. Thus, it has to subscribe to the `lang-dir` attribute. This should be the case for most components.
+ * You have to know which key you want to override. To see the translation keys, you can use the frontend debug mode. This is done by appendig `#debug` at the end of the webpage and reloading the page. Then all text that uses translation keys gets replaced by the translation key.
+ * You need to write a translation file with your override translations. This is done in `json` format. Since [i18next](https://www.i18next.com/) is used as a translation engine, please have a look at the [i18n json documation](https://www.i18next.com/misc/json-format). You will have to provide a `translation.json` file for each language you want to translate your page into.
+ * The translation file has to be located in a defined directory. Per default, the translation directory is in `assets/translations/`. Each language needs its own directory with only one file inside which has to be named `translation.json`. Thus, if you want a german and a english translation, you will need the files `assets/translations/de/translation.json` and `assets/translations/en/translation.json`. Currently, only english and german are supported.
+ * Translation override files containing all keys and all default translations are already present in the given location. You can simply change the given translations and insert your translations.
+
+### Example
+Consider the following scenario:
+
+You want to replace the text in a save button. By default, the button shows the text `Save` but you want to change it to `Submit`. The website in debug mode shows you the key `dbp-create-3g-ticket.save-btn`. This means that the button text is provided by the activity object namespace `dbp-create-3g-ticket` which contains the key `save-btn`. An example override translation file (for english) could look something like this:
+```json
+{
+  ...
+  "dbp-create-3g-ticket": {
+    ...
+    "save-btn": "Save",
+    ...
+  },
+  ...
+}
+```
+To change the translation, you just need to change the value associated with the key.
+```json
+{
+  ...
+  "dbp-create-3g-ticket": {
+    ...
+    "save-btn": "Submit",
+    ...
+  },
+  ...
+}
+```
 
 ## Slots
 You can use various slots to customize your application.
@@ -215,7 +253,7 @@ You can use various slots to customize your application.
     </figcaption>
 </figure>
 
-You can adapt the **name**, **title**, **logo** or exchange the whole **header**, the **footer-links** 
+You can adapt the **name**, **title**, **logo** or exchange the whole **header**, the **footer-links**
 or exchange the whole **footer**. [[Fig. 1]](#fig1) [[Fig. 2]](#fig2)
 The nearer description can be found in the documentation of the [app shell](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master/packages/app-shell){:target="_blank"}.
 
@@ -244,7 +282,7 @@ For example:
 
 
 ### App specific Slots
-Often there are app-specific slots or rather, activity-specific slots. These slots are often used for text customization. 
+Often there are app-specific slots or rather, activity-specific slots. These slots are often used for text customization.
 In the activity description, in the `src` folder of the application you can read which slots are available.
 
 You should place these slots in the `<template id= "global-override">` tag of your `index.html`.
@@ -311,7 +349,7 @@ You also can change the name and description of each application to change the p
 In the **index.html**:
 
 - Adapt the `<meta property="og:site_name" content="">` with your site title in the `content` attribute.
-- Adapt the `<meta property="og:url" content="" />`with your site url  in the `content` attribute. 
+- Adapt the `<meta property="og:url" content="" />`with your site url  in the `content` attribute.
 - Adapt the `<meta title="">`, `<meta property="og:title" content="">` with your application title in the `title` and `content` attribute.
 - Adapt the `<meta title="">`, `<meta property="og:title" content="">` with your application title in the `title` and `content` attribute.
 - Adapt the `<meta name="description" content="">`, ` <meta property="og:description content="">` with your application title in the `title` and `content` attribute.
@@ -323,7 +361,7 @@ In the **app.manifest.json**:
   - It is the primary identifier of the app and displayed everytime the name of the application is shown and enough space is given.
 - Adapt the `"short_name": ""` (max. of 12 characters recommended) with a short version of the human-readable name of your application.
   - It is a short version of the app's name and is displayed where not enough space for the full name, such as: app launcher, new tab page in chrome
-  
+
 For more information about the app.manifest.json you can read under [developer.mozilla.org](https://developer.mozilla.org/de/docs/Web/Manifest){:target="_blank"}.
 
 
