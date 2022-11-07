@@ -3,10 +3,10 @@
 
     This feature is currently in development, thus not everything may work as explained here. Translation overrides are not yet supported in the main versions of the apps!
 
-To handle translations, [i18next](https://www.i18next.com/) is used.
+[i18next](https://www.i18next.com/) is used for translations.
 All apps, activities and toolkit components contain default translations by default, if the respective part needs translations. The [i18n namespace](https://www.i18next.com/principles/namespaces) `translation` contains all default translations while the i18n namespace `--translation-override` contains all loaded override translations. This is consistent over all apps, activities and toolkit components.
 Default translations are handled locally, while override translations are handled globally. Thus, if you want to define a key, you have to be sure that this key is not taken yet. Otherwise, when using translation overrides, all components that subscribe to the `lang-dir` attribute will receive the key. Therefore, you *cannot* use the same key names across components that subscribes to the `lang-dir` attribute, or else they will receive the same translation! Theoretically, if a component does not use translation overrides (e.g. if it doesnt support the `lang-dir` attribute), then the used keys do not have to be unique globally. However, it is best practice to still make them unique globally.
-Since it is very difficult to know if a translation key is already taken or not, `json` objects are used as a kind of namespace (not to be confused with [i18n namespaces](https://www.i18next.com/principles/namespaces)) to distinguish between keys with the same name. This way, the keys only need to be unique in each `json` object namespace. Later on this page, a table with reserved object namespaces is mentioned. Do not create object namespaces with the same name, or else it could lead to key collisions!
+Since it is very difficult to know if a translation key is already taken or not, `json` objects are used as a kind of namespace (not to be confused with [i18n namespaces](https://www.i18next.com/principles/namespaces)) to distinguish between keys with the same name. This way, the keys only need to be unique in each `json` object namespace. Later on this page, a [table with reserved object namespaces](#reserved-object-namespaces) is mentioned. Do not create object namespaces with the same name, or else it could lead to key collisions!
 
 ## Overriding default translations
 To override the default translations and customize the application, you simply need to alter the already given override files. These files are located in `assets/translations/lang-code/translation.json`. Every single key that can be overriden should be listed there with its respective default translation.
@@ -29,7 +29,7 @@ The dbp-translation component can also be used to inject [interpolations](https:
 Consider the following scenario:
 
 You want to use the slot `footer-links` which is provided by the app-shell to display your contact email as a link.
-The follow override translation file (for english) and HTML snipped to the index.html can be used to achieve this.
+The following override translation file (for english) and HTML snipped to the index.html can be used to achieve this.
 ```json
 "dbp-translation": {
     "footer-contact": "<a rel=\"noopener\" href=\"{{- link}}\" class=\"footer-link\">Contact</a>"
