@@ -162,6 +162,7 @@ nav:
       - frontend/dev/assets.md
       - frontend/dev/topics.md
       - frontend/dev/faq.md
+      - frontend/dev/translations.md
 
   - Corporate Design:
     - cd/logo.md
