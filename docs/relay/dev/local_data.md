@@ -15,7 +15,7 @@ You can easily add local data to your Entity (`MyEntity`) by:
 * Adding an event dispatcher member variable of type `LocalDataAwareEventDispatcher` to your entity provider
 * On GET-requests, passing the value of the `includeLocal` parameter to the event dispatcher
 ```php
-$this->eventDispatcher->initRequestedLocalDataAttributes($includeParameter);
+$this->eventDispatcher->onNewOperation([$includeParameter]);
 ```
 * Creating a (post-)event `MyEntityPostEvent` extending `LocalDataAwareEvent`, which you pass to the event dispatcher's `dispatch` method once your entity provider is done setting up a new instance of `MyEntity`:
 ```php
