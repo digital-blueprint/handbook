@@ -68,6 +68,7 @@ nav:
     - relay/locks.md
     - relay/update.md
     - relay/reverse_proxies.md
+    - relay/base_entities.md
     - relay/hooks.md
     - relay/faq.md
     - relay/api_guide.md

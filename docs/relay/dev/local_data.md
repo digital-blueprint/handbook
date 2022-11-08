@@ -1,10 +1,10 @@
-# Local Data
+# Local Data Aware Entities
 
-For how to extend entities via the "local data" feature see [Events Hooks](../hooks.md).
+To learn how to extend Base Entities using the Local Data mechanism, see [Base Entities](../base_entities.md).
 
 ## Creating Local Data aware Entities
 
-You can easily add local data to your Entity (`MyEntity`) by:
+You can easily add the Local Data mechanism to your Entity (`MyEntity`) by:
 
 * Using the `LocalDataAwareTrait` in `MyEntity`
 * Implementing the `LocalDataAwareInterface` in `MyEntity`
