@@ -72,6 +72,6 @@ https://myapi.example.com/things?page=1
 
 API responses generally contain content in one language/translation. The API user can request a language by passing an [Accept-Language](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language) header.
 
-In special cases where the frontend can't really pass HTTP headers to the API, like when a HTML response should be displayed in an iframe, then the endpoint also takes a `lang` query parameter with the same syntax as the `Accept-Language` header.
+In special cases where the frontend can't really pass HTTP headers to the API, like when a HTML response should be displayed in an iframe, then the endpoint may also take a `lang` query parameter with the same syntax as the `Accept-Language` header.
 
-For error messages it is recommended to use error IDs instead of text messages, so the API user can provide their own messages and translations.
+For error messages it is recommended to use error IDs instead of text messages, so the API user, can provide their own messages and translations.
