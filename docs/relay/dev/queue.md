@@ -21,3 +21,7 @@ public function prepend(ContainerBuilder $container)
     $this->addQueueMessage($container, GuestCheckOutMessage::class);
     // ...
 ```
+
+## Error Handling in the Message Handler
+
+By default the worker queue will try to handle the message up to 3 times and will then drop it if it still throws an error. If you want to customize the retry behaviour you can either throw a `UnrecoverableMessageHandlingException` or a `RecoverableMessageHandlingException`, see https://symfony.com/doc/current/messenger.html#retries-failures for details.
