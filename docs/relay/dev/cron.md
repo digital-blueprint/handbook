@@ -14,6 +14,9 @@ and failed jobs will not be retried.
 ```
 
 ```php
+use Dbp\Relay\CoreBundle\Cron\CronJobInterface;
+use Dbp\Relay\CoreBundle\Cron\CronOptions;
+
 class MyCronJob implements CronJobInterface
 {
     public function getName(): string
