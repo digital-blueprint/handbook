@@ -21,6 +21,10 @@ and failed jobs will not be retried.
 ```php
 <?php
 
+declare(strict_types=1);
+
+namespace Dbp\Relay\MyBundle\Cron;
+
 use Dbp\Relay\CoreBundle\Cron\CronJobInterface;
 use Dbp\Relay\CoreBundle\Cron\CronOptions;
 
