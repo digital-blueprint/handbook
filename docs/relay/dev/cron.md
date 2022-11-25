@@ -7,13 +7,20 @@ right time by the core bundle.
 Note that the jobs might be called more often then specified in some edge cases
 and failed jobs will not be retried.
 
+`src/Resources/config/services.yaml`:
+
 ```yaml
   Dbp\Relay\MyBundle\Cron\MyCronJob:
     autowire: true
     autoconfigure: true
 ```
 
+`src/Cron/MyCronJob.php`:
+
+
 ```php
+<?php
+
 use Dbp\Relay\CoreBundle\Cron\CronJobInterface;
 use Dbp\Relay\CoreBundle\Cron\CronOptions;
 
