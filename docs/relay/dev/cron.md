@@ -17,7 +17,6 @@ and failed jobs will not be retried.
 
 `src/Cron/MyCronJob.php`:
 
-
 ```php
 <?php
 
