@@ -49,3 +49,14 @@ class MyCronJob implements CronJobInterface
 
 See https://crontab.guru/ for information on the syntax used in the interval
 string.
+
+
+## FAQ
+
+**What happens if a job fails/throws?**
+
+The error will be logged, and the next job will be executed, if there is one ready. The same job will be executed again later according to the cron interval.
+
+**What happens if my job takes longer then the configured interval?**
+
+Then multiple instances of your job will run at the same time.
