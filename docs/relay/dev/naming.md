@@ -159,20 +159,6 @@ This is used in `ApiError::withDetails()`, for example: `ApiError::withDetails(R
     * `dbp:relay:core:queue:work`
 * Usage: Shown when running ./bin/console`
 
-## Event naming
-
-`BundleName`: Name of the bundle where the event will be used (e.g. `greenlight_connector_campusonline` for the bundle `GreenlightConnectorCampusonlineBundle`)
-`EventCategoryName`: Name of the event category. Can also be a class name if wanted (e.g. `person_photo_provider` for the class `PersonPhotoProvider`)
-`EventName`: Name of the event in `ClassName` (e.g. `pre` or `post`)
-
-* Schema:
-    * `<Vendor, SnakeCase>.<Category, SnakeCase>.<BundleName, SnakeCase>.<EventCategoryName, SnakeCase>.<EventName, SnakeCase>`
-* Example:
-    * Event name: `dbp.relay.greenlight_connector_campusonline.person_photo_provider.pre`
-        * This results in a listener function name: `onDbpRelayGreenlightConnectorCampusonlinePersonPhotoProviderPre`
-    * Event name: `dbp.relay.greenlight_connector_campusonline.person_photo_provider.post`
-        * This results in a listener function name: `onDbpRelayGreenlightConnectorCampusonlinePersonPhotoProviderPost`
-
 ## Symfony Service Tags Naming
 
 * Schema:
