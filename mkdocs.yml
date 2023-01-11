@@ -145,25 +145,6 @@ nav:
 
   - Frontend Framework:
     - frontend/index.md
-    - frontend/getting_started.md
-    - frontend/components.md
-    - frontend/activities.md
-    - frontend/configuration.md
-    - frontend/theming.md
-    - frontend/keycloak_integration.md
-    - Developer Guide:
-      - frontend/dev/coding_standard.md
-      - frontend/dev/accessibility.md
-      - frontend/dev/ui_guideline.md
-      - frontend/dev/web_components_guidelines.md
-      - frontend/dev/testing.md
-      - frontend/dev/build_tooling.md
-      - frontend/dev/browser_support.md
-      - frontend/dev/remote_firefox_debugging.md
-      - frontend/dev/assets.md
-      - frontend/dev/topics.md
-      - frontend/dev/faq.md
-      - frontend/dev/translations.md
 
   - Corporate Design:
     - cd/index.md
