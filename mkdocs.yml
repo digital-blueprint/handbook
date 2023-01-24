@@ -6,8 +6,8 @@ theme:
       - scheme: default
         primary: white
         accent: indigo
-    logo: assets/dbp_logo_small_on_white.svg
-    favicon: assets/apple-touch-icon.png
+    logo: cd/assets/logo/dbp_logo_small_on_white.svg
+    favicon: cd/assets/apple-touch-icon.png
     custom_dir: overrides
 
 extra_css:
@@ -166,8 +166,13 @@ nav:
       - frontend/dev/translations.md
 
   - Corporate Design:
-    - cd/index.md
-
+    - cd/logo.md
+    - cd/naming.md
+    - cd/colors.md
+    - cd/fonts.md
+    - cd/secondary-design-elements.md
+    - cd/icons.md
+    - cd/apps.md
   - How-Tos:
     - howtos/docker.md
   - demo_access.md
