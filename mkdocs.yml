@@ -9,6 +9,9 @@ theme:
     logo: cd/assets/logo/dbp_logo_small_on_white.svg
     favicon: cd/assets/apple-touch-icon.png
     custom_dir: overrides
+    features:
+      - content.action.edit
+      - content.code.copy
 
 extra_css:
   - assets/styles/styles.css
