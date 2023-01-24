@@ -148,3 +148,6 @@ nav:
 
   - Corporate Design:
     - cd/index.md
+
+  - How-Tos:
+    - howtos/docker.md
