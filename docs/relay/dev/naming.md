@@ -130,6 +130,13 @@ Base Bundle Exception: In case `UniqueName` starts with `Base` then `UniqueName`
 
 ## GIT Repository Naming
 
+In case the vendor is in some form already included the URL path (github.com/vendor/relay-check-in-bundle) then:
+
+* Schema: `<Category, KebapCase>-<UniqueName, KebapCase>-bundle`
+* Naming: `relay-check-in-bundle`
+
+otherwise:
+
 * Schema: `<Vendor, KebapCase>-<Category, KebapCase>-<UniqueName, KebapCase>-bundle`
 * Naming: `dbp-relay-check-in-bundle`
 
