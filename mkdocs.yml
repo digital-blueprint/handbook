@@ -151,3 +151,6 @@ nav:
 
   - How-Tos:
     - howtos/docker.md
+  - demo_access.md
+  - contribute.md
+  - contact.md
