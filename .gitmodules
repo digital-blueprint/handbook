@@ -3,16 +3,16 @@
 	url = https://gitlab.tugraz.at/dbp/relay/dbp-relay-auth-bundle.git
 [submodule "submodules/dbp-relay-esign-bundle"]
 	path = submodules/dbp-relay-esign-bundle
-	url = https://gitlab.tugraz.at/dbp/esign/dbp-relay-esign-bundle.git
+	url = https://github.com/digital-blueprint/relay-esign-bundle.git
 [submodule "submodules/dbp-relay-core-bundle"]
 	path = submodules/dbp-relay-core-bundle
 	url = https://gitlab.tugraz.at/dbp/relay/dbp-relay-core-bundle.git
 [submodule "submodules/dbp-relay-greenlight-connector-campusonline-bundle"]
 	path = submodules/dbp-relay-greenlight-connector-campusonline-bundle
-	url = https://gitlab.tugraz.at/dbp/greenlight/dbp-relay-greenlight-connector-campusonline-bundle.git
+	url = https://github.com/digital-blueprint/dbp-relay-greenlight-connector-campusonline-bundle.git
 [submodule "submodules/dbp-relay-greenlight-bundle"]
 	path = submodules/dbp-relay-greenlight-bundle
-	url = https://gitlab.tugraz.at/dbp/greenlight/dbp-relay-greenlight-bundle.git
+	url = https://github.com/digital-blueprint/dbp-relay-greenlight-bundle.git
 [submodule "submodules/dbp-relay-mono-bundle"]
 	path = submodules/dbp-relay-mono-bundle
 	url = https://gitlab.tugraz.at/dbp/mono/dbp-relay-mono-bundle
