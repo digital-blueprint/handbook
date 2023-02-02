@@ -25,3 +25,6 @@
 [submodule "submodules/dbp-relay-mono-connector-generic-bundle"]
 	path = submodules/dbp-relay-mono-connector-generic-bundle
 	url = https://gitlab.tugraz.at/dbp/mono/dbp-relay-mono-connector-generic-bundle
+[submodule "submodules/dbp-relay-dispatch-bundle"]
+	path = submodules/dbp-relay-dispatch-bundle
+	url = https://github.com/digital-blueprint/relay-dispatch-bundle

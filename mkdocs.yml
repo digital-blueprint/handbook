@@ -157,6 +157,12 @@ nav:
           - relay/bundles/mono-connector-payunity/config.md
         - Generic Connector:
           - relay/bundles/mono-connector-generic/index.md
+      - Dispatch Bundle:
+        - relay/bundles/dispatch/index.md
+        - relay/bundles/dispatch/config.md
+        - relay/bundles/dispatch/authz.md
+        - relay/bundles/dispatch/database.md
+        - relay/bundles/dispatch/cli.md
 
   - Frontend Framework:
     - frontend/index.md
