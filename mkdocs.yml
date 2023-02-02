@@ -74,7 +74,44 @@ nav:
     - relay/base_entities.md
     - relay/hooks.md
     - relay/faq.md
-    - relay/api_guide.md
+
+    - User Guide:
+      - relay/user/index.md
+      - relay/user/error_handling.md
+      - relay/user/pagination.md
+      - relay/user/translations.md
+
+    - Developer Guide:
+      - relay/dev/index.md
+      - relay/dev/new_bundle.md
+      - relay/dev/bundle_config.md
+      - relay/dev/access_control.md
+      - relay/dev/cron.md
+      - relay/dev/errors.md
+      - relay/dev/queue.md
+      - relay/dev/logging.md
+      - relay/dev/local_data.md
+      - relay/dev/locks.md
+      - relay/dev/api.md
+      - relay/dev/cors_headers.md
+      - relay/dev/cli_commands.md
+      - relay/dev/health_checks.md
+      - relay/dev/naming.md
+      - relay/dev/guidelines.md
+      - relay/dev/faq.md
+      - relay/dev/coding_standard.md
+      - relay/dev/ide_integration.md
+      - relay/dev/datetime.md
+      - relay/dev/pagination.md
+      - relay/dev/translations.md
+
+    - Keycloak Integration:
+      - relay/keycloak/index.md
+      - relay/keycloak/keycloak_scopes.md
+      - relay/keycloak/keycloak_audience.md
+      - relay/keycloak/scopes.md
+      - relay/keycloak/client_credentials.md
+
     - Available Bundles:
       - Core Bundle:
         - relay/bundles/core/index.md
@@ -114,37 +151,6 @@ nav:
           - relay/bundles/mono-connector-payunity/index.md
         - Generic Connector:
           - relay/bundles/mono-connector-generic/index.md
-
-    - Developer Guide:
-      - relay/dev/index.md
-      - relay/dev/new_bundle.md
-      - relay/dev/bundle_config.md
-      - relay/dev/access_control.md
-      - relay/dev/cron.md
-      - relay/dev/errors.md
-      - relay/dev/queue.md
-      - relay/dev/logging.md
-      - relay/dev/local_data.md
-      - relay/dev/locks.md
-      - relay/dev/api.md
-      - relay/dev/cors_headers.md
-      - relay/dev/cli_commands.md
-      - relay/dev/health_checks.md
-      - relay/dev/naming.md
-      - relay/dev/guidelines.md
-      - relay/dev/faq.md
-      - relay/dev/coding_standard.md
-      - relay/dev/ide_integration.md
-      - relay/dev/datetime.md
-      - relay/dev/pagination.md
-      - relay/dev/translations.md
-
-    - Keycloak Integration:
-      - relay/keycloak/index.md
-      - relay/keycloak/keycloak_scopes.md
-      - relay/keycloak/keycloak_audience.md
-      - relay/keycloak/scopes.md
-      - relay/keycloak/client_credentials.md
 
   - Frontend Framework:
     - frontend/index.md
