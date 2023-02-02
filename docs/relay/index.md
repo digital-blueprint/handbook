@@ -61,8 +61,8 @@ for example.
 ### Extending and Customizing
 
 The API gateway can be easily extended by simply [installing an existing
-bundle](./extending_with_bundles.md), changing exiting bundle behavior via
-[event hooks](./hooks.md), or writing your very own bundle.
+bundle](./admin/extending_with_bundles.md), changing exiting bundle behavior via
+[event hooks](./dev/hooks.md), or writing your very own bundle.
 
 If you write your own bundle you can create completely new APIs, or connect an
 existing API to a new external system. If you then share your bundle with the

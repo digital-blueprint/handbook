@@ -1,6 +1,6 @@
 # Local Data Aware Entities
 
-To learn how to extend Base Entities using the Local Data mechanism, see [Base Entities](../base_entities.md).
+To learn how to extend Base Entities using the Local Data mechanism, see [Base Entities](./base_entities.md).
 
 ## Creating Local Data aware Entities
 

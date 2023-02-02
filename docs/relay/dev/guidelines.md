@@ -31,7 +31,7 @@ Example:
 
 ## Client / Request information behind a Reverse Proxy
 
-See [Reverse Proxies & Load Balancer](../reverse_proxies.md) for how to
+See [Reverse Proxies & Load Balancer](../admin/reverse_proxies.md) for how to
 configure Symfony in case your application is running behind a reverse proxy.
 
 Instead of relying on HTTP headers or anything in `$_SERVER` you have to use the

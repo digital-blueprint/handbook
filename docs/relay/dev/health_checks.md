@@ -28,4 +28,4 @@ class HealthCheck implements CheckInterface
     }
 ```
 
-For how to invoke them see the [user guide](../debugging.md#health-checks)
+For how to invoke them see the [user guide](../admin/debugging.md#health-checks)

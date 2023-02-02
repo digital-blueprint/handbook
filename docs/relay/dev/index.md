@@ -92,5 +92,5 @@ allows bundles to extend the API gateway in various ways, so they can:
 
 ## Bundle Architecture
 
-See [Extending with Bundles](../extending_with_bundles.md) for the different
+See [Extending with Bundles](../admin/extending_with_bundles.md) for the different
 types of bundles and their use cases.

@@ -62,18 +62,6 @@ nav:
 
   - Relay API Gateway:
     - relay/index.md
-    - relay/getting_started.md
-    - relay/extending_with_bundles.md
-    - relay/config.md
-    - relay/debugging.md
-    - relay/production.md
-    - relay/queue.md
-    - relay/locks.md
-    - relay/update.md
-    - relay/reverse_proxies.md
-    - relay/base_entities.md
-    - relay/hooks.md
-    - relay/faq.md
 
     - User Guide:
       - relay/user/index.md
@@ -81,8 +69,21 @@ nav:
       - relay/user/pagination.md
       - relay/user/translations.md
 
+    - Administration Guide:
+      - relay/admin/index.md
+      - relay/admin/extending_with_bundles.md
+      - relay/admin/production.md
+      - relay/admin/config.md
+      - relay/admin/locks.md
+      - relay/admin/queue.md
+      - relay/admin/reverse_proxies.md
+      - relay/admin/debugging.md
+      - relay/admin/update.md
+      - relay/admin/faq.md
+
     - Developer Guide:
       - relay/dev/index.md
+      - relay/dev/getting_started.md
       - relay/dev/new_bundle.md
       - relay/dev/bundle_config.md
       - relay/dev/access_control.md
@@ -104,6 +105,8 @@ nav:
       - relay/dev/datetime.md
       - relay/dev/pagination.md
       - relay/dev/translations.md
+      - relay/dev/base_entities.md
+      - relay/dev/hooks.md
 
     - Keycloak Integration:
       - relay/keycloak/index.md

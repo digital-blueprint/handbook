@@ -1,4 +1,4 @@
-# Reverse Proxies & Load Balancer
+# Reverse Proxies & Load Balancers
 
 In case your API is running behind a reverse proxy or a load balancer some
 information of the connecting client, like IP, the used protocol, port etc might

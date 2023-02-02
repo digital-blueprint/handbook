@@ -40,7 +40,7 @@ graph LR
 
 To get you up and running fast we provide two PHP packages that you can use as a starting point:
 
-* **The "API Server Template":** This is a Symonfy App skeleton with good
+* **The "API Server Template":** This is a Symfony App skeleton with good
   default settings and integration for CI, testing, linting and so on. You can
   copy this project and use it as a starting point for your own server. →
   https://gitlab.tugraz.at/dbp/middleware/dbp-api/api-server-template
@@ -96,8 +96,8 @@ Now you have a working Symfony application. Some potential next steps are:
 
 * Convert your app to a git repository to easily track changes
 * Install existing feature bundles to expose new API and configure them
-* Create your own feature bundle, see [Creating a New Bundle](./dev/new_bundle.md)
-* Deploy your application, see [Running in Production](./production.md)
+* Create your own feature bundle, see [Creating a New Bundle](./new_bundle.md)
+* Deploy your application, see [Running in Production](../admin/production.md)
 
 ## Docker-Compose Extra Services
 
