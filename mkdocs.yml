@@ -108,6 +108,7 @@ nav:
       - relay/dev/translations.md
       - relay/dev/base_entities.md
       - relay/dev/hooks.md
+      - relay/dev/database.md
 
     - Keycloak Integration:
       - relay/keycloak/index.md
