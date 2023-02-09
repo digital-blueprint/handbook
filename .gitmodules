@@ -15,7 +15,7 @@
 	url = https://github.com/digital-blueprint/dbp-relay-greenlight-bundle.git
 [submodule "submodules/dbp-relay-mono-bundle"]
 	path = submodules/dbp-relay-mono-bundle
-	url = https://gitlab.tugraz.at/dbp/mono/dbp-relay-mono-bundle
+	url = https://github.com/digital-blueprint/relay-mono-bundle.git
 [submodule "submodules/dbp-relay-mono-connector-campusonline-bundle"]
 	path = submodules/dbp-relay-mono-connector-campusonline-bundle
 	url = https://gitlab.tugraz.at/dbp/mono/dbp-relay-mono-connector-campusonline-bundle
