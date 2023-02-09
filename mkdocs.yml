@@ -114,7 +114,6 @@ nav:
       - relay/keycloak/index.md
       - relay/keycloak/keycloak_scopes.md
       - relay/keycloak/keycloak_audience.md
-      - relay/keycloak/scopes.md
       - relay/keycloak/client_credentials.md
 
     - Available Bundles:
