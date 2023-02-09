@@ -1,6 +1,4 @@
----
-title: Setting an Audience in Keycloak
----
+# Setting an Audience in Keycloak
 
 To prevent access tokens issued by the same Keycloak server, but meant for other
 services, to be used with our API Gateway we can set an "Audience" for the

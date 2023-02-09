@@ -68,6 +68,7 @@ nav:
       - relay/user/error_handling.md
       - relay/user/pagination.md
       - relay/user/translations.md
+      - relay/user/client_credentials.md
 
     - Administration Guide:
       - relay/admin/index.md
@@ -110,11 +111,10 @@ nav:
       - relay/dev/hooks.md
       - relay/dev/database.md
 
-    - Keycloak Integration:
-      - relay/keycloak/index.md
-      - relay/keycloak/keycloak_scopes.md
-      - relay/keycloak/keycloak_audience.md
-      - relay/keycloak/client_credentials.md
+    - HowTos:
+      - relay/howtos/keycloak_scopes.md
+      - relay/howtos/keycloak_audience.md
+      - relay/howtos/service_account.md
 
     - Available Bundles:
       - Core Bundle:

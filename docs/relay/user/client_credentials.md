@@ -1,15 +1,6 @@
-# Service Account & Client Credentials Flow
+# Client Credentials Flow Example
 
-## Keycloak Setup
-
-Related Keycloak docs: [https://www.keycloak.org/docs/latest/server_admin#_service_accounts](https://www.keycloak.org/docs/latest/server_admin#_service_accounts)
-
-Summary:
-
-* Add a keycloak client with only "Service Accounts Enabled" to enable the
-  the [Client Credentials Flow](https://auth0.com/docs/api-auth/tutorials/client-credentials)
-* Add the wanted scopes to the client
-* Give the client name and secret to the external service
+The following shows how to retrieve an access token from the OAuth2 server using the "Client Credentials" flow and then accessing the API with it. In this example we use Keycloak as the OAuth2 server.
 
 ## PHP Example
 

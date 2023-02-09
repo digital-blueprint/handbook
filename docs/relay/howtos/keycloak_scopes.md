@@ -1,8 +1,6 @@
----
-title: Creating Scopes in Keycloak
----
+# Scopes in Keycloak
 
-## Mapping Roles to OAuth2 Scopes
+## Mapping Roles to OAuth2 Scopes in Keycloak
 
 We want to assign various roles to users/clients in Keycloak and as a result let
 them have various scopes. These scopes are then used to authorize various
