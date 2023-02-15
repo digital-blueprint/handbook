@@ -2,13 +2,13 @@
 
 We currently target the following browsers:
 
-- Firefox 67+ (2019-05)
+- Firefox 69+ (2019-09)
 - Chrome 67+ (2018-05)
 - Edge 79+ (2020-01)
-- Safari 12.1+ (2019-03)
+- Safari 13.1+ (2020-03)
 - Opera 64+ (2019-10)
-- iOS Safari 12.2+/iOS 12.2+ (2019-03)
-- Android 4.4+ (2013): Chrome 80 as well as Firefox 68 can be installed on Android 4.4
+- iOS Safari 13.4+/iOS 13+ (2020-03)
+- Android 4.4+ (2013): Chrome 80 can be installed on Android 4.4
 
 These version requirements are derived from requiring the following features:
 
@@ -21,6 +21,7 @@ These version requirements are derived from requiring the following features:
 - [JavaScript modules via script tag](https://caniuse.com/es6-module)
 - [Async functions](https://caniuse.com/async-functions)
 - [AbortController & AbortSignal](https://caniuse.com/abortcontroller)
+- [Resize Observer](https://caniuse.com/resizeobserver)
 
 We use extra tooling/pollyfills:
 
