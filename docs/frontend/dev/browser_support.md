@@ -3,7 +3,7 @@
 We currently target the following browsers:
 
 - Firefox 69+ (2019-09)
-- Chrome 67+ (2018-05)
+- Chrome 71+ (2018-12)
 - Edge 79+ (2020-01)
 - Safari 13.1+ (2020-03)
 - Opera 64+ (2019-10)
@@ -22,6 +22,7 @@ These version requirements are derived from requiring the following features:
 - [Async functions](https://caniuse.com/async-functions)
 - [AbortController & AbortSignal](https://caniuse.com/abortcontroller)
 - [Resize Observer](https://caniuse.com/resizeobserver)
+- [globalThis](https://caniuse.com/mdn-javascript_builtins_globalthis)
 
 We use extra tooling/pollyfills:
 
