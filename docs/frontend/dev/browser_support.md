@@ -33,6 +33,17 @@ We use extra tooling/pollyfills:
   supporting [EventTarget
   constructors](https://caniuse.com/mdn-api_eventtarget_eventtarget) on older
   Safari.
+- [@webcomponents/scoped-custom-element-registry](https://www.npmjs.com/package/@webcomponents/scoped-custom-element-registry) for Scoped Custom Element Registries, for all browsers.
+
+## Rules for when Browsers can potentially be dropped
+
+See https://github.com/browserslist/browserslist
+
+For example this query can be use as a rough guideline:
+
+```
+npx browserslist "> 0.5% in alt-EU, last 1 years, Firefox ESR, not dead"
+```
 
 ## Handling of old Browsers
 
