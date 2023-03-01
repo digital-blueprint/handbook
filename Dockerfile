@@ -1,11 +1,12 @@
 FROM ubuntu:22.04
 
 RUN apt-get update && apt-get install -y \
-  python3-poetry \
-  python3-cachecontrol \
+  pipx \
   && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /mkdocs
+RUN pipx install poetry==1.4.0
+ENV PATH "/root/.local/bin:$PATH"
 COPY poetry.lock /mkdocs/
 COPY pyproject.toml /mkdocs/
 
