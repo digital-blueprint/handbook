@@ -1,12 +1,12 @@
 [submodule "submodules/dbp-relay-auth-bundle"]
 	path = submodules/dbp-relay-auth-bundle
-	url = https://gitlab.tugraz.at/dbp/relay/dbp-relay-auth-bundle.git
+	url = https://github.com/digital-blueprint/relay-auth-bundle.git
 [submodule "submodules/dbp-relay-esign-bundle"]
 	path = submodules/dbp-relay-esign-bundle
 	url = https://github.com/digital-blueprint/relay-esign-bundle.git
 [submodule "submodules/dbp-relay-core-bundle"]
 	path = submodules/dbp-relay-core-bundle
-	url = https://gitlab.tugraz.at/dbp/relay/dbp-relay-core-bundle.git
+	url = https://github.com/digital-blueprint/relay-core-bundle.git
 [submodule "submodules/dbp-relay-greenlight-connector-campusonline-bundle"]
 	path = submodules/dbp-relay-greenlight-connector-campusonline-bundle
 	url = https://github.com/digital-blueprint/dbp-relay-greenlight-connector-campusonline-bundle.git
@@ -18,13 +18,13 @@
 	url = https://github.com/digital-blueprint/relay-mono-bundle.git
 [submodule "submodules/dbp-relay-mono-connector-campusonline-bundle"]
 	path = submodules/dbp-relay-mono-connector-campusonline-bundle
-	url = https://gitlab.tugraz.at/dbp/mono/dbp-relay-mono-connector-campusonline-bundle
+	url = https://github.com/digital-blueprint/relay-mono-connector-campusonline-bundle.git
 [submodule "submodules/dbp-relay-mono-connector-payunity-bundle"]
 	path = submodules/dbp-relay-mono-connector-payunity-bundle
-	url = https://gitlab.tugraz.at/dbp/mono/dbp-relay-mono-connector-payunity-bundle
+	url = https://github.com/digital-blueprint/relay-mono-connector-payunity-bundle.git
 [submodule "submodules/dbp-relay-mono-connector-generic-bundle"]
 	path = submodules/dbp-relay-mono-connector-generic-bundle
-	url = https://gitlab.tugraz.at/dbp/mono/dbp-relay-mono-connector-generic-bundle
+	url = https://github.com/digital-blueprint/relay-mono-connector-generic-bundle.git
 [submodule "submodules/dbp-relay-dispatch-bundle"]
 	path = submodules/dbp-relay-dispatch-bundle
 	url = https://github.com/digital-blueprint/relay-dispatch-bundle

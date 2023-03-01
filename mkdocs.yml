@@ -150,6 +150,8 @@ nav:
           - relay/bundles/greenlight-connector-campusonline/config.md
       - Mono Bundle:
         - relay/bundles/mono/index.md
+        - relay/bundles/mono/config.md
+        - relay/bundles/mono/logging.md
         - CAMPUSonline Connector:
           - relay/bundles/mono-connector-campusonline/index.md
         - PayUnity Connector:
