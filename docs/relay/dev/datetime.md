@@ -6,6 +6,7 @@ Recommendations:
 * Behavior should be independent of the server timezone. For example the API responses should always be UTC.
 * When taking datetimes from external systems always ensure that it has a timezone (either fail when it is missing, make the timezone configurable, or set a fixed timezone if it is documented)
 * Use `DateTimeImmutable` and `DateTimeInterface` over `DateTime`. All operations on `DateTimeImmutable` create a new instance, which makes mutating objects you don't own impossible.
+* Set the timezone of the API as soon as possible, and do not switch between different timezones as this could lead to issues.
 
 Open Questions:
 
