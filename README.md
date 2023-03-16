@@ -1,4 +1,4 @@
-# Digital Blueprint Handbook
+# digital blueprint - Handbook
 
 [Website](https://dbp-demo.tugraz.at/handbook/)
 
