@@ -9,7 +9,7 @@ without the user having to install extra repositories or requiring updates using
 
 * All libraries and bundles should try to support the following systems:
 
-    * The latest Ubuntu release that
+    * The latest Ubuntu release
     * The latest Debian Stable release that is older then one year
     * The latest Ubuntu LTS release that is older then one year
     * The latest Red Hat/Red Hat like release that is older then one year
