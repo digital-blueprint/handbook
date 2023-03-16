@@ -111,6 +111,7 @@ nav:
       - relay/dev/base_entities.md
       - relay/dev/hooks.md
       - relay/dev/database.md
+      - relay/dev/sysreq_policy.md
 
     - HowTos:
       - relay/howtos/keycloak_scopes.md
