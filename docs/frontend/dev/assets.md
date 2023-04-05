@@ -54,3 +54,10 @@ then you using COMPONENT-A requires you to copy both ASSET-A and ASSET-B.
 
 Since these files have fixed names the cache duration should be limited to
 avoid stale data on re-deploys.
+
+## Custom Assets
+
+We allow developers to define custom assets, which means that the default dbp assets get overwritten by assets which the developers can define. This allows developers to develop for different environments, for example for a whitelabel dbp app and simultaneously for another organization with different assets.
+To use custom assets, a directory with all custom assets has to be placed in `assets_custom/dbp-appname/assets/`. For example, for mono the directory name would be `assets_custom/dbp-mono/assets/`.
+The structure of the `assets_custom/dbp-appname/assets/` directory has to be the same as the default assets directory `assets/`. Thus, files and directories with the same name inside of `assets/` also have to be present inside `assets_custom/dbp-appname/assets/`.
+We recommend to simply copy the `assets/` directory to `assets_custom/dbp-appname/assets/` and to replace all dbp assets with the respective custom assets. This way, it is unlikely that some assets are forgotten when creating the custom assets directory.
