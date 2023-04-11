@@ -21,3 +21,15 @@ public function prepend(ContainerBuilder $container)
     $this->registerEntityManager($container, 'dbp_relay_myname_bundle');
     // ...
 ```
+
+## Generating Migrations
+
+Run the following command and replace the entity manager with the one for your bundle
+
+```bash
+./docker/console doctrine:migrations:diff --em=dbp_relay_mono_connector_payunity_bundle
+```
+
+It should create a migration under `Migrations` in your bundle. The migration will contain the required changes, but also changes from other bundles which you need to delete manually.
+
+Also make sure to change the base class to the one wich supports filtering based on the entity manager.
