@@ -1,4 +1,4 @@
-# DateTime Handling in the API and PHP
+# DateTime/Duration Handling in the API, PHP and Config
 
 Recommendations:
 
@@ -49,3 +49,20 @@ Convert a `DateTimeImmutable` with a non-UTC timezone to UTC:
 $datetime = new \DateTimeImmutable('2022-10-20T08:28:49+02:00');
 $datetime->setTimezone(new \DateTimeZone('UTC'));
 ```
+
+## Durations
+
+Use ISO durations in the config as well as in the API for durations.
+
+If possible use a start and/or end DateTime in the API response, so the client
+doesn't have to deal with durations.
+
+Otherwise use ISO 8601 durations, in the bundle config, API and PHP:
+
+```php
+new \DateInterval('P1Y');
+new \DateInterval('PT60S');
+```
+
+Note that the PHP implementation is limited and doesn't allow decimal numbers or
+no negative numbers, so we can't support them either.
