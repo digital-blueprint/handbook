@@ -36,7 +36,7 @@ key.
 ></dbp-auth-keycloak>
 ```
 
-See the [component docs](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/blob/master/packages/auth/README.md) for more information.
+See the [component docs](https://github.com/digital-blueprint/toolkit/blob/main/packages/auth/README.md) for more information.
 
 In Keycloak this requires a realm with the name `my-realm` as well as a client with the name `my-client-id`.
 

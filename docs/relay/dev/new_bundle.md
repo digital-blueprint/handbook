@@ -44,5 +44,5 @@ If you just want to extract the package, but don't want to publish it publicly y
 
 * For best practices on how to create a Symfony bundle see
 https://symfony.com/doc/current/bundles/best_practices.html
-* The new bundle is based on our bundle template, see https://gitlab.tugraz.at/dbp/relay/dbp-relay-template-bundle for more information
-* If you want to look at a more fully featured bundle as a reference see https://gitlab.tugraz.at/dbp/relay/dbp-relay-example-bundle which contains various examples of what you can do and implement inside of a bundle.
+* The new bundle is based on our bundle template, see https://github.com/digital-blueprint/relay-template-bundle for more information
+* If you want to look at a more fully featured bundle as a reference see https://github.com/digital-blueprint/relay-example-bundle which contains various examples of what you can do and implement inside of a bundle.

@@ -81,7 +81,7 @@ dbp_relay_core:
   build_info: '%env(CORE_API_BUILDINFO)%'
   build_info_url: '%env(CORE_API_BUILDINFO_URL)%'
   docs_title: 'API Gateway'
-  docs_description: '*powered by the Relay API gateway - part of the [Digital Blueprint](https://gitlab.tugraz.at/dbp) project*'
+  docs_description: '*powered by the Relay API gateway - part of the [Digital Blueprint](https://github.com/digital-blueprint) project*'
   queue_dsn: 'doctrine://queue_connection'
   lock_dsn: '%env(CORE_LOCK_DSN)%'
 ```
@@ -111,7 +111,7 @@ dbp_relay_core:
     # The title text of the API docs page
     docs_title:           'Relay API Gateway'
     # The description text of the API docs page (supports markdown)
-    docs_description:     '*part of the [Digital Blueprint](https://gitlab.tugraz.at/dbp) project*'
+    docs_description:     '*part of the [Digital Blueprint](https://github.com/digital-blueprint) project*'
     messenger_transport_dsn: '' # Deprecated (Since dbp/relay-core-bundle 0.1.20: Use "queue_dsn" instead.)
     # See https://symfony.com/doc/5.3/messenger.html#redis-transport
     queue_dsn:            '' # Example: 'redis://localhost:6379'

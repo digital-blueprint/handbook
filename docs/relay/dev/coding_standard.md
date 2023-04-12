@@ -20,4 +20,4 @@ In some cases we run the linters as a git pre-commit hook using
 You can see an example configuration for all the linters and the pre-commit hook
 in our example bundle:
 
-https://gitlab.tugraz.at/dbp/relay/dbp-relay-example-bundle
+https://github.com/digital-blueprint/relay-example-bundle

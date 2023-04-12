@@ -43,12 +43,12 @@ To get you up and running fast we provide two PHP packages that you can use as a
 * **The "API Server Template":** This is a Symfony App skeleton with good
   default settings and integration for CI, testing, linting and so on. You can
   copy this project and use it as a starting point for your own server. →
-  https://gitlab.tugraz.at/dbp/middleware/dbp-api/api-server-template
+  https://github.com/digital-blueprint/relay-server-template
 
-* **The "API Starter Bundle":** It includes code for all the things a typical
+* **The "API Example Bundle":** It includes code for all the things a typical
   bundle can contain to show what is possible. You can copy this bundle and
   rename it to act as a starting point for your own REST API. →
-  https://gitlab.tugraz.at/dbp/middleware/dbp-api/api-starter-bundle
+  https://github.com/digital-blueprint/relay-example-bundle
 
 ## Prerequisites
 
@@ -61,7 +61,7 @@ Note: This is only tested on Linux so far, but any operating system supporting d
 Optional (In case you want to work outside of docker):
 
 * php7.3+
-* php extensions, see the [Dockerfile](https://gitlab.tugraz.at/dbp/middleware/dbp-api/api-server-template/-/blob/main/docker-dev/php-fpm/Dockerfile) for a list
+* php extensions, see the [Dockerfile](https://github.com/digital-blueprint/relay-server-template/blob/main/docker-dev/php-fpm/Dockerfile) for a list
 * composer 2.x
 
 ## Setup

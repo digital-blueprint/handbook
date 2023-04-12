@@ -124,7 +124,7 @@ We distinguish between tables with fix content [[Fig. 7]](#fig7) and datatables 
 
 Depending on the operation area you can decide between endless scroll or pagination.
 An example for endless scroll can be found in the [Nextcloud file picker Webcomponents](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/blob/master/packages/file-handling/src/nextcloud-file-picker.js){:target="_blank"}.
-An example for pagination can be found in [Formalize](https://gitlab.tugraz.at/dbp/formalize/formalize){:target="_blank"}.
+An example for pagination can be found in [Formalize](https://github.com/digital-blueprint/formalize-app){:target="_blank"}.
 
 If you have an endless scroll, you can also show up a `select all` button as it was done in the Nextcloud file picker Webcomponents.
 
@@ -189,7 +189,7 @@ A detail modal is used to view records as a whole or to get more details.
 The modal has a title in the left upper corner and a close sign in the right upper corner [[Fig. 11]](#fig11).
 The buttons are placed at the bottom of the modal dialogue.
 
-An example for a detailed modal can be found in our application [Formalize](https://gitlab.tugraz.at/dbp/formalize/formalize){:target="_blank"}, where 
+An example for a detailed modal can be found in our application [Formalize](https://github.com/digital-blueprint/formalize-app){:target="_blank"}, where 
 we used the detail modal to show a whole data entry row in a compact way.
 
 <figure id="fig11" style="width:100%;">
