@@ -236,8 +236,8 @@ To change the translation, you just need to change the value associated with the
 }
 ```
 
-## Slots
-You can use various slots to customize your application.
+## Customizing the application with slots
+You can use various slots to customize your application. You can place your custom assets like images or customized texts inside of slots to adapt the appearance of the application as you want.  
 
 ### App shell slots
 
