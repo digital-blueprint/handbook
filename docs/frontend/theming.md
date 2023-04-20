@@ -261,13 +261,13 @@ The nearer description can be found in the documentation of the [app shell](http
 
 You should place these slots in the `<template id= "global-override">` tag of your `index.html`.
 
-For example:
+For example, you can override the name in the top left corner, and the logo shown in the top right corner:
 
 ```html
 <template id="global-override">
     <template id="dbp-greenlight">
         <div slot="name">
-            DBP<br />
+            MyUni<br />
             <dbp-translated subscribe="lang">
                 <div slot="de">
                     Meine Universität
@@ -276,6 +276,9 @@ For example:
                     My University
                 </div>
             </dbp-translated>
+        </div>
+        <div slot="logo">
+            <img style="height: 80px" src="path/to/logo.svg" alt="My university logo">
         </div>
     </template>
 </template>
