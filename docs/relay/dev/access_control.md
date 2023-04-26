@@ -1,6 +1,4 @@
----
-title: Access Control
----
+# Access Control
 
 Assuming you have a "my-scope" that gets somehow mapped into the access token
 you want to restrict certain APIs and operations to only work if the token has

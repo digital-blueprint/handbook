@@ -75,6 +75,8 @@ nav:
       - relay/admin/extending_with_bundles.md
       - relay/admin/production.md
       - relay/admin/config.md
+      - relay/admin/access_control.md
+      - relay/admin/expression_language.md
       - relay/admin/locks.md
       - relay/admin/queue.md
       - relay/admin/cron.md
