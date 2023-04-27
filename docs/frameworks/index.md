@@ -1,7 +1,7 @@
 # Overview
 
-This handbook contains documentation for integrators, system administrators,
-designers, developers and users of the DBP framework.
+This section contains documentation for integrators, system administrators,
+designers, developers and users of our front-end and backe-end frameworks.
 
 ```mermaid
 flowchart LR
@@ -45,7 +45,7 @@ flowchart LR
     bundle_2a["Bundle"] --> connector["Connector"]
 ```
 
-The DBP framework is open source and consists of a modular [API gateway](./relay) providing a REST
+The digital blueprint framework is open source and consists of a modular [API gateway](./relay) providing a REST
 API as well as a web component based [frontend framework](./frontend) for
 building web applications as well as single activities that can be embedded in
 existing web applications.
