@@ -34,7 +34,7 @@ Signature verification is currently handled by referring to <https://www.rtr.at/
 
 ```{.mermaid style="max-width:600px; margin: auto"}
 graph TB
-    frontend((ESign App)) --> relay((Relay API Gateway))
+    frontend(ESign App) --> relay(Relay API Gateway)
     frontend --> keycloak[Keycloak Server]
     relay --> esign-bundle[[ESign Bundle]]
     relay --> frontend-bundle[[Frontend Bundle]]
@@ -43,23 +43,13 @@ graph TB
     esign-bundle --> moa-spss[MOA-SPSS]
     esign-bundle  -->  core-bundle[[Core Bundle]]
     frontend-bundle --> core-bundle
-    auth-bundle --> local-system(("University systems (e.g. LDAP)"))
+    auth-bundle --> local-system("University systems (e.g. LDAP)")
     auth-bundle --> keycloak
     keycloak --> local-system
     pdf-as --> a-trust[A-Trust]
     moa-spss --> a-trust
 
     style frontend fill:#d0d0ff,stroke:#333,stroke-width:4px
-    click frontend "/site/software/esign.html#frontend-app" "ESign App"
-    click keycloak "/site/software/esign.html#keycloak-server" "Keycloak Server"
-    click relay "/site/software/esign.html#relay-api" "Relay API"
-    click esign-bundle "/site/software/esign.html#relay-api" "Relay API"
-    click frontend-bundle "/site/software/esign.html#relay-api" "Relay API"
-    click core-bundle "/site/software/esign.html#relay-api" "Relay API"
-    click auth-bundle "/site/software/esign.html#relay-api" "Relay API"
-    click pdf-as "/site/components/pdf-as.html" "PDF-AS"
-    click moa-spss "https://joinup.ec.europa.eu/collection/e-government-innovation-center-egiz/solution/moa-spss" "MOA-SSP"
-    click a-trust "https://www.a-trust.at/" "A-Trust"
 ```
 
 ### Frontend App

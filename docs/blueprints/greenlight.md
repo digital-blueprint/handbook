@@ -30,7 +30,7 @@ a course or exam. The ticket then enables you to access the university premises 
 
 ```{.mermaid style="max-width:600px; margin: auto"}
 graph TB
-    frontend((Greenlight App))-->relay((Relay API Gateway))
+    frontend(Greenlight App)-->relay(Relay API Gateway)
     frontend-->keycloak[Keycloak Server]
     relay-->greenlight-bundle[[Greenlight Bundle]]
     relay-->frontend-bundle[[Frontend Bundle]]
@@ -39,19 +39,11 @@ graph TB
     greenlight-bundle-->database[Database]
     greenlight-bundle-->core-bundle[[Core Bundle]]
     frontend-bundle-->core-bundle
-    auth-bundle-->local-system(("University systems (e.g. LDAP)"))
+    auth-bundle-->local-system("University systems (e.g. LDAP)")
     auth-bundle-->keycloak
     keycloak-->local-system
 
     style frontend fill:#d0d0ff,stroke:#333,stroke-width:4px
-    click frontend "/site/software/greenlight.html#frontend-app" "Greenlight App"
-    click keycloak "/site/software/greenlight.html#keycloak-server" "Keycloak Server"
-    click relay "/site/software/greenlight.html#relay-api" "Relay API"
-    click greenlight-bundle "/site/software/greenlight.html#relay-api" "Relay API"
-    click frontend-bundle "/site/software/greenlight.html#relay-api" "Relay API"
-    click base-person-bundle "/site/components/base-person-bundle.html" "Base Person Bundle"
-    click core-bundle "/site/software/greenlight.html#relay-api" "Relay API"
-    click auth-bundle "/site/software/greenlight.html#relay-api" "Relay API"
 ```
 
 

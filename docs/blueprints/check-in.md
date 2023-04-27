@@ -31,7 +31,7 @@ Handles check-ins to places and contact tracing for warning about COVID-19 cases
 
 ```{.mermaid style="max-width:600px; margin: auto"}
 graph TB
-    frontend((Check-in App))-->relay((Relay API))
+    frontend(Check-in App)-->relay(Relay API)
     frontend-->keycloak[Keycloak Server]
     relay-->check-in-bundle[[Check-in Bundle]]
     relay-->frontend-bundle[[Frontend Bundle]]
@@ -42,22 +42,11 @@ graph TB
     check-in-bundle-->core-bundle[[Core Bundle]]
     frontend-bundle-->core-bundle
     core-bundle-->mysql[MySQL]
-    auth-bundle-->local-system(("University systems (e.g. LDAP)"))
+    auth-bundle-->local-system("University systems (e.g. LDAP)")
     auth-bundle-->keycloak
     keycloak-->local-system
 
     style frontend fill:#d0d0ff,stroke:#333,stroke-width:4px
-    click frontend "/site/software/check-in.html#frontend-app" "Check-in App"
-    click keycloak "/site/software/check-in.html#keycloak-server" "Keycloak Server"
-    click relay "/site/software/check-in.html#relay-api" "Relay API"
-    click check-in-bundle "/site/software/check-in.html#relay-api" "Relay API"
-    click campus-qr "/site/software/check-in.html#campusqr" "Campus QR"
-    click mongodb "/site/software/check-in.html#mongodb" "MongoDB"
-    click mysql "/site/software/check-in.html#mysql" "MySQL"
-    click frontend-bundle "/site/software/check-in.html#relay-api" "Relay API"
-    click base-person-bundle "/site/components/base-person-bundle.html" "Base Person Bundle"
-    click core-bundle "/site/software/check-in.html#relay-api" "Relay API"
-    click auth-bundle "/site/software/check-in.html#relay-api" "Relay API"
 ```
 
 ### Frontend App
