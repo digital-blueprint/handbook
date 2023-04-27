@@ -63,138 +63,165 @@ markdown_extensions:
 nav:
   - index.md
 
-  - Relay API Gateway:
-    - relay/index.md
+  - Blueprints:
+    - blueprints/index.md
+    - blueprints/greenlight.md
+    - blueprints/check-in.md
+    - blueprints/esign.md
+    - blueprints/plan.md
 
-    - User Guide:
-      - relay/user/index.md
-      - relay/user/error_handling.md
-      - relay/user/pagination.md
-      - relay/user/translations.md
-      - relay/user/client_credentials.md
+  - Components:
 
-    - Administration Guide:
-      - relay/admin/index.md
-      - relay/admin/extending_with_bundles.md
-      - relay/admin/production.md
-      - relay/admin/config.md
-      - relay/admin/access_control.md
-      - relay/admin/expression_language.md
-      - relay/admin/locks.md
-      - relay/admin/queue.md
-      - relay/admin/cron.md
-      - relay/admin/database.md
-      - relay/admin/reverse_proxies.md
-      - relay/admin/debugging.md
-      - relay/admin/update.md
-      - relay/admin/faq.md
+    - Apps:
+      - components/app/mono.md
 
-    - Developer Guide:
-      - relay/dev/index.md
-      - relay/dev/getting_started.md
-      - relay/dev/new_bundle.md
-      - relay/dev/bundle_config.md
-      - relay/dev/access_control.md
-      - relay/dev/cron.md
-      - relay/dev/errors.md
-      - relay/dev/queue.md
-      - relay/dev/logging.md
-      - relay/dev/local_data.md
-      - relay/dev/locks.md
-      - relay/dev/api.md
-      - relay/dev/cors_headers.md
-      - relay/dev/cli_commands.md
-      - relay/dev/health_checks.md
-      - relay/dev/naming.md
-      - relay/dev/guidelines.md
-      - relay/dev/faq.md
-      - relay/dev/coding_standard.md
-      - relay/dev/ide_integration.md
-      - relay/dev/datetime.md
-      - relay/dev/pagination.md
-      - relay/dev/translations.md
-      - relay/dev/base_entities.md
-      - relay/dev/hooks.md
-      - relay/dev/database.md
-      - relay/dev/sysreq_policy.md
-
-    - HowTos:
-      - relay/howtos/keycloak_scopes.md
-      - relay/howtos/keycloak_audience.md
-      - relay/howtos/service_account.md
-
-    - Available Bundles:
+    - API:
+      - components/api/server-template.md
+      - components/api/core-bundle.md
+      - components/api/auth-bundle.md
+      - components/api/base-person-bundle.md
+      - components/api/base-person-connector-ldap-bundle.md
+      - components/api/greenlight-connector-campusonline-bundle.md
       - Core Bundle:
-        - relay/bundles/core/index.md
+        - components/api/core/index.md
       - Auth Bundle:
-        - relay/bundles/auth/index.md
-        - relay/bundles/auth/config.md
-        - relay/bundles/auth/roles.md
+        - components/api/auth/index.md
+        - components/api/auth/config.md
+        - components/api/auth/roles.md
       - Base Person Bundle:
-        - relay/bundles/base-person/index.md
+        - components/api/base-person/index.md
       - Base Organization Bundle:
-        - relay/bundles/base-organization/index.md
+        - components/api/base-organization/index.md
       - Electronic Signature Bundle:
-        - relay/bundles/esign/index.md
-        - relay/bundles/esign/config.md
-        - relay/bundles/esign/advanced_flow.md
-        - relay/bundles/esign/advanced_pdf_signing.md
-        - relay/bundles/esign/qualified_flow.md
-        - relay/bundles/esign/positioning.md
-        - relay/bundles/esign/cli_commands.md
+        - components/api/esign/index.md
+        - components/api/esign/config.md
+        - components/api/esign/advanced_flow.md
+        - components/api/esign/advanced_pdf_signing.md
+        - components/api/esign/qualified_flow.md
+        - components/api/esign/positioning.md
+        - components/api/esign/cli_commands.md
       - Sublibrary Bundle:
-        - relay/bundles/sublibrary/index.md
+        - components/api/sublibrary/index.md
       - Authentic Document Bundle:
-        - relay/bundles/authentic-document/index.md
+        - components/api/authentic-document/index.md
       - Check In Bundle:
-        - relay/bundles/check-in/index.md
+        - components/api/check-in/index.md
       - Greenlight Bundle:
-        - relay/bundles/greenlight/index.md
-        - relay/bundles/greenlight/config.md
+        - components/api/greenlight/index.md
+        - components/api/greenlight/config.md
         - CAMPUSonline Connector:
-          - relay/bundles/greenlight-connector-campusonline/index.md
-          - relay/bundles/greenlight-connector-campusonline/config.md
+          - components/api/greenlight-connector-campusonline/index.md
+          - components/api/greenlight-connector-campusonline/config.md
       - Mono Bundle:
-        - relay/bundles/mono/index.md
-        - relay/bundles/mono/config.md
-        - relay/bundles/mono/logging.md
+        - components/api/mono/index.md
+        - components/api/mono/config.md
+        - components/api/mono/logging.md
         - CAMPUSonline Connector:
-          - relay/bundles/mono-connector-campusonline/index.md
-          - relay/bundles/mono-connector-campusonline/config.md
+          - components/api/mono-connector-campusonline/index.md
+          - components/api/mono-connector-campusonline/config.md
         - PayUnity Connector:
-          - relay/bundles/mono-connector-payunity/index.md
-          - relay/bundles/mono-connector-payunity/config.md
+          - components/api/mono-connector-payunity/index.md
+          - components/api/mono-connector-payunity/config.md
         - Generic Connector:
-          - relay/bundles/mono-connector-generic/index.md
+          - components/api/mono-connector-generic/index.md
       - Dispatch Bundle:
-        - relay/bundles/dispatch/README.md
-        - relay/bundles/dispatch/config.md
-        - relay/bundles/dispatch/authz.md
-        - relay/bundles/dispatch/database.md
-        - relay/bundles/dispatch/cli.md
-        - relay/bundles/dispatch/api.md
+        - components/api/dispatch/README.md
+        - components/api/dispatch/config.md
+        - components/api/dispatch/authz.md
+        - components/api/dispatch/database.md
+        - components/api/dispatch/cli.md
+        - components/api/dispatch/api.md
 
-  - Frontend Framework:
-    - frontend/index.md
-    - frontend/getting_started.md
-    - frontend/components.md
-    - frontend/activities.md
-    - frontend/configuration.md
-    - frontend/theming.md
-    - frontend/keycloak_integration.md
-    - Developer Guide:
-      - frontend/dev/coding_standard.md
-      - frontend/dev/accessibility.md
-      - frontend/dev/ui_guideline.md
-      - frontend/dev/web_components_guidelines.md
-      - frontend/dev/testing.md
-      - frontend/dev/build_tooling.md
-      - frontend/dev/browser_support.md
-      - frontend/dev/remote_firefox_debugging.md
-      - frontend/dev/assets.md
-      - frontend/dev/topics.md
-      - frontend/dev/faq.md
-      - frontend/dev/translations.md
+    - Supporting Software:
+      - components/supporting-software/pdf-as.md
+
+  - Frameworks:
+
+    - frameworks/index.md
+
+    - Relay API Gateway:
+      - frameworks/relay/index.md
+
+      - User Guide:
+        - frameworks/relay/user/index.md
+        - frameworks/relay/user/error_handling.md
+        - frameworks/relay/user/pagination.md
+        - frameworks/relay/user/translations.md
+        - frameworks/relay/user/client_credentials.md
+
+      - Administration Guide:
+        - frameworks/relay/admin/index.md
+        - frameworks/relay/admin/extending_with_bundles.md
+        - frameworks/relay/admin/production.md
+        - frameworks/relay/admin/config.md
+        - frameworks/relay/admin/access_control.md
+        - frameworks/relay/admin/expression_language.md
+        - frameworks/relay/admin/locks.md
+        - frameworks/relay/admin/queue.md
+        - frameworks/relay/admin/cron.md
+        - frameworks/relay/admin/database.md
+        - frameworks/relay/admin/reverse_proxies.md
+        - frameworks/relay/admin/debugging.md
+        - frameworks/relay/admin/update.md
+        - frameworks/relay/admin/faq.md
+
+      - Developer Guide:
+        - frameworks/relay/dev/index.md
+        - frameworks/relay/dev/getting_started.md
+        - frameworks/relay/dev/new_bundle.md
+        - frameworks/relay/dev/bundle_config.md
+        - frameworks/relay/dev/access_control.md
+        - frameworks/relay/dev/cron.md
+        - frameworks/relay/dev/errors.md
+        - frameworks/relay/dev/queue.md
+        - frameworks/relay/dev/logging.md
+        - frameworks/relay/dev/local_data.md
+        - frameworks/relay/dev/locks.md
+        - frameworks/relay/dev/api.md
+        - frameworks/relay/dev/cors_headers.md
+        - frameworks/relay/dev/cli_commands.md
+        - frameworks/relay/dev/health_checks.md
+        - frameworks/relay/dev/naming.md
+        - frameworks/relay/dev/guidelines.md
+        - frameworks/relay/dev/faq.md
+        - frameworks/relay/dev/coding_standard.md
+        - frameworks/relay/dev/ide_integration.md
+        - frameworks/relay/dev/datetime.md
+        - frameworks/relay/dev/pagination.md
+        - frameworks/relay/dev/translations.md
+        - frameworks/relay/dev/base_entities.md
+        - frameworks/relay/dev/hooks.md
+        - frameworks/relay/dev/database.md
+        - frameworks/relay/dev/sysreq_policy.md
+
+      - HowTos:
+        - frameworks/relay/howtos/keycloak_scopes.md
+        - frameworks/relay/howtos/keycloak_audience.md
+        - frameworks/relay/howtos/service_account.md
+
+    - Frontend Framework:
+
+      - frameworks/frontend/index.md
+      - frameworks/frontend/getting_started.md
+      - frameworks/frontend/components.md
+      - frameworks/frontend/activities.md
+      - frameworks/frontend/configuration.md
+      - frameworks/frontend/theming.md
+      - frameworks/frontend/keycloak_integration.md
+
+      - Developer Guide:
+        - frameworks/frontend/dev/coding_standard.md
+        - frameworks/frontend/dev/accessibility.md
+        - frameworks/frontend/dev/ui_guideline.md
+        - frameworks/frontend/dev/web_components_guidelines.md
+        - frameworks/frontend/dev/testing.md
+        - frameworks/frontend/dev/build_tooling.md
+        - frameworks/frontend/dev/browser_support.md
+        - frameworks/frontend/dev/remote_firefox_debugging.md
+        - frameworks/frontend/dev/assets.md
+        - frameworks/frontend/dev/topics.md
+        - frameworks/frontend/dev/faq.md
+        - frameworks/frontend/dev/translations.md
 
   - Corporate Design:
     - cd/logo.md
@@ -206,20 +233,7 @@ nav:
     - cd/apps.md
   - How-Tos:
     - howtos/docker.md
-  - Software:
-    - software/index.md
-    - software/greenlight.md
-    - software/check-in.md
-    - software/esign.md
-    - software/plan.md
-  - Components:
-    - components/server-template.md
-    - components/core-bundle.md
-    - components/auth-bundle.md
-    - components/base-person-bundle.md
-    - components/base-person-connector-ldap-bundle.md
-    - components/greenlight-connector-campusonline-bundle.md
-    - components/pdf-as.md
+
   - demo_access.md
   - contribute.md
   - contact.md

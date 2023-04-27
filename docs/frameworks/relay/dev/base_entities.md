@@ -4,14 +4,14 @@ Base Entities are basic resource entities intended to be (re-)usable in a wide r
 
 The Relay API Gateway provides a growing set of Base Entities, such as
 
-* [Base Organization](../bundles/base-organization/index.md)
-* [Base Person](../bundles/base-person/index.md)
+* [Base Organization](../../../components/api/base-organization/index.md)
+* [Base Person](../../../components/api/base-person/index.md)
 
 ## Bundle Structure
 
 ### Base Entity Bundles
 
-Base Entities have a corresponding bundle where they are defined (e.g. the [Base Organization Bundle](../bundles/base-organization/index.md)). These Base Entity Bundles define
+Base Entities have a corresponding bundle where they are defined (e.g. the [Base Organization Bundle](../../../components/api/base-organization/index.md)). These Base Entity Bundles define
 
 * the Base Entity
 * HTTP endpoints to request the Base Entity (at least one item and one collection endpoint)

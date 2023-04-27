@@ -296,7 +296,7 @@ which contains functionality like error handling, logging, locking and a message
 queue configuration, that is required by all bundles for the DBP Relay project.
 
 There are multiple backends to choose from (MySQL, Redis, ...) on how to persist data,
-see [Core Bundle Check-in Configuration](../components/core-bundle.md#check-in) on how to configure them.
+see [Core Bundle Check-in Configuration](../components/api/core-bundle.md#check-in) on how to configure them.
 
 You need to have a system in place to run the [message queue workers](https://dbp-demo.tugraz.at/handbook/relay/admin/queue/).
 Symfony recommends to use [Supervisor](http://supervisord.org/) to do this. You can use the [example configuration](https://dbp-demo.tugraz.at/handbook/relay/admin/queue/#manage-workers-with-supervisor) to help you with the setup process.
@@ -312,7 +312,7 @@ Symfony recommends to use [Supervisor](http://supervisord.org/) to do this. You 
 
 #### Auth Bundle config
 
-Follow the these steps to configure the Auth Bundle: [Configure the Auth Bundle](../components/auth-bundle.md)
+Follow the these steps to configure the Auth Bundle: [Configure the Auth Bundle](../components/api/auth-bundle.md)
 
 #### Checkin Bundle config
 
@@ -338,9 +338,9 @@ You need to implement a service for `PersonProviderInterface` from [Base Person 
 !!! tip
     If you are using **LDAP** as your source for identity management, you can install the
     [BasePerson Connector Bundle for LDAP](https://gitlab.tugraz.at/dbp/relay/dbp-relay-base-person-connector-ldap-bundle),
-    which allows you to connect the [Base Person Bundle](../components/base-person-bundle.md) to your LDAP server.
+    which allows you to connect the [Base Person Bundle](../components/api/base-person-bundle.md) to your LDAP server.
 
-    There is a guide at [BasePerson Connector Bundle for LDAP](../components/base-person-connector-ldap-bundle.md),
+    There is a guide at [BasePerson Connector Bundle for LDAP](../components/api/base-person-connector-ldap-bundle.md),
     that walks you through the steps to set up the LDAP connector.
 
 

@@ -1,51 +1,77 @@
 # Overview
 
-This handbook contains documentation for integrators, system administrators,
-designers, developers and users of the DBP framework.
+The project digital blueprint consists of blueprints. Each blueprint consists of
+multiple components such as front-end applications, back-end APIs, existing
+software projects with extensions, or other supporting software. Together they
+provide a service that your users can benefit from.
+
+```mermaid
+flowchart TB
+    style blueprint_a stroke:#338555,color:#338555
+    style blueprint_b stroke:#9e1e4d,color:#9e1e4d
+    style blueprint_c stroke:#336885,color:#336885
+
+    subgraph " "
+      direction TB
+
+      subgraph blueprint_a ["Blueprint A"]
+          direction LR
+          component_1["App Component"]
+          component_2["API Component"]
+      end
+
+      subgraph blueprint_b ["Blueprint B"]
+          direction LR
+          component_3["App Component"]
+          component_4["API Component"]
+          component_5["Supporting Software Component"]
+      end
+
+      subgraph blueprint_c ["Blueprint C"]
+          direction LR
+          component_6["Application"]
+          component_7["Application Extension"]
+      end
+
+    end
+```
+
+Many of the components, which make up a blueprint, make use of our own frontend and API framework.
 
 ```mermaid
 flowchart LR
-    style gateway stroke:#338555,color:#338555
-    style frontend stroke:#9e1e4d,color:#9e1e4d
+    style blueprint_a stroke:#338555,color:#338555
+    style frameworks stroke:#9e1e4d,color:#9e1e4d
 
-    subgraph frontend["Frontend Framework"]
-        webapp["Web Application"]
-        activitiy["Web Activity"]
+    subgraph " "
+      direction LR
+
+      subgraph frameworks["Frameworks"]
+          frontend["Frontend Framework"]
+          backend["Relay API Gateway"]
+      end
+
+      subgraph blueprint_a ["Blueprint A"]
+          direction LR
+          component_1["App Component"]
+          component_2["API Component"]
+      end
     end
 
-    subgraph system["Backend System"]
-        apiclient["HTTP Client"]
-    end
-
-    subgraph gateway["Relay API Gateway"]
-        api["API Gateway"]
-        subgraph bundle_1["Bundle"]
-          bundle_1a["Bundle"]
-        end
-        subgraph bundle_2["Bundle with Connector"]
-          direction TB
-          bundle_2a["Bundle 2"]
-          connector["Connector"]
-        end
-    end
-
-    backend_1["Backend 1"]
-    backend_2["Backend 2"]
-    
-    bundle_1a ---> backend_1
-    connector --> backend_2
-
-    api --> bundle_1a
-    api --> bundle_2a
-
-    webapp --> gateway
-    activitiy --> gateway
-    apiclient --> gateway
-
-    bundle_2a["Bundle"] --> connector["Connector"]
+    component_1 --- frontend
+    component_2 --- backend
 ```
 
-The DBP framework is open source and consists of a modular [API gateway](./relay) providing a REST
-API as well as a web component based [frontend framework](./frontend) for
-building web applications as well as single activities that can be embedded in
-existing web applications.
+Many of the components are not tied to their blueprints can be re-used in external contexts, like your own applications.
+
+```mermaid
+flowchart LR
+    style component_1 stroke:#338555,color:#338555
+    style component_2 stroke:#9e1e4d,color:#9e1e4d
+
+    subgraph yourapp["Your Application"]
+    direction LR
+        component_1["digital blueprint Component"]
+        component_2["Your Component"]
+    end
+```

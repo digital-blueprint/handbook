@@ -47,7 +47,7 @@ If you don't need any customization, you don't need to implement any event subsc
 
 ### Check-in
 
-For the [Check-In project](../software/check-in.md) you need to set `ROLE_SCOPE_LOCATION-CHECK-IN` and `ROLE_SCOPE_LOCATION-CHECK-IN-GUEST`
+For the [Check-In project](../../blueprints/check-in.md) you need to set `ROLE_SCOPE_LOCATION-CHECK-IN` and `ROLE_SCOPE_LOCATION-CHECK-IN-GUEST`
 as `ldap-roles` for the person. You can do that by implementing an event subscriber for the `PersonFromUserItemPostEvent` event.
 
 Please take a look at the [PersonFromUserItemPostEvent Documentation](https://gitlab.tugraz.at/dbp/relay/dbp-relay-base-person-connector-ldap-bundle/-/tree/main#personfromuseritempostevent)
@@ -94,7 +94,7 @@ Afterwards best do a `composer install` to make sure caches are cleared and ever
 
 ### Greenlight
 
-[Greenlight project](../software/greenlight.md) you need to set `ROLE_SCOPE_GREENLIGHT` as `ldap-roles` for the person.
+[Greenlight project](../../blueprints/greenlight.md) you need to set `ROLE_SCOPE_GREENLIGHT` as `ldap-roles` for the person.
 You can do that by implementing an event subscriber for the `PersonFromUserItemPostEvent` event.
 
 Please take a look at the [PersonFromUserItemPostEvent Documentation](https://gitlab.tugraz.at/dbp/relay/dbp-relay-base-person-connector-ldap-bundle/-/tree/main#personfromuseritempostevent)
@@ -141,7 +141,7 @@ Afterwards best do a `composer install` to make sure caches are cleared and ever
 
 ### ESign
 
-[Esign project](../software/esign.md) you need to set the roles you set in `config/packages/dbp_relay_esign.yaml` as
+[Esign project](../../blueprints/esign.md) you need to set the roles you set in `config/packages/dbp_relay_esign.yaml` as
 `ldap-roles` for the person if it should have permission to the signature profile.
 You can do that by implementing an event subscriber for the `PersonFromUserItemPostEvent` event.
 

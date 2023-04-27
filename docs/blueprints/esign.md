@@ -83,7 +83,7 @@ You need to install and set up the Open Source Identity and Access Management [K
 
 ### PDF-AS
 
-For the actual PDF signing you need a [PDF-AS](../components/pdf-as.md) server 4.1.5+ by [EGIZ](https://joinup.ec.europa.eu/collection/e-government-innovation-center-egiz/about).
+For the actual PDF signing you need a [PDF-AS](../components/supporting-software/pdf-as.md) server 4.1.5+ by [EGIZ](https://joinup.ec.europa.eu/collection/e-government-innovation-center-egiz/about).
 
 We provide two pre-configured variants of pdf-as, you need at least one of them depending on your use case:
 
@@ -230,7 +230,7 @@ composer require dbp/relay-esign-bundle
 
 #### Auth Bundle config
 
-Follow the these steps to configure the Auth Bundle: [Configure the Auth Bundle](../components/auth-bundle.md)
+Follow the these steps to configure the Auth Bundle: [Configure the Auth Bundle](../components/api/auth-bundle.md)
 
 #### ESign Bundle config
 

@@ -223,7 +223,7 @@ composer require dbp/relay-greenlight-bundle
 
 #### Auth Bundle config
 
-Follow the these steps to configure the Auth Bundle: [Configure the Auth Bundle](../components/auth-bundle.md)
+Follow the these steps to configure the Auth Bundle: [Configure the Auth Bundle](../components/api/auth-bundle.md)
 
 #### Greenlight Bundle config
 
@@ -264,7 +264,7 @@ You need to implement a service for `PersonPhotoProviderInterface` from [Greenli
     which fetches images for [DbpRelayGreenlightBundle](https://gitlab.tugraz.at/dbp/greenlight/dbp-relay-greenlight-bundle)
     from CampusOnline, while retrieving the `co-obfuscated-c-ident` from LDAP
 
-    There is a guide at [Greenlight Connector Bundle for CampusOnline and LDAP](../components/greenlight-connector-campusonline-bundle.md),
+    There is a guide at [Greenlight Connector Bundle for CampusOnline and LDAP](../components/api/greenlight-connector-campusonline-bundle.md),
     that walks you through the steps to set up the CampusOnline connector.
 
 Afterwards best do a `composer install` to make sure caches are cleared and everything is in order.
@@ -276,9 +276,9 @@ You need to implement a service for `PersonProviderInterface` from [Base Person 
 !!! tip
     If you are using **LDAP** as your source for identity management, you can install the
     [BasePerson Connector Bundle for LDAP](https://gitlab.tugraz.at/dbp/relay/dbp-relay-base-person-connector-ldap-bundle),
-    which allows you to connect the [Base Person Bundle](../components/base-person-bundle.md) to your LDAP server.
+    which allows you to connect the [Base Person Bundle](../components/api/base-person-bundle.md) to your LDAP server.
 
-    There is a guide at [BasePerson Connector Bundle for LDAP](../components/base-person-connector-ldap-bundle.md),
+    There is a guide at [BasePerson Connector Bundle for LDAP](../components/api/base-person-connector-ldap-bundle.md),
     that walks you through the steps to set up the LDAP connector.
 
 
