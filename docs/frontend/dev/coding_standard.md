@@ -7,8 +7,8 @@ For our Javscript projects we currently use the following tools:
 
 To invoke the tools:
 
-* `yarn lint` - will run eslint on the project and warn on errors
-* `yarn format` - will reformat the project using both eslint and prettier
+* `npm lint` - will run eslint on the project and warn on errors
+* `npm format` - will reformat the project using both eslint and prettier
 
 ## Prettier Pitfalls
 

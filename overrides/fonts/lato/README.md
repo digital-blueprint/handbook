@@ -9,7 +9,7 @@ The CSS and web font files to easily self-host the “Lato” font. Please visit
 Fontsource has a variety of methods to import CSS, such as using a bundler like Webpack. Alternatively, it supports SASS. Full documentation can be found [here](https://fontsource.org/docs/introduction).
 
 ```javascript
-yarn add @fontsource/lato // npm install @fontsource/lato
+npm install @fontsource/lato
 ```
 
 Within your app entry file or site component, import it in.

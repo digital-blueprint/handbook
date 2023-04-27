@@ -3,8 +3,8 @@
 To run unit tests for a package:
 
 ```
-yarn install
-yarn run test
+npm install
+npm run test
 ```
 
 * We use [karma](https://karma-runner.github.io) + [mocha](https://mochajs.org)

@@ -1,9 +1,6 @@
 # Build Tooling
 
-For package management we use [yarn 1.x](https://classic.yarnpkg.com) since it
-provides support for monorepos through yarn workspaces and allows to hoist
-dependencies in mono repos so bundles can consume them. We have not looked into
-yarn 2.x+ and the new workspaces support in nom 7.x+.
+For package management we use npm. We use workspaces in combination with mono repos and git submodules to allow developing multiple packages at the same time.
 
 For managing mono repos we also use [lerna](https://lerna.js.org/), which allow
 us to run tasks for all included packages.

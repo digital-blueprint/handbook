@@ -30,7 +30,7 @@ Take a look at [fonts](../../frontend/theming/#fonts) in the "theming and indivi
 
 To add a font to your repository simply call
 ```bash
-yarn add @fontsource/nunito-sans
+npm install @fontsource/nunito-sans
 ```
 Now you have to adapt the `rollup.config.js`, 
 so that the fonts are loaded in the dist folder.
