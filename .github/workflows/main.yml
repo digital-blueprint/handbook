@@ -34,13 +34,19 @@ jobs:
         run: |
           poetry install
 
-      - run: poetry run mkdocs build
+      - name: Build
+        run: |
+          poetry run mkdocs build
+
+      - name: Pack result
+        run: |
+          tar -czf site.tar.gz ./site
 
       - name: Upload Results
         uses: actions/upload-artifact@v3
         with:
           name: website
-          path: ./site
+          path: site.tar.gz
 
   deploy:
     runs-on: ubuntu-latest
