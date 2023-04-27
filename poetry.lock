@@ -347,6 +347,25 @@ files = [
 ]
 
 [[package]]
+name = "mkdocs-redirects"
+version = "1.2.0"
+description = "A MkDocs plugin for dynamic page redirects to prevent broken links."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "mkdocs-redirects-1.2.0.tar.gz", hash = "sha256:ddd38267d49fdfa19fb2f25b4aed2fb53f0496c818bf3018009c8eaf6676a327"},
+]
+
+[package.dependencies]
+mkdocs = ">=1.1.1"
+
+[package.extras]
+dev = ["autoflake", "black", "isort", "pytest", "twine (>=1.13.0)"]
+release = ["twine (>=1.13.0)"]
+test = ["autoflake", "black", "isort", "pytest"]
+
+[[package]]
 name = "packaging"
 version = "23.1"
 description = "Core utilities for Python packages"
@@ -649,4 +668,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "ec8e6996db86a4dcbc65ebbc2068d3be222ae06e8fa49eb77f9c7d2d9ed5300e"
+content-hash = "846d383b43c21a0660173f70545eb1e5c887e538c99868332e83af06a59bed9d"

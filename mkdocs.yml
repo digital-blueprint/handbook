@@ -13,6 +13,11 @@ theme:
       - content.action.edit
       - content.code.copy
 
+plugins:
+  # https://github.com/mkdocs/mkdocs-redirects
+  - redirects:
+      redirect_maps:
+
 extra_css:
   - assets/styles/styles.css
   - assets/styles/extra.css
