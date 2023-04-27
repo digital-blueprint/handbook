@@ -26,10 +26,13 @@ repo_url: https://github.com/digital-blueprint/handbook
 edit_uri: edit/main/docs/
 
 markdown_extensions:
+    - md_in_html
     - attr_list
     - codehilite
     - sane_lists
     - admonition
+    - pymdownx.tabbed:
+        alternate_style: true
     - pymdownx.arithmatex
     - pymdownx.betterem:
         smart_enable: all
@@ -203,6 +206,20 @@ nav:
     - cd/apps.md
   - How-Tos:
     - howtos/docker.md
+  - Software:
+    - software/index.md
+    - software/greenlight.md
+    - software/check-in.md
+    - software/esign.md
+    - software/plan.md
+  - Components:
+    - components/server-template.md
+    - components/core-bundle.md
+    - components/auth-bundle.md
+    - components/base-person-bundle.md
+    - components/base-person-connector-ldap-bundle.md
+    - components/greenlight-connector-campusonline-bundle.md
+    - components/pdf-as.md
   - demo_access.md
   - contribute.md
   - contact.md
