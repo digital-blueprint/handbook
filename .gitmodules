@@ -34,3 +34,6 @@
 [submodule "submodules/relay-base-person-bundle"]
 	path = submodules/relay-base-person-bundle
 	url = https://github.com/digital-blueprint/relay-base-person-bundle
+[submodule "submodules/relay-base-person-connector-ldap-bundle"]
+	path = submodules/relay-base-person-connector-ldap-bundle
+	url = https://github.com/digital-blueprint/relay-base-person-connector-ldap-bundle

@@ -95,6 +95,9 @@ nav:
         - components/api/auth/roles.md
       - Base Person Bundle:
         - components/api/base-person/README.md
+        - LDAP Connector:
+          - components/api/base-person-connector-ldap/README.md
+          - components/api/base-person-connector-ldap/config.md
       - Base Organization Bundle:
         - components/api/base-organization/index.md
       - Electronic Signature Bundle:
