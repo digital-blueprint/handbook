@@ -31,3 +31,6 @@
 [submodule "submodules/relay-authentic-documents-bundle"]
 	path = submodules/relay-authentic-documents-bundle
 	url = https://github.com/digital-blueprint/relay-authentic-documents-bundle
+[submodule "submodules/relay-base-person-bundle"]
+	path = submodules/relay-base-person-bundle
+	url = https://github.com/digital-blueprint/relay-base-person-bundle

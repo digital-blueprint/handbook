@@ -85,7 +85,6 @@ nav:
       - components/api/server-template.md
       - components/api/core-bundle.md
       - components/api/auth-bundle.md
-      - components/api/base-person-bundle.md
       - components/api/base-person-connector-ldap-bundle.md
       - components/api/greenlight-connector-campusonline-bundle.md
       - Core Bundle:
@@ -95,7 +94,7 @@ nav:
         - components/api/auth/config.md
         - components/api/auth/roles.md
       - Base Person Bundle:
-        - components/api/base-person/index.md
+        - components/api/base-person/README.md
       - Base Organization Bundle:
         - components/api/base-organization/index.md
       - Electronic Signature Bundle:
