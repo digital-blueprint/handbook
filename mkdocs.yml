@@ -109,7 +109,7 @@ nav:
         - components/api/esign/positioning.md
         - components/api/esign/cli_commands.md
       - Sublibrary Bundle:
-        - components/api/sublibrary/index.md
+        - components/api/sublibrary/README.md
       - Authentic Documents Bundle:
         - components/api/authentic-documents/README.md
       - Check In Bundle:
