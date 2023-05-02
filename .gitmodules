@@ -28,3 +28,6 @@
 [submodule "submodules/dbp-relay-dispatch-bundle"]
 	path = submodules/dbp-relay-dispatch-bundle
 	url = https://github.com/digital-blueprint/relay-dispatch-bundle
+[submodule "submodules/relay-authentic-documents-bundle"]
+	path = submodules/relay-authentic-documents-bundle
+	url = https://github.com/digital-blueprint/relay-authentic-documents-bundle

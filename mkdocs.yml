@@ -108,8 +108,8 @@ nav:
         - components/api/esign/cli_commands.md
       - Sublibrary Bundle:
         - components/api/sublibrary/index.md
-      - Authentic Document Bundle:
-        - components/api/authentic-document/index.md
+      - Authentic Documents Bundle:
+        - components/api/authentic-documents/README.md
       - Check In Bundle:
         - components/api/check-in/index.md
       - Greenlight Bundle:
