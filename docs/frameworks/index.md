@@ -1,7 +1,7 @@
 # Overview
 
 This section contains documentation for integrators, system administrators,
-designers, developers and users of our front-end and backe-end frameworks.
+designers, developers and users of our front-end and back-end frameworks.
 
 ```mermaid
 flowchart LR
