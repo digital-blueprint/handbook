@@ -250,7 +250,7 @@ cd /[VHOST-ROOT]
 # Install the DBP API Server Template (https://github.com/digital-blueprint/relay-server-template)
 # as base Symfony PHP application
 # The relay-api/public directory then is the directory to let the webserver point at
-composer create-project dbp/relay-server-template relay-api "dev-main"
+composer create-project dbp/relay-server-template relay-api
 
 # Change to app directory
 cd relay-api

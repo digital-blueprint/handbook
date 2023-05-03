@@ -69,7 +69,7 @@ Optional (In case you want to work outside of docker):
 Note: If you don't have `bash` you can execute the commands in the shell scripts (`*.sh`) manually.
 
 ```shell
-composer create-project dbp/relay-server-template my-api "dev-main"
+composer create-project dbp/relay-server-template my-api
 cd my-api
 cd docker-dev
 ./build.sh          # to build the required docker images
