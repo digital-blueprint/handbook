@@ -87,7 +87,6 @@ nav:
       - Core Bundle:
         - components/api/core/index.md
       - components/api/base-person-connector-ldap-bundle.md
-      - components/api/greenlight-connector-campusonline-bundle.md
       - Auth Bundle:
         - components/api/auth/README.md
         - components/api/auth/config.md
@@ -117,8 +116,9 @@ nav:
         - components/api/greenlight/index.md
         - components/api/greenlight/config.md
         - CAMPUSonline Connector:
-          - components/api/greenlight-connector-campusonline/index.md
+          - components/api/greenlight-connector-campusonline/README.md
           - components/api/greenlight-connector-campusonline/config.md
+          - components/api/greenlight-connector-campusonline/events.md
       - Mono Bundle:
         - components/api/mono/index.md
         - components/api/mono/config.md

@@ -256,7 +256,7 @@ You need to implement a service for `PersonPhotoProviderInterface` from [Greenli
     which fetches images for [DbpRelayGreenlightBundle](https://gitlab.tugraz.at/dbp/greenlight/dbp-relay-greenlight-bundle)
     from CampusOnline, while retrieving the `co-obfuscated-c-ident` from LDAP
 
-    There is a guide at [Greenlight Connector Bundle for CampusOnline and LDAP](../components/api/greenlight-connector-campusonline-bundle.md),
+    There is a guide at [Greenlight Connector Bundle for CampusOnline and LDAP](../components/api/greenlight-connector-campusonline/config.md),
     that walks you through the steps to set up the CampusOnline connector.
 
 Afterwards best do a `composer install` to make sure caches are cleared and everything is in order.
