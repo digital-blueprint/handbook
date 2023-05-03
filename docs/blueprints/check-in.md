@@ -52,7 +52,7 @@ graph TB
 ### Frontend App
 
 You can install the frontend application with a simple command you can find on
-[Check-in frontend installation](https://gitlab.tugraz.at/dbp/check-in/checkin#using-this-app-as-pre-built-package).
+[Check-in frontend installation](https://github.com/digital-blueprint/checkin-app#using-this-app-as-pre-built-package).
 
 To install the frontend app you need `npx` which should be installed using this command.
 
@@ -61,7 +61,7 @@ To install the frontend app you need `npx` which should be installed using this 
 apt-get -y --no-install-recommends install nodejs
 ```
 
-After installing the frontend app you need to adapt the `index.html` file to match the branding of your organization. You can find a guide for this in the [Handbook](https://dbp-demo.tugraz.at/handbook/frontend/theming/).
+After installing the frontend app you need to adapt the `index.html` file to match the branding of your organization. You can find a guide for this in the [Handbook](../frameworks/frontend/theming.md).
 
 ### Keycloak Server
 
@@ -233,7 +233,7 @@ sudo service apache2 restart
 
 #### App and bundle install
 
-We will use the [DBP API Server Template](https://gitlab.tugraz.at/dbp/relay/dbp-relay-server-template) as
+We will use the [DBP API Server Template](https://github.com/digital-blueprint/relay-server-template) as
 starting point for our implementation.
 
 !!! tip
@@ -247,7 +247,7 @@ starting point for our implementation.
 # create files and directories in the "/[VHOST-ROOT]" directory.
 cd /[VHOST-ROOT]
 
-# Install the DBP API Server Template (https://gitlab.tugraz.at/dbp/relay/dbp-relay-server-template)
+# Install the DBP API Server Template (https://github.com/digital-blueprint/relay-server-template)
 # as base Symfony PHP application
 # The relay-api/public directory then is the directory to let the webserver point at
 composer create-project dbp/relay-server-template relay-api "dev-main"
@@ -255,21 +255,21 @@ composer create-project dbp/relay-server-template relay-api "dev-main"
 # Change to app directory
 cd relay-api
 
-# Install the Base Person Bundle (https://gitlab.tugraz.at/dbp/relay/dbp-relay-base-person-bundle),
+# Install the Base Person Bundle (https://github.com/digital-blueprint/relay-base-person-bundle),
 # which contains entities required by many bundles for the DBP Relay project.
 composer require dbp/relay-base-person-bundle
 
 # If you are using LDAP as your source for identity management, you can install and configure the
-# BasePerson Connector Bundle for LDAP (https://gitlab.tugraz.at/dbp/relay/dbp-relay-base-person-connector-ldap-bundle),
+# BasePerson Connector Bundle for LDAP (https://github.com/digital-blueprint/relay-base-person-connector-ldap-bundle),
 # which allows you to connect the Base Person Bundle to your LDAP server.
 composer require dbp/relay-base-person-connector-ldap-bundle
 
-# Install the Frontend Bundle (https://gitlab.tugraz.at/dbp/relay/dbp-relay-frontend-bundle),
+# Install the Frontend Bundle (https://github.com/digital-blueprint/relay-frontend-bundle),
 # which contains APIs mostly useful for frontend apps.
 # It is a required dependency for all DBP frontend apps.
 composer require dbp/relay-frontend-bundle
 
-# Install the Check-in Bundle (https://gitlab.tugraz.at/dbp/check-in/dbp-relay-checkin-bundle),
+# Install the Check-in Bundle (https://github.com/digital-blueprint/relay-checkin-bundle),
 # which allows you to talk to the CampusQR backend.
 composer require dbp/relay-checkin-bundle
 ```
@@ -280,15 +280,15 @@ composer require dbp/relay-checkin-bundle
 
 #### Core bundle config
 
-You need to [configure the Core Bundle](https://dbp-demo.tugraz.at/handbook/relay/admin/config/),
+You need to [configure the Core Bundle](../frameworks/relay/admin/config.md),
 which contains functionality like error handling, logging, locking and a message
 queue configuration, that is required by all bundles for the DBP Relay project.
 
 There are multiple backends to choose from (MySQL, Redis, ...) on how to persist data,
 see [Core Bundle Check-in Configuration](../components/api/core-bundle.md#check-in) on how to configure them.
 
-You need to have a system in place to run the [message queue workers](https://dbp-demo.tugraz.at/handbook/relay/admin/queue/).
-Symfony recommends to use [Supervisor](http://supervisord.org/) to do this. You can use the [example configuration](https://dbp-demo.tugraz.at/handbook/relay/admin/queue/#manage-workers-with-supervisor) to help you with the setup process.
+You need to have a system in place to run the [message queue workers](../frameworks/relay/admin/queue.md).
+Symfony recommends to use [Supervisor](http://supervisord.org/) to do this. You can use the [example configuration](../frameworks/relay/admin/queue.md#manage-workers-with-supervisor) to help you with the setup process.
 
 !!! warning
     Keep in mind that you need to **restart** the message queue **workers** when you
@@ -305,7 +305,7 @@ Follow the these steps to configure the Auth Bundle: [Configure the Auth Bundle]
 
 #### Checkin Bundle config
 
-You need to [Configure the Checkin Bundle](https://gitlab.tugraz.at/dbp/check-in/dbp-relay-checkin-bundle#configuration),
+You need to [Configure the Checkin Bundle](https://github.com/digital-blueprint/relay-checkin-bundle#configuration),
 so it can talk to CampusQR.
 
 Adapt all `CAMPUS_QR_` settings in your `.env`.
@@ -327,9 +327,9 @@ You need to implement a service for `PersonProviderInterface` from [Base Person 
 !!! tip
     If you are using **LDAP** as your source for identity management, you can install the
     [BasePerson Connector Bundle for LDAP](https://github.com/digital-blueprint/relay-base-person-connector-ldap-bundle),
-    which allows you to connect the [Base Person Bundle](../../components/api/base-person/) to your LDAP server.
+    which allows you to connect the [Base Person Bundle](../components/api/base-person/README.md) to your LDAP server.
 
-    There is a guide at [BasePerson Connector Bundle for LDAP](../../components/api/base-person-connector-ldap-bundle/),
+    There is a guide at [BasePerson Connector Bundle for LDAP](../components/api/base-person-connector-ldap-bundle.md),
     that walks you through the steps to set up the LDAP connector.
 
 
@@ -372,7 +372,7 @@ If everything is working it should print something like:
 ```
 
 #### Debugging
-You can find an detailed guide on debugging in the [Handbook](https://dbp-demo.tugraz.at/handbook/relay/admin/debugging/).
+You can find an detailed guide on debugging in the [Handbook](../frameworks/relay/admin/debugging.md).
 
 !!! tip
     Many unspecific or hard to debug errors can be dealt with by clearing the Symfony cache using `./bin/console cache:clear`.
@@ -383,7 +383,7 @@ You can find an detailed guide on debugging in the [Handbook](https://dbp-demo.t
 
 #### Running in Production
 
-When you are done with setting things up please visit [Running in Production](https://dbp-demo.tugraz.at/handbook/relay/admin/production)
+When you are done with setting things up please visit [Running in Production](../frameworks/relay/admin/production.md)
 to learn how to run the Relay API in production.
 
 #### Backups
