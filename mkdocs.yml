@@ -82,13 +82,12 @@ nav:
       - components/app/mono.md
 
     - API:
+      - Core Bundle:
+        - components/api/core/index.md
       - components/api/server-template.md
-      - components/api/core-bundle.md
       - components/api/auth-bundle.md
       - components/api/base-person-connector-ldap-bundle.md
       - components/api/greenlight-connector-campusonline-bundle.md
-      - Core Bundle:
-        - components/api/core/index.md
       - Auth Bundle:
         - components/api/auth/index.md
         - components/api/auth/config.md
