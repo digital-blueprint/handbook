@@ -40,3 +40,6 @@
 [submodule "submodules/relay-sublibrary-bundle"]
 	path = submodules/relay-sublibrary-bundle
 	url = https://github.com/digital-blueprint/relay-sublibrary-bundle
+[submodule "submodules/relay-server-template"]
+	path = submodules/relay-server-template
+	url = https://github.com/digital-blueprint/relay-server-template

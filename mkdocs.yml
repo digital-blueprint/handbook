@@ -82,9 +82,10 @@ nav:
       - components/app/mono.md
 
     - API:
+      - Server Template:
+        - components/api/server-template/README.md
       - Core Bundle:
         - components/api/core/index.md
-      - components/api/server-template.md
       - components/api/base-person-connector-ldap-bundle.md
       - components/api/greenlight-connector-campusonline-bundle.md
       - Auth Bundle:
