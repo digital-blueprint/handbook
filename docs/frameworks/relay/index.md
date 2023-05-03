@@ -52,7 +52,7 @@ access data via the [API](#api). The user authentication is done via an OIDC
 server like Keycloak.
 
 An example for a web application would be the [Library
-application](https://dbp-demo.tugraz.at/apps/sublibrary/en).
+application](https://dbp-demo.tugraz.at/apps/sublibrary).
 
 External services like server applications that don't act on behalf of a user
 can access the API via "Client Credential" grants, also available in Keycloak

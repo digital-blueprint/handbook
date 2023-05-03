@@ -2,7 +2,7 @@
 
 Digitally sign one or multiple PDF documents with a freely positioned seal. 
 
-[Visit ESign Demo](https://dbp-demo.tugraz.at/wlapps/esign)
+[Visit ESign Demo](https://dbp-demo.tugraz.at/apps/signature)
 
 The application has two modes for signing
 
@@ -61,14 +61,14 @@ The frontend app currently depends on a `default` profile being configured in
 the backend for the qualified signature and a `official` profile for the
 advanced signature. This will be made [configurable in a future version](https://gitlab.tugraz.at/dbp/esign/signature/-/issues/48).
 
-If you want to customize your frontend, please have a look at the [theming and individualizing your application guide](https://handbook.digital-blueprint.org/frontend/theming/). There, an detailed description of individualizing your fonts, colors, icons, and other assets is given.
+If you want to customize your frontend, please have a look at the [theming and individualizing your application guide](../frameworks/frontend/theming.md). There, an detailed description of individualizing your fonts, colors, icons, and other assets is given.
 
 ### Keycloak Server
 
 You need to install and set up the Open Source Identity and Access Management [Keycloak](https://www.keycloak.org/).
 
 !!! tip
-    There is small guide about the [Keycloak Client Setup](https://dbp-demo.tugraz.at/handbook/frontend/keycloak_integration/).
+    There is small guide about the [Keycloak Client Setup](../frameworks/frontend/keycloak_integration.md).
 
 
 ### PDF-AS
@@ -224,7 +224,7 @@ Follow the these steps to configure the Auth Bundle: [Configure the Auth Bundle]
 
 #### ESign Bundle config
 
-You need to [Configure the ESign Bundle](https://gitlab.tugraz.at/dbp/esign/dbp-relay-esign-bundle#configuration).
+You need to [Configure the ESign Bundle](https://github.com/digital-blueprint/relay-esign-bundle#configuration).
 
 Adapt all `PDF_AS_` settings in your `.env`.
 
@@ -266,5 +266,5 @@ If everything is working it should print something like:
 
 #### Running in Production
 
-When you are done with setting things up please visit [Running in Production](https://dbp-demo.tugraz.at/handbook/relay/admin/production)
+When you are done with setting things up please visit [Running in Production](../frameworks/relay/admin/production.md)
 to learn how to run the Relay API in production.

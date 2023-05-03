@@ -2,7 +2,7 @@
 
 Handles check-ins to places and contact tracing for warning about COVID-19 cases.
 
-[Visit Check-in Demo](https://dbp-demo.tugraz.at/wlapps/check-in)
+[Visit Check-in Demo](https://dbp-demo.tugraz.at/apps/check-in)
 
 ## Screenshot
 
@@ -69,7 +69,7 @@ You need to install and set up the Open Source Identity and Access Management [K
 which needs to import (sync) your LDAP users.
 
 !!! tip
-    There is small guide about the [Keycloak Client Setup](https://dbp-demo.tugraz.at/handbook/frontend/keycloak_integration/).
+    There is small guide about the [Keycloak Client Setup](../frameworks/frontend/keycloak_integration.md).
 
 
 In addition to the `dbp-frontend` default client scope Check-in also needs a second default client scope called `location-check-in`, where `Include in Token Scope` is enabled and no additional mappers or scopes are set.

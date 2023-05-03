@@ -3,7 +3,7 @@
 Creates an entrance ticket and import your 3-G evidence on this device to validate it for admission even before attending
 a course or exam. The ticket then enables you to access the university premises quickly and efficiently.
 
-[Visit Greenlight Demo](https://dbp-demo.tugraz.at/wlapps/greenlight)
+[Visit Greenlight Demo](https://dbp-demo.tugraz.at/apps/greenlight)
 
 ## Screenshot
 
@@ -52,14 +52,14 @@ graph TB
 You can install the frontend application with a simple command you can find on 
 [Greenlight frontend installation](https://gitlab.tugraz.at/dbp/greenlight/greenlight/-/blob/main/README.md#using-this-app-as-pre-built-package).
 
-If you want to customize your frontend, please have a look at the [theming and individualizing your application guide](https://handbook.digital-blueprint.org/frontend/theming/). There, an detailed description of individualizing your fonts, colors, icons, and other assets is given. 
+If you want to customize your frontend, please have a look at the [theming and individualizing your application guide](../frameworks/frontend/theming.md). There, an detailed description of individualizing your fonts, colors, icons, and other assets is given. 
 
 ### Keycloak Server
 
 You need to install and set up the Open Source Identity and Access Management [Keycloak](https://www.keycloak.org/).
 
 !!! tip
-    There is small guide about the [Keycloak Client Setup](https://dbp-demo.tugraz.at/handbook/frontend/keycloak_integration/).
+    There is small guide about the [Keycloak Client Setup](../frameworks/frontend/keycloak_integration.md).
 
 
 ### Relay API
@@ -306,7 +306,7 @@ If everything is working it should print something like:
 
 #### Running in Production
 
-When you are done with setting things up please visit [Running in Production](https://dbp-demo.tugraz.at/handbook/relay/admin/production)
+When you are done with setting things up please visit [Running in Production](../frameworks/relay/admin/production.md)
 to learn how to run the Relay API in production.
 
 #### All done
