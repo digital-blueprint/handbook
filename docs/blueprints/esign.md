@@ -220,7 +220,7 @@ composer require dbp/relay-esign-bundle
 
 #### Auth Bundle config
 
-Follow the these steps to configure the Auth Bundle: [Configure the Auth Bundle](../components/api/auth-bundle.md)
+Follow the these steps to configure the Auth Bundle: [Configure the Auth Bundle](../components/api/auth/config.md)
 
 #### ESign Bundle config
 

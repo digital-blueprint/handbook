@@ -215,7 +215,7 @@ composer require dbp/relay-greenlight-bundle
 
 #### Auth Bundle config
 
-Follow the these steps to configure the Auth Bundle: [Configure the Auth Bundle](../components/api/auth-bundle.md)
+Follow the these steps to configure the Auth Bundle: [Configure the Auth Bundle](../components/api/auth/config.md)
 
 #### Greenlight Bundle config
 

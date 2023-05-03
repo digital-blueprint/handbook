@@ -85,11 +85,10 @@ nav:
       - Core Bundle:
         - components/api/core/index.md
       - components/api/server-template.md
-      - components/api/auth-bundle.md
       - components/api/base-person-connector-ldap-bundle.md
       - components/api/greenlight-connector-campusonline-bundle.md
       - Auth Bundle:
-        - components/api/auth/index.md
+        - components/api/auth/README.md
         - components/api/auth/config.md
         - components/api/auth/roles.md
       - Base Person Bundle:
