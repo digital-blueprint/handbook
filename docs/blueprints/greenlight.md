@@ -50,7 +50,7 @@ graph TB
 ### Frontend App
 
 You can install the frontend application with a simple command you can find on 
-[Greenlight frontend installation](https://gitlab.tugraz.at/dbp/greenlight/greenlight/-/blob/main/README.md#using-this-app-as-pre-built-package).
+[Greenlight frontend installation](https://github.com/digital-blueprint/greenlight-app#using-this-app-as-pre-built-package).
 
 If you want to customize your frontend, please have a look at the [theming and individualizing your application guide](../frameworks/frontend/theming.md). There, an detailed description of individualizing your fonts, colors, icons, and other assets is given. 
 
@@ -168,7 +168,7 @@ sudo service apache2 restart
 
 #### App and bundle install
 
-We will use the [DBP API Server Template](https://gitlab.tugraz.at/dbp/relay/dbp-relay-server-template) as
+We will use the [DBP API Server Template](https://github.com/digital-blueprint/relay-server-template) as
 starting point for our implementation.
 
 !!! tip
@@ -182,7 +182,7 @@ starting point for our implementation.
 # create files and directories in the "/[VHOST-ROOT]" directory.
 cd /[VHOST-ROOT]
 
-# Install the DBP API Server Template (https://gitlab.tugraz.at/dbp/relay/dbp-relay-server-template)
+# Install the DBP API Server Template (https://github.com/digital-blueprint/relay-server-template)
 # as base Symfony PHP application
 # The relay-api/public directory then is the directory to let the webserver point at 
 composer create-project dbp/relay-server-template relay-api
@@ -190,7 +190,7 @@ composer create-project dbp/relay-server-template relay-api
 # Change to app directory
 cd relay-api
 
-# Install the Base Person Bundle (https://gitlab.tugraz.at/dbp/relay/dbp-relay-base-person-bundle),
+# Install the Base Person Bundle (https://github.com/digital-blueprint/relay-base-person-bundle),
 # which contains entities required by many bundles for the DBP Relay project.
 composer require dbp/relay-base-person-bundle
 
@@ -199,12 +199,12 @@ composer require dbp/relay-base-person-bundle
 # which allows you to connect the Base Person Bundle to your LDAP server.
 composer require dbp/relay-base-person-connector-ldap-bundle
 
-# Install the Frontend Bundle (https://gitlab.tugraz.at/dbp/relay/dbp-relay-frontend-bundle),
+# Install the Frontend Bundle (https://github.com/digital-blueprint/relay-base-person-connector-ldap-bundle),
 # which contains APIs mostly useful for frontend apps.
 # It is a required dependency for all DBP frontend apps.
 composer require dbp/relay-frontend-bundle
 
-# Install the Greenlight Bundle (https://gitlab.tugraz.at/dbp/greenlight/dbp-relay-greenlight-bundle),
+# Install the Greenlight Bundle (https://github.com/digital-blueprint/relay-greenlight-bundle),
 # which allows you to create permits for the Covid19 certificate evaluation process.
 composer require dbp/relay-greenlight-bundle
 ```
@@ -252,8 +252,8 @@ You need to implement a service for `PersonPhotoProviderInterface` from [Greenli
 
 !!! tip
     If you are using **CampusOnline** for storing photos and **LDAP** as your source for identity management, you can install the
-    [Greenlight Connector Bundle for CampusOnline](https://gitlab.tugraz.at/dbp/greenlight/dbp-relay-greenlight-connector-campusonline-bundle),
-    which fetches images for [DbpRelayGreenlightBundle](https://gitlab.tugraz.at/dbp/greenlight/dbp-relay-greenlight-bundle)
+    [Greenlight Connector Bundle for CampusOnline](https://github.com/digital-blueprint/relay-greenlight-connector-campusonline-bundle),
+    which fetches images for [DbpRelayGreenlightBundle](https://github.com/digital-blueprint/relay-greenlight-bundle)
     from CampusOnline, while retrieving the `co-obfuscated-c-ident` from LDAP
 
     There is a guide at [Greenlight Connector Bundle for CampusOnline and LDAP](../components/api/greenlight-connector-campusonline/config.md),
@@ -263,11 +263,11 @@ Afterwards best do a `composer install` to make sure caches are cleared and ever
 
 #### Connect Base Person Bundle to your infrastructure
 
-You need to implement a service for `PersonProviderInterface` from [Base Person Bundle](https://gitlab.tugraz.at/dbp/relay/dbp-relay-base-person-bundle).
+You need to implement a service for `PersonProviderInterface` from [Base Person Bundle](https://github.com/digital-blueprint/relay-base-person-bundle).
 
 !!! tip
     If you are using **LDAP** as your source for identity management, you can install the
-    [BasePerson Connector Bundle for LDAP](https://gitlab.tugraz.at/dbp/relay/dbp-relay-base-person-connector-ldap-bundle),
+    [BasePerson Connector Bundle for LDAP](https://github.com/digital-blueprint/relay-base-person-connector-ldap-bundle),
     which allows you to connect the [Base Person Bundle](../components/api/base-person/) to your LDAP server.
 
     There is a guide at [BasePerson Connector Bundle for LDAP](../components/api/base-person-connector-ldap-bundle.md),

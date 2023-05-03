@@ -55,11 +55,11 @@ graph TB
 ### Frontend App
 
 You can install the frontend application with a simple command you can find on 
-[ESign frontend installation](https://gitlab.tugraz.at/dbp/esign/signature#using-this-app-as-pre-built-package).
+[ESign frontend installation](https://github.com/digital-blueprint/esign-app#using-this-app-as-pre-built-package).
 
 The frontend app currently depends on a `default` profile being configured in
 the backend for the qualified signature and a `official` profile for the
-advanced signature. This will be made [configurable in a future version](https://gitlab.tugraz.at/dbp/esign/signature/-/issues/48).
+advanced signature. This will be made [configurable in a future version](https://github.com/digital-blueprint/esign-app/issues/13).
 
 If you want to customize your frontend, please have a look at the [theming and individualizing your application guide](../frameworks/frontend/theming.md). There, an detailed description of individualizing your fonts, colors, icons, and other assets is given.
 
@@ -184,7 +184,7 @@ sudo service apache2 restart
 
 #### App and bundle install
 
-We will use the [DBP API Server Template](https://gitlab.tugraz.at/dbp/relay/dbp-relay-server-template) as
+We will use the [DBP API Server Template](https://github.com/digital-blueprint/relay-server-template) as
 starting point for our implementation.
 
 !!! tip
@@ -197,7 +197,7 @@ starting point for our implementation.
 # create files and directories in the "/[VHOST-ROOT]" directory.
 cd /[VHOST-ROOT]
 
-# Install the DBP API Server Template (https://gitlab.tugraz.at/dbp/relay/dbp-relay-server-template)
+# Install the DBP API Server Template (https://github.com/digital-blueprint/relay-server-template)
 # as base Symfony PHP application
 # The relay-api/public directory then is the directory to let the webserver point at 
 composer create-project dbp/relay-server-template relay-api
@@ -205,12 +205,12 @@ composer create-project dbp/relay-server-template relay-api
 # Change to app directory
 cd relay-api
 
-# Install the Frontend Bundle (https://gitlab.tugraz.at/dbp/relay/dbp-relay-frontend-bundle),
+# Install the Frontend Bundle (https://github.com/digital-blueprint/relay-frontend-bundle),
 # which contains APIs mostly useful for frontend apps.
 # It is a required dependency for all DBP frontend apps.
 composer require dbp/relay-frontend-bundle
 
-# Install the ESign Bundle (https://gitlab.tugraz.at/dbp/esign/dbp-relay-esign-bundle),
+# Install the ESign Bundle (https://github.com/digital-blueprint/relay-esign-bundle),
 # which allows you to create permits for the Covid19 certificate evaluation process.
 composer require dbp/relay-esign-bundle
 ```
