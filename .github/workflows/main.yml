@@ -74,6 +74,8 @@ jobs:
     if: (github.repository == 'digital-blueprint/handbook' && github.event_name == 'push' && github.ref == 'refs/heads/main')
     steps:
       - uses: actions/checkout@v3
+        with:
+          submodules: true
       - name: Log in
         run: |
           echo "$TOKEN" | docker login ghcr.io --username "$USERNAME" --password-stdin
