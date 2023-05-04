@@ -65,3 +65,24 @@ jobs:
           id: '21238'
           ref: 'main'
           variables: '{"UPSTREAM_PROJECT_PATH":"dbp/handbook","UPSTREAM_COMMIT_BRANCH":"${{ github.ref_name }}","UPSTREAM_COMMIT_SHA":"${{ github.ref_name }}"}'
+
+  deploy-docker:
+    permissions:
+      contents: read
+      packages: write
+    runs-on: ubuntu-latest
+    if: (github.repository == 'digital-blueprint/handbook' && github.event_name == 'push' && github.ref == 'refs/heads/main')
+    steps:
+      - uses: actions/checkout@v3
+      - name: Log in
+        run: |
+          echo "$TOKEN" | docker login ghcr.io --username "$USERNAME" --password-stdin
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.actor }}
+      - name: Build image
+        run: |
+          docker build --tag ghcr.io/digital-blueprint/handbook:latest .
+      - name: Deploy image
+        run: |
+          docker push ghcr.io/digital-blueprint/handbook:latest
