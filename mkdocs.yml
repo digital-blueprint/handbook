@@ -86,7 +86,6 @@ nav:
         - components/api/server-template/README.md
       - Core Bundle:
         - components/api/core/index.md
-      - components/api/base-person-connector-ldap-bundle.md
       - Auth Bundle:
         - components/api/auth/README.md
         - components/api/auth/config.md
@@ -96,6 +95,8 @@ nav:
         - LDAP Connector:
           - components/api/base-person-connector-ldap/README.md
           - components/api/base-person-connector-ldap/config.md
+          - components/api/base-person-connector-ldap/events.md
+          - components/api/base-person-connector-ldap/examples.md
       - Base Organization Bundle:
         - components/api/base-organization/index.md
       - Electronic Signature Bundle:
