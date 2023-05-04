@@ -19,6 +19,7 @@ Using poetry:
 
 Using docker-compose:
 
+* `cd docker-dev`
 * `docker-compose up`
 * <http:/127.0.0.1:8011>
 
