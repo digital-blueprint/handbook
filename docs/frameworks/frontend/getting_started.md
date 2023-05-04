@@ -3,7 +3,7 @@
 1. Check out the starter app
 
 ```
-git clone https://gitlab.tugraz.at/dbp/web-components/dbp-template-app
+git clone https://github.com/digital-blueprint/template-app
 cd dbp-template-app
 git submodule update --init
 ```

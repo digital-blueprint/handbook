@@ -123,7 +123,7 @@ For more information see [Accessibility](/../frontend/dev/accessibility/).
 We distinguish between tables with fix content [[Fig. 7]](#fig7) and datatables [[Fig. 9]](#fig9).
 
 Depending on the operation area you can decide between endless scroll or pagination.
-An example for endless scroll can be found in the [Nextcloud file picker Webcomponents](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/blob/master/packages/file-handling/src/nextcloud-file-picker.js){:target="_blank"}.
+An example for endless scroll can be found in the [Nextcloud file picker Webcomponents](https://github.com/digital-blueprint/toolkit/tree/main/packages/file-handling/src/nextcloud-file-picker.js){:target="_blank"}.
 An example for pagination can be found in [Formalize](https://github.com/digital-blueprint/formalize-app){:target="_blank"}.
 
 If you have an endless scroll, you can also show up a `select all` button as it was done in the Nextcloud file picker Webcomponents.
@@ -205,7 +205,7 @@ These tabs are placed on the left side of the modal dialogue. On mobile devices 
 
 We also have a modal title which indicates the context of this dialogue and a closing sign on the right upper corner.
 
-An example for a modal with tabs can be found in the [file handling webcomponents](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/blob/master/packages/file-handling/src/file-source.js){:target="_blank"}.
+An example for a modal with tabs can be found in the [file handling webcomponents](https://github.com/digital-blueprint/toolkit/tree/main/packages/file-handling/src/file-source.js){:target="_blank"}.
 
 <figure id="fig12" style="width:100%;">
     <img src="../../assets/ui_images/DBP-UI-Design_page_09.svg" alt="Modal with Tabs" style="width:100%; border: 1px solid black;">

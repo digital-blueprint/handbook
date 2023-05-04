@@ -8,7 +8,7 @@
 You can adapt the **[fonts](#fonts)**, the **[colors](#color-system)**, and some **parts** in the form of [slots](#slots).
 Moreover, you can also change favicons and browser specific items ([Favicons, Search Engine and more](#favicons-search-engine-and-more)).
 
-DBP also supports multiple themes. To create multiple themes look in the [readme](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master/packages/theme-switcher#usage-in-an-application-with-appshell){:target="_blank"} of the theme-switcher web component.
+DBP also supports multiple themes. To create multiple themes look in the [readme](https://github.com/digital-blueprint/toolkit/tree/main/packages/theme-switcher#usage-in-an-application-with-appshell){:target="_blank"} of the theme-switcher web component.
 
 ## Fonts
 You can apply a font by adding the font-family to the `html` or `body` in a css `<style>` tag.
@@ -153,7 +153,7 @@ html {
     --dbp-override-background: black;
 }
 ```
-If you want to override variables in multiple themes read the [readme](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master/packages/theme-switcher#usage-in-an-application-with-appshell){:target="_blank"} of the theme-switcher web component.
+If you want to override variables in multiple themes read the [readme](https://github.com/digital-blueprint/toolkit/tree/main/packages/theme-switcher#usage-in-an-application-with-appshell){:target="_blank"} of the theme-switcher web component.
 
 ### Usage of these colors
 In some cases you may have to use these variables (e.g. slot css). You can use these variables in css by surrounding them with a `var()` function.
@@ -173,7 +173,7 @@ In digital blueprint frontends you can also change icons. (E.g. if you have your
 The icon override work similar to the color override - with css variables.
 To override an icon you have to write in a css selector the prefix `--dbp-override-icon-` + the icon name.
 You can find the icon name of a specific icon with the site-inspector, e.g. from [mozilla firefox](https://developer.mozilla.org/de/docs/Tools/Page_Inspector){:target="_blank"}  or the [chrome DevTools](https://developer.chrome.com/docs/devtools/){:target="_blank"}.
-You can also take a look at the [icon vendor](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master/packages/common/assets/icons){:target="_blank"} in the toolkit repository.
+You can also take a look at the [icon vendor](https://github.com/digital-blueprint/toolkit/tree/main/packages/common/assets/icons){:target="_blank"} in the toolkit repository.
 
 Now you can override any icon with that css variable. Simply pass the new icon with its relative path to the css variable with `url()`.
 
@@ -189,7 +189,7 @@ The new icon should be type of **svg**.
 Further information about CSS variables in general can be found at [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties){:target="_blank"}.
 
 You can change these icons for all themes or only for one theme.
-If you want to override variables in multiple themes read the [readme](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master/packages/theme-switcher#usage-in-an-application-with-appshell){:target="_blank"} of the theme-switcher web component.
+If you want to override variables in multiple themes read the [readme](https://github.com/digital-blueprint/toolkit/tree/main/packages/theme-switcher#usage-in-an-application-with-appshell){:target="_blank"} of the theme-switcher web component.
 
 
 ## Overriding default translations
@@ -257,7 +257,7 @@ You can use various slots to customize your application. You can place your cust
 
 You can adapt the **name**, **title**, **logo** or exchange the whole **header**, the **footer-links**
 or exchange the whole **footer**. [[Fig. 1]](#fig1) [[Fig. 2]](#fig2)
-The nearer description can be found in the documentation of the [app shell](https://gitlab.tugraz.at/dbp/web-components/toolkit/-/tree/master/packages/app-shell){:target="_blank"}.
+The nearer description can be found in the documentation of the [app shell](https://github.com/digital-blueprint/toolkit/tree/main/packages/app-shell){:target="_blank"}.
 
 You should place these slots in the `<template id= "global-override">` tag of your `index.html`.
 
@@ -336,7 +336,7 @@ You can use the free & open source vector based image editor [InkScape](https://
 
 ##### How to change the colors of the icon
 The following steps has to be done for the whitelabel favicon and the whitelabel app icon.
-You can read [here](../../cd/apps/#favicons-of-apps) which resolutions and formats are used by the two files.
+You can read [here](../../cd/apps.md#favicons-of-apps) which resolutions and formats are used by the two files.
 
 1. Open the needed svg whitelabel icon file in [InkScape](https://inkscape.org/de/){:target="_blank"}
 2. Double-click on the first square, then a line in the middle of the square should appear: the gradient line

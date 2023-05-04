@@ -114,8 +114,10 @@ nav:
       - Check In Bundle:
         - components/api/check-in/index.md
       - Greenlight Bundle:
-        - components/api/greenlight/index.md
+        - components/api/greenlight/README.md
         - components/api/greenlight/config.md
+        - components/api/greenlight/api.md
+        - components/api/greenlight/misc.md
         - CAMPUSonline Connector:
           - components/api/greenlight-connector-campusonline/README.md
           - components/api/greenlight-connector-campusonline/config.md

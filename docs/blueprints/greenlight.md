@@ -195,7 +195,7 @@ cd relay-api
 composer require dbp/relay-base-person-bundle
 
 # If you are using LDAP as your source for identity management, you can install and configure the 
-# BasePerson Connector Bundle for LDAP (https://gitlab.tugraz.at/dbp/relay/dbp-relay-base-person-connector-ldap-bundle),
+# BasePerson Connector Bundle for LDAP (https://github.com/digital-blueprint/relay-base-person-connector-ldap-bundle),
 # which allows you to connect the Base Person Bundle to your LDAP server.
 composer require dbp/relay-base-person-connector-ldap-bundle
 
@@ -219,7 +219,7 @@ Follow the these steps to configure the Auth Bundle: [Configure the Auth Bundle]
 
 #### Greenlight Bundle config
 
-You need to [Configure the Greenlight Bundle](https://gitlab.tugraz.at/dbp/greenlight/dbp-relay-greenlight-bundle#configuration),
+You need to [Configure the Greenlight Bundle](../components/api/greenlight/config.md),
 so it can talk to database.
 
 Adapt all `GREENLIGHT_` settings in your `.env`.
