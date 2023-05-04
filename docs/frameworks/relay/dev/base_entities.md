@@ -29,22 +29,40 @@ Base Entities may lack some attributes required by your business logic. _Local D
 
 ### Adding Local Data Attributes to Existing Entities
 
-Local data can be added in custom Base Entity (post) event hooks:
+To be able to request a new Local Data attribute, you need to add an entry to the ```local_data``` node
+of the Base Entity's bundle config:
+
+```yaml
+dbp_relay_base_person:
+  local_data:
+    - local_data_attribute: foo
+      authorization_expression: 'user.get("MAY_READ_FOO")'
+    - local_data_attribute: bar
+      authorization_expression: 'true'
+```
+
+The ```authorization_expression``` represents a conditional statement determining which users are authorized to read the attribute.
+With the example config above, users with the ```MAY_READ_FOO``` attribute may request the ```foo``` attribute and 
+all users may request the ```bar``` attribute of a person.  See [Access Control Policies](../admin/access_control.md#access-control-policies) to 
+learn how to write these expressions. 
+
+To add Local data to an entity you can write a custom Base Entity post event subscriber listening to the post event of 
+the base entity, which is triggered after the entity data is retrieved from the backend:
 
 ```php
-class EntityPostEventSubscriber implements EventSubscriberInterface
+class PersonPostEventSubscriber implements EventSubscriberInterface
 {
     public static function getSubscribedEvents(): array
     {
         return [
-            EntityPostEvent::NAME => 'onPost',
+            PersonPostEvent::class => 'onPost',
          ];
     }
 
-    public function onPost(EntityPostEvent $event)
+    public function onPostEvent(PersonPostEvent $event)
     {
         $sourceData = $event->getSourceData();
-        $event->trySetLocalDataAttribute('foo', $sourceData->getFoo());
+        $event->trySetLocalDataAttribute('foo', $sourceData['foo']);
         
         if ($event->isLocalDataAttributeRequested('bar')) {
             $bar = $externalApi->getBar(); // expensive api call
@@ -53,10 +71,11 @@ class EntityPostEventSubscriber implements EventSubscriberInterface
     }
 }
 ```
-Events of Base Entities from the Relay API Gateway provide a `getSourceData()` and a `getEntity()` method by convention, where
+Base Entity post events in the Relay API Gateway are derived from ```LocalDataPostEvent``` and provide a `getSourceData()` and a `getEntity()` method by convention,
+where
 
-* `getSourceData()` provides the full set of available attributes for the entity
-* `getEntity()` provides the entity itself
+* `getSourceData()` provides the full set of available attributes for the entity.
+* `getEntity()` provides the entity itself.
 
 To set local data attributes:
 
@@ -65,11 +84,30 @@ To set local data attributes:
 
 Note that local data values have to be serializable to JSON.
 
-To learn how to add the Local Data mechanism to your own Entity, see [Local Data Aware Entities](./local_data.md).
+To learn how to add the Local Data mechanism to your own entity, see [Local Data Aware Entities](./local_data.md).
+
+### Local Data Mapping Config
+
+[Base Entity Connector Bundles](#base-entity-connector-bundles) in the Relay API Gateway ship with a built-in Base Entity event subscriber
+(derived from ```LocalDataEventSubscriber```). It can be used by configuring the ```local_data_mapping``` node
+in the connector's bundle config:
+
+```yaml
+dbp_relay_base_person_connector_ldap:
+  local_data_mapping:
+    - local_data_attribute: foo
+      source_attribute: foo_source
+      default_value: 'default'
+```
+
+The example config above maps the source data attribute ```foo_source``` to the Local Data attribute ```foo```. If
+source attribute is not available, the configured default value```default``` will be used. If no default value is configured, the request will return
+an error.
 
 ### Local Data requests
 
-Local data can be requested by clients using the `includeLocal` parameter provided by Base Entity GET operations. Its value is a comma-separated list of attribute names:
+Local data can be requested by clients using the `includeLocal` parameter provided by Base Entity GET operations.
+Its value is a comma-separated list of attribute names:
 
 ```php
 includeLocal=<attributeName>,...
@@ -77,43 +115,80 @@ includeLocal=<attributeName>,...
 
 The server will return a client error if
 
-* The format of the `includeLocal` parameter value is invalid
-* A requested attribute could not be provided by any event hook
+* The format of the `includeLocal` parameter value is invalid.
+* A requested attribute could not be provided by any event subscriber.
 
 The server will issue a warning if
 
-* Multiple event hooks tried to set the same requested attribute
+* Multiple event subscribers tried to set the same requested attribute.
 
 ### Using Local Query Parameters
 
-Base Entities usually provide basic filtering by their core attributes. In a similar way as Local Data attributes do with the output, Local Query parameters provide a mechanism to add custom input to a query. 
+Base Entities usually provide basic filtering by their core attributes. Local Query parameters provide a mechanism to 
+query by Local Data attributes for a specific connector backend which provides the data (LDAP, DB, ...).
 
-These Local Query parameters are passed directly to the backend system (i.e. the provider interface implementation) by default. Alternatively, they can be modified (e.g. mapped) by a custom Base Entity (pre) event hook:  
+To be able to query by a Local Data attribute, the ```allow_query``` option of the attribute must be set to ```true```
+in the ```local_data``` config of the Base Entity's bundle config:
+
+```yaml
+dbp_relay_base_person:
+  local_data:
+    - local_data_attribute: foo
+      authorization_expression: 'user.get("MAY_READ_FOO")'
+      allow_query: true
+``` 
+
+Local Queries can be 'injected' by modifying the options passed to the connector backend. You can do this by writing a
+custom Base Entity pre event subscriber, listening to the pre event of the base entity , which is triggered before
+the query is executed:
+
 ```php
-class EntityPreEventSubscriber implements EventSubscriberInterface
+class PersonPreEventSubscriber implements EventSubscriberInterface
 {
     public static function getSubscribedEvents(): array
     {
         return [
-            EntityPreEvent::NAME => 'onPre',
+            PersonPreEvent::class => 'onPreEvent',
          ];
     }
 
-    public function onPre(EntityPreEvent $event)
+    public function onPreEvent(PersonPreEvent $preEvent)
     {
-        $localQueryParameterOut = [];
-        // get the query parameters by the client
-        $localQueryParameterIn = $event->getQueryParameters();
-        // do some mapping 
-        $localQueryParameterOut['student'] = $localQueryParameterIn['person'] ?? '';
-        // set the query parameters for the backend
-        $event->setQueryParameters($localQueryParameterOut);
+        $value = null;
+        if ($preEvent->tryPopPendingQueryParameter('foo', $value)) {
+            $options = $preEvent->getOptions();
+
+            $options['filter'] = [
+                'attribute' => 'foo',
+                'value' => $value,
+            ];
+
+            $preEvent->setOptions($options);
+        }
     }
 }
 
 ```
 
-Local Query parameters can be specified by clients using the `queryLocal` parameter provided by Base Entity GET operations. The format of the `queryLocal` parameter is a comma-seperated list of  `<parameter key>:<parameter value>` pairs:
+Base Entity pre events in the Relay API Gateway are derived from ```LocalDataPreEvent``` and provide the
+following methods:
+
+* ```tryPopPendingQueryParameter(string $queryParameterName, &$queryParameterValue = null): bool```:
+Returns ```true``` if the given parameter was requested by the client, ```false``` otherwise. If requested, it
+acknowledges the parameter (i.e. tells, that it will handle the parameter) and provides its value.
+* ```getPendingQueryParameters(): array``` Returns the list of requested query parameters as key (attribute name) value
+  (attribute value) pairs.
+* ```getOptions(): array``` Returns the list of options for the data providing connector backend.
+* ```setOptions(array $options)``` Set the list of (modified) options for the data providing connector backend. 
+
+Note that the built-in event subscriber described in [Local Data Mapping Config](#local-data-mapping-config) can also
+be used to allow local queries.
+
+### Local Query Requests
+
+Local Query parameters can be specified by clients using the `queryLocal` parameter provided by Base Entity GET
+operations. The format of the `queryLocal` parameter is a comma-seperated list of  
+`<parameter key>:<parameter value>` pairs, where ```<parameter value>``` must be URL encoded:
 
 ```php
 queryLocal=<parameterName>:<parameterValue>,...
@@ -121,6 +196,7 @@ queryLocal=<parameterName>:<parameterValue>,...
 
 The server will return a client error if
 
-* The format of the `queryLocal` parameter value is invalid
+* The format of the `queryLocal` parameter value is invalid.
+* A requested query parameter was not acknowledged by any event subscriber.
 
 
