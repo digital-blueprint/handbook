@@ -1,0 +1,19 @@
+{
+  "name": "handbook-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:fonts": "cp -R node_modules/@fontsource/* ../overrides/fonts",
+    "build:mermaid": "cp -R node_modules/mermaid/dist/mermaid.min.js ../docs/assets/js",
+    "build": "npm run build:fonts && npm run build:mermaid"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@fontsource/nunito-sans": "^4.5.8",
+    "@fontsource/roboto-mono": "^4.5.1",
+    "mermaid": "~9.2.2"
+  }
+}
