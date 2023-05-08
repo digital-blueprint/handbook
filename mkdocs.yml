@@ -85,7 +85,8 @@ nav:
       - Server Template:
         - components/api/server-template/README.md
       - Core Bundle:
-        - components/api/core/index.md
+        - components/api/core/README.md
+        - components/api/core/config.md
       - Auth Bundle:
         - components/api/auth/README.md
         - components/api/auth/config.md
