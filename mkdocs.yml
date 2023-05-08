@@ -124,9 +124,10 @@ nav:
           - components/api/greenlight-connector-campusonline/config.md
           - components/api/greenlight-connector-campusonline/events.md
       - Mono Bundle:
-        - components/api/mono/index.md
+        - components/api/mono/README.md
         - components/api/mono/config.md
         - components/api/mono/logging.md
+        - components/api/mono/misc.md
         - CAMPUSonline Connector:
           - components/api/mono-connector-campusonline/index.md
           - components/api/mono-connector-campusonline/config.md
