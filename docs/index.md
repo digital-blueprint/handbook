@@ -1,9 +1,6 @@
 # Overview
 
-The project digital blueprint consists of blueprints. Each blueprint consists of
-multiple components such as front-end applications, back-end APIs, existing
-software projects with extensions, or other supporting software. Together they
-provide a service that your users can benefit from.
+The Digital Blueprint project consists of blueprints. Each blueprint consists of several components, such as front-end applications, back-end APIs, existing software projects with extensions, or other supporting software. Together they provide a service for your users.
 
 ```mermaid
 flowchart TB
