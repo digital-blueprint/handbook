@@ -97,12 +97,16 @@ dbp_relay_base_person_connector_ldap:
   local_data_mapping:
     - local_data_attribute: foo
       source_attribute: foo_source
-      default_value: 'default'
+    - local_data_attribute: fooList
+      source_attribute: foo_source
+      is_array: true # default: false
 ```
 
 The example config above maps the source data attribute ```foo_source``` to the Local Data attribute ```foo```. If
-source attribute is not available, the configured default value```default``` will be used. If no default value is configured, the request will return
-an error.
+source attribute is not available ```null``` is returned. The attribute ```fooList``` is configured to be an array,
+which means that the value of the source attribute is converted to a single-element array if it has a scalar value.
+Conversely, if the attribute is not configured to be an array (which is the default) and the source attribute value
+is of type array, the first array element is returned.
 
 ### Local Data requests
 
@@ -198,5 +202,3 @@ The server will return a client error if
 
 * The format of the `queryLocal` parameter value is invalid.
 * A requested query parameter was not acknowledged by any event subscriber.
-
-
