@@ -4,8 +4,10 @@ The access control system of the Relay API Gateway is based on the **Attribute-b
 where the authorization of API users to perform certain operations is determined by attributes of the user, requested 
 resources, the performed action, and the environment. _Access control policies_ are conditional statements that grant or
 deny access depending on those attributes. They can be customized by administrators and allow for a flexible and
-fine-grained access control
-system without the risk of role explosion.
+fine-grained access control system without the risk of role explosion.
+
+If you want to integrate Relay API access control into your own application, see the
+[Access Control](../dev/access_control.md) developers guide.
 
 ## User Attributes
 
