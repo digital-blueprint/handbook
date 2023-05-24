@@ -45,7 +45,7 @@ Creates a new instance of ```AuthorizationConfigDefinition```.
 public function addPolicy(string $policyName, string $defaultExpression = 'false', string $info = ''): AuthorizationConfigDefinition
 ``` 
 Appends a new node definition for the policy ```$policyName```, with the default expression ```$defaultExpression``` 
-(```'false'``` meaning that that nobody is granted access) and the policy description ```$info```. 
+(```'false'``` meaning that nobody is granted access) and the policy description ```$info```. 
 
 ```php
 public function addAttribute(string $attributeName, string $defaultExpression = 'false', string $info = ''): AuthorizationConfigDefinition
@@ -66,7 +66,7 @@ The config definition example above yields the following default config:
 my_app:
   authorization:
     MAY_READ_BLOG_POST: 'false' 
-    MAY_ADD_BLOG_POSTS: 'false'
+    MAY_ADD_BLOG_POST: 'false'
     USER_GROUPS: '[]'
 ```
 
@@ -74,9 +74,15 @@ my_app:
 
 To evaluate your policy and attribute expressions on client requests you need to create a service which derives from the 
 ```AbstractAuthorizationService``` class declared in the 
-[Core Bundle](../../../components/api/core/README.md). Let's call it ```MyAuthorizationService```.
+[Core Bundle](../../../components/api/core/README.md). Let's call it ```MyAuthorizationService```:
 
-To set up policy and attribute configuration, be sure to call the following lines of code on service load:
+```php
+class MyAuthorizationService extends AbstractAuthorizationService
+{}
+```
+
+To set up policy and attribute configuration from your app's config, be sure to call the following lines of code
+on service load:
 
 ```php
 class MyAppExtension extends ConfigurableExtension
@@ -93,7 +99,7 @@ class MyAppExtension extends ConfigurableExtension
 }       
 ```
 
-And define ```MyAuthorizationService``` it as a service in your ```services.yaml``` file:
+And declare ```MyAuthorizationService``` as a service in your ```services.yaml``` file:
 
 ```yaml
   MyApp\Authorization\MyAuthorizationService:
@@ -101,12 +107,12 @@ And define ```MyAuthorizationService``` it as a service in your ```services.yaml
     autoconfigure: true
 ```
 
-Now, you are ready to use your access control policies and attributes at runtime:
+Now you are ready to use your access control policies and attributes at runtime, i.e. on client requests:
 
 ```php
 class MyAppController
 {
-   private authorizationService;
+   private $authorizationService;
    
    public function __contruct(MyAuthorizationService $authorizationService)
    {
@@ -118,8 +124,7 @@ class MyAppController
    */
    public function addBlogPost(BlogPost $blogPost)
    {
-      // if you just want to check without an exception being thrown,
-      // use $this->authorizationService->isGranted(...)
+      // if you just want to check without an exception being thrown, use $this->authorizationService->isGranted(...)
       $this->authorizationService->denyAccessUnlessIsGranted(Configuration::MAY_ADD_BLOG_POST, $blogPost);
       
       // add the blog post
