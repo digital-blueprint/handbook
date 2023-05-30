@@ -43,3 +43,6 @@
 [submodule "submodules/relay-server-template"]
 	path = submodules/relay-server-template
 	url = https://github.com/digital-blueprint/relay-server-template
+[submodule "submodules/dbp-relay-core-connector-ldap-bundle"]
+	path = submodules/dbp-relay-core-connector-ldap-bundle
+	url = https://github.com/digital-blueprint/relay-core-connector-ldap-bundle

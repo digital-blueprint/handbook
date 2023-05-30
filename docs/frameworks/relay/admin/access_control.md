@@ -18,9 +18,9 @@ Currently, the following _Authorization Data Providers_ are available:
 
 * **Textfile** (```dbp/relay-core-connector-textfile-bundle```) Retrieves user attributes from a simple Yaml text file
 which allows the definition of users, user groups, attributes and mapping between users/groups and attrbute values
-* **LDAP** (```dbp/relay-core-connector-ldap-bundle```) Retrieves user attributes from an LDAP service. It allows the
+* **LDAP** ([Core Connector LDAP](../../../components/api/core-connector-ldap/README.md)) Retrieves user attributes from an LDAP service. It allows the
 configuration of the mapping between LDAP and ABAC user attributes.  
-* **OIDC Token** (```dbp/relay-auth-bundle```) Retrieves user attributes from the authenticated user's OpenID Connect 
+* **OIDC Token** ([Auth Bundle](../../../components/api/auth/README.md)) Retrieves user attributes from the authenticated user's OpenID Connect 
 token. It allows the configuration of the mapping between token scopes and user attributes.
 * **CampusOnline** (```dbp/relay-core-connector-campusonline-bundle```) Retrieves user attributes from CampusOnline.
 

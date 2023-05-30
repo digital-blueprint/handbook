@@ -87,6 +87,8 @@ nav:
       - Core Bundle:
         - components/api/core/README.md
         - components/api/core/config.md
+        - LDAP Connector:
+            - components/api/core-connector-ldap/README.md
       - Auth Bundle:
         - components/api/auth/README.md
         - components/api/auth/config.md
