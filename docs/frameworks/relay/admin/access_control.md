@@ -16,13 +16,11 @@ _Authorization Data Providers_, which can be installed and used by administrator
 attributes are available and how to get their values for a specific user (e.g. organization, functions, skills, ...).
 Currently, the following _Authorization Data Providers_ are available:
 
-* **Textfile** (```dbp/relay-core-connector-textfile-bundle```) Retrieves user attributes from a simple Yaml text file
-which allows the definition of users, user groups, attributes and mapping between users/groups and attrbute values
-* **LDAP** ([Core Connector LDAP](../../../components/api/core-connector-ldap/README.md)) Retrieves user attributes from an LDAP service. It allows the
-configuration of the mapping between LDAP and ABAC user attributes.  
+* **Textfile** ([Core Connector Textfile](../../../components/api/core-connector-textfile/README.md)) Retrieves user attributes from a simple Yaml config file
+* **LDAP** ([Core Connector LDAP](../../../components/api/core-connector-ldap/README.md)) Retrieves user attributes from an LDAP service.
 * **OIDC Token** ([Auth Bundle](../../../components/api/auth/README.md)) Retrieves user attributes from the authenticated user's OpenID Connect 
-token. It allows the configuration of the mapping between token scopes and user attributes.
-* **CampusOnline** (```dbp/relay-core-connector-campusonline-bundle```) Retrieves user attributes from CampusOnline.
+token.
+* **CampusOnline** ([Core Connector Campusonline](../../../components/api/core-connector-campusonline/README.md)) Retrieves user attributes from CampusOnline.
 
 ## Access Control Policies
 

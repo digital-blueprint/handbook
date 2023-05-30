@@ -46,3 +46,12 @@
 [submodule "submodules/dbp-relay-core-connector-ldap-bundle"]
 	path = submodules/dbp-relay-core-connector-ldap-bundle
 	url = https://github.com/digital-blueprint/relay-core-connector-ldap-bundle
+[submodule "submodules/dbp-relay-core-connector-textfile-bundle"]
+	path = submodules/dbp-relay-core-connector-textfile-bundle
+	url = https://github.com/digital-blueprint/relay-core-connector-textfile-bundle
+[submodule "docs/components/api/submodules/dbp-relay-core-connector-campusonline-bundle"]
+	path = docs/components/api/submodules/dbp-relay-core-connector-campusonline-bundle
+	url = https://github.com/digital-blueprint/relay-core-connector-campusonline-bundle
+[submodule "submodules/dbp-relay-core-connector-campusonline-bundle"]
+	path = submodules/dbp-relay-core-connector-campusonline-bundle
+	url = https://github.com/digital-blueprint/relay-core-connector-campusonline-bundle
