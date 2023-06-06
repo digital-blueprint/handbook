@@ -55,3 +55,6 @@
 [submodule "submodules/dbp-relay-core-connector-campusonline-bundle"]
 	path = submodules/dbp-relay-core-connector-campusonline-bundle
 	url = https://github.com/digital-blueprint/relay-core-connector-campusonline-bundle
+[submodule "submodules/relay-formalize-bundle"]
+	path = submodules/relay-formalize-bundle
+	url = https://github.com/digital-blueprint/relay-formalize-bundle

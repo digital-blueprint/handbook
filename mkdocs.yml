@@ -114,6 +114,13 @@ nav:
         - components/api/esign/qualified_flow.md
         - components/api/esign/positioning.md
         - components/api/esign/cli_commands.md
+      - Formalize Bundle:
+        - components/api/formalize/README.md
+        - components/api/formalize/config.md
+        - components/api/formalize/authz.md
+        - components/api/formalize/database.md
+        - components/api/formalize/api.md
+        - components/api/formalize/events.md
       - Sublibrary Bundle:
         - components/api/sublibrary/README.md
       - Authentic Documents Bundle:
