@@ -71,10 +71,11 @@ nav:
 
   - Blueprints:
     - blueprints/index.md
-    - blueprints/greenlight.md
     - blueprints/check-in.md
     - blueprints/esign.md
     - blueprints/plan.md
+    - Archived Blueprints:
+      - blueprints/greenlight.md
 
   - Components:
 
@@ -127,15 +128,6 @@ nav:
         - components/api/authentic-documents/README.md
       - Check In Bundle:
         - components/api/check-in/index.md
-      - Greenlight Bundle:
-        - components/api/greenlight/README.md
-        - components/api/greenlight/config.md
-        - components/api/greenlight/api.md
-        - components/api/greenlight/misc.md
-        - CAMPUSonline Connector:
-          - components/api/greenlight-connector-campusonline/README.md
-          - components/api/greenlight-connector-campusonline/config.md
-          - components/api/greenlight-connector-campusonline/events.md
       - Mono Bundle:
         - components/api/mono/README.md
         - components/api/mono/config.md
@@ -159,6 +151,17 @@ nav:
 
     - Supporting Software:
       - components/supporting-software/pdf-as.md
+
+    - Archived Components:
+      - Greenlight Bundle:
+        - components/api/greenlight/README.md
+        - components/api/greenlight/config.md
+        - components/api/greenlight/api.md
+        - components/api/greenlight/misc.md
+        - CAMPUSonline Connector:
+          - components/api/greenlight-connector-campusonline/README.md
+          - components/api/greenlight-connector-campusonline/config.md
+          - components/api/greenlight-connector-campusonline/events.md
 
   - Frameworks:
 
