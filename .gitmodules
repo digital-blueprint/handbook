@@ -58,3 +58,6 @@
 [submodule "submodules/relay-formalize-bundle"]
 	path = submodules/relay-formalize-bundle
 	url = https://github.com/digital-blueprint/relay-formalize-bundle
+[submodule "submodules/relay-blob-bundle"]
+	path = submodules/relay-blob-bundle
+	url = https://github.com/digital-blueprint/relay-blob-bundle.git

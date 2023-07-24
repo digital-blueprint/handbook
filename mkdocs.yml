@@ -105,6 +105,11 @@ nav:
           - components/api/base-person-connector-ldap/config.md
           - components/api/base-person-connector-ldap/events.md
           - components/api/base-person-connector-ldap/examples.md
+      - Blob Bundle:
+        - components/api/blob/Overview.md
+        - components/api/blob/Configuration.md
+        - components/api/blob/api.md
+        - components/api/blob/examples.md
       - Base Organization Bundle:
         - components/api/base-organization/index.md
       - Electronic Signature Bundle:
