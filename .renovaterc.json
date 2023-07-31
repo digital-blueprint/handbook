@@ -10,5 +10,8 @@
   "rangeStrategy": "update-lockfile",
   "js": {
     "enabled": false
+  },
+  "git-submodules": {
+    "enabled": true
   }
 }
