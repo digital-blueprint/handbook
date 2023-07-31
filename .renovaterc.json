@@ -13,5 +13,14 @@
   },
   "git-submodules": {
     "enabled": true
-  }
+  },
+  "packageRules": [
+    {
+      "groupName": "git submodules",
+      "groupSlug": "git-submodules",
+      "matchPackagePatterns": [
+        "submodules/*"
+      ]
+    }
+  ]
 }
