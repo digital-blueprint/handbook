@@ -20,7 +20,8 @@
       "groupSlug": "git-submodules",
       "matchPackagePatterns": [
         "submodules/*"
-      ]
+      ],
+      "automerge": true
     }
   ]
 }
