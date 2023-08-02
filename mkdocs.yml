@@ -110,6 +110,7 @@ nav:
         - components/api/blob/Configuration.md
         - components/api/blob/api.md
         - components/api/blob/examples.md
+        - components/api/blob/sequence-diagrams.md
       - Base Organization Bundle:
         - components/api/base-organization/index.md
       - Electronic Signature Bundle:
