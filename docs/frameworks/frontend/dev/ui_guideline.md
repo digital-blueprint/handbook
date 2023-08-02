@@ -103,7 +103,7 @@ We use the `menu-dots` icon from our icon set for the **kebab menu**.
 This is opened by clicking and the additional buttons are displayed there as entries in the dropdown list.
 
 Buttons which contain text are expanded to the full width and have a min height of 40px. Buttons which contain icons have a width and height of 40px.
-For more information see [Accessibility](/../frontend/dev/accessibility/).
+For more information see [Accessibility](./accessibility.md).
 
 <figure id="fig5" style="width:50%;">
     <img src="../../assets/ui_images/DBP-UI-Design_page_13.svg" alt="Buttons hide behind an additional menu (kebab menu)" style="width:100%; border: 1px solid black; margin:auto;">
@@ -227,7 +227,7 @@ However, an informal "OK" button may be provided to ensure once again that the u
 ## Colors
 DBP Apps have declared different CSS variables. You should avoid using hard coded colors or borders. 
 Instead, use these CSS variables. 
-You can find a brief description of the color system and the variables at the [theming page](../../theming/#color-system).
+You can find a brief description of the color system and the variables at the [theming page](../theming.md#color-system).
 
 CSS variables are accessed using the `var()` function.
 You can use all of these CSS variables without the 'override' in the code. E.g.: if you want to use
@@ -245,7 +245,7 @@ Further information about CSS variables in general can be found at [developer.mo
 
 ## Fontsize
 You should not use a font size smaller than 16 CSS px. You should also avoid absolut units, use relative, like em, rem instead.
-Read more in the [Accessibility guide](../accessibility/#fontsize).
+Read more in the [Accessibility guide](./accessibility.md#fontsize).
 
 ## And more to consider
-Regarding design and structure you have considering much more. You can find a short overview in the [Accessibility guide](../accessibility/).
+Regarding design and structure you have considering much more. You can find a short overview in the [Accessibility guide](./accessibility.md).

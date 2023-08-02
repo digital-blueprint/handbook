@@ -45,7 +45,7 @@ flowchart LR
     bundle_2a["Bundle"] --> connector["Connector"]
 ```
 
-The digital blueprint framework is open source and consists of a modular [API gateway](./relay) providing a REST
-API as well as a web component based [frontend framework](./frontend) for
+The digital blueprint framework is open source and consists of a modular [API gateway](./relay/index.md) providing a REST
+API as well as a web component based [frontend framework](./frontend/index.md) for
 building web applications as well as single activities that can be embedded in
 existing web applications.

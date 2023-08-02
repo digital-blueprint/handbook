@@ -5,7 +5,7 @@ Base Entities are basic resource entities intended to be (re-)usable in a wide r
 The Relay API Gateway provides a growing set of Base Entities, such as
 
 * [Base Organization](../../../components/api/base-organization/index.md)
-* [Base Person](../../../components/api/base-person/)
+* [Base Person](../../../components/api/base-person/README.md)
 
 ## Bundle Structure
 

@@ -38,11 +38,11 @@ The app icon appears at two places in the dbp-branded versions of the apps: in t
 
 ### App shell header
 The icon in the app shell header[[fig3]](#fig3) is the plain icon with no squares and in true black and 50% opacity. [[fig1]](#fig1)
-For more information about the appearance and how to create an app icon, see [app icon](../icons/#app-icon) under icons.
+For more information about the appearance and how to create an app icon, see [app icon](./icons.md#app-icon) under icons.
 
 ### PWA Icon
 The icon in the color white and on the squares is used as the pwa icon[[fig2]](#fig2).
-For further information and placement take a look at [app icon](../icons/#app-icon).
+For further information and placement take a look at [app icon](./icons.md#app-icon).
 
 ## Favicons of apps
 There exists many favicons in different sizes and formats for different devices and uses.
@@ -165,4 +165,4 @@ How to use the [maskable.app](https://maskable.app/){:target="_blank"}:
 
 ## Applying own colors
 For not dbp uses, you might want to use the app icon and favicons from dbp, but with your brand colors.
-This and other changes can be read in the [Theming documentation](../../frontend/theming/#use-the-dbp-app-icon-with-your-brand-colors).
+This and other changes can be read in the [Theming documentation](../frameworks/frontend/theming.md#use-the-dbp-app-icon-with-your-brand-colors).

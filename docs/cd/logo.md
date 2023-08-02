@@ -34,12 +34,12 @@ You can find all logo files in the gitlab repository [dbp Corporate Identity](ht
 
 ### The text
 The text on the right side of the Logo consists of two parts. A headline "digital blueprint" and a subheading "a university toolbox".
-More information for the brand name can be found [here](../naming).
+More information for the brand name can be found [here](./naming.md).
 
 ### Background
 The logo on white must not be displayed on a different background than white(`#ffffff`).
 The logo on black is allowed to be displayed on background, which has enough contrast(minimum contrast level of AA - 
-take a look at [accessibility guide](../#colors-&-minimal-contrast-level) for more information about contrast levels) to the logo,
+take a look at [accessibility guide](../frameworks/frontend/dev/accessibility.md#colors-minimal-contrast-level) for more information about contrast levels) to the logo,
 but the preferred background is **True black** (HEX `#222120` - instead of black). 
 The correct file depending on the background must be used: *dbp_logo_on_white.svg* [[Fig. 1]](#fig1) or *dbp_logo_on_black.svg* [[Fig. 2]](#fig2).
 
@@ -91,8 +91,8 @@ The logo can adjust depending on some uses(e.g. creating an app icon). To adjust
 If a logo is adjusted, the versions for both backgrounds(white, black) and also the monochrom versions(on white) have to be created.
 
 #### App icons
-If the logo is used in an application, which has an app icon[[Apps]](../apps/#app-icon), the small logo can be extended with that icon (e.g. [Fig. 11](#fig11))
-by placing the app icon in front of the squares and in the middle of the first square. How to do this and for the rules take a look at [app icons](../apps/#app-icon).
+If the logo is used in an application, which has an app icon[[Apps]](./apps.md#app-icon), the small logo can be extended with that icon (e.g. [Fig. 11](#fig11))
+by placing the app icon in front of the squares and in the middle of the first square. How to do this and for the rules take a look at [app icons](./apps.md#app-icon).
 
 <figure id="fig11" style="width:100%;">
     <img src="../assets/appicon_example.svg" alt="Logo with app icon example" style="max-width:200px; box-shadow: 1px 1px 3px grey; margin:auto;">

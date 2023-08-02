@@ -55,7 +55,7 @@ App icons has additional these rules:
 - **Highlight Color:** black with 50% opacity
 - **Stroke size:** 1 pt
 
-For further information see [App icon](../apps).
+For further information see [App icon](./apps.md#app-icon).
 
 <figure id="fig2" style="width:100%;">
     <img src="../assets/appicon_example_clean.svg" alt="App icon example" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">

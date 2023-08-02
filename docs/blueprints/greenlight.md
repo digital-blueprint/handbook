@@ -273,7 +273,7 @@ You need to implement a service for `PersonProviderInterface` from [Base Person 
 !!! tip
     If you are using **LDAP** as your source for identity management, you can install the
     [BasePerson Connector Bundle for LDAP](https://github.com/digital-blueprint/relay-base-person-connector-ldap-bundle),
-    which allows you to connect the [Base Person Bundle](../components/api/base-person/) to your LDAP server.
+    which allows you to connect the [Base Person Bundle](../components/api/base-person/README.md) to your LDAP server.
 
     There is a guide at [BasePerson Connector Bundle for LDAP](../components/api/base-person-connector-ldap/config.md),
     that walks you through the steps to set up the LDAP connector.

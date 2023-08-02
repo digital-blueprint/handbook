@@ -68,4 +68,4 @@ If you write your own bundle you can create completely new APIs, or connect an
 existing API to a new external system. If you then share your bundle with the
 world everyone can install it and profit 😊
 
-For how to write your own bundle please see our [Developer Guide](./dev).
+For how to write your own bundle please see our [Developer Guide](./dev/index.md).

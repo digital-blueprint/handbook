@@ -72,7 +72,7 @@ So be carefully with the initial font weight. Take a look at this documentation 
 To make the colors as customizable as possible, there is a dbp color system.
 
 You can override the default colors for customize your app. For universities, these colors should have a contrast level of at least AA in contrast to the base color.
-You can read more about the minimal contrast level in [Accessibility](../dev/accessibility#minimal-contrast-level).
+You can read more about the minimal contrast level in [Accessibility](./dev/accessibility.md#minimal-contrast-level).
 
 All colors without a postfix need to work on top of the "base" color. All others need to work on top of their respective surface colors.
 
