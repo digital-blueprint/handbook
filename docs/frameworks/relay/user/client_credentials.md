@@ -4,22 +4,29 @@ The following shows how to retrieve an access token from the OAuth2 server using
 
 ## PHP Example
 
+```console
+$ composer require guzzlehttp/guzzle
+$ php test.php
+```
+
 ```php
+// test.php
 <?php
 
 require_once 'vendor/autoload.php';
 
 use GuzzleHttp\Client;
 
-$KEYCLOAK_URL = "https://auth-dev.tugraz.at/auth";
-$TOKEN_URL = $KEYCLOAK_URL . "/realms/tugraz-vpu/protocol/openid-connect/token";
-$API_URL = "https://api-dev.tugraz.at";
+$KEYCLOAK_URL = "https://auth.tugraz.at/auth";
+$REALM = "tugraz";
+$API_URL = "https://api.tugraz.at";
 
 // Credentials
 $CLIENT_ID = "somekey-keycloak-client-id";
 $CLIENT_SECRET = "deadbeef-dead-dead-dead-deadbeefdead";
 
 // Fetch a token
+$TOKEN_URL = "$KEYCLOAK_URL/realms/$REALM/protocol/openid-connect/token"
 $client = new Client();
 $response = $client->post(
     $TOKEN_URL, [
@@ -43,18 +50,25 @@ var_dump($json);
 
 ## Python Example
 
+```console
+$ pip3 install requests
+$ python3 test.py
+```
+
 ```python
+# test.py
 import requests
 
-KEYCLOAK_URL = "https://auth-dev.tugraz.at/auth"
-TOKEN_URL = KEYCLOAK_URL + "/realms/tugraz-vpu/protocol/openid-connect/token"
-API_URL = "https://api-dev.tugraz.at"
+KEYCLOAK_URL = "https://auth.tugraz.at/auth"
+REALM = "tugraz"
+API_URL = "https://api.tugraz.at"
 
 # Credentials
 CLIENT_ID="somekey-keycloak-client-id"
 CLIENT_SECRET="deadbeef-dead-dead-dead-deadbeefdead"
 
 # Fetch a token
+TOKEN_URL = KEYCLOAK_URL + "/realms/" + REALM + "/protocol/openid-connect/token"
 r = requests.post(
     TOKEN_URL,
     auth=(CLIENT_ID, CLIENT_SECRET),
