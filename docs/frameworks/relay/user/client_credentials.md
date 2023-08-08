@@ -26,7 +26,7 @@ $CLIENT_ID = "somekey-keycloak-client-id";
 $CLIENT_SECRET = "deadbeef-dead-dead-dead-deadbeefdead";
 
 // Fetch a token
-$TOKEN_URL = "$KEYCLOAK_URL/realms/$REALM/protocol/openid-connect/token"
+$TOKEN_URL = "$KEYCLOAK_URL/realms/$REALM/protocol/openid-connect/token";
 $client = new Client();
 $response = $client->post(
     $TOKEN_URL, [
