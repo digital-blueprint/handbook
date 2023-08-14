@@ -106,8 +106,8 @@ nav:
           - components/api/base-person-connector-ldap/events.md
           - components/api/base-person-connector-ldap/examples.md
       - Blob Bundle:
-        - components/api/blob/Overview.md
-        - components/api/blob/Configuration.md
+        - components/api/blob/overview.md
+        - components/api/blob/configuration.md
         - components/api/blob/api.md
         - components/api/blob/examples.md
         - components/api/blob/sequence-diagrams.md
