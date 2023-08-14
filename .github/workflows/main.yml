@@ -36,7 +36,7 @@ jobs:
 
       - name: Build
         run: |
-          poetry run mkdocs build
+          poetry run mkdocs build --strict
 
       - name: Pack result
         run: |
