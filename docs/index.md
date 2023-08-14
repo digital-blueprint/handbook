@@ -59,7 +59,7 @@ flowchart LR
     component_2 --- backend
 ```
 
-Many of the components are not tied to their blueprints can be re-used in external contexts, like your own applications.
+Many of the components are not tied to their blueprints and can be re-used in external contexts, like your own applications.
 
 ```mermaid
 flowchart LR
