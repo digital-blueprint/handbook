@@ -19,13 +19,13 @@ CLIENT_SECRET="deadbeef-dead-dead-dead-deadbeefdead"
 
 # Fetch a token
 TOKEN_URL="$KEYCLOAK_URL/realms/$REALM/protocol/openid-connect/token"
-ACCESS_TOKEN=$(curl --silent --show-error --fail -X POST "$TOKEN_URL" \
+ACCESS_TOKEN=$(curl --silent --show-error --fail-with-body -X POST "$TOKEN_URL" \
   -d "grant_type=client_credentials" \
   -d "client_id=$CLIENT_ID" \
   -d "client_secret=$CLIENT_SECRET" | jq -r '.access_token')
 
 # Access the API with the access token
-curl --silent --show-error --fail -H "Authorization: Bearer $ACCESS_TOKEN" "$API_URL/base/people/811EC3ACC0ADCA70" | jq
+curl --silent --show-error --fail-with-body -H "Authorization: Bearer $ACCESS_TOKEN" "$API_URL/base/people/811EC3ACC0ADCA70" | jq
 ```
 
 ## PHP Example
