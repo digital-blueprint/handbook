@@ -62,7 +62,7 @@ $json = json_decode($data, true, 512, JSON_THROW_ON_ERROR);
 $accessToken = $json['access_token'];
 
 // Access the API with the access token
-$response = $client->get($API_URL . "/base/people/woody007", [
+$response = $client->get($API_URL . "/base/people/811EC3ACC0ADCA70", [
     'headers' => [
         'Authorization' => "Bearer $accessToken",
     ]
@@ -102,7 +102,7 @@ access_token = r.json()["access_token"]
 
 # Access the API with the access token
 r = requests.get(
-    API_URL + "/people/woody007",
+    API_URL + "/people/811EC3ACC0ADCA70",
     headers={'Authorization': 'Bearer ' + access_token})
 r.raise_for_status()
 print(r.json())
