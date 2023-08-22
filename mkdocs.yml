@@ -178,10 +178,10 @@ nav:
 
       - User Guide:
         - frameworks/relay/user/index.md
+        - frameworks/relay/user/client_credentials.md
         - frameworks/relay/user/error_handling.md
         - frameworks/relay/user/pagination.md
         - frameworks/relay/user/translations.md
-        - frameworks/relay/user/client_credentials.md
 
       - Administration Guide:
         - frameworks/relay/admin/index.md
