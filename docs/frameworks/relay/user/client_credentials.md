@@ -2,6 +2,30 @@
 
 The following shows how to retrieve an access token from the OAuth2 server using the "Client Credentials" flow and then accessing the API with it. In this example we use Keycloak as the OAuth2 server.
 
+## curl/jq Example
+
+```bash
+#!/bin/bash
+
+KEYCLOAK_URL="https://auth.tugraz.at/auth"
+REALM="tugraz"
+API_URL="https://api.tugraz.at"
+
+# Credentials
+CLIENT_ID="somekey-keycloak-client-id"
+CLIENT_SECRET="deadbeef-dead-dead-dead-deadbeefdead"
+
+# Fetch a token
+TOKEN_URL="$KEYCLOAK_URL/realms/$REALM/protocol/openid-connect/token"
+ACCESS_TOKEN=$(curl --silent --fail -X POST "$TOKEN_URL" \
+  -d "grant_type=client_credentials" \
+  -d "client_id=$CLIENT_ID" \
+  -d "client_secret=$CLIENT_SECRET" | jq -r '.access_token')
+
+# Access the API with the access token
+curl --silent --fail -H "Authorization: Bearer $ACCESS_TOKEN" "$API_URL/base/people/811EC3ACC0ADCA70" | jq
+```
+
 ## PHP Example
 
 ```console
