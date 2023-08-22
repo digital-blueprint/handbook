@@ -7,6 +7,8 @@ The following shows how to retrieve an access token from the OAuth2 server using
 ```bash
 #!/bin/bash
 
+set -e -o pipefail
+
 KEYCLOAK_URL="https://auth.tugraz.at/auth"
 REALM="tugraz"
 API_URL="https://api.tugraz.at"
