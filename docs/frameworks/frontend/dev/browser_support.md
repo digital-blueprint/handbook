@@ -23,6 +23,7 @@ These version requirements are derived from requiring the following features:
 - [AbortController & AbortSignal](https://caniuse.com/abortcontroller)
 - [Resize Observer](https://caniuse.com/resizeobserver)
 - [globalThis](https://caniuse.com/mdn-javascript_builtins_globalthis)
+- [Intl.PluralRules](https://caniuse.com/intl-pluralrules)
 
 We use extra tooling/pollyfills:
 
