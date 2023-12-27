@@ -43,7 +43,7 @@ jobs:
           tar -czf site.tar.gz ./site
 
       - name: Upload Results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: website
           path: site.tar.gz
