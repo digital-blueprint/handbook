@@ -61,3 +61,6 @@
 [submodule "submodules/relay-blob-bundle"]
 	path = submodules/relay-blob-bundle
 	url = https://github.com/digital-blueprint/relay-blob-bundle.git
+[submodule "submodules/relay-blob-library"]
+	path = submodules/relay-blob-library
+	url = https://github.com/digital-blueprint/relay-blob-library.git
