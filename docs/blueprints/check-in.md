@@ -2,7 +2,7 @@
 
 Handles check-ins to places and contact tracing for warning about COVID-19 cases.
 
-[Visit Check-in Demo](https://dbp-demo.tugraz.at/apps/check-in)
+[Visit Check-in Demo](https://dbp-demo.tugraz.at/apps/checkin)
 
 ## Screenshot
 
