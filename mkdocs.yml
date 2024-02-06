@@ -74,6 +74,8 @@ nav:
     - blueprints/check-in.md
     - blueprints/esign.md
     - blueprints/plan.md
+    - blueprints/dual-delivery.md
+    - blueprints/mono.md
     - Archived Blueprints:
       - blueprints/greenlight.md
 
