@@ -59,8 +59,13 @@ php                 7.2 [d]                common [d], devel, minimal           
 php                 7.3                    common [d], devel, minimal               PHP scripting language              
 php                 7.4                    common [d], devel, minimal               PHP scripting language              
 php                 8.0                    common [d], devel, minimal               PHP scripting language              
+php                 8.2                    common [d], devel, minimal               PHP scripting language 
 
 Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled
 $ dnf module install php
-$ dnf module switch-to php:8.0
+$ dnf module switch-to php:8.2
 ```
+
+## History
+
+* 2024-01-10: Dropped support for PHP 7.3, added support for PHP 8.3

@@ -20,7 +20,7 @@ Signature verification is currently handled by referring to <https://www.rtr.at/
 ## Example tech stack
 
 - A [**Keycloak**](https://www.keycloak.org/guides) server
-- A **LAMP server** (Linux, Apache, MySQL/MariaDB, PHP>=7.3), but MySQL/MariaDB is not needed in this case
+- A **LAMP server** (Linux, Apache, MySQL/MariaDB, PHP>=7.4), but MySQL/MariaDB is not needed in this case
     - The dependency manager for PHP [Composer 2](https://getcomposer.org/) also needs to be installed
     - `git` >= 2.25 needs to be installed
     - In case that the frontend will also be hosted on the same server, then **npm** needs to be installed too
@@ -109,7 +109,7 @@ This should install most of the packages you will need on your webserver (if Apa
       php-readline php-xml php-intl php-zip php-redis php-fpm php-ldap php-gmp \
       openssl composer
 
-    # should show something like "PHP 7.3.x" (or higher)
+    # should show something like "PHP 7.4.x" (or higher)
     php -v
 
     # Should show something like "Composer 2.x"
@@ -119,11 +119,11 @@ This should install most of the packages you will need on your webserver (if Apa
 === "RedHat/CentOS"
 
     ```bash
-    # Install Remi's RPM repository for php-redis and PHP 7.3
+    # Install Remi's RPM repository for php-redis and PHP 7.4
     dnf -y install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
 
-    # Install PHP 7.3
-    dnf -y module install php:remi-7.3
+    # Install PHP 7.4
+    dnf -y module install php:remi-7.4
 
     # Install packages on Redhat/CentOS
     dnf -y install curl composer php php-apcu php-bcmath php-cli php-curl php-gd \
@@ -131,7 +131,7 @@ This should install most of the packages you will need on your webserver (if Apa
       php-intl php-zip php-redis php-fpm php-ldap php-gmp openssl php-pecl-redis5 \
       sudo git
 
-    # should show something like "PHP 7.3.x" (or higher)
+    # should show something like "PHP 7.4.x" (or higher)
     php -v
 
     # Should show something like "Composer 2.x"
@@ -139,7 +139,7 @@ This should install most of the packages you will need on your webserver (if Apa
     ```
 
 !!! warning
-    Please make sure you have installed **PHP** with at least version **7.3**, **Composer** version **2** and **Git**
+    Please make sure you have installed **PHP** with at least version **7.4**, **Composer** version **2** and **Git**
     with at least version **2.25**!
 
 
