@@ -48,6 +48,9 @@ Links:
 * https://packages.debian.org/stable/php
 * https://packages.debian.org/oldstable/php
 * https://packages.ubuntu.com/search?keywords=php
+* https://endoflife.date/api-platform
+* https://endoflife.date/symfony
+* https://endoflife.date/php
 
 Example for how to list PHP versions provided by AppStream in Red Hat like distros and how to switch between them:
 
@@ -70,3 +73,6 @@ $ dnf module switch-to php:8.2
 ## History
 
 * 2024-01-10: Dropped support for PHP 7.3, added support for PHP 8.3
+* 2024-02-26: Dropped support for PHP 7.4 and PHP 8.0. This violates the Debian
+  LTS policy by a few months, but we are forced to do this due to api-platform
+  dropping support for PHP 7.4 and PHP 8.0.
