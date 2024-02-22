@@ -23,6 +23,7 @@ without the user having to install extra repositories or requiring updates using
 
     * The PHP version range supported by the major Symfony version we use
     * The Symfony version we use needs to have active security support
+    * Any other core PHP libraries we use need to have active security support (api-platform, etc.)
 
 * Specific non-core bundles can require other PHP version ranges, in case some
   features can not reasonable be provided otherwise. This should be highlighted
