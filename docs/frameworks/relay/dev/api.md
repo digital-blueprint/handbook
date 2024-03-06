@@ -1,7 +1,7 @@
 # Creating APIs
 
 You can add new APIs by registering api-platform entities or registering Symfony
-routes. The former will end up in the auto-gernated API docs, the later can be
+routes. The former will end up in the auto-generated API docs, the later can be
 used for internal/special APIs, if required.
 
 See https://api-platform.com/docs/core/operations/ for how to work with the
