@@ -124,3 +124,24 @@ handled by the workers:
 ```bash
 ./bin/console dbp:relay:core:queue:test --count 10 --delay 3
 ```
+
+## Handing of Failed Tasks
+
+By default the worker queue will try to handle the message up to 3 times and
+will then move it to a separate area in the database if it still does not
+succeed. You can then manually inspect why it failed, retry the task, or delete
+it.
+
+To create a test task which will always fail run:
+
+```console
+$ ./bin/console dbp:relay:core:queue:test --fail
+```
+
+To inspect and retry failed tasks the following Symfony commands are available:
+
+```console
+$ ./bin/console messenger:failed:show --transport async_failed
+$ ./bin/console messenger:failed:retry --transport async_failed
+$ ./bin/console messenger:failed:remove --transport async_failed
+```
