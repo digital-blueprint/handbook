@@ -27,3 +27,9 @@
         width: 15rem;
     }
 }
+
+/* make the console prompt not selectable */
+.highlight .gp {
+    opacity: 0.75;
+    user-select: none;
+}
