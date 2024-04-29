@@ -1,4 +1,4 @@
-FROM ubuntu:22.04 as build
+FROM ubuntu:24.04 as build
 
 RUN apt-get update && apt-get install --no-install-recommends -y \
   pipx \
