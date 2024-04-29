@@ -11,6 +11,7 @@ COPY poetry.lock /mkdocs/
 COPY pyproject.toml /mkdocs/
 
 RUN poetry install
+ENV TZ=UTC
 
 CMD ["poetry", "run", "mkdocs", "serve", "--dev-addr",  "0.0.0.0:8011"]
 EXPOSE 8011

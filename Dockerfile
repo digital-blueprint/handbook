@@ -9,6 +9,7 @@ ENV PATH "/root/.local/bin:$PATH"
 COPY . /app
 WORKDIR /app
 RUN poetry install --only main
+ENV TZ=UTC
 RUN poetry run mkdocs build
 
 FROM nginx:stable-alpine
