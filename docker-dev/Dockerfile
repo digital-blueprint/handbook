@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y \
   && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /mkdocs
-RUN pipx install poetry==1.5.1
+RUN pipx install poetry==1.8.2
 ENV PATH "/root/.local/bin:$PATH"
 COPY poetry.lock /mkdocs/
 COPY pyproject.toml /mkdocs/

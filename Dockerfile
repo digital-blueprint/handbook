@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
   pipx \
   && rm -rf /var/lib/apt/lists/*
 
-RUN pipx install poetry==1.5.1
+RUN pipx install poetry==1.8.2
 ENV PATH "/root/.local/bin:$PATH"
 COPY . /app
 WORKDIR /app
