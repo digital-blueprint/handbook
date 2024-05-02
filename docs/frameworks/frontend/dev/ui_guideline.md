@@ -19,7 +19,7 @@ In this guide we discover these topics:
 
 An Activity follows the order [[Fig. 1]](#fig1)[[Fig. 2]](#fig2):
 
-1. H2 title 
+1. H2 title (An activity should be named using a verb, because this emphasizes it being a real activity, something the user can do.)
 2. Subtitle with ``class="subheadline"`` - Short explanation of the activity (**mandatory!**)
 3. Intro Text - Overview of the activity if needed (Optional)
 4. Activity Stuff
@@ -38,10 +38,6 @@ An Activity follows the order [[Fig. 1]](#fig1)[[Fig. 2]](#fig2):
         <b>Fig. 2: Basic activity mobile GUI visualization</b>
     </figcaption>
 </figure>
-
-### Activity Naming
-
-An activity should be named using a verb, because this emphasizes it being a real activity, something the user can do.
 
 ## UI Flow
 The user interface always follows similar rules.
