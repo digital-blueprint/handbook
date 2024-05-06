@@ -2,7 +2,6 @@
 In this guide we discover these topics:
 
 - [Activity UI Guide](#activity-ui-guide)
-    - [Activity Naming](#activity-naming)
 - [UI Flow](#ui-flow)
     -  [Informational views](#informational-views)
     - [Click-through flow](#click-through-flow)
