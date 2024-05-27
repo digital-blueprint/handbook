@@ -64,7 +64,7 @@ Optional (In case you want to work outside of docker):
 * php extensions, see the [Dockerfile](https://github.com/digital-blueprint/relay-server-template/blob/main/docker-dev/php-fpm/Dockerfile) for a list
 * composer 2.x
 
-## Setup
+## Setup API server
 
 Note: If you don't have `bash` you can execute the commands in the shell scripts (`*.sh`) manually.
 
