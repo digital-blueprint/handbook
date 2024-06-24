@@ -63,7 +63,7 @@ flowchart LR
         impl("Implementation")
     end
 
-    ext_apis --> ext_service2
+    ext_apis ----> ext_service2
     client --> api_platform
     client --> oidc_server
 
