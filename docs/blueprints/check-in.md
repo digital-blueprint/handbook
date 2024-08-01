@@ -35,15 +35,15 @@ graph TB
     frontend-->keycloak[Keycloak Server]
     relay-->check-in-bundle[[Check-in Bundle]]
     relay-->frontend-bundle[[Frontend Bundle]]
-    relay-->auth-bundle[[Auth Bundle]]
+    relay-->oidc-bundle[[OIDC Bundle]]
     check-in-bundle-->campus-qr[CampusQR]
     campus-qr-->mongodb[MongoDB]
     check-in-bundle-->base-person-bundle[[Base Person Bundle]]
     check-in-bundle-->core-bundle[[Core Bundle]]
     frontend-bundle-->core-bundle
     core-bundle-->mysql[MySQL]
-    auth-bundle-->local-system("University systems (e.g. LDAP)")
-    auth-bundle-->keycloak
+    oidc-bundle-->local-system("University systems (e.g. LDAP)")
+    oidc-bundle-->keycloak
     keycloak-->local-system
 
     style frontend fill:#d0d0ff,stroke:#333,stroke-width:4px
@@ -299,9 +299,9 @@ Symfony recommends to use [Supervisor](http://supervisord.org/) to do this. You 
     dbp:relay:core:queue:restart`, then Supervisor will start them again.
 
 
-#### Auth Bundle config
+#### OIDC Bundle config
 
-Follow the these steps to configure the Auth Bundle: [Configure the Auth Bundle](../components/api/auth/config.md)
+Follow the these steps to configure the OIDC Bundle: [Configure the Core Connector OIDC Bundle](../components/api/core-connector-oidc/config.md)
 
 #### Checkin Bundle config
 

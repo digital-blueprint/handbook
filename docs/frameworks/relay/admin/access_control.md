@@ -18,7 +18,7 @@ Currently, the following _Authorization Data Providers_ are available:
 
 * **Textfile** ([Core Connector Textfile](../../../components/api/core-connector-textfile/README.md)) Retrieves user attributes from a simple Yaml config file
 * **LDAP** ([Core Connector LDAP](../../../components/api/core-connector-ldap/README.md)) Retrieves user attributes from an LDAP service.
-* **OIDC Token** ([Auth Bundle](../../../components/api/auth/README.md)) Retrieves user attributes from the authenticated user's OpenID Connect 
+* **OIDC Token** ([Core Connector OIDC](../../../components/api/core-connector-oidc/README.md)) Retrieves user attributes from the authenticated user's OpenID Connect 
 token.
 * **CampusOnline** ([Core Connector Campusonline](../../../components/api/core-connector-campusonline/README.md)) Retrieves user attributes from CampusOnline.
 

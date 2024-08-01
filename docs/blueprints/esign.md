@@ -38,13 +38,13 @@ graph TB
     frontend --> keycloak[Keycloak Server]
     relay --> esign-bundle[[ESign Bundle]]
     relay --> frontend-bundle[[Frontend Bundle]]
-    relay --> auth-bundle[[Auth Bundle]]
+    relay --> oidc-bundle[[OIDC Bundle]]
     esign-bundle --> pdf-as[PDF-AS]
     esign-bundle --> moa-spss[MOA-SPSS]
     esign-bundle  -->  core-bundle[[Core Bundle]]
     frontend-bundle --> core-bundle
-    auth-bundle --> local-system("University systems (e.g. LDAP)")
-    auth-bundle --> keycloak
+    oidc-bundle --> local-system("University systems (e.g. LDAP)")
+    oidc-bundle --> keycloak
     keycloak --> local-system
     pdf-as --> a-trust[A-Trust]
     moa-spss --> a-trust
@@ -218,9 +218,9 @@ composer require dbp/relay-esign-bundle
 !!! tip
     Executing `composer check-platform-reqs` shows that the required PHP extensions are installed.
 
-#### Auth Bundle config
+#### OIDC Bundle config
 
-Follow the these steps to configure the Auth Bundle: [Configure the Auth Bundle](../components/api/auth/config.md)
+Follow the these steps to configure the OIDC Bundle: [Configure the Core Connector OIDC Bundle](../components/api/core-connector-oidc/config.md)
 
 #### ESign Bundle config
 

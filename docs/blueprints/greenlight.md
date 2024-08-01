@@ -39,13 +39,13 @@ graph TB
     frontend-->keycloak[Keycloak Server]
     relay-->greenlight-bundle[[Greenlight Bundle]]
     relay-->frontend-bundle[[Frontend Bundle]]
-    relay-->auth-bundle[[Auth Bundle]]
+    relay-->oidc-bundle[[OIDC Bundle]]
     greenlight-bundle-->base-person-bundle[[Base Person Bundle]]
     greenlight-bundle-->database[Database]
     greenlight-bundle-->core-bundle[[Core Bundle]]
     frontend-bundle-->core-bundle
-    auth-bundle-->local-system("University systems (e.g. LDAP)")
-    auth-bundle-->keycloak
+    oidc-bundle-->local-system("University systems (e.g. LDAP)")
+    oidc-bundle-->keycloak
     keycloak-->local-system
 
     style frontend fill:#d0d0ff,stroke:#333,stroke-width:4px
@@ -218,9 +218,9 @@ composer require dbp/relay-greenlight-bundle
     Executing `composer check-platform-reqs` shows that the required PHP extensions are installed.
 
 
-#### Auth Bundle config
+#### OIDC Bundle config
 
-Follow the these steps to configure the Auth Bundle: [Configure the Auth Bundle](../components/api/auth/config.md)
+Follow the these steps to configure the OIDC Bundle: [Configure the Core Connector OIDC Bundle](../components/api/core-connector-oidc/config.md)
 
 #### Greenlight Bundle config
 
