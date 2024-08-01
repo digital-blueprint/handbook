@@ -1,6 +1,3 @@
-[submodule "submodules/dbp-relay-auth-bundle"]
-	path = submodules/dbp-relay-auth-bundle
-	url = https://github.com/digital-blueprint/relay-auth-bundle.git
 [submodule "submodules/dbp-relay-esign-bundle"]
 	path = submodules/dbp-relay-esign-bundle
 	url = https://github.com/digital-blueprint/relay-esign-bundle.git
