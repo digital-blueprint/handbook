@@ -96,10 +96,10 @@ nav:
             - components/api/core-connector-textfile/README.md
         - Campusonline Connector:
             - components/api/core-connector-campusonline/README.md
-      - Auth Bundle:
-        - components/api/auth/README.md
-        - components/api/auth/config.md
-        - components/api/auth/roles.md
+        - OIDC Bundle:
+          - components/api/core-connector-oidc/README.md
+          - components/api/core-connector-oidc/config.md
+          - components/api/core-connector-oidc/roles.md
       - Base Person Bundle:
         - components/api/base-person/README.md
         - LDAP Connector:

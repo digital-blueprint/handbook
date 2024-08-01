@@ -61,3 +61,6 @@
 [submodule "submodules/relay-blob-library"]
 	path = submodules/relay-blob-library
 	url = https://github.com/digital-blueprint/relay-blob-library.git
+[submodule "submodules/relay-core-connector-oidc-bundle"]
+	path = submodules/relay-core-connector-oidc-bundle
+	url = https://github.com/digital-blueprint/relay-core-connector-oidc-bundle
