@@ -24,4 +24,7 @@ public function prepend(ContainerBuilder $container)
 
 ## Error Handling in the Message Handler
 
-By default the worker queue will try to handle the message up to 3 times and will then drop it if it still throws an error. If you want to customize the retry behaviour you can either throw a `UnrecoverableMessageHandlingException` or a `RecoverableMessageHandlingException`, see https://symfony.com/doc/current/messenger.html#retries-failures for details.
+By default the worker queue will try to handle the message up to 3 times in case it throws an error. If you want to customize the retry behavior you can either throw a `UnrecoverableMessageHandlingException` or a `RecoverableMessageHandlingException`, see https://symfony.com/doc/current/messenger.html#retries-failures for details.
+
+After 3 times it the message will be moved to the `async_failed` transport and you can inspect and retry it manually,
+see https://symfony.com/doc/current/messenger.html#saving-retrying-failed-messages for details.
