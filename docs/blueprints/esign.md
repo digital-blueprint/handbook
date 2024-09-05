@@ -2,7 +2,7 @@
 
 Digitally sign one or multiple PDF documents with a freely positioned seal. 
 
-[Visit ESign Demo](https://dbp-demo.tugraz.at/apps/signature)
+[Visit ESign Demo](https://dbp-demo.tugraz.at/apps/esign/)
 
 The application has two modes for signing
 
