@@ -8,8 +8,6 @@
 Creates an entrance ticket and import your 3-G evidence on this device to validate it for admission even before attending
 a course or exam. The ticket then enables you to access the university premises quickly and efficiently.
 
-[Visit Greenlight Demo](https://dbp-demo.tugraz.at/apps/greenlight)
-
 ## Screenshot
 
 <figure markdown>

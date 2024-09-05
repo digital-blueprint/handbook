@@ -46,7 +46,7 @@ We distinguish between Informational views and Click-through flow.
 For **informational views**, all UI elements are weighted equally.
 The user himself must decide what he wants to do next.
 All buttons are then equivalent [[Secondary Button]](#secondary-button). The user is not guided through the activity/section.
-E.g.: [Clipboardmanagement activity](https://dbp-demo.tugraz.at/apps/common/de/clipboard){:target="_blank"} or see picture [Fig. 7](#fig9).
+E.g.: [Clipboardmanagement activity](https://dbp-demo.tugraz.at/apps/activity-showcase/de/clipboard){:target="_blank"} or see picture [Fig. 7](#fig9).
 
 ### Click-through flow
 In the click-through flow you want to guide the user through an activity/an element.
