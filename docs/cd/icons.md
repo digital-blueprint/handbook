@@ -53,7 +53,7 @@ If you create a new app icon[[Fig. 2]](#fig2)[[Fig. 3]](#fig3) you have to follo
 App icons has additional these rules:
 
 - **Highlight Color:** black with 50% opacity
-- **Stroke size:** 1 pt
+- **Stroke size:** 1 px
 
 For further information see [App icon](./apps.md#app-icon).
 
