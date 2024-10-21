@@ -137,7 +137,7 @@ The default oft these colors would be always the dbp colors.
 **Note:** Default colors will be used in case of undeclared variables. Colors don't have to be different in all cases, for example the primary color can be the same as the accent color.
 
 ### Adapting the colors
-You can override a css variable inside a selector by take the variable and assign it to a new value.
+You can override a css variable inside a selector by taking the variable and assign it to a new value.
 
 ```css
 .any-selector {
