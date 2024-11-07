@@ -43,7 +43,7 @@ Links:
 * https://endoflife.date/almalinux
 * https://endoflife.date/rocky-linux
 * https://endoflife.date/oraclelinux
-* https://endoflife.date/centos
+* https://endoflife.date/centos-stream
 * https://packages.debian.org/testing/php
 * https://packages.debian.org/stable/php
 * https://packages.debian.org/oldstable/php
@@ -55,15 +55,12 @@ Links:
 Example for how to list PHP versions provided by AppStream in Red Hat like distros and how to switch between them:
 
 ```console
-$ docker run -it quay.io/centos/centos:stream8 bash
+$ docker run -it quay.io/centos/centos:stream9 bash
 $ dnf module list php
-CentOS Stream 8 - AppStream
-Name                Stream                 Profiles                                 Summary                             
-php                 7.2 [d]                common [d], devel, minimal               PHP scripting language              
-php                 7.3                    common [d], devel, minimal               PHP scripting language              
-php                 7.4                    common [d], devel, minimal               PHP scripting language              
-php                 8.0                    common [d], devel, minimal               PHP scripting language              
-php                 8.2                    common [d], devel, minimal               PHP scripting language 
+CentOS Stream 9 - AppStream
+Name                 Stream                 Profiles                                   Summary                               
+php                  8.1                    common [d], devel, minimal                 PHP scripting language                
+php                  8.2                    common [d], devel, minimal                 PHP scripting language                
 
 Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled
 $ dnf module install php
@@ -72,7 +69,7 @@ $ dnf module switch-to php:8.2
 
 ## History
 
-* 2024-01-10: Dropped support for PHP 7.3, added support for PHP 8.3
 * 2024-02-26: Dropped support for PHP 7.4 and PHP 8.0. This violates the Debian
   LTS policy by a few months, but we are forced to do this due to api-platform
   dropping support for PHP 7.4 and PHP 8.0.
+* 2024-01-10: Dropped support for PHP 7.3, added support for PHP 8.3
