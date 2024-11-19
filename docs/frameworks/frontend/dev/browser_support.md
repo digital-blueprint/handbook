@@ -5,9 +5,9 @@ We currently target the following browsers:
 - Firefox 69+ (2019-09)
 - Chrome 71+ (2018-12)
 - Edge 79+ (2020-01)
-- Safari 13.1+ (2020-03)
+- Safari 14+ (2020-09)
 - Opera 64+ (2019-10)
-- iOS Safari 13.4+/iOS 13+ (2020-03)
+- iOS Safari 14+/iOS 14+ (2020-09)
 - Android 4.4+ (2013): Chrome 80 can be installed on Android 4.4
 
 These version requirements are derived from requiring the following features:
@@ -24,16 +24,13 @@ These version requirements are derived from requiring the following features:
 - [Resize Observer](https://caniuse.com/resizeobserver)
 - [globalThis](https://caniuse.com/mdn-javascript_builtins_globalthis)
 - [Intl.PluralRules](https://caniuse.com/intl-pluralrules)
+- [EventTarget constructor](https://caniuse.com/mdn-api_eventtarget_eventtarget)
 
 We use extra tooling/pollyfills:
 
 - [babel](https://babeljs.io/docs/en/babel-preset-env) for translating newer
   Javascript to something the above mentioned versions can run and to work
   around bugs in those versions.
-- [event-target-shim](https://www.npmjs.com/package/event-target-shim) for
-  supporting [EventTarget
-  constructors](https://caniuse.com/mdn-api_eventtarget_eventtarget) on older
-  Safari.
 - [@webcomponents/scoped-custom-element-registry](https://www.npmjs.com/package/@webcomponents/scoped-custom-element-registry) for Scoped Custom Element Registries, for all browsers.
 
 ## Rules for when Browsers can potentially be dropped
