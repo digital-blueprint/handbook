@@ -117,7 +117,7 @@ nav:
       - Base Organization Bundle:
         - components/api/base-organization/index.md
       - Electronic Signature Bundle:
-        - components/api/esign/index.md
+        - components/api/esign/README.md
         - components/api/esign/config.md
         - components/api/esign/advanced_flow.md
         - components/api/esign/advanced_pdf_signing.md
