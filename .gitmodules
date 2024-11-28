@@ -64,3 +64,9 @@
 [submodule "submodules/relay-core-connector-oidc-bundle"]
 	path = submodules/relay-core-connector-oidc-bundle
 	url = https://github.com/digital-blueprint/relay-core-connector-oidc-bundle
+[submodule "submodules/relay-cabinet-bundle"]
+	path = submodules/relay-cabinet-bundle
+	url = https://github.com/digital-blueprint/relay-cabinet-bundle
+[submodule "submodules/relay-cabinet-connector-campusonline-bundle"]
+	path = submodules/relay-cabinet-connector-campusonline-bundle
+	url = https://github.com/digital-blueprint/relay-cabinet-connector-campusonline-bundle
