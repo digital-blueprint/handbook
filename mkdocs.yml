@@ -76,6 +76,7 @@ nav:
     - blueprints/plan.md
     - blueprints/dual-delivery.md
     - blueprints/mono.md
+    - blueprints/cabinet.md
     - Archived Blueprints:
       - blueprints/greenlight.md
 
@@ -83,6 +84,7 @@ nav:
 
     - Apps:
       - components/app/mono.md
+      - components/app/cabinet.md
 
     - API:
       - Server Template:
