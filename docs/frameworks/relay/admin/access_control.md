@@ -29,12 +29,20 @@ policies in the form of one-line conditional statements (like ```if``` statement
 (usually means "access granted") or ```false``` (usually means "access denied).
 
 Relay bundles that come with access control declare a predefined set of policies in their bundle configuration.
-The policy's name and info describe the action and the resource it grants (or denies) access to.
+The policy's name and info describe the action, and optionally the resource it grants (or denies) access to.
 
-The following variables can be addressed in policy statements:
+There are currently two types of policies:
+* **Roles**
+* **Resource Permissions**
 
+Resource **Permissions** always define a permission granted on one concrete resource item (instance), e.g. `READ_DOCUMENT`, where **Roles** are
+resource item independent. They can be defined for a resource class (e.g. `CREATE_DOCUMENTS`) or globally (e.g. `ROLE_ADMIN`). 
+
+The following variable can be accessed in all policy statements:
 * ```user``` The authenticated API user (see [The User Object](#the-user-object)).
-* ```object``` The requested resource (may be ```null```) (see [The Resource Object](#the-resource-object))
+
+The following variable can be accessed in **Resource Permision** statements only:
+* ```resource``` The requested resource (see [The Resource Object](#the-resource-object))
 
 ## Access Control Attributes
 
@@ -44,7 +52,6 @@ declared primitive, array, or object type. They allow access control relevant at
 to be used in the API code to be customized by administrators.
 
 The following variables can be addressed in attribute statements:
-
 * ```user``` The authenticated API user (see [The User Object](#the-user-object)).
 
 ### The User Object
@@ -52,20 +59,24 @@ The following variables can be addressed in attribute statements:
 The ```user``` object represents the authenticated API user and provides the following set of methods:
 
 * ```getIdentifier(): ?string``` Returns the user identifier or ```null``` for system accounts.
-* ```get(string $attributeName, $defaultValue = null): mixed|null``` Gets the value of a [user attribute](#user-attributes).
+* ```get(string $attributeName, mixed $defaultValue = null): mixed``` Gets the value of a [user attribute](#user-attributes).
   Throws an exception, if the attribute is not declared. If no value is provided for the user, ```$defailtValue``` is
   returned.
-* ```isGranted(string $policyName, $resource)``` Evaluates the access control policy ```$policyName```
+* ```isGrantedRole(string $roleName): bool``` Evaluates the **Role** expression ```$roleName```for the current user. 
+Allows the evaluation of policies within other policy or attribute
+  statements of the same bundle. Throws an exception if the policy is not declared in the bundle or an infinite loop
+  is detected.
+* ```isGrantedResourcePersmission(string $resourcePermissionName, object $resource): bool``` Evaluates the **Resource Permision**
+  expression ```$resourcePermissionName```
   with the resource ```$resource``` for the current user. Allows the evaluation of policies within other policy or attribute
   statements of the same bundle. Throws an exception if the policy is not declared in the bundle or an infinite loop
   is detected.
-* ```getAttribute(string $attributeName, $defaultValue = null): mixed|null``` Evaluates the access control attribute
+* ```getAttribute(string $attributeName, $defaultValue = null): mixed``` Evaluates the access control attribute
   ```$attributeName``` for the current user and returns its return value. Allows the evaluation of attributes within
   other or attribute statements of the same bundle. Throws an exception if the attribute is not declared
   in the bundle or an infinite loop is detected.
 
 ### The Resource Object
 
-The resource ```object``` represents one of possible many resources that the user requested access to. Its type depends
-on the context and is part of the documentation of the respective [access control policy](#access-control-policies). It
-may also be ```null```, in case it the policy is not associated with a resource (e.g. policies like 'MAY_USE_API')
+The Resource Object represents a resources item (instance) that the user requested access to. Its type (resource class) depends
+on the context and is part of the documentation of the respective **Resource Permission** (see [Access Control Policies](#access-control-policies)).

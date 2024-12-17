@@ -14,7 +14,7 @@ for details):
 class Configuration implements ConfigurationInterface
 {
    public const MAY_READ_BLOG_POST = 'MAY_READ_BLOG_POST';
-   public const MAY_ADD_BLOG_POST = 'MAY_ADD_BLOG_POST';
+   public const MAY_ADD_BLOG_POSTS = 'MAY_ADD_BLOG_POSTS';
    public const USER_GROUPS = 'USER_GROUPS';
 
     public function getConfigTreeBuilder(): TreeBuilder
@@ -22,9 +22,9 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder('my_app');
         $treeBuilder->getRootNode()->append(
            AuthorizationConfigDefinition::create()
-              ->addPolicy(self::MAY_READ_BLOG_POST, 'false', 'Returns true if the authenticated user may read the given blog post.')
-              ->addPolicy(self::MAY_ADD_BLOG_POST, 'false', 'Returns true if the authenticated user may add the given blog post.')
-              ->addAttribute(self::USER_GROUPS, '[]', 'Returns an array of group IDs the authenticated user is part of')
+              ->addResourcePermission(self::MAY_READ_BLOG_POST, 'false', 'Returns true if the authenticated user may read the given blog post.')
+              ->addRole(self::MAY_ADD_BLOG_POSTS, 'false', 'Returns true if the authenticated user may add blog posts.')
+              ->addAttribute(self::USER_GROUPS, '[]', 'Returns an array of group IDs the authenticated user is member of')
               ->getNodeDefinition()
         );
           
@@ -42,10 +42,16 @@ public static function create()
 Creates a new instance of ```AuthorizationConfigDefinition```.
 
 ```php
-public function addPolicy(string $policyName, string $defaultExpression = 'false', string $info = ''): AuthorizationConfigDefinition
+public function addRole(string $roleName, string $defaultExpression = 'false', string $info = ''): AuthorizationConfigDefinition
 ``` 
-Appends a new node definition for the policy ```$policyName```, with the default expression ```$defaultExpression``` 
-(```'false'``` meaning that nobody is granted access) and the policy description ```$info```. 
+Appends a new node definition for the role ```$roleName```, with the default expression ```$defaultExpression``` 
+(```'false'``` meaning that nobody is granted access) and the role description ```$info```.
+
+```php
+public function addResourcePermission(string $resourcePermissionName, string $defaultExpression = 'false', string $info = ''): AuthorizationConfigDefinition
+``` 
+Appends a new node definition for the resource permission ```$resourcePermissionName```, with the default expression ```$defaultExpression```
+(```'false'``` meaning that nobody is granted access) and the policy description ```$info```.
 
 ```php
 public function addAttribute(string $attributeName, string $defaultExpression = 'false', string $info = ''): AuthorizationConfigDefinition
@@ -65,9 +71,12 @@ The config definition example above yields the following default config:
 ```yaml
 my_app:
   authorization:
-    MAY_READ_BLOG_POST: 'false' 
-    MAY_ADD_BLOG_POST: 'false'
-    USER_GROUPS: '[]'
+    resource_permissions:
+       MAY_READ_BLOG_POST: 'false'
+    roles:
+       MAY_ADD_BLOG_POSTS: 'false'
+    attributes:
+       USER_GROUPS: '[]'
 ```
 
 ## Creating Your Authorization Service
@@ -112,22 +121,35 @@ Now you are ready to use your access control policies and attributes at runtime,
 ```php
 class MyAppController
 {
-   private $authorizationService;
-   
-   public function __contruct(MyAuthorizationService $authorizationService)
+   public function __construct(
+      private readonly MyAuthorizationService $authorizationService)
    {
-      $this->authorizationService = $authorizationService;
    }
    
    /**
-   * @throws ApiError throws a 403 'forbidden' exception if the current user is not authorized to add $blogPost
+   * @throws ApiError throws a 403 'forbidden' exception if the current user is not authorized to add blog posts
    */
    public function addBlogPost(BlogPost $blogPost)
    {
-      // if you just want to check without an exception being thrown, use $this->authorizationService->isGranted(...)
-      $this->authorizationService->denyAccessUnlessIsGranted(Configuration::MAY_ADD_BLOG_POST, $blogPost);
+      // if you just want to check without an exception being thrown,
+      // use $this->authorizationService->isGrantedRole(...)
+      $this->authorizationService->denyAccessUnlessIsGrantedRole(
+         Configuration::MAY_ADD_BLOG_POSTS);
       
       // add the blog post
+   }
+   
+   /**
+   * @throws ApiError throws a 403 'forbidden' exception if the current user is not authorized to read $blogPost
+   */
+   public function getBlogPost(BlogPost $blogPost)
+   {
+      // if you just want to check without an exception being thrown,
+      // use $this->authorizationService->denyAccessUnlessIsGrantedResourcePermission(...)
+      $this->authorizationService->denyAccessUnlessIsGrantedResourcePermission(
+         Configuration::MAY_READ_BLOG_POST, $blogPost);
+      
+      return $blogPost;
    }
    
    public function getUserGroups(): array
@@ -137,8 +159,8 @@ class MyAppController
 }
 ```
 
-Note that the ```denyAccessUnlessIsGranted``` method gets passed the blog post as a parameter. It is available
-in your policy expression as ```object``` variable
+Note that the ```denyAccessUnlessIsGrantedResourcePermission``` method gets passed the blog post as a parameter.
+It is available in your policy expression as ```resource``` variable
 (see [The Resource Object](../admin/access_control.md#the-resource-object)). 
 
 ## Symfony Access Control (Deprecated)
