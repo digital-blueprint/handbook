@@ -32,6 +32,7 @@ Relay bundles that come with access control declare a predefined set of policies
 The policy's name and info describe the action, and optionally the resource it grants (or denies) access to.
 
 There are currently two types of policies:
+
 * **Roles**
 * **Resource Permissions**
 
@@ -39,9 +40,11 @@ Resource **Permissions** always define a permission granted on one concrete reso
 resource item independent. They can be defined for a resource class (e.g. `CREATE_DOCUMENTS`) or globally (e.g. `ROLE_ADMIN`). 
 
 The following variable can be accessed in all policy statements:
+
 * ```user``` The authenticated API user (see [The User Object](#the-user-object)).
 
 The following variable can be accessed in **Resource Permision** statements only:
+
 * ```resource``` The requested resource (see [The Resource Object](#the-resource-object))
 
 ## Access Control Attributes
