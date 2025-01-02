@@ -22,7 +22,7 @@
       "groupName": "git submodules",
       "groupSlug": "git-submodules",
       "automerge": true,
-      "matchPackageNames": [
+      "matchDepNames": [
         "submodules/**"
       ]
     }
