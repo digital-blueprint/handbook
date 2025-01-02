@@ -1,6 +1,6 @@
 {
   "extends": [
-    "config:base",
+    "config:recommended",
     "group:allNonMajor",
     "schedule:weekly"
   ],
@@ -8,20 +8,23 @@
     ":prHourlyLimit2"
   ],
   "rangeStrategy": "update-lockfile",
-  "js": {
-    "enabled": false
-  },
   "git-submodules": {
     "enabled": true
   },
   "packageRules": [
     {
+      "matchCategories": [
+        "js"
+      ],
+      "enabled": false
+    },
+    {
       "groupName": "git submodules",
       "groupSlug": "git-submodules",
-      "matchPackagePatterns": [
-        "submodules/*"
-      ],
-      "automerge": true
+      "automerge": true,
+      "matchPackageNames": [
+        "submodules/**"
+      ]
     }
   ]
 }
