@@ -138,7 +138,7 @@ nav:
       - Authentic Documents Bundle:
         - components/api/authentic-documents/README.md
       - Check In Bundle:
-        - components/api/check-in/index.md
+        - components/api/checkin/README.md
       - Mono Bundle:
         - components/api/mono/README.md
         - components/api/mono/config.md
@@ -176,7 +176,7 @@ nav:
       - Blob Library:
         - components/supporting-software/blob-library/README.md
         - components/supporting-software/blob-library/api.md
-        - components/supporting-software/blob-library/error-codes.md
+        - components/supporting-software/blob-library/error-codescheck-in.md
 
     - Archived Components:
       - Greenlight Bundle:
