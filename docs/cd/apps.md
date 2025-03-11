@@ -27,19 +27,6 @@ The app icon appears at two places in the dbp-branded versions of the apps: in t
     </figcaption>
 </figure>
 
-
-<figure id="fig3" style="width:100%;">
-    <img src="../assets/appheader_example.svg" alt="App header example" style="max-width:100%; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
-    <figcaption>
-        <b>Fig. 3: App header example</b>
-    </figcaption>
-</figure>
-
-
-### App shell header
-The icon in the app shell header[[fig3]](#fig3) is the plain icon with no squares and in true black and 50% opacity. [[fig1]](#fig1)
-For more information about the appearance and how to create an app icon, see [app icon](./icons.md#app-icon) under icons.
-
 ### PWA Icon
 The icon in the color white and on the squares is used as the pwa icon[[fig2]](#fig2).
 For further information and placement take a look at [app icon](./icons.md#app-icon).
