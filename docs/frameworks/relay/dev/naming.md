@@ -189,6 +189,16 @@ This is used in `ApiError::withDetails()`, for example: `ApiError::withDetails(R
 
 * Usage: when creating new monolog logging channels in Symfony
 
+## Symfony Translation Domains
+
+* Schema:
+    * `<Vendor, SnakeCase>_<Category, SnakeCase>_<BundleName, SnakeCase>`
+
+* Example: `dbp_relay_mono`
+
+* Usage: when providing translations in Symfony, or for allowing the user to
+  provide translations. (see https://symfony.com/doc/current/translation.html)
+
 ## Open Questions
 
 * We use `API` -> `Api` for PascalCase because Symfony derives the config key
