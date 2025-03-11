@@ -76,7 +76,7 @@ cd docker-dev
 ./run.sh            # to get a shell in the main docker container
 composer install    # to install the php dependencies inside the container
 exit                # to exit the docker container
-docker-compose up   # to start the server
+docker compose up   # to start the server
 ```
 
 Now visit <http://localhost:8000> to see the server API description interface, which should look something like this:
