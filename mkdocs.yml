@@ -116,6 +116,7 @@ nav:
         - components/api/blob/examples.md
         - components/api/blob/sequence-diagrams.md
         - components/api/blob/stored-data.md
+        - components/api/blob/retention.md
       - Base Organization Bundle:
         - components/api/base-organization/index.md
       - Electronic Signature Bundle:
@@ -135,6 +136,8 @@ nav:
         - components/api/formalize/events.md
       - Sublibrary Bundle:
         - components/api/sublibrary/README.md
+        - components/api/sublibrary/config.md
+        - components/api/sublibrary/authz.md
       - Authentic Documents Bundle:
         - components/api/authentic-documents/README.md
       - Check In Bundle:
