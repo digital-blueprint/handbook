@@ -60,7 +60,7 @@ Note: This is only tested on Linux so far, but any operating system supporting d
 
 Optional (In case you want to work outside of docker):
 
-* php8.1+
+* php8.2+
 * php extensions, see the [Dockerfile](https://github.com/digital-blueprint/relay-server-template/blob/main/docker-dev/php-fpm/Dockerfile) for a list
 * composer 2.x
 
