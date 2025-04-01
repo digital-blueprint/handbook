@@ -157,21 +157,6 @@ dbp_relay_core_connector_ldap:
 
 Fill out the `OIDC_*` environment variables in `.env.local`.
 
-**relay-base-person-connector-ldap-bundle**
-
-Fill out the `LDAP_PERSON_PROVIDER_LDAP_ATTRIBUTE_*` environment variables in `.env.local`.
-
-Add a local data mapping required by the sublibrary bundle:
-
-```yaml
-dbp_relay_base_person_connector_ldap:
-  local_data_mapping:
-    - local_data_attribute: email
-      source_attribute: "mail"
-    - local_data_attribute: almaId
-      source_attribute: co-alma-patron-id
-```
-
 ### Final Steps & Customization
 
 After everything is configured you can run the health checks to see if everything
