@@ -36,12 +36,12 @@ of the Base Entity's bundle config:
 dbp_relay_base_person:
   local_data:
     - local_data_attribute: foo
-      authorization_expression: 'user.get("MAY_READ_FOO")'
+      read_policy: 'user.get("MAY_READ_FOO")'
     - local_data_attribute: bar
-      authorization_expression: 'true'
+      read_policy: 'true'
 ```
 
-The ```authorization_expression``` represents a conditional statement determining which users are authorized to read the attribute.
+The ```read_policy``` represents a conditional statement determining which users are authorized to read the attribute.
 With the example config above, users with the ```MAY_READ_FOO``` attribute may request the ```foo``` attribute and 
 all users may request the ```bar``` attribute of a person.  See [Access Control Policies](../admin/access_control.md#access-control-policies) to 
 learn how to write these expressions. 
