@@ -48,7 +48,6 @@ Then we need to install the required API bundles:
 ```bash
 composer require dbp/relay-frontend-bundle
 composer require dbp/relay-sublibrary-bundle
-composer require dbp/relay-sublibrary-connector-base-organization-bundle
 composer require dbp/relay-base-organization-bundle
 composer require dbp/relay-base-organization-connector-campusonline-bundle
 composer require dbp/relay-base-person-bundle
@@ -87,6 +86,8 @@ dbp_relay_sublibrary:
     person_local_data_attributes:
         email: email
         alma_id: almaId
+    organization_local_data_attributes:
+        code: code
     authorization:
         roles:
             ROLE_LIBRARY_MANAGER: 'true'
@@ -99,17 +100,7 @@ dbp_relay_sublibrary:
 * Fill out `SUBLIBRARY_IDS` with the IDs used by the base organization connector that the user should have access to
 * Fill out `ALMA_LIBRARY_IDS` with the ALMA library IDS that the user should have access to
 * Set `person_local_data_attributes` to map the attributes that are exposed by the base person connector
-
-**relay-sublibrary-connector-base-organization-bundle**
-
-This bundle provides library entities to the sublibrary bundle by deriving them from the organization API.
-
-Configure that the library code is retrieved via the "code" attribute from the base organization:
-
-```yaml
-dbp_relay_sublibrary_connector_base_organization:
-    library_code_local_data_attribute: 'code'
-```
+* Set `organization_local_data_attributes` to map the attributes that are exposed by the base organization connector
 
 **relay-base-organization-bundle**
 
