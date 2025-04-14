@@ -1,9 +1,5 @@
 # Sublibrary
 
-!!! note
-    This guide is currently a work in progress.
-
-
 ```mermaid
 graph TD
     style sublibrary_bundle fill:#606096,color:#fff
