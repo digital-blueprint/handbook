@@ -435,12 +435,12 @@ Within the cabinet app when users interact with the "clear filters" option a spi
 * <b>Active activities</b> in the side menu are highlighted with bold text and marked with a vertical, CD-colored line `--dbp-accent` on the left side. See [[Fig. 2]](#fig2)
 
 <figure id="" style="width:15%; margin-left:20px">
-    <img src="../../assets/ui_images/activeLink.svg" alt="secondary buttons" style="width:100%;">
+    <img src="../../assets/ui_images/activeLink.svg" alt="active link" style="width:100%;">
 </figure>
 <div id="toggle-switch"></div>
 * <b>Toggle switches</b> are turned off by default with the `--dbp-muted` color. When activated, the color changes to `--dbp-info`. 
 <figure id="" style="width:12%;  margin-left:20px">
-    <img src="../../assets/ui_images/toggleswitch.png" alt="secondary buttons" style="width:100%;">
+    <img src="../../assets/ui_images/toggleswitch.png" alt="toggle switch buttons" style="width:100%;">
 </figure>
 
 
@@ -451,7 +451,7 @@ Currently, no focus is defined. At the moment, it is the browser default focus, 
 Elements in a disabled state are grayed out (color: `dbp-secondary-surface`; opacity: 0.4;) so they remain visually recognizable but are not interactive. This can apply to buttons or links that are temporarily inaccessible. For example, in Formalize, when not all fields have been filled out, the submission button remains in a disabled state. Only when all required information has been provided is the disabled state removed.
 
 <figure id="" style="width:18%;  margin:0">
-    <img src="../../assets/ui_images/disabled_state.svg" alt="secondary buttons" style="width:100%;">
+    <img src="../../assets/ui_images/disabled_state.svg" alt="disabled state button" style="width:100%;">
 </figure>
 
 ### Loading state
