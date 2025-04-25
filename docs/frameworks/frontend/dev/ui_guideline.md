@@ -18,7 +18,7 @@ The App Shell loads first, providing immediate visual feedback to users while th
 
 #### Responsive Behavior
 
-* Full App Shell with maximum content width of 1500px, using [standard layout](#fig6) by default
+* Full App Shell with maximum content width of 1400px, using [standard layout](#fig6) by default
 * At the breakpoint of 768px (and below) the application automatically switches to wide layout (the layout switcher is no longer available)
 
 #### Theme Support
@@ -142,7 +142,7 @@ The dbp app supports two different layout types that users can switch between us
 * The side menu `<aside>` is positioned at the top of the screen by default 
 * Main content area `<main>` spans the full width below the `<aside>` navigation [[Fig.8]](#fig8)
 * Optimized for content-heavy workflows where maximum screen real estate is needed (E.g: Cabinet – filter options)
-* Maintains the same maximum content width (1500px) like the standard layout
+* Maintains the same maximum content width (1400px) like the standard layout
 
 <figure id="fig8" style="width:100%;">
     <img src="../../assets/ui_images/dbp_ui_widelayout.svg" alt="Wide layout desktop visualization" style="width:100%; border: 1px solid black; margin: auto;">
@@ -152,7 +152,7 @@ The dbp app supports two different layout types that users can switch between us
 </figure>
 
 ### Maximum Content Width
-Maximum content width: 1500px. Regardless of standard layout or wide layout, a maximum width of 1500px must be set. This prevents texts or other elements from becoming too long to read or elements within the `<main>` column from being stretched too much.
+Maximum content width: 1400px. Regardless of standard layout or wide layout, a maximum width of 1400px must be set. This prevents texts or other elements from becoming too long to read or elements within the `<main>` column from being stretched too much.
 
 <figure id="fig9" style="width:100%;">
     <img src="../../assets/ui_images/dbp_ui_maxwidth.svg" alt="Maximum width visualization for the standard layout" style="width:100%; border: 1px solid black; margin: auto;">
@@ -218,11 +218,11 @@ The filter options are the main purpose of this app to filter and display studen
 
 ### Breakpoint overview
 
-#### Desktop ≥1500px
-Standard- & wide layout with maximum content width of 1500px [[Fig. 9]](#fig9) [[Fig.10]](#fig10)
+#### Desktop ≥1400px
+Standard- & wide layout with maximum content width of 1400px [[Fig. 9]](#fig9) [[Fig.10]](#fig10)
 
 #### Small Laptops and Tablet Landscape (1100px)
-Only implement if additional layout adjustments are required between 1500px and 768px [[Fig.13]](#fig13)
+Only implement if additional layout adjustments are required between 1400px and 768px [[Fig.13]](#fig13)
 
 #### Tablet (768px)
 
