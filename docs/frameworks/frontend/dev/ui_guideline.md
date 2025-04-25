@@ -437,7 +437,7 @@ Within the cabinet app when users interact with the "clear filters" option a spi
 <figure id="" style="width:15%; margin-left:20px">
     <img src="../../assets/ui_images/activeLink.svg" alt="secondary buttons" style="width:100%;">
 </figure>
-
+<div id="toggle-switch"></div>
 * <b>Toggle switches</b> are turned off by default with the `--dbp-muted` color. When activated, the color changes to `--dbp-info`. 
 <figure id="" style="width:12%;  margin-left:20px">
     <img src="../../assets/ui_images/toggleswitch.png" alt="secondary buttons" style="width:100%;">
@@ -463,7 +463,7 @@ See also: [Toolkit-Showcase > Mini Spinner](https://dbp-dev.tugraz.at/apps/toolk
 
 Since there is no hover state, the only feedback state is that links function as expected and the interaction is completed - a new window opens or a modal is closed. The successful execution of the action itself serves as feedback to the user.
 
-For toggle buttons, feedback is provided through color changes: when toggled off, the button appears in `color: --dbp-muted`; when toggled on, it changes to `--dbp-info` green. Additionally, toggle buttons include a small animation of a slider moving from the "On" to "Off" position and vice versa, providing clear visual feedback about the state change.
+For toggle buttons, feedback is provided through color changes [[See toggle switcher]](#toggle-switch): when toggled off, the button appears in `color: --dbp-muted`; when toggled on, it changes to `--dbp-info` green. Additionally, toggle buttons include a small animation of a slider moving from the "On" to "Off" position and vice versa, providing clear visual feedback about the state change.
 
 ### Error Handling
 All errors appear in the `--dbp-danger` color. An error is always displayed with a meaningful error message and it must be clear where the error occurs. The following example shows the app esign [Fig.24]
