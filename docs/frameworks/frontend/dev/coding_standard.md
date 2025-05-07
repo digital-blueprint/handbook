@@ -4,13 +4,23 @@ For our Javscript projects we currently use the following tools:
 
 * [ESLint](https://eslint.org/) - a static code analyzer
 * [Prettier](https://prettier.io/) - an opinionated code formatter
+* [i18next Parser](https://github.com/i18next/i18next-parser) - a tool for automatically maintaining translation files
 * [Typescript](https://www.typescriptlang.org/) - a type checker for Javascript (and its own langauge, but we only use the type checking part)
 
 To invoke the tools:
 
-* `npm lint` - will run eslint on the project and warn on errors
-* `npm format` - will reformat the project using both eslint and prettier
+* `npm eslint` - will run eslint on the project and warn on errors
+* `npm eslint:fix` - will run eslint on the project and try to fix errors
+* `npm prettier` - will error out on any formatting issues
+* `npm prettier:fix` - will reformat the project
+* `npm i18next` - will error out on any translation issues
+* `npm i18next:fix` - will fix translation issues if possible
 * `npm tsc` - will run the type checker on the project
+
+There are grouped commands for the tools, so you can run all of them at once:
+
+* `npm check` - will run eslint, prettier and i18next
+* `npm fix` - will run eslint, prettier and i18next and try to fix all issues
 
 ## Static Type Checking
 
@@ -28,6 +38,21 @@ https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html
 
 It's recommended to use VSCode as your editor, as it has good integration with
 the typescript language server.
+
+## i18next Parser Tips
+
+In case you want you want to translate keys that are not in the code, but either
+dynamically created, or come from another source, i18next-parser will not be
+able to find them and remove them from the translation files.
+
+You can work around the issue by listing all keys in a comment somewhere:
+
+```javascript
+/*
+t('my-keys.somekey')
+t('my-keys.somekey2')
+*/
+```
 
 ## Prettier Pitfalls
 
