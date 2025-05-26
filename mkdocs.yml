@@ -179,8 +179,6 @@ nav:
       - components/supporting-software/pdf-as.md
       - Blob Library:
         - components/supporting-software/blob-library/README.md
-        - components/supporting-software/blob-library/api.md
-        - components/supporting-software/blob-library/error-codes.md
 
     - Archived Components:
       - Greenlight Bundle:
