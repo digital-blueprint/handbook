@@ -43,6 +43,20 @@ For example this query can be use as a rough guideline:
 npx browserslist "> 0.5% in alt-EU, last 1 years, Firefox ESR, not dead"
 ```
 
+## Browser Testing
+
+We currently use [playwright](https://playwright.dev) for end-to-end testing of
+our frontend code. Due to the way playwright only supports the latest versions
+of browsers, we do not test against older versions of the browsers we support.
+We also don't test with Safari at the moment.
+
+In case there are any issues with older versions of the browsers we support,
+please let us know and we will try to fix them. We can't guarantee that we will
+notice these issues automatically.
+
+See the playwright release notes for the currently supported browsers in the
+latest version: https://playwright.dev/docs/release-notes
+
 ## Handling of old Browsers
 
 In case our modules are used with a too old browser this can lead to the following issues:
