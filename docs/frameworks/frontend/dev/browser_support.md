@@ -54,6 +54,20 @@ To avoid such scenarios and to give the user proper feedback, we provide a stand
 
 https://github.com/digital-blueprint/toolkit/blob/main/packages/common/misc/browser-check.js
 
+Example usage:
+
+```html
+  <script src="browser-check.js" defer></script>
+  <noscript>This application requires Javascript</noscript>
+```
+
+Since the check uses eval() for some of the feature checks, it is not compatible with CSPs that disallow eval(). To avoid
+this, you can use the `noeval` option when loading the script:
+
+```html
+<script src="browser-check.js?noeval" defer></script>
+```
+
 ## Device Resolution Support
 
 We currently try to target "iPhone SE 1st gen" as the lowest supported (CSS) resolution: 320 x 568
