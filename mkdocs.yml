@@ -266,6 +266,7 @@ nav:
       - frameworks/frontend/configuration.md
       - frameworks/frontend/theming.md
       - frameworks/frontend/keycloak_integration.md
+      - frameworks/frontend/layout-switcher.md
 
       - Developer Guide:
         - frameworks/frontend/dev/coding_standard.md
