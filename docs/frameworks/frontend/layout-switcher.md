@@ -4,7 +4,7 @@
 
 The `LayoutSwitcher` is a Web Component built with Lit, designed to toggle between layout modes (e.g., `standard`, `wide`). It handles screen-size responsiveness, stores user preferences, and integrates with internationalization.
 
----
+
 
 ## Features
 
@@ -16,7 +16,7 @@ The `LayoutSwitcher` is a Web Component built with Lit, designed to toggle betwe
 - Uses a dropdown UI with icons.
 - Lightweight and customizable.
 
----
+
 
 ## Basic Knowledge
 
@@ -34,19 +34,21 @@ To work effectively with the `LayoutSwitcher` component, you should be familiar 
 - **Lit Library**  
   Understanding how Lit handles templating, reactivity, and component rendering (`html`, `css`, `@property`, etc.).
   
----
+
 
 ## Usage
 
-```
+```html
 <layout-switcher
   app-name="myApp"
   default-layout="standard"
   disabled-layout="wide"
   lang-dir="ltr">
 </layout-switcher>
+```
 
----
+
+
 
 ## Properties & Attributes
 
@@ -62,7 +64,7 @@ To work effectively with the `LayoutSwitcher` component, you should be familiar 
 | `isDefaultLayout` | `boolean` | –                 | Whether current layout is `standard`.                                       |
 | `dropdown`        | `boolean` | –                 | Dropdown visibility state.                                                  |
 
----
+
 
 ## Icons
 
