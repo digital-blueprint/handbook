@@ -1,10 +1,8 @@
-# `LayoutSwitcher` 
+# LayoutSwitcher 
 
 ## Overview
 
 The `LayoutSwitcher` is a Web Component built with Lit, designed to toggle between layout modes (e.g., `standard`, `wide`). It handles screen-size responsiveness, stores user preferences, and integrates with internationalization.
-
-
 
 ## Features
 
@@ -16,26 +14,13 @@ The `LayoutSwitcher` is a Web Component built with Lit, designed to toggle betwe
 - Uses a dropdown UI with icons.
 - Lightweight and customizable.
 
+**Basic Knowledge:**
 
-
-## Basic Knowledge
-
-To work effectively with the `LayoutSwitcher` component, you should be familiar with:
-
-- **HTML/CSS**  
-  Understanding of semantic HTML elements and responsive design using CSS.
-
-- **JavaScript (ES6+)**  
-  Comfort with modern JavaScript syntax (e.g., `classes`, `arrow functions`, `template literals`, `Promises`).
-
-- **Web Components**  
-  Basic knowledge of custom elements, shadow DOM, and lifecycle callbacks (`connectedCallback`, `disconnectedCallback`).
-
-- **Lit Library**  
-  Understanding how Lit handles templating, reactivity, and component rendering (`html`, `css`, `@property`, etc.).
-  
-
-
+HTML/CSS 
+JavaScript (ES6+)
+Web Components
+Lit Library
+ 
 ## Usage
 
 ```html
@@ -46,8 +31,6 @@ To work effectively with the `LayoutSwitcher` component, you should be familiar 
   lang-dir="ltr">
 </layout-switcher>
 ```
-
-
 
 
 ## Properties & Attributes
@@ -69,3 +52,19 @@ To work effectively with the `LayoutSwitcher` component, you should be familiar 
 ## Icons
 
 In digital blueprint frontends you can also change icons. (E.g. if you have your own icon set or want to change specific icons).
+
+## Accessibility
+
+- Uses semantic HTML (ul, li, a) for better accessibility.
+- All interactive elements are keyboard and screen-reader friendly.
+- Dropdown closes on outside click.
+
+## Dependencies
+- lit
+- @dbp-toolkit/common for:
+ - ScopedElementsMixin
+ - LangMixin
+ - AdapterLitElement
+
+
+
