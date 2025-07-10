@@ -23,13 +23,15 @@ The `LayoutSwitcher` is a Web Component built with Lit, designed to toggle betwe
 
 import { LayoutSwitcher } from './path-to/LayoutSwitcher.js';
 
-html`
-  <layout-switcher
-    app-name="my-app"
-    default-layout="wide"
-    lang-dir="ltr"
-  ></layout-switcher>
-`
+```html
+<layout-switcher
+  app-name="myApp"
+  default-layout="standard"
+  disabled-layout="wide"
+  lang-dir="ltr">
+</layout-switcher>
+```
+
 
 ## Properties & Attributes
 
