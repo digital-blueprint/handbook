@@ -44,7 +44,7 @@ To work effectively with the `LayoutSwitcher` component, you should be familiar 
   default-layout="standard"
   disabled-layout="wide"
   lang-dir="ltr">
-</layout-switcher>
+</layout-switcher>```
 
 ---
 
@@ -63,6 +63,7 @@ To work effectively with the `LayoutSwitcher` component, you should be familiar 
 | `dropdown`        | `boolean` | –                 | Dropdown visibility state.                                                  |
 
 ---
+
 ## Icons
 
 In digital blueprint frontends you can also change icons. (E.g. if you have your own icon set or want to change specific icons).
