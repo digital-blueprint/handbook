@@ -38,13 +38,13 @@ To work effectively with the `LayoutSwitcher` component, you should be familiar 
 
 ## Usage
 
-```html
+```
 <layout-switcher
   app-name="myApp"
   default-layout="standard"
   disabled-layout="wide"
   lang-dir="ltr">
-</layout-switcher>```
+</layout-switcher>
 
 ---
 
