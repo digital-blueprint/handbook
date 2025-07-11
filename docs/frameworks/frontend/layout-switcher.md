@@ -2,6 +2,13 @@
 
 The `LayoutSwitcher` is a Web Component built with Lit, designed to toggle between layout modes (e.g., `standard`, `wide`). It handles screen-size responsiveness, stores user preferences, and integrates with internationalization.
 
+**Basic Knowledge:**
+
+- HTML/CSS 
+- JavaScript (ES6+)
+- Web Components
+- Lit Library
+  
 ## Features
 
 - Toggle between layouts: `standard`, `wide`, etc.
@@ -11,15 +18,8 @@ The `LayoutSwitcher` is a Web Component built with Lit, designed to toggle betwe
 - i18n-ready for translation.
 - Uses a dropdown UI with icons.
 - Lightweight and customizable.
-
-**Basic Knowledge:**
-
-- HTML/CSS 
-- JavaScript (ES6+)
-- Web Components
-- Lit Library
  
-## Basic Usage
+## Usage
 
 import { LayoutSwitcher } from './path-to/LayoutSwitcher.js';
 
@@ -59,10 +59,10 @@ import { LayoutSwitcher } from './path-to/LayoutSwitcher.js';
 Switches to a given layout, stores the choice, updates UI and fires layout-changed.
 
 - loadDefaultLayout(): void
-Marks current layout as default (standard).
+Marks current layout as default (e.g.standard).
 
 - loadAlternateLayout(): void
-Marks current layout as alternate (wide).
+Marks current layout as alternate (e.g.wide).
 
 - updateLayoutBasedOnWindowSize(): void
 Sets layout to wide on narrow screens (<871px), or to stored/default layout on wider screens.
@@ -73,11 +73,11 @@ Toggles visibility of the dropdown layout menu.
 - hideLayoutMenu(e: Event): void
 Hides the layout menu when clicking outside it.
 
-- _getStoredLayout(): string
-Returns layout value from localStorage.
+- getStoredLayout(): string
+Stores the current layout value in localStorage(e.g., `wide`, `standard`).
 
-- _setStoredLayout(value: string): void
-Stores layout value in localStorage.
+- setStoredLayout(value: string): void
+Saves the last layout value(e.g., `wide`, `standard`) in localStorage.
 
 ## Responsive behavior:
 
@@ -99,7 +99,8 @@ Key	Usage
 - switch-to-standard-layout-label	Tooltip for standard layout option
 - wide-layout-name	Label for wide layout option
 - standard-layout-name	Label for standard layout option
-   
+
+If you want to add new translations and extend the webpage, please have a look at the [translation developer guide](https://handbook.digital-blueprint.org/frameworks/frontend/dev/translations/).   
 
 
 
