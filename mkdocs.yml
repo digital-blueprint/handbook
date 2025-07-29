@@ -268,7 +268,6 @@ nav:
       - frameworks/frontend/activities.md
       - frameworks/frontend/configuration.md
       - frameworks/frontend/theming.md
-      - frameworks/frontend/keycloak_integration.md
       - frameworks/frontend/layout-switcher.md
 
       - Developer Guide:
@@ -279,11 +278,14 @@ nav:
         - frameworks/frontend/dev/testing.md
         - frameworks/frontend/dev/build_tooling.md
         - frameworks/frontend/dev/browser_support.md
-        - frameworks/frontend/dev/remote_firefox_debugging.md
         - frameworks/frontend/dev/assets.md
         - frameworks/frontend/dev/topics.md
         - frameworks/frontend/dev/faq.md
         - frameworks/frontend/dev/translations.md
+
+      - HowTos:
+        - frameworks/frontend/howtos/remote_firefox_debugging.md
+        - frameworks/frontend/howtos/keycloak_integration.md
 
   - Corporate Design:
     - cd/logo.md
