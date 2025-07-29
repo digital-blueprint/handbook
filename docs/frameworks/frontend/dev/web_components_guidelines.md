@@ -2,7 +2,7 @@
 
 A random selection of guidelines for how we write web components.
 
-## Custom Elements
+## Scoped Elements
 
 * All elements which use other custom elements should use `ScopedElementsMixin` from ['@open-wc/scoped-elements'](https://open-wc.org/docs/development/scoped-elements/) instead of requiring the used custom elements to be globally registered. This avoids the internally used elements to leak and avoids conflicts.
 
@@ -17,15 +17,13 @@ A random selection of guidelines for how we write web components.
     }
     ```
 
-Instead of `document.createElement()` when creating nested custom elements use `getShadowRootDocument()`
+* Instead of `document.createElement()` when creating nested custom elements use `this.createScopedElement()`
 
-```js
-import {getShadowRootDocument} from '@dbp-toolkit/common';
-
-func() {
-    let elm = getShadowRootDocument(this).createElement('dbp-my-tag');
-}
-```
+    ```js
+    func() {
+        let elm = this.createScopedElement('my-panel');
+    }
+    ```
 
 
 ## Internal State
