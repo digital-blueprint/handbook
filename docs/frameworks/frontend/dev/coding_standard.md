@@ -39,21 +39,6 @@ https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html
 It's recommended to use VSCode as your editor, as it has good integration with
 the typescript language server.
 
-## i18next Parser Tips
-
-In case you want you want to translate keys that are not in the code, but either
-dynamically created, or come from another source, i18next-parser will not be
-able to find them and remove them from the translation files.
-
-You can work around the issue by listing all keys in a comment somewhere:
-
-```javascript
-/*
-t('my-keys.somekey')
-t('my-keys.somekey2')
-*/
-```
-
 ## Prettier Pitfalls
 
 Formatters like Prettier can't just move html tags around because in some cases whitespace changes also change the presentation on the rendered website.

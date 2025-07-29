@@ -283,9 +283,10 @@ nav:
         - frameworks/frontend/dev/browser_support.md
         - frameworks/frontend/dev/assets.md
         - frameworks/frontend/dev/component_metadata.md
-        - frameworks/frontend/dev/faq.md
         - frameworks/frontend/dev/translations.md
+        - frameworks/frontend/dev/translation_overrides.md
         - frameworks/frontend/dev/layout-switcher.md
+        - frameworks/frontend/dev/faq.md
 
       - HowTos:
         - frameworks/frontend/howtos/remote_firefox_debugging.md
