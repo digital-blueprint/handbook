@@ -151,9 +151,6 @@ nav:
         - CAMPUSonline Connector:
           - components/api/mono-connector-campusonline/index.md
           - components/api/mono-connector-campusonline/config.md
-        - PayUnity Connector:
-          - components/api/mono-connector-payunity/index.md
-          - components/api/mono-connector-payunity/config.md
         - Generic Connector:
           - components/api/mono-connector-generic/index.md
       - Dispatch Bundle:
@@ -192,6 +189,9 @@ nav:
           - components/api/greenlight-connector-campusonline/events.md
       - Authentic Documents Bundle:
         - components/api/authentic-documents/README.md
+      - PayUnity Connector:
+        - components/api/mono-connector-payunity/index.md
+        - components/api/mono-connector-payunity/config.md
 
   - Frameworks:
 
