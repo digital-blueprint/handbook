@@ -277,10 +277,9 @@ nav:
         - frameworks/frontend/dev/build_tooling.md
         - frameworks/frontend/dev/browser_support.md
         - frameworks/frontend/dev/assets.md
-        - frameworks/frontend/dev/topics.md
+        - frameworks/frontend/dev/component_metadata.md
         - frameworks/frontend/dev/faq.md
         - frameworks/frontend/dev/translations.md
-        - frameworks/frontend/dev/activities.md
         - frameworks/frontend/dev/layout-switcher.md
 
       - HowTos:
