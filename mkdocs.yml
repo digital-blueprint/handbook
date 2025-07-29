@@ -264,7 +264,6 @@ nav:
 
       - frameworks/frontend/index.md
       - frameworks/frontend/getting_started.md
-      - frameworks/frontend/components.md
       - frameworks/frontend/activities.md
       - frameworks/frontend/configuration.md
       - frameworks/frontend/theming.md
