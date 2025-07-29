@@ -1,4 +1,4 @@
-# Fonts
+# Custom Fonts
 
 You can apply a font by adding the font-family to the `html` or `body` in a css `<style>` tag.
 
