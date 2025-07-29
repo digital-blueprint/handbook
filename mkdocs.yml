@@ -151,6 +151,9 @@ nav:
         - CAMPUSonline Connector:
           - components/api/mono-connector-campusonline/index.md
           - components/api/mono-connector-campusonline/config.md
+        - PAYONE Connector:
+          - components/api/mono-connector-payone/index.md
+          - components/api/mono-connector-payone/config.md
         - Generic Connector:
           - components/api/mono-connector-generic/index.md
       - Dispatch Bundle:
