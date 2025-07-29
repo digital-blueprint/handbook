@@ -61,7 +61,7 @@ The frontend app currently depends on a `default` profile being configured in
 the backend for the qualified signature and a `official` profile for the
 advanced signature. This will be made [configurable in a future version](https://github.com/digital-blueprint/esign-app/issues/13).
 
-If you want to customize your frontend, please have a look at the [theming and individualizing your application guide](../frameworks/frontend/user/theming.md). There, an detailed description of individualizing your fonts, colors, icons, and other assets is given.
+If you want to customize your frontend, please have a look at the [theming and individualizing your application guide](../frameworks/frontend/user/index.md). There, an detailed description of individualizing your fonts, colors, icons, and other assets is given.
 
 ### Keycloak Server
 

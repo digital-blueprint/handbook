@@ -1,4 +1,4 @@
-# Overriding Translations
+# Custom Translations
 
 !!! warning "Currently in development"
 

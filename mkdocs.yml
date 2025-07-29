@@ -266,8 +266,11 @@ nav:
       - User Guide:
         - frameworks/frontend/user/index.md
         - frameworks/frontend/user/fonts.md
+        - frameworks/frontend/user/styling.md
+        - frameworks/frontend/user/icons.md
+        - frameworks/frontend/user/metadata.md
+        - frameworks/frontend/user/content.md
         - frameworks/frontend/user/translations.md
-        - frameworks/frontend/user/theming.md
 
       - Developer Guide:
         - frameworks/frontend/dev/getting_started.md

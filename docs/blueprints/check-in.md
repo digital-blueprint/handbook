@@ -61,7 +61,7 @@ To install the frontend app you need `npx` which should be installed using this 
 apt-get -y --no-install-recommends install nodejs
 ```
 
-After installing the frontend app you need to adapt the `index.html` file to match the branding of your organization. You can find a guide for this in the [Handbook](../frameworks/frontend/user/theming.md).
+After installing the frontend app you need to adapt the `index.html` file to match the branding of your organization. You can find a guide for this in the [Handbook](../frameworks/frontend/user/index.md).
 
 ### Keycloak Server
 

@@ -25,7 +25,7 @@ The App Shell loads first, providing immediate visual feedback to users while th
 The App Shell supports theming through CSS variables:
 
 * Light/Dark mode toggle  <img src="../../assets/ui_images/contrast.svg" alt="Main navigation" style="width:20px;"> in the main navigation affects the entire App Shell
-* Custom themes can be implemented by overriding the CSS variables -> See [theming page](../user/theming.md#color-system).
+* Custom themes can be implemented by overriding the CSS variables -> See [theming page](../user/styling.md#color-system).
 * All App Shell components use the same variables as the rest of the application for visual consistency
 
 
@@ -499,7 +499,7 @@ When users interact with the "Reset Filter Option" in Cabinet app by selecting "
 ## Colors
 DBP Apps have declared different CSS variables. You should avoid using hard coded colors or borders. 
 Instead, use these CSS variables. 
-You can find a brief description of the color system and the variables at the [theming page](../user/theming.md#color-system).
+You can find a brief description of the color system and the variables at the [theming page](../user/styling.md#color-system).
 
 CSS variables are accessed using the `var()` function.
 You can use all of these CSS variables without the 'override' in the code. E.g.: if you want to use

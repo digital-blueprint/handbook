@@ -55,7 +55,7 @@ graph TB
 You can install the frontend application with a simple command you can find on 
 [Greenlight frontend installation](https://github.com/digital-blueprint/greenlight-app#using-this-app-as-pre-built-package).
 
-If you want to customize your frontend, please have a look at the [theming and individualizing your application guide](../frameworks/frontend/user/theming.md). There, an detailed description of individualizing your fonts, colors, icons, and other assets is given. 
+If you want to customize your frontend, please have a look at the [theming and individualizing your application guide](../frameworks/frontend/user/index.md). There, an detailed description of individualizing your fonts, colors, icons, and other assets is given. 
 
 ### Keycloak Server
 
