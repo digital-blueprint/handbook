@@ -265,6 +265,7 @@ nav:
 
       - User Guide:
         - frameworks/frontend/user/index.md
+        - frameworks/frontend/user/fonts.md
         - frameworks/frontend/user/theming.md
 
       - Developer Guide:
