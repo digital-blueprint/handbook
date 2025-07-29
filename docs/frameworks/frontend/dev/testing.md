@@ -17,7 +17,7 @@ npm run test
   a fake browser has the downside of missing bugs in real browsers, so not sure
   if this is worth it.
 
-* We use [cypress](https://www.cypress.io) to run end-to-end tests on deployed
-  apps both locally and in CI for Chromium/Firefox/Edge.
+* We use [Playwright](https://playwright.dev/) to run end-to-end tests on
+  deployed apps both locally and in CI for Chromium/Firefox.
 
 * We use [GitLab CI](https://docs.gitlab.com/ee/ci) for our CI.
