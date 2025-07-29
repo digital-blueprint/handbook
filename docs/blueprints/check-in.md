@@ -61,7 +61,7 @@ To install the frontend app you need `npx` which should be installed using this 
 apt-get -y --no-install-recommends install nodejs
 ```
 
-After installing the frontend app you need to adapt the `index.html` file to match the branding of your organization. You can find a guide for this in the [Handbook](../frameworks/frontend/theming.md).
+After installing the frontend app you need to adapt the `index.html` file to match the branding of your organization. You can find a guide for this in the [Handbook](../frameworks/frontend/user/theming.md).
 
 ### Keycloak Server
 
@@ -69,7 +69,7 @@ You need to install and set up the Open Source Identity and Access Management [K
 which needs to import (sync) your LDAP users.
 
 !!! tip
-    There is small guide about the [Keycloak Client Setup](../frameworks/frontend/keycloak_integration.md).
+    There is small guide about the [Keycloak Client Setup](../frameworks/frontend/howtos/keycloak_integration.md).
 
 
 In addition to the `dbp-frontend` default client scope Check-in also needs a second default client scope called `location-check-in`, where `Include in Token Scope` is enabled and no additional mappers or scopes are set.

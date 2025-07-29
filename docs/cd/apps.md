@@ -152,4 +152,4 @@ How to use the [maskable.app](https://maskable.app/){:target="_blank"}:
 
 ## Applying own colors
 For not dbp uses, you might want to use the app icon and favicons from dbp, but with your brand colors.
-This and other changes can be read in the [Theming documentation](../frameworks/frontend/theming.md#use-the-dbp-app-icon-with-your-brand-colors).
+This and other changes can be read in the [Theming documentation](../frameworks/frontend/user/theming.md#use-the-dbp-app-icon-with-your-brand-colors).

@@ -24,7 +24,7 @@ For developing or designing you may have to install some fonts on your working d
 Simply open the *\*.ttf* file with a double click, then click `install`.
 
 ### Import your own font for theming
-Take a look at [fonts](../frameworks/frontend/theming.md#fonts) in the "theming and individualizing your application" section for further information about using your own fonts and other adaptions.
+Take a look at [fonts](../frameworks/frontend/user/theming.md#fonts) in the "theming and individualizing your application" section for further information about using your own fonts and other adaptions.
 
 ### Import fonts in a repository
 

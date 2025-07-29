@@ -25,7 +25,7 @@ The App Shell loads first, providing immediate visual feedback to users while th
 The App Shell supports theming through CSS variables:
 
 * Light/Dark mode toggle  <img src="../../assets/ui_images/contrast.svg" alt="Main navigation" style="width:20px;"> in the main navigation affects the entire App Shell
-* Custom themes can be implemented by overriding the CSS variables -> See [theming page](../theming.md#color-system).
+* Custom themes can be implemented by overriding the CSS variables -> See [theming page](../user/theming.md#color-system).
 * All App Shell components use the same variables as the rest of the application for visual consistency
 
 
@@ -499,7 +499,7 @@ When users interact with the "Reset Filter Option" in Cabinet app by selecting "
 ## Colors
 DBP Apps have declared different CSS variables. You should avoid using hard coded colors or borders. 
 Instead, use these CSS variables. 
-You can find a brief description of the color system and the variables at the [theming page](../theming.md#color-system).
+You can find a brief description of the color system and the variables at the [theming page](../user/theming.md#color-system).
 
 CSS variables are accessed using the `var()` function.
 You can use all of these CSS variables without the 'override' in the code. E.g.: if you want to use
@@ -526,15 +526,15 @@ Regarding design and structure, you must ensure WCAG 2.1 AA compliance for all D
 
 Table of Content: 
 
-* [Keyboard-friendly ](../accessibility/#keyboard-friendly)
-* [Colors & Minimal Contrast Level ](../accessibility/#colors-minimal-contrast-level)
-  * [Minimal Contrast Level ](../accessibility/#minimal-contrast-level)
-  * [Include a Text or Icon cue for colored information ](../accessibility/#include-a-text-or-icon-cue-for-colored-information)
-* [Fontsize ](../accessibility/#fontsize)
-* [Touchtarget Size](../accessibility/#touchtarget-size)
-* [Hierarchy of Headlines ](../accessibility/#hierarchy-of-headlines)
-* [Text alternatives](../accessibility/#text-alternatives) 
-  * [Non Text content: ALT attribute ](../accessibility/#non-text-content-alt-attribute)
-  * [Link titles ](../accessibility/#link-titles)
-  * [Labels for User input](../accessibility/#labels-for-user-input)
+* [Keyboard-friendly ](./accessibility.md#keyboard-friendly)
+* [Colors & Minimal Contrast Level ](./accessibility.md#colors-minimal-contrast-level)
+  * [Minimal Contrast Level ](./accessibility.md#minimal-contrast-level)
+  * [Include a Text or Icon cue for colored information ](./accessibility.md#include-a-text-or-icon-cue-for-colored-information)
+* [Fontsize ](./accessibility.md#fontsize)
+* [Touchtarget Size](./accessibility.md#touchtarget-size)
+* [Hierarchy of Headlines ](./accessibility.md#hierarchy-of-headlines)
+* [Text alternatives](./accessibility.md#text-alternatives) 
+  * [Non Text content: ALT attribute ](./accessibility.md#non-text-content-alt-attribute)
+  * [Link titles ](./accessibility.md#link-titles)
+  * [Labels for User input](./accessibility.md#labels-for-user-input)
 

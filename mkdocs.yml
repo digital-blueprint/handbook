@@ -261,15 +261,14 @@ nav:
         - frameworks/relay/howtos/service_account.md
 
     - Frontend Framework:
-
       - frameworks/frontend/index.md
-      - frameworks/frontend/getting_started.md
-      - frameworks/frontend/activities.md
-      - frameworks/frontend/configuration.md
-      - frameworks/frontend/theming.md
-      - frameworks/frontend/layout-switcher.md
+
+      - User Guide:
+        - frameworks/frontend/user/index.md
+        - frameworks/frontend/user/theming.md
 
       - Developer Guide:
+        - frameworks/frontend/dev/getting_started.md
         - frameworks/frontend/dev/coding_standard.md
         - frameworks/frontend/dev/accessibility.md
         - frameworks/frontend/dev/ui_guideline.md
@@ -281,6 +280,8 @@ nav:
         - frameworks/frontend/dev/topics.md
         - frameworks/frontend/dev/faq.md
         - frameworks/frontend/dev/translations.md
+        - frameworks/frontend/dev/activities.md
+        - frameworks/frontend/dev/layout-switcher.md
 
       - HowTos:
         - frameworks/frontend/howtos/remote_firefox_debugging.md

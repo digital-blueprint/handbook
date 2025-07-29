@@ -72,7 +72,7 @@ So be carefully with the initial font weight. Take a look at this documentation 
 To make the colors as customizable as possible, there is a dbp color system.
 
 You can override the default colors for customize your app. For universities, these colors should have a contrast level of at least AA in contrast to the base color.
-You can read more about the minimal contrast level in [Accessibility](./dev/accessibility.md#minimal-contrast-level).
+You can read more about the minimal contrast level in [Accessibility](../dev/accessibility.md#minimal-contrast-level).
 
 All colors without a postfix need to work on top of the "base" color. All others need to work on top of their respective surface colors.
 
@@ -206,7 +206,7 @@ To override the default translations, a few things have to be done.
  * The translation file has to be located in a defined directory. By default, the translation directory is in `assets/translations/`. Each language needs its own directory with only one file inside which has to be named `translation.json`. Thus, if you want a german and a english translation, you will need the files `assets/translations/de/translation.json` and `assets/translations/en/translation.json`. Currently, only english and german are supported.
  * Translation override files containing all keys and all default translations are already present in the given location. You can simply change the given translations and insert your translations.
 
- If you want to add new translations and extend the webpage, please have a look at the [translation developer guide](dev/translations.md).
+ If you want to add new translations and extend the webpage, please have a look at the [translation developer guide](../dev/translations.md).
 
 ### Example
 Consider the following scenario:
@@ -336,7 +336,7 @@ You can use the free & open source vector based image editor [InkScape](https://
 
 ##### How to change the colors of the icon
 The following steps has to be done for the whitelabel favicon and the whitelabel app icon.
-You can read [here](../../cd/apps.md#favicons-of-apps) which resolutions and formats are used by the two files.
+You can read [here](../../../cd/apps.md#favicons-of-apps) which resolutions and formats are used by the two files.
 
 1. Open the needed svg whitelabel icon file in [InkScape](https://inkscape.org/de/){:target="_blank"}
 2. Double-click on the first square, then a line in the middle of the square should appear: the gradient line
