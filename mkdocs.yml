@@ -274,12 +274,10 @@ nav:
 
       - Developer Guide:
         - frameworks/frontend/dev/getting_started.md
-        - frameworks/frontend/dev/coding_standard.md
+        - frameworks/frontend/dev/dev_tools.md
         - frameworks/frontend/dev/accessibility.md
         - frameworks/frontend/dev/ui_guideline.md
         - frameworks/frontend/dev/web_components_guidelines.md
-        - frameworks/frontend/dev/testing.md
-        - frameworks/frontend/dev/build_tooling.md
         - frameworks/frontend/dev/browser_support.md
         - frameworks/frontend/dev/assets.md
         - frameworks/frontend/dev/component_metadata.md

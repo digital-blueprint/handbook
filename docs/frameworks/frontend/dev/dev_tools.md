@@ -1,4 +1,6 @@
-# Coding Standard
+# Development Tools
+
+## Linting & Formatting & Type Checking
 
 For our Javscript projects we currently use the following tools:
 
@@ -22,7 +24,7 @@ There are grouped commands for the tools, so you can run all of them at once:
 * `npm check` - will run eslint, prettier and i18next
 * `npm fix` - will run eslint, prettier and i18next and try to fix all issues
 
-## Static Type Checking
+### Static Type Checking
 
 We currently use pure Javascript for our code and add inline documentation and
 extra type information via [jsdoc](https://jsdoc.app/).
@@ -39,7 +41,7 @@ https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html
 It's recommended to use VSCode as your editor, as it has good integration with
 the typescript language server.
 
-## Prettier Pitfalls
+### Prettier Pitfalls
 
 Formatters like Prettier can't just move html tags around because in some cases whitespace changes also change the presentation on the rendered website.
 
@@ -70,3 +72,37 @@ Thus we set the Prettier config to ignore whitespace in all cases (html-whitespa
 ```
 
 Once https://github.com/prettier/prettier/issues/12218 is fixed/released you can also use `<!-- display: inline -->` in front of the inline tag.
+
+## Package Management & Bundling
+
+For package management we use npm. We use workspaces in combination with mono repos and git submodules to allow developing multiple packages at the same time.
+
+For managing mono repos we also use [lerna](https://lerna.js.org/), which allow
+us to run tasks for all included packages.
+
+For bundling we use [rollup](https://rollupjs.org) since it's relatively easy to
+use, but still can be extended through various plugins.
+
+## Testing
+
+To run unit tests for a package:
+
+```
+npm install
+npm run test
+```
+
+* We use [karma](https://karma-runner.github.io) + [mocha](https://mochajs.org)
+  \+ [chai](https://www.chaijs.com) with Chromium/Firefox to run unit tests both
+  locally and in CI.
+
+  We could look into [jsdom](https://github.com/jsdom/jsdom) for testing as an
+  alternative. Last time we looked things were blocked on
+  https://github.com/jsdom/jsdom/pull/2548, but this is now fixed. Testing with
+  a fake browser has the downside of missing bugs in real browsers, so not sure
+  if this is worth it.
+
+* We use [Playwright](https://playwright.dev/) to run end-to-end tests on
+  deployed apps both locally and in CI for Chromium/Firefox.
+
+* We use [GitLab CI](https://docs.gitlab.com/ee/ci) for our CI.
