@@ -2,13 +2,13 @@
 
 We currently target the following browsers:
 
-- Firefox 69+ (2019-09)
-- Chrome 71+ (2018-12)
-- Edge 79+ (2020-01)
-- Safari 14+ (2020-09)
-- Opera 64+ (2019-10)
-- iOS Safari 14+/iOS 14+ (2020-09)
-- Android 4.4+ (2013): Chrome 80 can be installed on Android 4.4
+- Firefox 110+ (2023-02)
+- Chrome 106+ (2022-09)
+- Edge 106+ (2022-10)
+- Safari 16+ (2022-09)
+- Opera 94+ (2022-12)
+- iOS Safari 16+/iOS 16+ (2022-09)
+- Android 7+ (2016-08): Chrome 106 can be installed on Android 7
 
 These version requirements are derived from requiring the following features:
 
@@ -25,6 +25,7 @@ These version requirements are derived from requiring the following features:
 - [globalThis](https://caniuse.com/mdn-javascript_builtins_globalthis)
 - [Intl.PluralRules](https://caniuse.com/intl-pluralrules)
 - [EventTarget constructor](https://caniuse.com/mdn-api_eventtarget_eventtarget)
+- [CSS Container Queries (Size)](https://caniuse.com/css-container-queries)
 
 We use extra tooling/pollyfills:
 
@@ -87,3 +88,11 @@ this, you can use the `noeval` option when loading the script:
 We currently try to target "iPhone SE 1st gen" as the lowest supported (CSS) resolution: 320 x 568
 
 See https://www.ios-resolution.com, https://www.mydevice.io/#compare-devices and https://en.wikipedia.org/wiki/IPhone_SE_(1st_generation) for more information.
+
+## History
+
+* 2025-08-06 - Require "CSS Container Queries (Size)"
+* 2024-11-19 - Require "EventTarget constructor"
+* 2023-10-03 - Require "Intl.PluralRules"
+* 2023-02-15 - Require "Resize Observer" and "globalThis"
+* ...
