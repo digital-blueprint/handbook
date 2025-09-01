@@ -76,3 +76,6 @@
 [submodule "submodules/relay-mono-connector-payone-bundle"]
 	path = submodules/relay-mono-connector-payone-bundle
 	url = https://github.com/digital-blueprint/relay-mono-connector-payone-bundle
+[submodule "submodules/relay-verity-bundle"]
+	path = submodules/relay-verity-bundle
+	url = https://github.com/digital-blueprint/relay-verity-bundle.git
