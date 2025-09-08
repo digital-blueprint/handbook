@@ -181,6 +181,9 @@ nav:
           - components/api/verity/configuration.md
           - components/api/verity/connectors.md
           - components/api/verity/events.md
+          - VeraPDF Connector:
+            - components/api/verity-connector-verapdf/Overview.md
+            - components/api/verity-connector-verapdf/Configuration.md
 
     - Supporting Software:
       - components/supporting-software/pdf-as.md
