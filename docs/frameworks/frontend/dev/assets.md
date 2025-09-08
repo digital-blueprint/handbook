@@ -1,32 +1,84 @@
 # Assets & Bundle Layout
 
 In some cases a component, in addition to Javscript files, also contains CSS
-files, images, JS workers that are not handled by the bundler. For example:
+files, images, JS workers, etc. that are not handled by the JS bundler. For
+example:
 
 * An "icon" components wants to include extra SVG files.
 * A component wraps a library which expects CSS files to be in a hardcoded place
   and the CSS references images with relative paths and hardcoded names.
-* A component uses a library which uses web workers, which atm can't be bundled
-  to ES6 modules because [most browsers don't support
-  them](https://caniuse.com/mdn-api_worker_worker_ecmascript_modules), so they
-  have to be copied as is.
 * A component uses a library that ships JSON files including translations which
   that library expects in a certain location.
 
-In some cases this can be worked around in the bundler by using plugins to
-inline the files into JS and thus make them part of the bundling process:
+This aren't problems a bundler can solve, as it only knows about JS files, so we
+have provide a separate mechanism to deal with such files.
 
-* [@rollup/plugin-json](https://www.npmjs.com/package/@rollup/plugin-json) can
-  be used to convert JSON files to Javascript.
+## Asset Copy Configuration
 
-Sadly the only way atm (ideas to improve this welcome) is to leak this
-implementation detail out and leave the copying of those files to the
-integrator/bundle creator.
+In case you have files that need to be copied to a certain location and
+structure, you can define them in package.json, like this:
 
-To somewhat improve this we use a set of rules for how our packages expect those
-files to end up in the file system in relation to the bundle.
+```json
+{
+  "dbp": {
+    "assets": [
+      {
+        "srcPackage": "@dbp-toolkit/common",
+        "src": "assets/icons/*.svg",
+        "dest": "icons"
+      }
+    ]
+  }
+}
+```
+
+- **srcPackage:** npm package name where files are located
+- **src:** source path within srcPackage (string, array, or glob pattern)
+- **dest:** destination directory (string or array)
+
+This allows dependencies of this package to copy the files into the expected
+place during the build. The files will be copied to
+`dist/local/<npm-package-name-of-the-component>/<dest>`.
+
+## Asset URL Imports Configuration
+
+In case you want to import a file, like a CSS file, and get an URL to that file,
+you can define them in package.json, like this:
+
+```json
+{
+  "dbp": {
+    "urls": [
+      {
+        "srcPackage": "select2",
+        "src": "**\/*.css"
+      }
+    ]
+  }
+}
+```
+
+- **srcPackage:** npm package name where files are located
+- **src:** source path within srcPackage (string, array, or glob pattern)
+
+Example import:
+
+```js
+import select2CSSPath from 'select2/dist/css/select2.min.css';
+```
+
+The imported file will be copied during the build process to the `/dist/shared`
+directory and the import will return a URL to that file, relative to the bundle
+root. Since you don't control how the file is named and where it exactly ends
+up, this means the file can't be referenced, or reference other files with a
+fixed name or path.
 
 ## Bundle Layout
+
+`/dist`:
+
+The bundle root. This contains the index.html, other static files referenced
+from there, and the application and activity Javascript entry points.
 
 `/dist`:
 
@@ -44,13 +96,10 @@ durations as the file names depend on the content.
 
 `/dist/local/<npm-package-name-of-the-component>/*`:
 
-This is where all files end up that need to have a fixed name/path.
-
-For example an icon component could have `/dist/local/my-icon/foo.svg`. The
-files that need to be copied there need to be documented in the README of the
-respective component. This also applies to all transitive dependencies, so if
-COMPONENT-A wants asset ASSET-A and depends on COMPONENT-B which needs ASSET-B,
-then you using COMPONENT-A requires you to copy both ASSET-A and ASSET-B.
+This is where all files end up that need to have a fixed name/path and belong to
+the package. Packages should not directly access files belonging to other
+packages, unless the path is retrieved via a JS API, to avoid unexpected
+breakages when packages are updated.
 
 Since these files have fixed names the cache duration should be limited to
 avoid stale data on re-deploys.
