@@ -12,7 +12,7 @@ Execute this command in the console in the directory of the api. Note that the `
     --vendor myuni \
     --unique-name=example \
     --friendly-name="Example Bundle" \
-    --example-entity=Entity
+    --example-entity=Resource
 
     Composer Package Name: myuni/relay-example-bundle
             PHP Namespace: Myuni\Relay\ExampleBundle
