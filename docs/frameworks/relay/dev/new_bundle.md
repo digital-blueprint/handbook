@@ -1,26 +1,29 @@
 # Creating a New Bundle
 
-The easiest way to start a new bundle is by using our bundle creator. The API server comes with a command which creates a new bundle according to your specified naming and installs/registers it with your application, so you can start developing/testing right away.
+The easiest way to start a new bundle is by using our bundle creator.
+The API server comes with a command which creates a new bundle according to your specified 
+naming and installs/registers it with your application, so you can start developing/testing right away.
 
-CExecute this command in the console in the directory of the api.
+Execute this command in the console in the directory of the api. Note that the `relay` prefix and the 
+`bundle` suffix are added automatically to the bundle name:
 
 ```console
 > ./bin/console dbp:relay:maker:make:bundle \
     --vendor myuni \
-    --unique-name=my-bundle \
-    --friendly-name="My Bundle" \
+    --unique-name=example \
+    --friendly-name="Example Bundle" \
     --example-entity=Entity
 
-    Composer Package Name: myuni/relay-my-bundle-bundle
-            PHP Namespace: Myuni\Relay\MyBundleBundle
-      Symfony Bundle Name: MyuniRelayMyBundleBundle
-        Bundle Config Key: myuni_relay_my_bundle
-           PHP Class Name: Entity
-  API-Platform Short Name: MyBundleEntity
-            Resource Path: /my-bundle/entitys
-      Serialization Group: MyBundleEntity:some-group
-             Open API Tag: My Bundle
-      GIT Repository Name: myuni-relay-my-bundle-bundle
+    Composer Package Name: myuni/relay-example-bundle
+            PHP Namespace: Myuni\Relay\ExampleBundle
+      Symfony Bundle Name: MyuniRelayExampleBundle
+        Bundle Config Key: myuni_relay_example
+           PHP Class Name: Resource
+  API-Platform Short Name: ExampleResource
+            Resource Path: /example/resources
+      Serialization Group: ExampleResource:some-group
+             Open API Tag: Example Bundle
+      GIT Repository Name: myuni-relay-example-bundle
 Continue? (y/n)
 
 * The package 'myuni/relay-my-bundle-bundle' was created under 'bundles/myuni-relay-my-bundle'
