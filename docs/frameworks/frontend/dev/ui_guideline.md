@@ -146,15 +146,13 @@ in the main navigation. When the viewport shrinks down to 870px the layout autom
 </figure>
 
 ### Maximum Content Width
-Maximum content width is 1400px. Regardless of standard layout or wide layout, a maximum width of 1400px must be set. This prevents texts or other elements from becoming too long to read or elements within the <main> column from being stretched too much.
+Maximum content width is 1400px. Regardless of standard layout or wide layout, a maximum width of 1400px must be set. This prevents texts or other elements from becoming too long to read or elements within the `<main>` column from being stretched too much.
 
 ## Breakpoint Structure & responsive behavior
 <div id="main-bp"></div>
-
-## Main Breakpoints
 The apps should be developed so that adjustments are primarily made at the two breakpoints to ensure a consistent responsive design. 
 
-### First main breakpoint: 870px (Tablet)
+### First breakpoint: 870px (Tablet)
 <figure id="fig8" style="width:50%; margin:0">
     <img src="../../assets/ui_images/dbp_ui_standardlayout_responsive.svg" alt="First main breakpoint at 870px" style="width:100%; border: 1px solid black; margin: auto;">
     <figcaption>
@@ -163,7 +161,7 @@ The apps should be developed so that adjustments are primarily made at the two b
 </figure>
 
 
-### Second main breakpoint: 490px (Smartphone and below)
+### Second  breakpoint: 490px (Smartphone and below)
 <figure id="fig9" style="width:25%; margin:0">
     <img src="../../assets/ui_images/dbp_ui_standard_490.svg" alt="Second main breakpoint at 490px" style="width:100%; border: 1px solid black; margin: auto;">
     <figcaption>
@@ -204,7 +202,7 @@ See https://www.ios-resolution.com, https://www.mydevice.io/#compare-devices and
 
 Icons in the DBP app are classified into three main categories based on their function and interaction requirements: decorative icons, interactive icons, and interactive buttons with icon+text.
 *	Decorative icons 
-*	Interactive icons: They will always stand alone and are only used, if there is no space for icon+text button eg. [see Fig. 16 Datatables]
+*	Interactive icons: They will always stand alone and are only used, if there is no space for icon+text button eg. [see Fig. 14 Datatables](#fig14)
 *	Buttons with icon+text is always the first choice
 
 
@@ -326,7 +324,7 @@ Tables with fix contents [Fig. 12](#fig12) are tables where we know the amount o
 Tables with unknown Data or a high amount of data are datatables [Fig. 14](#fig14) [Fig. 15](#fig15). We don't know the weight of each column, so we can't collapse any of them. We need a horizontal scroll and a short preview of a row. This is realized with an icon only button at the very end of the row -in the last column, where all row actions are located. This column is the frozen part which is fixed/sticky.
 
 <figure id="fig14" style="width:100%;">
-    <img src="../../assets/ui_images/dbp-ui-datatable.svg" alt="Datatable" style="width:100%; border: 1px solid black;">
+    <img src="../../assets/ui_images/dbp_ui_datatable.svg" alt="Datatable" style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Fig. 14: Datatable</b>
     </figcaption>
@@ -348,7 +346,7 @@ The styling of the table title is always `font-size: 1.17 em; 3px solid var(--db
 Table actions are displayed as buttons above the table. The button opens a drop-down menu with all possible actions. These actions apply to the entire table unless one or more rows are selected, in which case the actions only apply to the selected rows. Example: If nothing is selected, all elements are affected. If some rows are selected, the table action only affects those rows. 
 
 <figure id="fig16" style="width:50%;">
-    <img src="../../assets/ui_images/dbi-ui-table-title_actions-dropdown.png" alt="Table title and action dropdown example for tables" style="width:100%; border: 1px solid black; margin: auto;">
+    <img src="../../assets/ui_images/dbi-ui-table-title_actions-dropdown.png" alt="Table title and action dropdown example for tables" style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Fig. 16: Table title and action dropdown example for tables</b>
     </figcaption>
@@ -358,7 +356,7 @@ Table actions are displayed as buttons above the table. The button opens a drop-
 The search bar in the table is a magnifying glass icon that can be expanded to reveal text search and advanced search parameters. The advanced search options allow you to narrow down your search by column name and operators. 
 
 <figure id="fig17" style="width:50%;">
-    <img src="../../assets/ui_images/dbp-ui-searchbar.svg" alt="Searchbar" style="width:100%; border: 1px solid black; margin: auto;">
+    <img src="../../assets/ui_images/dbp-ui-searchbar.svg" alt="Searchbar" style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Searchbar</b>
     </figcaption>
@@ -369,7 +367,7 @@ To export table data to other formats, there is an export button on the far righ
 
 <figure id="fig18" style="width:50%;">
     <img src="../../assets/ui_images/dbp-ui-export-dropdown.png" alt="Export dropdown example for tables 
-" style="width:100%; border: 1px solid black; margin: auto;">
+" style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Export dropdown example for tables 
 </b>
