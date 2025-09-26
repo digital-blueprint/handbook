@@ -231,7 +231,7 @@ Interactive icons are functional elements that the user can click or tap to perf
 
 ### Icon size
 <div id="icon-size"></div>
-Although the icons in the buttons are 22 x 22px in size, they are displayed larger when they stand alone. The touch targetsize should always have 40 x 40px in size while the icon inside can have the size between 22 x 22px and 24 x 24px (depending on the readability of the symbol) <img src="../../assets/ui_images/dbp_ui_icon-size.png" alt="minimum size of icons" style="width:100%; border: 1px solid black;"> 
+Although the icons in the buttons are 22 x 22px in size, they are displayed larger when they stand alone. The touch targetsize should always have 40 x 40px in size while the icon inside can have the size between 22 x 22px and 24 x 24px (depending on the readability of the symbol) <img src="../../assets/ui_images/dbp_ui_icon-size.png" alt="minimum size of icons" style="width:25%; border: 1px solid black;"> 
 
 ### Buttons
 A button always consists of an icon and a text. The text describes the action using a verb and optionally a noun to specify it. Buttons without icons may not be placed.
@@ -346,7 +346,7 @@ The styling of the table title is always `font-size: 1.17 em; 3px solid var(--db
 #### table actions
 Table actions are displayed as buttons above the table. The button opens a drop-down menu with all possible actions. These actions apply to the entire table unless one or more rows are selected, in which case the actions only apply to the selected rows. Example: If nothing is selected, all elements are affected. If some rows are selected, the table action only affects those rows. 
 
-<figure id="fig16" style="width:50%; margin:0 text-align:left ;">
+<figure id="fig16" style="width:50%; margin:0; text-align:left ;">
     <img src="../../assets/ui_images/dbi-ui-tableTitle_actions-dropdown.png" alt="Table title and action dropdown example for tables" style="width:40%; border: 1px solid black; margin:0;">
     <figcaption>
         <b>Fig. 16: Table title and action dropdown example for tables</b>
@@ -366,7 +366,7 @@ The search bar in the table is a magnifying glass icon that can be expanded to r
 #### Export dropdown
 To export table data to other formats, there is an export button on the far right. This opens a drop-down menu with all further export settings. 
 
-<figure id="fig18" style="width:50%; margin:0 text-align:left; ">
+<figure id="fig18" style="width:50%; margin:0; text-align:left; ">
     <img src="../../assets/ui_images/dbp-ui-export-dropdown.png" alt="Export dropdown example for tables " style="width:25%; border: 1px solid black; margin:0;">
     <figcaption>
         <b>Fig. 18: Export dropdown example for tables 
