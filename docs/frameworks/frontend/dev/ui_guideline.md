@@ -303,7 +303,7 @@ We are using [tabulator](http://tabulator.info/){:target="_blank"} for building 
 
 ### Tables with fix content
 
-Tables with fix contents [Fig. 12](#fig12) are tables where we know the amount of columns before, where we can estimate the weight of these columns. Because we can estimate the weight, we can collapse some columns on mobile devices [Fig. 13](#fig15) and the rest of the table can expand to full width. These columns can be collapsed or expanded on these devices. The collapse Icon is placed in the first column of the row.
+Tables with fix contents [Fig. 12](#fig12) are tables where we know the amount of columns before, where we can estimate the weight of these columns. Because we can estimate the weight, we can collapse some columns on mobile devices [Fig. 13](#fig13) and the rest of the table can expand to full width. These columns can be collapsed or expanded on these devices. The collapse Icon is placed in the first column of the row.
 
 
 <figure id="fig12" style="width:100%;">
@@ -359,7 +359,7 @@ The search bar in the table is a magnifying glass icon that can be expanded to r
 <figure id="fig17" style="width:50%;">
     <img src="../../assets/ui_images/dbp-ui-searchbar.svg" alt="Searchbar" style="width:100%; border: 1px solid black;">
     <figcaption>
-        <b>Searchbar</b>
+        <b>Fig. 17: Searchbar</b>
     </figcaption>
 </figure>
 
@@ -370,7 +370,7 @@ To export table data to other formats, there is an export button on the far righ
     <img src="../../assets/ui_images/dbp-ui-export-dropdown.png" alt="Export dropdown example for tables 
 " style="width:100%; border: 1px solid black;">
     <figcaption>
-        <b>Export dropdown example for tables 
+        <b>Fig. 18: Export dropdown example for tables 
 </b>
     </figcaption>
 </figure>
