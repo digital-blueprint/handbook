@@ -59,7 +59,7 @@ The side menu `<aside>` contains various activities [[Fig. 2]](#fig2) of an app:
 * In wide layout, the `<aside>` menu with all activities is already at the top<br>
 
 <figure id="fig3" style="margin:0; ">
-    <img src="../../assets/ui_images/dbp_ui_dropdown-navigation.svg" alt="Dropdownmenu with activities" style="width:100%; border: 1px solid black;">
+    <img src="../../assets/ui_images/dbp_ui_dropdown-navigation.svg" alt="Dropdownmenu with activities" style="width:55%; border: 1px solid black;">
     <figcaption>
         <b>Fig. 3: Dropdownmenu with activities</b>
     </figcaption>
@@ -84,7 +84,7 @@ An activity [[Fig. 4]](#fig4)[[Fig. 5]](#fig5) follows the structure:<br>
 </figure>
 
 <figure id="fig5" style="width:50%;">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_06.svg" alt="Basic activity mobile GUI visualization" style="width:100%; border: 1px solid black; margin: auto;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_06.svg" alt="Basic activity mobile GUI visualization" style="width:55%; border: 1px solid black; margin: auto;">
     <figcaption>
         <b>Fig. 5: Basic activity mobile GUI visualization</b>
     </figcaption>
@@ -154,7 +154,7 @@ The apps should be developed so that adjustments are primarily made at the two b
 
 ### First breakpoint: 870px (Tablet)
 <figure id="fig8" style="width:50%; margin:0">
-    <img src="../../assets/ui_images/dbp_ui_standardlayout_responsive.svg" alt="First main breakpoint at 870px" style="width:100%; border: 1px solid black; margin: auto;">
+    <img src="../../assets/ui_images/dbp_ui_standardlayout_responsive.svg" alt="First main breakpoint at 870px" style="width:55%; border: 1px solid black; margin: auto;">
     <figcaption>
         <b>Fig. 8: First main breakpoint at 870px</b>
     </figcaption>
@@ -314,7 +314,7 @@ Tables with fix contents [Fig. 12](#fig12) are tables where we know the amount o
 </figure>
 
 <figure id="fig13" style="width:50%;">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_14.svg" alt="Table with fix and selectable content on mobile devices" style="width:100%; border: 1px solid black; margin: auto;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_14.svg" alt="Table with fix and selectable content on mobile devices" style="width:55%; border: 1px solid black; margin: auto;">
     <figcaption>
         <b>Fig. 13: Table with fix and selectable content on mobile devices</b>
     </figcaption>
@@ -332,7 +332,7 @@ Tables with unknown Data or a high amount of data are datatables [Fig. 14](#fig1
 </figure>
 
 <figure id="fig15" style="width:50%;">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_15.svg" alt="Datatable on mobile devices" style="width:100%; border: 1px solid black; margin: auto;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_15.svg" alt="Datatable on mobile devices" style="width:55%; border: 1px solid black; margin: auto;">
     <figcaption>
         <b>Fig. 15: Datatable on mobile devices</b>
     </figcaption>
@@ -346,7 +346,7 @@ The styling of the table title is always `font-size: 1.17 em; 3px solid var(--db
 #### table actions
 Table actions are displayed as buttons above the table. The button opens a drop-down menu with all possible actions. These actions apply to the entire table unless one or more rows are selected, in which case the actions only apply to the selected rows. Example: If nothing is selected, all elements are affected. If some rows are selected, the table action only affects those rows. 
 
-<figure id="fig16" style="width:50%;">
+<figure id="fig16" style="width:20%; margin:0; ">
     <img src="../../assets/ui_images/dbi-ui-table-title_actions-dropdown.png" alt="Table title and action dropdown example for tables" style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Fig. 16: Table title and action dropdown example for tables</b>
@@ -356,7 +356,7 @@ Table actions are displayed as buttons above the table. The button opens a drop-
 #### Table Searchbar 
 The search bar in the table is a magnifying glass icon that can be expanded to reveal text search and advanced search parameters. The advanced search options allow you to narrow down your search by column name and operators. 
 
-<figure id="fig17" style="width:50%;">
+<figure id="fig17" style="width:50%; margin:0; " >
     <img src="../../assets/ui_images/dbp-ui-searchbar.svg" alt="Searchbar" style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Fig. 17: Searchbar</b>
@@ -366,7 +366,7 @@ The search bar in the table is a magnifying glass icon that can be expanded to r
 #### Export dropdown
 To export table data to other formats, there is an export button on the far right. This opens a drop-down menu with all further export settings. 
 
-<figure id="fig18" style="width:50%;">
+<figure id="fig18" style="width:20%; margin:0; ">
     <img src="../../assets/ui_images/dbp-ui-export-dropdown.png" alt="Export dropdown example for tables 
 " style="width:100%; border: 1px solid black;">
     <figcaption>
