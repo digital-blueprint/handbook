@@ -46,7 +46,7 @@ The main navigation [[Fig. 1]](#fig1) `<header>` is centered and contains:
 
 ### Side Menu
 <figure id="fig2" style="margin:0; ">
-    <img src="../../assets/ui_images/dbp_ui_side-navigation.svg" alt="Listed activities in sidemenu" style="width:100%; border: 1px solid black;">
+    <img src="../../assets/ui_images/dbp_ui_side-navigation.svg" alt="Listed activities in sidemenu" style="width:50%; border: 1px solid black; margin:0;">
     <figcaption>
         <b>Fig. 2: Listed activities in sidemenu</b>
     </figcaption>
@@ -58,8 +58,8 @@ The side menu `<aside>` contains various activities [[Fig. 2]](#fig2) of an app:
 * In standard layout, the `<aside>` side menu switches to a dropdown menu[[Fig. 3]](#fig3) at the top of the screen at breakpoint 870px <br>
 * In wide layout, the `<aside>` menu with all activities is already at the top<br>
 
-<figure id="fig3" style="margin:0; ">
-    <img src="../../assets/ui_images/dbp_ui_dropdown-navigation.svg" alt="Dropdownmenu with activities" style="width:55%; border: 1px solid black;">
+<figure id="fig3" style="margin:0; text-align:left;">
+    <img src="../../assets/ui_images/dbp_ui_dropdown-navigation.svg" alt="Dropdownmenu with activities" style="width:55%; border: 1px solid black; margin:0;">
     <figcaption>
         <b>Fig. 3: Dropdownmenu with activities</b>
     </figcaption>
@@ -83,8 +83,8 @@ An activity [[Fig. 4]](#fig4)[[Fig. 5]](#fig5) follows the structure:<br>
     </figcaption>
 </figure>
 
-<figure id="fig5" style="width:50%;">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_06.svg" alt="Basic activity mobile GUI visualization" style="width:55%; border: 1px solid black; margin: auto;">
+<figure id="fig5" style="width:50%; margin:0; text-align:left;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_06.svg" alt="Basic activity mobile GUI visualization" style="width:55%; border: 1px solid black; margin: 0;">
     <figcaption>
         <b>Fig. 5: Basic activity mobile GUI visualization</b>
     </figcaption>
@@ -153,8 +153,8 @@ Maximum content width is 1400px. Regardless of standard layout or wide layout, a
 The apps should be developed so that adjustments are primarily made at the two breakpoints to ensure a consistent responsive design. 
 
 ### First breakpoint: 870px (Tablet)
-<figure id="fig8" style="width:50%; margin:0">
-    <img src="../../assets/ui_images/dbp_ui_standardlayout_responsive.svg" alt="First main breakpoint at 870px" style="width:55%; border: 1px solid black; margin: auto;">
+<figure id="fig8" style="width:50%; margin:0; text-align:left;">
+    <img src="../../assets/ui_images/dbp_ui_standardlayout_responsive.svg" alt="First main breakpoint at 870px" style="width:55%; border: 1px solid black; margin: 0;">
     <figcaption>
         <b>Fig. 8: First main breakpoint at 870px</b>
     </figcaption>
@@ -162,8 +162,8 @@ The apps should be developed so that adjustments are primarily made at the two b
 
 
 ### Second  breakpoint: 490px (Smartphone and below)
-<figure id="fig9" style="width:25%; margin:0">
-    <img src="../../assets/ui_images/dbp_ui_standard_490.svg" alt="Second main breakpoint at 490px" style="width:100%; border: 1px solid black; margin: auto;">
+<figure id="fig9" style="width:50%;  margin:0; text-align:left;">
+    <img src="../../assets/ui_images/dbp_ui_standard_490.svg" alt="Second main breakpoint at 490px" style="width:50%; border: 1px solid black; margin: 0;">
     <figcaption>
         <b>Fig. 9: Second main breakpoint at 490px</b>
     </figcaption>
@@ -263,7 +263,7 @@ These logical groups are then not distributed but combined in one element (`div`
 A primary button has the css classes `button` and `is-primary`.
 This button always denotes a "call-to-action" or "next-step" button, i.e. how to proceed in the UI.
 
-<figure id="" style="width:18%; margin:0">
+<figure id="" style="width:15%; margin:0">
     <img src="../../assets/ui_images/dbp_ui_primary.svg" alt="primary buttons" style="width:100%; ">
 </figure>
 
@@ -273,7 +273,7 @@ If a primary button is used in a button group, it is placed on the far right. [[
 A secondary button has the css classes `button` and `is-secondary`.
 This button is used for all actions which are not required for the flow. [[Fig. 11]](#fig11)
 
-<figure id="" style="width:20%; margin:0">
+<figure id="" style="width:15%; margin:0">
     <img src="../../assets/ui_images/dbp_ui_secondary.svg" alt="secondary buttons" style="width:100%;">
 </figure>
 
@@ -313,8 +313,8 @@ Tables with fix contents [Fig. 12](#fig12) are tables where we know the amount o
     </figcaption>
 </figure>
 
-<figure id="fig13" style="width:50%;">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_14.svg" alt="Table with fix and selectable content on mobile devices" style="width:55%; border: 1px solid black; margin: auto;">
+<figure id="fig13" style="width:50%; margin:0; text-align:left;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_14.svg" alt="Table with fix and selectable content on mobile devices" style="width:55%; border: 1px solid black; margin: 0;">
     <figcaption>
         <b>Fig. 13: Table with fix and selectable content on mobile devices</b>
     </figcaption>
@@ -331,8 +331,8 @@ Tables with unknown Data or a high amount of data are datatables [Fig. 14](#fig1
     </figcaption>
 </figure>
 
-<figure id="fig15" style="width:50%;">
-    <img src="../../assets/ui_images/DBP-UI-Design_page_15.svg" alt="Datatable on mobile devices" style="width:55%; border: 1px solid black; margin: auto;">
+<figure id="fig15" style="width:50%; margin:0; text-align:left;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_15.svg" alt="Datatable on mobile devices" style="width:55%; border: 1px solid black; margin: 0;">
     <figcaption>
         <b>Fig. 15: Datatable on mobile devices</b>
     </figcaption>
@@ -347,7 +347,7 @@ The styling of the table title is always `font-size: 1.17 em; 3px solid var(--db
 Table actions are displayed as buttons above the table. The button opens a drop-down menu with all possible actions. These actions apply to the entire table unless one or more rows are selected, in which case the actions only apply to the selected rows. Example: If nothing is selected, all elements are affected. If some rows are selected, the table action only affects those rows. 
 
 <figure id="fig16" style="width:20%; margin:0; ">
-    <img src="../../assets/ui_images/dbi-ui-table-title_actions-dropdown.png" alt="Table title and action dropdown example for tables" style="width:100%; border: 1px solid black;">
+    <img src="../../assets/ui_images/dbi-ui-tableTitle_actions-dropdown.png" alt="Table title and action dropdown example for tables" style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Fig. 16: Table title and action dropdown example for tables</b>
     </figcaption>
@@ -356,7 +356,7 @@ Table actions are displayed as buttons above the table. The button opens a drop-
 #### Table Searchbar 
 The search bar in the table is a magnifying glass icon that can be expanded to reveal text search and advanced search parameters. The advanced search options allow you to narrow down your search by column name and operators. 
 
-<figure id="fig17" style="width:50%; margin:0; " >
+<figure id="fig17" style="width:70%; margin:0; " >
     <img src="../../assets/ui_images/dbp-ui-searchbar.svg" alt="Searchbar" style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Fig. 17: Searchbar</b>
@@ -367,8 +367,7 @@ The search bar in the table is a magnifying glass icon that can be expanded to r
 To export table data to other formats, there is an export button on the far right. This opens a drop-down menu with all further export settings. 
 
 <figure id="fig18" style="width:20%; margin:0; ">
-    <img src="../../assets/ui_images/dbp-ui-export-dropdown.png" alt="Export dropdown example for tables 
-" style="width:100%; border: 1px solid black;">
+    <img src="../../assets/ui_images/dbp-ui-export-dropdown.png" alt="Export dropdown example for tables " style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Fig. 18: Export dropdown example for tables 
 </b>
@@ -444,12 +443,12 @@ Within the cabinet app when users interact with the "clear filters" option a spi
 
 * <b>Active activities</b> in the side menu are highlighted with bold text and marked with a vertical, CD-colored line `--dbp-accent` on the left side. See [Fig.2](#fig2)
 
-<figure id="" style="width:15%; margin-left:20px">
+<figure id="" style="width:10%; margin-left:20px">
     <img src="../../assets/ui_images/activeLink.svg" alt="active link" style="width:100%;">
 </figure>
 <div id="toggle-switch"></div>
 * <b>Toggle switches</b> are turned off by default with the `--dbp-muted` color. When activated, the color changes to `--dbp-info`. 
-<figure id="" style="width:12%;  margin-left:20px">
+<figure id="" style="width:9%;  margin-left:20px">
     <img src="../../assets/ui_images/toggleswitch.png" alt="toggle switch buttons" style="width:100%;">
 </figure>
 
@@ -460,7 +459,7 @@ Currently, no focus is defined. At the moment, it is the browser default focus, 
 ### Disabled state
 Elements in a disabled state are grayed out (color: `dbp-secondary-surface`; opacity: 0.4;) so they remain visually recognizable but are not interactive. This can apply to buttons or links that are temporarily inaccessible. For example, in Formalize, when not all fields have been filled out, the submission button remains in a disabled state. Only when all required information has been provided is the disabled state removed.
 
-<figure id="" style="width:18%;  margin:0">
+<figure id="" style="width:15%;  margin:0">
     <img src="../../assets/ui_images/disabled_state.svg" alt="disabled state button" style="width:100%;">
 </figure>
 
