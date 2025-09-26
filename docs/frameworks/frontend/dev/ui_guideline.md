@@ -231,7 +231,7 @@ Interactive icons are functional elements that the user can click or tap to perf
 
 ### Icon size
 <div id="icon-size"></div>
-Although the icons in the buttons are 22 x 22px in size, they are displayed larger when they stand alone. The touch targetsize should always have 40 x 40px in size while the icon inside can have the size between 22 x 22px and 24 x 24px (depending on the readability of the symbol) <img src="../../assets/ui_images/...svg" alt="..." style="width:100%; border: 1px solid black;"> 
+Although the icons in the buttons are 22 x 22px in size, they are displayed larger when they stand alone. The touch targetsize should always have 40 x 40px in size while the icon inside can have the size between 22 x 22px and 24 x 24px (depending on the readability of the symbol) <img src="../../assets/ui_images/dbp_ui_icon-size.svg" alt="minimum size of icons" style="width:100%; border: 1px solid black;"> 
 
 ### Buttons
 A button always consists of an icon and a text. The text describes the action using a verb and optionally a noun to specify it. Buttons without icons may not be placed.
