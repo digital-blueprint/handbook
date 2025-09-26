@@ -70,8 +70,7 @@ The side menu `<aside>` contains various activities [[Fig. 2]](#fig2) of an app:
 
 An activity [[Fig. 4]](#fig4)[[Fig. 5]](#fig5) follows the structure:<br>
 
-1. H1 activity name as title (An activity should be named with a verb, as this emphasizes that it is an actual activity, something the user can do)
-2. H2 optional heading for introduction or separation of sections
+1. H2 activity name as title (An activity should be named with a verb, as this emphasizes that it is an actual activity, something the user can do)
 3. Optional subtitle with class="subheadline" - Brief explanation of the activity
 4. Introductory text - Overview of the activity, if necessary (optional)
 5.	Activity contents
