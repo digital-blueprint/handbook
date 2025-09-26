@@ -217,9 +217,9 @@ Decorative icons are not intended for interaction and therefore do not need to b
 ### Usage 
 To choose the right icon for a button, look at the text. How the matching icon for a button is selected always depends on the verb that specifies the action. 
 Example: “Edit mode” contains the verb “edit”. Chose a matching icon for that verb. From the moment a verb is used, it must also be used for the same verb across all apps in the future.
-<img src="../../assets/ui_images/...svg" alt="..." style="width:100%; border: 1px solid black;"> So, editing will always be represented by a pencil for any actions.
+<img src="../../assets/ui_images/dbp_ui_edit-mode.svg" alt="Button for edit mode" style=""> So, editing will always be represented by a pencil for any actions.
 However, there must never be two buttons with the same icon near each other. In the event that two identical icons need to be used, a new icon must be selected. The icon for the verb has always be included in the new icon. 
-Example: “Edit mode  <img src="../../assets/ui_images/...svg" alt="..." style="width:100%; border: 1px solid black;"> ” and “Edit permission <img src="../../assets/ui_images/...svg" alt="..." style="width:100%; border: 1px solid black;"> “. Both of them contains a pencil icon, but the icon for “Edit permission” was adjusted for this specific case. From now on, „Edit permission“ will always be represented by this icon also using the pencil in combination. 
+Example: “Edit mode  <img src="../../assets/ui_images/dbp_ui_edit-mode.svg" alt="Button for edit mode" style=""> ” and “Edit permission <img src="../../assets/ui_images/dbp_ui_edit-permission.svg" alt="Button for edit permission" style=""> “. Both of them contains a pencil icon, but the icon for “Edit permission” was adjusted for this specific case. From now on, „Edit permission“ will always be represented by this icon also using the pencil in combination. 
 
 ### Buttons with Icon + Text
 A button in the GUI must always consist of an icon + text. The icon size within a button is 22 x 22px. 
@@ -264,7 +264,7 @@ A primary button has the css classes `button` and `is-primary`.
 This button always denotes a "call-to-action" or "next-step" button, i.e. how to proceed in the UI.
 
 <figure id="" style="width:18%; margin:0">
-    <img src="../../assets/ui_images/is primary.svg" alt="primary buttons" style="width:100%; ">
+    <img src="../../assets/ui_images/dbp_ui_primary.svg" alt="primary buttons" style="width:100%; ">
 </figure>
 
 If a primary button is used in a button group, it is placed on the far right. [[Fig. 11]](#fig11)
@@ -274,7 +274,7 @@ A secondary button has the css classes `button` and `is-secondary`.
 This button is used for all actions which are not required for the flow. [[Fig. 11]](#fig11)
 
 <figure id="" style="width:20%; margin:0">
-    <img src="../../assets/ui_images/secondary_button.svg" alt="secondary buttons" style="width:100%;">
+    <img src="../../assets/ui_images/dbp_ui_secondary.svg" alt="secondary buttons" style="width:100%;">
 </figure>
 
 <figure id="fig11" style="width:100%;">
@@ -283,6 +283,7 @@ This button is used for all actions which are not required for the flow. [[Fig. 
         <b>Fig. 11: secondary and primary buttons</b>
     </figcaption>
 </figure>
+
 
 
 #### Buttons in responsive webdesign
