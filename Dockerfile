@@ -8,7 +8,7 @@ RUN pipx install poetry==2.2.1
 ENV PATH "/root/.local/bin:$PATH"
 COPY . /app
 WORKDIR /app
-RUN poetry install --only main
+RUN poetry install
 ENV TZ=UTC
 RUN poetry run mkdocs build
 
