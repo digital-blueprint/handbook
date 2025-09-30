@@ -72,7 +72,6 @@ nav:
 
   - Blueprints:
     - blueprints/index.md
-    - blueprints/check-in.md
     - blueprints/esign.md
     - blueprints/plan.md
     - blueprints/dispatch.md
@@ -81,6 +80,7 @@ nav:
     - blueprints/sublibrary.md
     - Archived Blueprints:
       - blueprints/greenlight.md
+      - blueprints/check-in.md
 
   - Components:
 
@@ -142,8 +142,6 @@ nav:
         - components/api/sublibrary/README.md
         - components/api/sublibrary/config.md
         - components/api/sublibrary/authz.md
-      - Check In Bundle:
-        - components/api/checkin/README.md
       - Mono Bundle:
         - components/api/mono/README.md
         - components/api/mono/config.md
@@ -205,6 +203,8 @@ nav:
       - PayUnity Connector:
         - components/api/mono-connector-payunity/index.md
         - components/api/mono-connector-payunity/config.md
+      - Check In Bundle:
+        - components/api/checkin/README.md
 
   - Frameworks:
 

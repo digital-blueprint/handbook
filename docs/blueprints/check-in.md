@@ -1,5 +1,8 @@
 # Check-in
 
+!!! warning
+    This blueprint is **no longer maintained** and is kept here for historical purposes only.
+
 Handles check-ins to places and contact tracing for warning about COVID-19 cases.
 
 [Visit Check-in Demo](https://dbp-demo.tugraz.at/apps/checkin)
