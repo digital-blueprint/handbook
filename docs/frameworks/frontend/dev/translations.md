@@ -46,14 +46,14 @@ updating all translated content.
 
 ## Managing Translations with i18next Parser
 
-We use [i18next Parser](https://github.com/i18next/i18next-parser) for
+We use [i18next-cli](https://github.com/i18next/i18next-cli) for
 automatically extracting translation keys from the code and maintaining the
 translation files.
 
 To update the translation files, run: `npm i18next:fix`
 
 In case you want you want to translate keys that are not in the code, but either
-dynamically created, or come from another source, i18next-parser will not be
+dynamically created, or come from another source, i18next-cli will not be
 able to find them and remove them from the translation files.
 
 You can work around the issue by listing all keys in a comment somewhere:

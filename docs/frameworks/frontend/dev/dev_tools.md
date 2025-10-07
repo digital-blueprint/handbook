@@ -6,7 +6,7 @@ For our Javscript projects we currently use the following tools:
 
 * [ESLint](https://eslint.org/) - a static code analyzer
 * [Prettier](https://prettier.io/) - an opinionated code formatter
-* [i18next Parser](https://github.com/i18next/i18next-parser) - a tool for automatically maintaining translation files
+* [i18next-cli](https://github.com/i18next/i18next-cli) - a tool for automatically maintaining translation files
 * [Typescript](https://www.typescriptlang.org/) - a type checker for Javascript (and its own langauge, but we only use the type checking part)
 
 To invoke the tools:
