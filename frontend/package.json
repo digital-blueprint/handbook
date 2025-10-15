@@ -12,6 +12,6 @@
   "dependencies": {
     "@fontsource/nunito-sans": "^5.0.8",
     "@fontsource/roboto-mono": "^5.0.8",
-    "mermaid": "~9.2.2"
+    "mermaid": "~9.4.3"
   }
 }
