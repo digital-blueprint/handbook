@@ -3,5 +3,5 @@ _build
 .vscode
 site
 .lycheecache
-uv.lock
+poetry.lock
 .venv

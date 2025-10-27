@@ -13,30 +13,20 @@ jobs:
         with:
           submodules: true
 
-      - name: Setup Python (pip)
+      - name: Setup Python
         uses: actions/setup-python@v6
         with:
           python-version: '3.14'
           cache: 'pip'
           cache-dependency-path: .github/workflows/main.yml
 
-      - name: Install poetry
+      - name: Install uv
         run: |
-          python3 -m pip install --upgrade poetry==2.2.1
-
-      - name: Setup Python (poetry)
-        uses: actions/setup-python@v6
-        with:
-          python-version: '3.14'
-          cache: 'poetry'
-
-      - name: Install dependencies
-        run: |
-          poetry install
+          python3 -m pip install --upgrade uv==0.9.5
 
       - name: Build
         run: |
-          poetry run mkdocs build --strict
+          uv run mkdocs build --strict
 
       - name: Pack result
         run: |

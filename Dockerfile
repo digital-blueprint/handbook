@@ -1,16 +1,15 @@
-FROM ubuntu:24.04 as build
+FROM ubuntu:24.04 AS build
 
 RUN apt-get update && apt-get install --no-install-recommends -y \
   pipx \
   && rm -rf /var/lib/apt/lists/*
 
-RUN pipx install poetry==2.2.1
-ENV PATH "/root/.local/bin:$PATH"
+RUN pipx install uv==0.9.5
+ENV PATH="/root/.local/bin:$PATH"
 COPY . /app
 WORKDIR /app
-RUN poetry install
 ENV TZ=UTC
-RUN poetry run mkdocs build
+RUN uv run mkdocs build
 
 FROM nginx:stable-alpine
 

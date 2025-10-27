@@ -10,10 +10,9 @@ Clone the submodules:
 * `git submodule init`
 * `git submodule update`
 
-Using poetry:
+Using uv:
 
-* `poetry install`
-* `poetry run mkdocs serve --dev-addr 127.0.0.1:8011`
+* `uv run mkdocs serve --dev-addr 127.0.0.1:8011`
 * <http:/127.0.0.1:8011>
 
 Using docker-compose:
