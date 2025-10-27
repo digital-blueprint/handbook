@@ -145,6 +145,7 @@ nav:
       - Mono Bundle:
         - components/api/mono/README.md
         - components/api/mono/config.md
+        - components/api/mono/cleanup.md
         - components/api/mono/logging.md
         - components/api/mono/misc.md
         - CAMPUSonline Connector:
@@ -171,6 +172,7 @@ nav:
         - CAMPUSonline Connector:
           - components/api/cabinet-connector-campusonline/README.md
           - components/api/cabinet-connector-campusonline/config.md
+          - components/api/cabinet-connector-campusonline/cli-commands.md
           - components/api/cabinet-connector-campusonline/co-api.md
           - components/api/cabinet-connector-campusonline/data.md
       - Verity Bundle:
