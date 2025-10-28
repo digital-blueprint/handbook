@@ -82,3 +82,9 @@
 [submodule "submodules/relay-verity-connector-verapdf-bundle"]
 	path = submodules/relay-verity-connector-verapdf-bundle
 	url = https://github.com/digital-blueprint/relay-verity-connector-verapdf-bundle.git
+[submodule "submodules/relay-base-publication-bundle"]
+	path = submodules/relay-base-publication-bundle
+	url = https://github.com/digital-blueprint/relay-base-publication-bundle
+[submodule "submodules/relay-base-publication-connector-pure-bundle"]
+	path = submodules/relay-base-publication-connector-pure-bundle
+	url = https://github.com/digital-blueprint/relay-base-publication-connector-pure-bundle

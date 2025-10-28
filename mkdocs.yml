@@ -121,6 +121,10 @@ nav:
         - components/api/blob/retention.md
       - Base Organization Bundle:
         - components/api/base-organization/index.md
+      - Base Publication Bundle:
+        - components/api/base-publication/README.md
+        - PURE Connector:
+          - components/api/base-publication-connector-pure/README.md
       - Electronic Signature Bundle:
         - components/api/esign/README.md
         - components/api/esign/config.md
