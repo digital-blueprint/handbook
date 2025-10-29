@@ -80,8 +80,8 @@ For package management we use npm. We use workspaces in combination with mono re
 For managing mono repos we also use [lerna](https://lerna.js.org/), which allow
 us to run tasks for all included packages.
 
-For bundling we use [rollup](https://rollupjs.org) since it's relatively easy to
-use, but still can be extended through various plugins.
+For bundling we use [rolldown](https://rolldown.rs/) since it's fast, relatively
+easy to use, but still can be extended through various plugins.
 
 ## Testing
 
