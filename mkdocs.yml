@@ -76,7 +76,11 @@ nav:
     - blueprints/plan.md
     - blueprints/dispatch.md
     - blueprints/mono.md
-    - blueprints/cabinet.md
+    - Cabinet:
+      - blueprints/cabinet/introduction.md
+      - blueprints/cabinet/system-overview.md
+      - blueprints/cabinet/admin-manual.md
+      - blueprints/cabinet/user-manual.md
     - blueprints/sublibrary.md
     - Archived Blueprints:
       - blueprints/greenlight.md
