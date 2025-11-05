@@ -25,19 +25,18 @@ public function loadInternal(array $mergedConfig, ContainerBuilder $container): 
     $container->getDefinition(MyEntityDataProvider::class)
         ->addMethodCall('setConfig', [$mergedConfig]);
 }
-````
+```
 
 Now local data attributes can be configured in your entity bundle's config 
-(like when [Adding Local Data Attributes to Existing Entities](./base_entities.md#adding-local-data-attributes-to-existing-entities):
+(like when [Adding Local Data Attributes to Existing Entities](./base_entities.md#adding-local-data-attributes-to-existing-entities)):
 
 ```yaml
 my_vendor_my_entity:
     local_data:
       - local_data_attribute: foo
-        read_policy: 'user.get("MAY_READ_FOO")'
+        read_policy: 'true'
 ```
-Local data attribute `foo` can now be requested on `MyEntity`. If `MAY_READ_FOO` evaluates to `false` for the logged-in user,
-the local data attributes value will be `null` (see [Access Control](../admin/access_control.md) for details on access control policies).
+Local data attribute `foo` can now be requested on `MyEntity`.
 
 ## Make your Entity Local Data Aware
 
@@ -46,11 +45,11 @@ You can easily add the Local Data mechanism to `MyEntity` by:
 * Using the `LocalDataAwareTrait` in `MyEntity`
 * Implementing the `LocalDataAwareInterface` in `MyEntity`
 * Adding the `LocalData:output` group to the normalization context of `MyEntity`. For example:
-  ```php
-  normalizationContext: [
-        'groups' => ['MyEntity:output', 'LocalData:output'],
-    ]
-  ```
+```php
+normalizationContext: [
+    'groups' => ['MyEntity:output', 'LocalData:output'],
+]
+```
 * Adding an event dispatcher member variable of type `LocalDataAwareEventDispatcher` to your entity provider
 * On GET-requests, passing the `options` containing the local data attributes option to the event dispatcher
    * NOTE: if your data provider extends `AbstractDataProvider` (recommended), then the `options` passed to overrides of `getItemById` and `getPage`
