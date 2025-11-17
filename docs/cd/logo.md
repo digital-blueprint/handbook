@@ -30,7 +30,7 @@
 </figure>
 
 
-You can find all logo files in the gitlab repository [dbp Corporate Identity](https://gitlab.tugraz.at/dbp/dbp-ci/-/tree/main/){:target="_blank"}.
+You can find all logo files in the github repository [dbp Corporate Identity](https://github.com/digital-blueprint/static/tree/main/data/cd/1.0/logo){:target="_blank"}.
 
 ### The text
 The text on the right side of the Logo consists of two parts. A headline "digital blueprint" and a subheading "a university toolbox".

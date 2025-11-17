@@ -95,7 +95,7 @@ After that we have to create the maskable icons. For that we use the [maskable.a
 #### Realfavicon generator
 How to use the [realfaviongenerator](https://realfavicongenerator.net/){:target="_blank"}:
 
-1. Upload the initial favicon file *favicon.svg*. You can find this in the gitlab repository [dbp-ci](https://gitlab.tugraz.at/dbp/dbp-ci/-/tree/main/){:target="_blank"}.
+1. Upload the initial favicon file *favicon.svg*. You can find this in the github repository [static](https://github.com/digital-blueprint/static){:target="_blank"}.
 2. **Favicon for iOS** Section: 
     1. Add a `dedicated picture`, the app icon. 
     2. Select the option "Add a solid, plain background to fill the transparent regions."
@@ -107,7 +107,7 @@ How to use the [realfaviongenerator](https://realfavicongenerator.net/){:target=
     3. App name: "dbp *shortname-of-the-app*"
     4. Theme color: `#ffffff`
 4. **macOS Safari** Section:
-    5. Add the favicon file *safari-pinned-tab.svg*. You can find this in the gitlab repository [dbp-ci](https://gitlab.tugraz.at/dbp/dbp-ci/-/tree/main/){:target="_blank"}.
+    5. Add the favicon file *safari-pinned-tab.svg*. You can find this in the github repository [static](https://github.com/digital-blueprint/static){:target="_blank"}.
     6. Theme color: `#3775c1`
 5. Generate the icons and delete icons which we don't need
 6. Place them in the `assets/favicons/` directory

@@ -22,5 +22,3 @@ This project consists of a
 default configuration for pdf-as, pdf-as-web as well as tomcat and focuses on
 providing a signature service that can synchronously sign PDFs using PAdES via a
 SOAP interface.
-
-Read more about the project and how to install it on [PDF-AS Server for Advanced Signatures](https://gitlab.tugraz.at/dbp/esign/pdf-as-server-advanced).

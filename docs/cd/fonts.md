@@ -6,7 +6,7 @@ The logo uses the open source font [Montserrat](https://github.com/JulietaUla/Mo
 - **Headline**: Montserrat Semibold 600
 - **Subheading**: Montserrat Light 300
 
-You can also find the Font in gitlab [dbp Corporate Identity ](https://gitlab.tugraz.at/dbp/dbp-ci/-/tree/main/fonts/Montserrat){:target="_blank"}.
+You can also find the Font in github [dbp Corporate Identity ](https://github.com/digital-blueprint/static/tree/main/data/cd/1.0/fonts/Montserrat){:target="_blank"}.
 
 ## Text/Web/Print font
 For all other uses except the logo we use the open source font [Nunito Sans](https://github.com/googlefonts/NunitoSans){:target="_blank"}
@@ -15,7 +15,7 @@ For all other uses except the logo we use the open source font [Nunito Sans](htt
 - **Subheadings** Nunito Sans Light 300 Italic,
 - **Text**: Nunito Sans Light 300, Nunito Sans Bold 700
 
-You can also find the Font in gitlab [dbp Corporate Identity ](https://gitlab.tugraz.at/dbp/dbp-ci/-/tree/main/fonts/Nunito_Sans){:target="_blank"}.
+You can also find the Font in github [dbp Corporate Identity ](https://github.com/digital-blueprint/static/tree/main/data/cd/1.0/fonts/Nunito_Sanss){:target="_blank"}.
 
 ## Install and Import fonts
 
