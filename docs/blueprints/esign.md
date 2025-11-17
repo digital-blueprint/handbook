@@ -78,7 +78,6 @@ For the actual PDF signing you need a [PDF-AS](../components/supporting-software
 We provide two pre-configured variants of pdf-as, you need at least one of them depending on your use case:
 
 * [PDF-AS Server for Advanced Signatures](https://gitlab.tugraz.at/dbp/esign/pdf-as-server-advanced) - Configured for advanced signatures
-* [PDF-AS Server for Qualified Signatures](https://gitlab.tugraz.at/dbp/esign/pdf-as-server-qualified) - Configured for qualified signatures
 
 See the repository README files for how to set them up and configure them.
 

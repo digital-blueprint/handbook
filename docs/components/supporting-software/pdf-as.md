@@ -15,8 +15,6 @@ providing a signature service that can sign PDFs using PAdES via a
 SOAP interface and https://www.handy-signatur.at as well as verify those signatures
 via [MOA-SPSS](https://apps.egiz.gv.at/handbooks/moa-spss/handbook/handbook/index.html)
 
-Read more about the project and how to install it on [PDF-AS Server for Qualified Signatures](https://gitlab.tugraz.at/dbp/esign/pdf-as-server-qualified).
-
 ## PDF-AS Server for Advanced Signatures
 
 This project consists of a
