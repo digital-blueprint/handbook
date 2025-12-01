@@ -7,7 +7,7 @@ It consists of Kanboard, a free and open source
 Kanban project management software, plus a set of plugins which extend its
 functionality and also integrate it with other systems.
 
-For more information see <https://gitlab.tugraz.at/dbp/plan/plan-docs>
+For more information see <https://github.com/digital-blueprint/handbook/tree/main/docs/blueprints/plan.md>
 
 !!! note
     This page is work in progress. More information will follow soon.

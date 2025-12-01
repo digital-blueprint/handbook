@@ -92,7 +92,7 @@ If your database is on a separate server, you will additionally need to install 
 
 ### CampusQR
 
-You need to install and set up the **digital blueprint** fork of [CampusQR](https://gitlab.tugraz.at/dbp/check-in/campus-qr),
+You need to install and set up the **digital blueprint** fork of [CampusQR](https://github.com/digital-blueprint/campus-qr),
 the open source system for contact tracing at universities.
 
 * Download the latest [build artifact](https://gitlab.tugraz.at/dbp/check-in/campus-qr/-/jobs/artifacts/fork-v3/download?job=build)
