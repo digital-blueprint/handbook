@@ -69,10 +69,6 @@ You need to install and set up the Open Source Identity and Access Management [K
 
 This is a guide on how to set up the Relay API for Greenlight.
 
-!!! tip
-    You can find an example implementation on [relay-greenlight-api](https://gitlab.tugraz.at/dbp/relay/examples/relay-greenlight-api).
-
-
 #### Screenshot
 
 This is how this example will look like in the end.
@@ -250,8 +246,6 @@ Also, you need to set up a cron job to run
 This will regularly clean up caches and expired permits etc.
 
 #### Connect Greenlight Bundle to your infrastructure
-
-You need to implement a service for `PersonPhotoProviderInterface` from [Greenlight Bundle](https://gitlab.tugraz.at/dbp/greenlight/dbp-relay-greenlight-bundle#personphotoprovider-service).
 
 !!! tip
     If you are using **CampusOnline** for storing photos and **LDAP** as your source for identity management, you can install the
