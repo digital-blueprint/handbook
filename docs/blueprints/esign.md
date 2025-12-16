@@ -75,8 +75,6 @@ You need to install and set up the Open Source Identity and Access Management [K
 
 For the actual PDF signing you need a [PDF-AS](../components/supporting-software/pdf-as.md) server 4.1.5+ by [EGIZ](https://joinup.ec.europa.eu/collection/e-government-innovation-center-egiz/about).
 
-See the repository README files for how to set them up and configure them.
-
 ### Relay API
 
 This is a guide on how to set up the Relay API for ESign.
