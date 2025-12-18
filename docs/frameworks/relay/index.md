@@ -48,7 +48,7 @@ can depend on the core bundle for user management and authentication.
 ### API Clients
 
 External apps, like browser or mobile applications can be written easily to
-access data via the [API](#api). The user authentication is done via an OIDC
+access data via the API. The user authentication is done via an OIDC
 server like Keycloak.
 
 An example for a web application would be the [Library
