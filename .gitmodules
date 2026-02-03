@@ -88,3 +88,6 @@
 [submodule "submodules/relay-base-publication-connector-pure-bundle"]
 	path = submodules/relay-base-publication-connector-pure-bundle
 	url = https://github.com/digital-blueprint/relay-base-publication-connector-pure-bundle
+[submodule "submodules/relay-verity-connector-clamav-bundle"]
+	path = submodules/relay-verity-connector-clamav-bundle
+	url = https://github.com/digital-blueprint/relay-verity-connector-clamav-bundle.git
