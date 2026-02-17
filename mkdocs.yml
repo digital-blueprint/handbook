@@ -108,6 +108,16 @@ nav:
           - components/api/core-connector-oidc/README.md
           - components/api/core-connector-oidc/config.md
           - components/api/core-connector-oidc/roles.md
+      - Authorization Bundle:
+          - Overview: components/api/authorization/README.md
+          - components/api/authorization/getting-started.md
+          - components/api/authorization/setup.md
+          - components/api/authorization/configuration.md
+          - components/api/authorization/php-api.md
+          - components/api/authorization/rest-api.md
+          - components/api/authorization/groups.md
+          - components/api/authorization/resource-action-grants.md
+          - components/api/authorization/events.md
       - Base Person Bundle:
         - components/api/base-person/README.md
         - LDAP Connector:

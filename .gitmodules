@@ -91,3 +91,6 @@
 [submodule "submodules/relay-verity-connector-clamav-bundle"]
 	path = submodules/relay-verity-connector-clamav-bundle
 	url = https://github.com/digital-blueprint/relay-verity-connector-clamav-bundle.git
+[submodule "submodules/relay-authorization-bundle"]
+	path = submodules/relay-authorization-bundle
+	url = https://github.com/digital-blueprint/relay-authorization-bundle
