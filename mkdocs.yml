@@ -143,8 +143,10 @@ nav:
         - components/api/esign/README.md
         - components/api/esign/config.md
         - components/api/esign/advanced_flow.md
-        - components/api/esign/advanced_pdf_signing.md
+        - components/api/esign/example_advanced.md
         - components/api/esign/qualified_flow.md
+        - components/api/esign/example_qualified.md
+        - components/api/esign/example_qualified_batch.md
         - components/api/esign/positioning.md
         - components/api/esign/cli_commands.md
       - Formalize Bundle:
