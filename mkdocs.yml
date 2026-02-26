@@ -133,6 +133,8 @@ nav:
         - components/api/blob/sequence-diagrams.md
         - components/api/blob/stored-data.md
         - components/api/blob/retention.md
+        - components/api/blob/backup-and-restore.md
+        - components/api/blob/locks.md
       - Base Organization Bundle:
         - components/api/base-organization/index.md
       - Base Publication Bundle:
