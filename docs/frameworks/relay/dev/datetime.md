@@ -36,6 +36,8 @@ class Foo {
       ],
       denormalizationContext: [
           DateTimeNormalizer::TIMEZONE_KEY => 'UTC',
+          // TODO: Once we depend on Symfony 7.4
+          // DateTimeNormalizer::FORCE_TIMEZONE_KEY => true,
       ],
   )]
   private ?\DateTimeInterface $date = null;
