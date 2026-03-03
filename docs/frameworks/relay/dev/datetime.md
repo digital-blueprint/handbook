@@ -6,7 +6,7 @@ Recommendations:
 * Behavior should be independent of the server timezone. For example the API responses should always be UTC.
 * When taking datetimes from external systems always ensure that it has a timezone (either fail when it is missing, make the timezone configurable, or set a fixed timezone if it is documented)
 * Use `DateTimeImmutable` and `DateTimeInterface` over `DateTime`. All operations on `DateTimeImmutable` create a new instance, which makes mutating objects you don't own impossible.
-* Set the timezone of the API as soon as possible, and do not switch between different timezones as this could lead to issues.
+* Never change the global timezone with `date_default_timezone_set()` except in the very early bootstrap phase of the application and only in code that is always executed.
 
 Open Questions:
 
@@ -14,6 +14,74 @@ Open Questions:
   * Timezone missing? Assume one or fail?
   * Incomplete datetime?
   * Which formats are supported?
+
+## Enforcing UTC in the API
+
+With API platform, when exposing a `DateTimeInterface` property, make sure to
+use the `DateTimeNormalizer` and set the timezone to UTC:
+
+```php
+use ApiPlatform\Metadata\ApiProperty;
+use ApiPlatform\Metadata\ApiResource;
+use Symfony\Component\Serializer\Attribute\Context;
+use Symfony\Component\Serializer\Normalizer\DateTimeNormalizer;
+
+#[ApiResource()]
+class Foo {
+
+  #[ApiProperty()]
+  #[Context(
+      normalizationContext: [
+          DateTimeNormalizer::TIMEZONE_KEY => 'UTC',
+      ],
+      denormalizationContext: [
+          DateTimeNormalizer::TIMEZONE_KEY => 'UTC',
+      ],
+  )]
+  private ?\DateTimeInterface $date = null;
+}
+```
+
+This ensures that date times are always serialized and deserialized as UTC,
+regardless of the server timezone.
+
+## Enforcing UTC in the Database
+
+Since MariaDB/MySQL's `DATETIME` type doesn't store timezone information, we
+assume that all datetimes are stored as UTC. Since Doctrine doesn't have a
+built-in UTC type, we provide a custom type that enforces this:
+
+```php
+use Dbp\Relay\CoreBundle\Doctrine\DateImmutableUtcType;
+use Dbp\Relay\CoreBundle\Doctrine\DateTimeImmutableUtcType;
+
+    public function loadInternal(array $mergedConfig, ContainerBuilder $container): void
+    {
+        // ...
+        $typeDefinition = $container->getParameter('doctrine.dbal.connection_factory.types');
+        $typeDefinition['relay_mybundle_datetime_immutable_utc'] = ['class' => DateTimeImmutableUtcType::class];
+        $typeDefinition['relay_mybundle_date_immutable_utc'] = ['class' => DateImmutableUtcType::class];
+        $container->setParameter('doctrine.dbal.connection_factory.types', $typeDefinition);
+        // ...
+    }
+```
+
+To avoid conflicts the bundle registers the types with a namespace. This custom
+type should then be used for the ORM config:
+
+```php
+#[ApiProperty]
+#[ORM\Column(type: 'relay_mybundle_datetime_immutable_utc', nullable: true)]
+private ?\DateTimeInterface $date = null;
+```
+
+As well as when using the query builder:
+
+```php
+$this->createQueryBuilder('p')
+    ->andWhere('p.timeout >= :somedatetime')
+    ->setParameter('somedatetime', $somedatetime, 'relay_mybundle_datetime_immutable_utc');
+```
 
 ## How-To UTC in PHP
 
