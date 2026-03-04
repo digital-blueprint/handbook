@@ -36,16 +36,21 @@ class Foo {
       ],
       denormalizationContext: [
           DateTimeNormalizer::TIMEZONE_KEY => 'UTC',
-          // TODO: Once we depend on Symfony 7.4
-          // DateTimeNormalizer::FORCE_TIMEZONE_KEY => true,
+          // Note: FORCE_TIMEZONE_KEY is only available with Symfony 7.4+
+          DateTimeNormalizer::FORCE_TIMEZONE_KEY => true,
       ],
   )]
   private ?\DateTimeInterface $date = null;
 }
 ```
 
-This ensures that date times are always serialized and deserialized as UTC,
-regardless of the server timezone.
+For `normalizationContext`, `TIMEZONE_KEY` ensures that the date time is always
+serialized in UTC, regardless of the server timezone.
+
+For `denormalizationContext` (not needed if it's not an input), `TIMEZONE_KEY`
+ensures that date times without a timezone are interpreted as UTC.
+`FORCE_TIMEZONE_KEY` ensures that date times with a timezone are converted to
+UTC.
 
 ## Enforcing UTC in the Database
 
