@@ -1,96 +1,96 @@
 [submodule "submodules/dbp-relay-esign-bundle"]
-	path = submodules/dbp-relay-esign-bundle
+	path = docs/submodules/dbp-relay-esign-bundle
 	url = https://github.com/digital-blueprint/relay-esign-bundle.git
 [submodule "submodules/dbp-relay-core-bundle"]
-	path = submodules/dbp-relay-core-bundle
+	path = docs/submodules/dbp-relay-core-bundle
 	url = https://github.com/digital-blueprint/relay-core-bundle.git
 [submodule "submodules/dbp-relay-greenlight-connector-campusonline-bundle"]
-	path = submodules/dbp-relay-greenlight-connector-campusonline-bundle
+	path = docs/submodules/dbp-relay-greenlight-connector-campusonline-bundle
 	url = https://github.com/digital-blueprint/dbp-relay-greenlight-connector-campusonline-bundle.git
 [submodule "submodules/dbp-relay-greenlight-bundle"]
-	path = submodules/dbp-relay-greenlight-bundle
+	path = docs/submodules/dbp-relay-greenlight-bundle
 	url = https://github.com/digital-blueprint/dbp-relay-greenlight-bundle.git
 [submodule "submodules/dbp-relay-mono-bundle"]
-	path = submodules/dbp-relay-mono-bundle
+	path = docs/submodules/dbp-relay-mono-bundle
 	url = https://github.com/digital-blueprint/relay-mono-bundle.git
 [submodule "submodules/dbp-relay-mono-connector-campusonline-bundle"]
-	path = submodules/dbp-relay-mono-connector-campusonline-bundle
+	path = docs/submodules/dbp-relay-mono-connector-campusonline-bundle
 	url = https://github.com/digital-blueprint/relay-mono-connector-campusonline-bundle.git
 [submodule "submodules/dbp-relay-mono-connector-payunity-bundle"]
-	path = submodules/dbp-relay-mono-connector-payunity-bundle
+	path = docs/submodules/dbp-relay-mono-connector-payunity-bundle
 	url = https://github.com/digital-blueprint/relay-mono-connector-payunity-bundle.git
 [submodule "submodules/dbp-relay-mono-connector-generic-bundle"]
-	path = submodules/dbp-relay-mono-connector-generic-bundle
+	path = docs/submodules/dbp-relay-mono-connector-generic-bundle
 	url = https://github.com/digital-blueprint/relay-mono-connector-generic-bundle.git
 [submodule "submodules/dbp-relay-dispatch-bundle"]
-	path = submodules/dbp-relay-dispatch-bundle
+	path = docs/submodules/dbp-relay-dispatch-bundle
 	url = https://github.com/digital-blueprint/relay-dispatch-bundle
 [submodule "submodules/relay-authentic-documents-bundle"]
-	path = submodules/relay-authentic-documents-bundle
+	path = docs/submodules/relay-authentic-documents-bundle
 	url = https://github.com/digital-blueprint/relay-authentic-documents-bundle
 [submodule "submodules/relay-base-person-bundle"]
-	path = submodules/relay-base-person-bundle
+	path = docs/submodules/relay-base-person-bundle
 	url = https://github.com/digital-blueprint/relay-base-person-bundle
 [submodule "submodules/relay-base-person-connector-ldap-bundle"]
-	path = submodules/relay-base-person-connector-ldap-bundle
+	path = docs/submodules/relay-base-person-connector-ldap-bundle
 	url = https://github.com/digital-blueprint/relay-base-person-connector-ldap-bundle
 [submodule "submodules/relay-sublibrary-bundle"]
-	path = submodules/relay-sublibrary-bundle
+	path = docs/submodules/relay-sublibrary-bundle
 	url = https://github.com/digital-blueprint/relay-sublibrary-bundle
 [submodule "submodules/relay-server-template"]
-	path = submodules/relay-server-template
+	path = docs/submodules/relay-server-template
 	url = https://github.com/digital-blueprint/relay-server-template
 [submodule "submodules/dbp-relay-core-connector-ldap-bundle"]
-	path = submodules/dbp-relay-core-connector-ldap-bundle
+	path = docs/submodules/dbp-relay-core-connector-ldap-bundle
 	url = https://github.com/digital-blueprint/relay-core-connector-ldap-bundle
 [submodule "submodules/dbp-relay-core-connector-textfile-bundle"]
-	path = submodules/dbp-relay-core-connector-textfile-bundle
+	path = docs/submodules/dbp-relay-core-connector-textfile-bundle
 	url = https://github.com/digital-blueprint/relay-core-connector-textfile-bundle
 [submodule "docs/components/api/submodules/dbp-relay-core-connector-campusonline-bundle"]
 	path = docs/components/api/submodules/dbp-relay-core-connector-campusonline-bundle
 	url = https://github.com/digital-blueprint/relay-core-connector-campusonline-bundle
 [submodule "submodules/dbp-relay-core-connector-campusonline-bundle"]
-	path = submodules/dbp-relay-core-connector-campusonline-bundle
+	path = docs/submodules/dbp-relay-core-connector-campusonline-bundle
 	url = https://github.com/digital-blueprint/relay-core-connector-campusonline-bundle
 [submodule "submodules/relay-formalize-bundle"]
-	path = submodules/relay-formalize-bundle
+	path = docs/submodules/relay-formalize-bundle
 	url = https://github.com/digital-blueprint/relay-formalize-bundle
 [submodule "submodules/relay-blob-bundle"]
-	path = submodules/relay-blob-bundle
+	path = docs/submodules/relay-blob-bundle
 	url = https://github.com/digital-blueprint/relay-blob-bundle.git
 [submodule "submodules/relay-blob-library"]
-	path = submodules/relay-blob-library
+	path = docs/submodules/relay-blob-library
 	url = https://github.com/digital-blueprint/relay-blob-library.git
 [submodule "submodules/relay-core-connector-oidc-bundle"]
-	path = submodules/relay-core-connector-oidc-bundle
+	path = docs/submodules/relay-core-connector-oidc-bundle
 	url = https://github.com/digital-blueprint/relay-core-connector-oidc-bundle
 [submodule "submodules/relay-cabinet-bundle"]
-	path = submodules/relay-cabinet-bundle
+	path = docs/submodules/relay-cabinet-bundle
 	url = https://github.com/digital-blueprint/relay-cabinet-bundle
 [submodule "submodules/relay-cabinet-connector-campusonline-bundle"]
-	path = submodules/relay-cabinet-connector-campusonline-bundle
+	path = docs/submodules/relay-cabinet-connector-campusonline-bundle
 	url = https://github.com/digital-blueprint/relay-cabinet-connector-campusonline-bundle
 [submodule "submodules/relay-checking-bundle"]
-	path = submodules/relay-checking-bundle
+	path = docs/submodules/relay-checking-bundle
 	url = https://github.com/digital-blueprint/relay-checkin-bundle
 [submodule "submodules/relay-mono-connector-payone-bundle"]
-	path = submodules/relay-mono-connector-payone-bundle
+	path = docs/submodules/relay-mono-connector-payone-bundle
 	url = https://github.com/digital-blueprint/relay-mono-connector-payone-bundle
 [submodule "submodules/relay-verity-bundle"]
-	path = submodules/relay-verity-bundle
+	path = docs/submodules/relay-verity-bundle
 	url = https://github.com/digital-blueprint/relay-verity-bundle.git
 [submodule "submodules/relay-verity-connector-verapdf-bundle"]
-	path = submodules/relay-verity-connector-verapdf-bundle
+	path = docs/submodules/relay-verity-connector-verapdf-bundle
 	url = https://github.com/digital-blueprint/relay-verity-connector-verapdf-bundle.git
 [submodule "submodules/relay-base-publication-bundle"]
-	path = submodules/relay-base-publication-bundle
+	path = docs/submodules/relay-base-publication-bundle
 	url = https://github.com/digital-blueprint/relay-base-publication-bundle
 [submodule "submodules/relay-base-publication-connector-pure-bundle"]
-	path = submodules/relay-base-publication-connector-pure-bundle
+	path = docs/submodules/relay-base-publication-connector-pure-bundle
 	url = https://github.com/digital-blueprint/relay-base-publication-connector-pure-bundle
 [submodule "submodules/relay-verity-connector-clamav-bundle"]
-	path = submodules/relay-verity-connector-clamav-bundle
+	path = docs/submodules/relay-verity-connector-clamav-bundle
 	url = https://github.com/digital-blueprint/relay-verity-connector-clamav-bundle.git
 [submodule "submodules/relay-authorization-bundle"]
-	path = submodules/relay-authorization-bundle
+	path = docs/submodules/relay-authorization-bundle
 	url = https://github.com/digital-blueprint/relay-authorization-bundle

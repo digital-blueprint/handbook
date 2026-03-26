@@ -13,6 +13,9 @@ theme:
       - content.action.edit
       - content.code.copy
 
+exclude_docs: |
+  /submodules/*
+
 plugins:
   - search:
   # https://github.com/mkdocs/mkdocs-redirects
