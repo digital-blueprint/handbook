@@ -9,7 +9,7 @@ ENV PATH="/root/.local/bin:$PATH"
 COPY . /app
 WORKDIR /app
 ENV TZ=UTC
-RUN uv run mkdocs build
+RUN uv run zensical build
 
 FROM nginx:stable-alpine
 

@@ -12,7 +12,7 @@ Clone the submodules:
 
 Using uv:
 
-* `uv run mkdocs serve --dev-addr 127.0.0.1:8011`
+* `uv run zensical serve --dev-addr 127.0.0.1:8011`
 * <http:/127.0.0.1:8011>
 
 Using docker-compose:

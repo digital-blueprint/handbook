@@ -6,6 +6,6 @@ services:
       context: ..
       dockerfile: ./docker-dev/Dockerfile
     volumes:
-      - ..:/mkdocs
+      - ..:/docs
     ports:
       - "8011:8011"

@@ -1,5 +1,6 @@
 site_name: digital blueprint handbook
 theme:
+    variant: classic
     font: false
     name: material
     palette:
