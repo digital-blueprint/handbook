@@ -1,6 +1,10 @@
 import mermaid from './mermaid/mermaid.esm.min.mjs';
 
-var config = {
+mermaid.initialize({
     theme:'neutral',
-};
-mermaid.initialize(config);
+    startOnLoad: false,
+});
+
+document$.subscribe(function() {
+    mermaid.run();
+});

@@ -12,6 +12,7 @@ theme:
     features:
       - content.action.edit
       - content.code.copy
+      - navigation.instant
 
 exclude_docs: |
   /submodules/*
@@ -31,6 +32,7 @@ extra_javascript:
   - assets/js/mermaid/mermaid.esm.min.mjs
   - assets/js/main.mjs
 
+site_url: https://handbook.digital-blueprint.org
 repo_url: https://github.com/digital-blueprint/handbook
 edit_uri: edit/main/docs/
 
