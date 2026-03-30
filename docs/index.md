@@ -11,10 +11,10 @@ flowchart TB
     subgraph " "
       direction TB
 
-      subgraph blueprint_a ["Blueprint A"]
+      subgraph blueprint_c ["Blueprint C"]
           direction LR
-          component_1["App Component"]
-          component_2["API Component"]
+          component_6["Application"]
+          component_7["Application Extension"]
       end
 
       subgraph blueprint_b ["Blueprint B"]
@@ -24,10 +24,10 @@ flowchart TB
           component_5["Supporting Software Component"]
       end
 
-      subgraph blueprint_c ["Blueprint C"]
+      subgraph blueprint_a ["Blueprint A"]
           direction LR
-          component_6["Application"]
-          component_7["Application Extension"]
+          component_1["App Component"]
+          component_2["API Component"]
       end
 
     end

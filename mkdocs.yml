@@ -29,8 +29,8 @@ extra_css:
   - assets/styles/fonts.css
 
 extra_javascript:
-  - assets/js/mermaid.min.js
-  - assets/js/main.js
+  - assets/js/mermaid/mermaid.esm.min.mjs
+  - assets/js/main.mjs
 
 repo_url: https://github.com/digital-blueprint/handbook
 edit_uri: edit/main/docs/
