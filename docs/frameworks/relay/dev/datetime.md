@@ -15,44 +15,39 @@ Open Questions:
   * Incomplete datetime?
   * Which formats are supported?
 
-## Enforcing UTC in the API
+## Datetime Handling in the API
 
-With API platform, when exposing a `DateTimeInterface` property, make sure to
-use the `DateTimeNormalizer` and set the timezone to UTC:
+With API Platform, when exposing a `DateTimeInterface` property, use the custom
+`DateTimeUtcNormalizer` from `Dbp\Relay\CoreBundle\Serializer`:
 
 ```php
 use ApiPlatform\Metadata\ApiProperty;
 use ApiPlatform\Metadata\ApiResource;
+use Dbp\Relay\CoreBundle\Serializer\DateTimeUtcNormalizer;
 use Symfony\Component\Serializer\Attribute\Context;
-use Symfony\Component\Serializer\Normalizer\DateTimeNormalizer;
 
 #[ApiResource()]
 class Foo {
 
   #[ApiProperty()]
-  #[Context(
-      normalizationContext: [
-          DateTimeNormalizer::TIMEZONE_KEY => 'UTC',
-      ],
-      denormalizationContext: [
-          DateTimeNormalizer::TIMEZONE_KEY => 'UTC',
-          // Note: FORCE_TIMEZONE_KEY is only available with Symfony 7.4+
-          DateTimeNormalizer::FORCE_TIMEZONE_KEY => true,
-      ],
-  )]
+  #[Context([DateTimeUtcNormalizer::CONTEXT_KEY => true])]
   private ?\DateTimeInterface $date = null;
 }
 ```
 
-For `normalizationContext`, `TIMEZONE_KEY` ensures that the date time is always
-serialized in UTC, regardless of the server timezone.
+The normalizer enforces UTC and strict ISO 8601 with an explicit timezone on
+both input and output:
 
-For `denormalizationContext` (not needed if it's not an input), `TIMEZONE_KEY`
-ensures that date times without a timezone are interpreted as UTC.
-`FORCE_TIMEZONE_KEY` ensures that date times with a timezone are converted to
-UTC.
+* **Normalization** always outputs millisecond precision in UTC, e.g. `2024-01-01T12:00:00.000Z`.
+* **Denormalization** accepts ISO 8601 strings with an explicit timezone (`Z` or
+  `+HH:MM`), with either millisecond or microsecond precision. The parsed value
+  is always converted to UTC. Strings without an explicit timezone are rejected.
 
-## Enforcing UTC in the Database
+The default Symfony DateTimeNormalizer is not strict enough for API use: it
+accepts date strings without a timezone, silently interprets them using the
+server timezone, and does not enforce a consistent output format.
+
+## Datetime Handling in the Database
 
 Since MariaDB/MySQL's `DATETIME` type doesn't store timezone information, we
 assume that all datetimes are stored as UTC. Since Doctrine doesn't have a
@@ -90,7 +85,9 @@ $this->createQueryBuilder('p')
     ->setParameter('somedatetime', $somedatetime, 'relay_mybundle_datetime_immutable_utc');
 ```
 
-## How-To UTC in PHP
+## DateTime/Duration Handling in PHP
+
+### How-To UTC in PHP
 
 Create `DateTimeImmutable` for the current time with a UTC Timezone:
 
@@ -125,7 +122,7 @@ $datetime = new \DateTimeImmutable('2022-10-20T08:28:49+02:00');
 $datetime->setTimezone(new \DateTimeZone('UTC'));
 ```
 
-## Durations
+### Durations
 
 Use ISO durations in the config as well as in the API for durations.
 
