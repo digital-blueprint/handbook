@@ -216,8 +216,6 @@ nav:
 
     - Supporting Software:
       - components/supporting-software/pdf-as.md
-      - Blob Library:
-        - components/supporting-software/blob-library/README.md
 
     - Archived Components:
       - Greenlight Bundle:
