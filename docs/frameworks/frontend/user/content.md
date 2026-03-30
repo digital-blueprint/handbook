@@ -7,14 +7,14 @@ appearance of the application as you want.
 ## App shell slots
 
 <figure id="fig1" style="width:100%;">
-    <img src="../assets/ui_images/DBP-UI-Design_page_02.svg" alt="App shell Slots" style="width:100%; border: 1px solid black;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_02.svg" alt="App shell Slots" style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Fig. 1: App shell slots visualization</b>
     </figcaption>
 </figure>
 
 <figure id="fig2">
-    <img src="../assets/ui_images/DBP-UI-Design_page_05.svg" alt="App shell Slots mobile" style="width:100%; border: 1px solid black; margin: auto;">
+    <img src="../../assets/ui_images/DBP-UI-Design_page_05.svg" alt="App shell Slots mobile" style="width:100%; border: 1px solid black; margin: auto;">
     <figcaption>
         <b>Fig. 2: App shell slots mobile visualization</b>
     </figcaption>
