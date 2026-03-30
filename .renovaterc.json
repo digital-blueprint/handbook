@@ -23,7 +23,7 @@
       "groupSlug": "git-submodules",
       "automerge": true,
       "matchDepNames": [
-        "submodules/**"
+        "docs/submodules/**"
       ]
     }
   ]
