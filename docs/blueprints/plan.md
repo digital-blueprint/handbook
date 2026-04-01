@@ -8,6 +8,7 @@ Kanban project management software, plus a set of plugins which extend its
 functionality and also integrate it with other systems.
 
 !!! note
+
     This page is work in progress. More information will follow soon.
 
 ## Screenshot

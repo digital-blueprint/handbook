@@ -1,6 +1,7 @@
 # User Manual
 
 !!! note
+
     This guide is currently a work in progress.
 
 ## Getting Started with Cabinet

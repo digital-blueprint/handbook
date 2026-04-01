@@ -1,6 +1,7 @@
 # Administrator Manual
 
 !!! note
+
     This guide is currently a work in progress.
 
 ## Technical Requirements and Dependencies
