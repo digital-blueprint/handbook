@@ -1,14 +1,14 @@
-# LayoutSwitcher 
+# LayoutSwitcher
 
 The `LayoutSwitcher` is a Web Component built with Lit, designed to toggle between layout modes (e.g., `standard`, `wide`). It handles screen-size responsiveness, stores user preferences, and integrates with internationalization.
 
 **Basic Knowledge:**
 
-- HTML/CSS 
+- HTML/CSS
 - JavaScript (ES6+)
 - Web Components
 - Lit Library
-  
+
 ## Features
 
 - Toggle between layouts: `standard`, `wide`, etc.
@@ -18,7 +18,7 @@ The `LayoutSwitcher` is a Web Component built with Lit, designed to toggle betwe
 - i18n-ready for translation.
 - Uses a dropdown UI with icons.
 - Lightweight and customizable.
- 
+
 ## Usage
 
 import { LayoutSwitcher } from './path-to/LayoutSwitcher.js';
@@ -28,10 +28,10 @@ import { LayoutSwitcher } from './path-to/LayoutSwitcher.js';
   app-name="myApp"
   default-layout="standard"
   disabled-layout="wide"
-  lang-dir="ltr">
+  lang-dir="ltr"
+>
 </layout-switcher>
 ```
-
 
 ## Properties & Attributes
 
@@ -47,7 +47,6 @@ import { LayoutSwitcher } from './path-to/LayoutSwitcher.js';
 | `isDefaultLayout` | `boolean` | –                 | Whether current layout is `standard`.                                       |
 | `dropdown`        | `boolean` | –                 | Dropdown visibility state.                                                  |
 
-
 ## Accessibility
 
 - Uses semantic HTML (ul, li, a) for better accessibility.
@@ -55,35 +54,37 @@ import { LayoutSwitcher } from './path-to/LayoutSwitcher.js';
 - Dropdown closes on outside click.
 
 ## Methods
+
 - toggleLayout(layout: string): void
-Switches to a given layout, stores the choice, updates UI and fires layout-changed.
+  Switches to a given layout, stores the choice, updates UI and fires layout-changed.
 
 - loadDefaultLayout(): void
-Marks current layout as default (e.g.standard).
+  Marks current layout as default (e.g.standard).
 
 - loadAlternateLayout(): void
-Marks current layout as alternate (e.g.wide).
+  Marks current layout as alternate (e.g.wide).
 
 - updateLayoutBasedOnWindowSize(): void
-Sets layout to wide on narrow screens (<871px), or to stored/default layout on wider screens.
+  Sets layout to wide on narrow screens (<871px), or to stored/default layout on wider screens.
 
 - toggleLayoutMenu(e: Event): void
-Toggles visibility of the dropdown layout menu.
+  Toggles visibility of the dropdown layout menu.
 
 - hideLayoutMenu(e: Event): void
-Hides the layout menu when clicking outside it.
+  Hides the layout menu when clicking outside it.
 
 - getStoredLayout(): string
-Stores the current layout value in localStorage(e.g., `wide`, `standard`).
+  Stores the current layout value in localStorage(e.g., `wide`, `standard`).
 
 - setStoredLayout(value: string): void
-Saves the last layout value(e.g., `wide`, `standard`) in localStorage.
+  Saves the last layout value(e.g., `wide`, `standard`) in localStorage.
 
 ## Responsive behavior:
 
 Layout switcher icon hidden on screens <871px.
 
 ## Icons & Fonts
+
 - Uses <dbp-icon> from @dbp-toolkit/common for both switcher and menu options.
 
 - You must ensure the dbp-icon element is globally available or provided in the app (as shown in scopedElements).
@@ -91,16 +92,15 @@ Layout switcher icon hidden on screens <871px.
 - No specific font is required—component inherits your app’s font.
 
 ## i18n
+
 The component is internationalized using createInstance() and supports the following translation keys:
 
-Key	Usage
-- switch-layout	Tooltip for layout toggle button
-- switch-to-wide-layout-label	Tooltip for wide layout option
-- switch-to-standard-layout-label	Tooltip for standard layout option
-- wide-layout-name	Label for wide layout option
-- standard-layout-name	Label for standard layout option
+Key Usage
 
-If you want to add new translations and extend the webpage, please have a look at the [translation developer guide](https://handbook.digital-blueprint.org/frameworks/frontend/dev/translations/).   
+- switch-layout Tooltip for layout toggle button
+- switch-to-wide-layout-label Tooltip for wide layout option
+- switch-to-standard-layout-label Tooltip for standard layout option
+- wide-layout-name Label for wide layout option
+- standard-layout-name Label for standard layout option
 
-
-
+If you want to add new translations and extend the webpage, please have a look at the [translation developer guide](https://handbook.digital-blueprint.org/frameworks/frontend/dev/translations/).

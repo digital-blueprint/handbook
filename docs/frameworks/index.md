@@ -31,7 +31,7 @@ flowchart LR
 
     backend_1["Backend 1"]
     backend_2["Backend 2"]
-    
+
     bundle_1a ---> backend_1
     connector --> backend_2
 

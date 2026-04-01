@@ -6,9 +6,9 @@ bundles that require a database for how to set things up.
 
 ## General Rules
 
-* Each bundle should provide the possibility to use its own separate database.
-* Each bundle should support sharing a database with all other bundles.
-* All database tables need to be prefixed with the bundle unique name .e.g `uniquename_tablename`
+- Each bundle should provide the possibility to use its own separate database.
+- Each bundle should support sharing a database with all other bundles.
+- All database tables need to be prefixed with the bundle unique name .e.g `uniquename_tablename`
 
 ## Registering a Doctrine Entity Manager
 

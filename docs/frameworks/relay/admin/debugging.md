@@ -5,11 +5,11 @@
 The relay API gateway provides a command for checking the overall health of the
 system as well as all installed bundles. This includes:
 
-* API gateway configuration
-* Symfony related configuration
-* PHP and server configuration
-* Bundle configuration
-* Connectivity to various configured external and configured services (external
+- API gateway configuration
+- Symfony related configuration
+- PHP and server configuration
+- Bundle configuration
+- Connectivity to various configured external and configured services (external
   APIs, databases, etc.)
 
 Simply run the following in the API server directory:
@@ -48,8 +48,8 @@ The debug mode is helpful if the API or a web page just returns a generic unhelp
 
 By enabling the debug mode you get:
 
-* Richer error messages. Unhandled API errors will include a stack trace, including the content of variables on the stack at the time of the error. Web pages served by Symfony will also include stack traces in the HTML output and more detailed error messages.
-* The Symfony debug toolbar which is visible at the bottom of each website, like the API documentation page. It gives access to all the recent API requests, including logs, warnings, and context, timing information and much more.
+- Richer error messages. Unhandled API errors will include a stack trace, including the content of variables on the stack at the time of the error. Web pages served by Symfony will also include stack traces in the HTML output and more detailed error messages.
+- The Symfony debug toolbar which is visible at the bottom of each website, like the API documentation page. It gives access to all the recent API requests, including logs, warnings, and context, timing information and much more.
 
 You can enable the debug mode by adding `APP_DEBUG=1` to your `.env` file. Note that the `dev` environment, selected via `APP_ENV=dev`, automatically enables this debug mode.
 

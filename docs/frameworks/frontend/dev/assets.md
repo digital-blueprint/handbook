@@ -4,10 +4,10 @@ In some cases a component, in addition to Javscript files, also contains CSS
 files, images, JS workers, etc. that are not handled by the JS bundler. For
 example:
 
-* An "icon" components wants to include extra SVG files.
-* A component wraps a library which expects CSS files to be in a hardcoded place
+- An "icon" components wants to include extra SVG files.
+- A component wraps a library which expects CSS files to be in a hardcoded place
   and the CSS references images with relative paths and hardcoded names.
-* A component uses a library that ships JSON files including translations which
+- A component uses a library that ships JSON files including translations which
   that library expects in a certain location.
 
 This aren't problems a bundler can solve, as it only knows about JS files, so we
@@ -64,7 +64,7 @@ you can define them in package.json, like this:
 Example import:
 
 ```js
-import select2CSSPath from 'select2/dist/css/select2.min.css';
+import select2CSSPath from "select2/dist/css/select2.min.css";
 ```
 
 The imported file will be copied during the build process to the `/dist/shared`

@@ -7,9 +7,9 @@ parallel.
 
 This requires two extra deployment related tasks:
 
-1) One or more worker tasks have to be run in the background and automatically
+1. One or more worker tasks have to be run in the background and automatically
    restarted if they stop.
-2) On deployment the worker processes have to be restarted to use the new code.
+2. On deployment the worker processes have to be restarted to use the new code.
 
 ## Configuration
 
@@ -26,7 +26,7 @@ This transport requires the Redis PHP extension (>=4.3) and a running Redis serv
 # config/packages/dbp_relay_core.yaml
 dbp_relay_core:
   # redis[s]://[pass@][ip|host|socket[:port]]
-  queue_dsn: 'redis://localhost:6379'
+  queue_dsn: "redis://localhost:6379"
 ```
 
 This creates a redis stream automatically when active.
@@ -47,13 +47,13 @@ doctrine:
   dbal:
     connections:
       worker_queue_connection_name:
-        url: 'mysql://db:secret@mariadb:3306/db'
+        url: "mysql://db:secret@mariadb:3306/db"
 ```
 
 ```yaml
 # config/packages/dbp_relay_core.yaml
 dbp_relay_core:
-  queue_dsn: 'doctrine://worker_queue_connection_name'
+  queue_dsn: "doctrine://worker_queue_connection_name"
 ```
 
 It will automatically create a new database table when active.
@@ -75,10 +75,9 @@ number of processed tasks.
 
 Note:
 
-* You need to take care of restarting it automatically.
-* Each active worker needs to have a unique name passed as the first argument
+- You need to take care of restarting it automatically.
+- Each active worker needs to have a unique name passed as the first argument
   which should stay the same across restarts.
-
 
 ## Restart the workers
 
@@ -90,7 +89,6 @@ After deployment run
 
 This will signal the workers to exit after the current task, which means they
 will be restarted by supervisor and will run the newly deployed code.
-
 
 ## Manage Workers with Supervisor
 

@@ -62,8 +62,8 @@ latest version: https://playwright.dev/docs/release-notes
 
 In case our modules are used with a too old browser this can lead to the following issues:
 
-* The page stays empty since it fails to load the Javascript or fails to parse it
-* The application works but some (possibly key) features are broken
+- The page stays empty since it fails to load the Javascript or fails to parse it
+- The application works but some (possibly key) features are broken
 
 To avoid such scenarios and to give the user proper feedback, we provide a standalone feature-detection script which gets loaded alongside the application and replaces the whole page with an information overlay in case a required feature is missing:
 
@@ -72,8 +72,8 @@ https://github.com/digital-blueprint/toolkit/blob/main/packages/common/misc/brow
 Example usage:
 
 ```html
-  <script src="browser-check.js" defer></script>
-  <noscript>This application requires Javascript</noscript>
+<script src="browser-check.js" defer></script>
+<noscript>This application requires Javascript</noscript>
 ```
 
 Since the check uses eval() for some of the feature checks, it is not compatible with CSPs that disallow eval(). To avoid
@@ -91,8 +91,8 @@ See https://www.ios-resolution.com, https://www.mydevice.io/#compare-devices and
 
 ## History
 
-* 2025-08-06 - Require "CSS Container Queries (Size)"
-* 2024-11-19 - Require "EventTarget constructor"
-* 2023-10-03 - Require "Intl.PluralRules"
-* 2023-02-15 - Require "Resize Observer" and "globalThis"
-* ...
+- 2025-08-06 - Require "CSS Container Queries (Size)"
+- 2024-11-19 - Require "EventTarget constructor"
+- 2023-10-03 - Require "Intl.PluralRules"
+- 2023-02-15 - Require "Resize Observer" and "globalThis"
+- ...

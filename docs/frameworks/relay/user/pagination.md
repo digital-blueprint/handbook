@@ -24,7 +24,7 @@ https://myapi.example.com/things?page=1
     {
       "@id": "/things/42",
       "@type": "https://schema.org/Thing",
-      "name": "Some Thing",
+      "name": "Some Thing"
     }
   ],
   "hydra:view": {

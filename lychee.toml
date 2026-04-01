@@ -3,6 +3,4 @@ max_cache_age = "1d"
 
 scheme = ["https"]
 exclude_all_private = true
-exclude = [
-
-]
+exclude = []

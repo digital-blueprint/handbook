@@ -10,9 +10,9 @@ and failed jobs will not be retried.
 `src/Resources/config/services.yaml`:
 
 ```yaml
-  Dbp\Relay\MyBundle\Cron\MyCronJob:
-    autowire: true
-    autoconfigure: true
+Dbp\Relay\MyBundle\Cron\MyCronJob:
+  autowire: true
+  autoconfigure: true
 ```
 
 `src/Cron/MyCronJob.php`:
@@ -49,7 +49,6 @@ class MyCronJob implements CronJobInterface
 
 See https://crontab.guru/ for information on the syntax used in the interval
 string.
-
 
 ## FAQ
 

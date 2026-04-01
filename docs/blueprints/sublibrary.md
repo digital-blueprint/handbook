@@ -63,7 +63,7 @@ Give every user the frontend role for managing the library:
 ```yaml
 dbp_relay_frontend:
   roles:
-    ROLE_LIBRARY_MANAGER: 'true'
+    ROLE_LIBRARY_MANAGER: "true"
 ```
 
 **relay-sublibrary-bundle**
@@ -76,27 +76,27 @@ in `dbp_relay_sublibrary.yaml`:
 
 ```yaml
 dbp_relay_sublibrary:
-    api_url: '%env(SUBLIBRARY_ALMA_API_URL)%'
-    api_key: '%env(SUBLIBRARY_ALMA_API_KEY)%'
-    analytics_api_key: '%env(SUBLIBRARY_ALMA_ANALYTICS_API_KEY)%'
-    person_local_data_attributes:
-        email: email
-        alma_id: almaId
-    organization_local_data_attributes:
-        code: code
-    authorization:
-        roles:
-            ROLE_LIBRARY_MANAGER: 'true'
-        attributes:
-            SUBLIBRARY_IDS: '["1263"]'
-            ALMA_LIBRARY_IDS: '["F2190"]'
+  api_url: "%env(SUBLIBRARY_ALMA_API_URL)%"
+  api_key: "%env(SUBLIBRARY_ALMA_API_KEY)%"
+  analytics_api_key: "%env(SUBLIBRARY_ALMA_ANALYTICS_API_KEY)%"
+  person_local_data_attributes:
+    email: email
+    alma_id: almaId
+  organization_local_data_attributes:
+    code: code
+  authorization:
+    roles:
+      ROLE_LIBRARY_MANAGER: "true"
+    attributes:
+      SUBLIBRARY_IDS: '["1263"]'
+      ALMA_LIBRARY_IDS: '["F2190"]'
 ```
 
-* Set `ROLE_LIBRARY_MANAGER: 'true'` to allow everyone to access the API
-* Fill out `SUBLIBRARY_IDS` with the IDs used by the base organization connector that the user should have access to
-* Fill out `ALMA_LIBRARY_IDS` with the ALMA library IDS that the user should have access to
-* Set `person_local_data_attributes` to map the attributes that are exposed by the base person connector
-* Set `organization_local_data_attributes` to map the attributes that are exposed by the base organization connector
+- Set `ROLE_LIBRARY_MANAGER: 'true'` to allow everyone to access the API
+- Fill out `SUBLIBRARY_IDS` with the IDs used by the base organization connector that the user should have access to
+- Fill out `ALMA_LIBRARY_IDS` with the ALMA library IDS that the user should have access to
+- Set `person_local_data_attributes` to map the attributes that are exposed by the base person connector
+- Set `organization_local_data_attributes` to map the attributes that are exposed by the base organization connector
 
 **relay-base-organization-bundle**
 
@@ -157,9 +157,9 @@ If needed adjust the encryption method in `config/packages/relay_core_connector_
 
 ```yaml
 dbp_relay_core_connector_ldap:
-    connections:
-        DEFAULT:
-          encryption: 'simple_tls'
+  connections:
+    DEFAULT:
+      encryption: "simple_tls"
 ```
 
 **relay-core-connector-oidc-bundle:**

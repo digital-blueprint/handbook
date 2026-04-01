@@ -20,7 +20,7 @@ At the moment we only support RedisStore and PdoStore:
 # config/packages/dbp_relay_core.yaml
 dbp_relay_core:
   # redis[s]://[pass@][ip|host|socket[:port]]
-  lock_dsn: 'redis://localhost:6379'
+  lock_dsn: "redis://localhost:6379"
 ```
 
 ### PDO
@@ -28,7 +28,7 @@ dbp_relay_core:
 ```yaml
 # config/packages/dbp_relay_core.yaml
 dbp_relay_core:
-  lock_dsn: 'mysql://user:secret@mariadb:3306/dbname'
+  lock_dsn: "mysql://user:secret@mariadb:3306/dbname"
 ```
 
 This will create a `lock_keys` table in your database where the lock information

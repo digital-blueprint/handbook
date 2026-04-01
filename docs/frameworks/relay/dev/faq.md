@@ -4,4 +4,3 @@
 
 See https://symfony.com/doc/current/bundles.html. Bundles should still be used
 when sharing code between applications, which is what we use them for.
-

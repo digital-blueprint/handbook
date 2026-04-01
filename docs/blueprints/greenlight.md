@@ -1,9 +1,8 @@
 # Greenlight
 
-
 !!! warning
-    With the Austrian EU Digital COVID Certificates infrastructure being
-    discontinued since June 2023 this blueprint is no longer functional.
+With the Austrian EU Digital COVID Certificates infrastructure being
+discontinued since June 2023 this blueprint is no longer functional.
 
 Creates an entrance ticket and import your 3-G evidence on this device to validate it for admission even before attending
 a course or exam. The ticket then enables you to access the university premises quickly and efficiently.
@@ -19,17 +18,16 @@ a course or exam. The ticket then enables you to access the university premises 
 - An **LDAP server**, which at least contains first name, last name, birthday and user id of the students
 - A [**Keycloak**](https://www.keycloak.org/guides) server, which integrates with the LDAP server
 - A **LAMP server** (Linux, Apache, MySQL/MariaDB, PHP>=8.2)
-    - The dependency manager for PHP [Composer 2](https://getcomposer.org/) also needs to be installed
-    - `git` >= 2.25 needs to be installed
-    - In case that the frontend will also be hosted on the same server, then **npm** needs to be installed too
-    - Several **PHP extensions** need to be present: `ext-ctype`, `ext-dom`, `ext-fileinfo`, `ext-filter`, `ext-json`,
-      `ext-ldap`, `ext-libxml`, `ext-mbstring`, `ext-mysql`, `ext-openssl`, `ext-pcre`, `ext-reflection`, `ext-simplexml`, `ext-soap`,
-      `ext-spl`, `ext-tokenizer`, `ext-xml`, `ext-curl`, `ext-gmp`
+  - The dependency manager for PHP [Composer 2](https://getcomposer.org/) also needs to be installed
+  - `git` >= 2.25 needs to be installed
+  - In case that the frontend will also be hosted on the same server, then **npm** needs to be installed too
+  - Several **PHP extensions** need to be present: `ext-ctype`, `ext-dom`, `ext-fileinfo`, `ext-filter`, `ext-json`,
+    `ext-ldap`, `ext-libxml`, `ext-mbstring`, `ext-mysql`, `ext-openssl`, `ext-pcre`, `ext-reflection`, `ext-simplexml`, `ext-soap`,
+    `ext-spl`, `ext-tokenizer`, `ext-xml`, `ext-curl`, `ext-gmp`
 - **Domains** (or sub-domains) along with the needed **TLS/SSL certificates** for the Relay API web server,
   the frontend web server and the Keycloak server
 
 ## Installation
-
 
 ```{.mermaid style="max-width:600px; margin: auto"}
 graph TB
@@ -49,21 +47,19 @@ graph TB
     style frontend fill:#d0d0ff,stroke:#333,stroke-width:4px
 ```
 
-
 ### Frontend App
 
-You can install the frontend application with a simple command you can find on 
+You can install the frontend application with a simple command you can find on
 [Greenlight frontend installation](https://github.com/digital-blueprint/greenlight-app#using-this-app-as-pre-built-package).
 
-If you want to customize your frontend, please have a look at the [theming and individualizing your application guide](../frameworks/frontend/user/index.md). There, an detailed description of individualizing your fonts, colors, icons, and other assets is given. 
+If you want to customize your frontend, please have a look at the [theming and individualizing your application guide](../frameworks/frontend/user/index.md). There, an detailed description of individualizing your fonts, colors, icons, and other assets is given.
 
 ### Keycloak Server
 
 You need to install and set up the Open Source Identity and Access Management [Keycloak](https://www.keycloak.org/).
 
 !!! tip
-    There is small guide about the [Keycloak Client Setup](../frameworks/frontend/howtos/keycloak_integration.md).
-
+There is small guide about the [Keycloak Client Setup](../frameworks/frontend/howtos/keycloak_integration.md).
 
 ### Relay API
 
@@ -76,7 +72,6 @@ This is how this example will look like in the end.
 <figure markdown>
 ![greenlight](./img/relay-greenlight-api.png){: style="max-width:800px; width: 100%; box-shadow: 0px 0px 5px #888;" }
 </figure>
-
 
 #### PHP Modules and other packages
 
@@ -119,11 +114,9 @@ This should install most of the packages you will need on your webserver (if Apa
     composer -V
     ```
 
-
 !!! warning
-    Please make sure you have installed **PHP** with at least version **8.2**, **Composer** version **2** and **Git**
-    with at least version **2.25**!
-
+Please make sure you have installed **PHP** with at least version **8.2**, **Composer** version **2** and **Git**
+with at least version **2.25**!
 
 #### Apache Webserver configuration
 
@@ -139,8 +132,7 @@ In your virtual host configuration you need to allow `.htaccess` files and set y
 Note that in this example `/[VHOST-ROOT]/relay-api` will be the path where the PHP application resides.
 
 !!! warning
-    You need to replace `/[VHOST-ROOT]` with the root path of your virtual hosts!
-
+You need to replace `/[VHOST-ROOT]` with the root path of your virtual hosts!
 
 ```apacheconf
 # Allow .htaccess
@@ -171,9 +163,8 @@ We will use the [DBP API Server Template](https://github.com/digital-blueprint/r
 starting point for our implementation.
 
 !!! tip
-    Keep in mind that your current user needs to have permissions to
-    create files and directories in the `/[VHOST-ROOT]` directory for this example.
-
+Keep in mind that your current user needs to have permissions to
+create files and directories in the `/[VHOST-ROOT]` directory for this example.
 
 ```bash
 # You need to replace "/[VHOST-ROOT]" with the root path of your virtual hosts!
@@ -183,7 +174,7 @@ cd /[VHOST-ROOT]
 
 # Install the DBP API Server Template (https://github.com/digital-blueprint/relay-server-template)
 # as base Symfony PHP application
-# The relay-api/public directory then is the directory to let the webserver point at 
+# The relay-api/public directory then is the directory to let the webserver point at
 composer create-project dbp/relay-server-template relay-api
 
 # Change to app directory
@@ -193,7 +184,7 @@ cd relay-api
 # which contains entities required by many bundles for the DBP Relay project.
 composer require dbp/relay-base-person-bundle
 
-# If you are using LDAP as your source for identity management, you can install and configure the 
+# If you are using LDAP as your source for identity management, you can install and configure the
 # BasePerson Connector Bundle for LDAP (https://github.com/digital-blueprint/relay-base-person-connector-ldap-bundle),
 # which allows you to connect the Base Person Bundle to your LDAP server.
 composer require dbp/relay-base-person-connector-ldap-bundle
@@ -209,8 +200,7 @@ composer require dbp/relay-greenlight-bundle
 ```
 
 !!! tip
-    Executing `composer check-platform-reqs` shows that the required PHP extensions are installed.
-
+Executing `composer check-platform-reqs` shows that the required PHP extensions are installed.
 
 #### OIDC Bundle config
 
@@ -228,8 +218,7 @@ GREENLIGHT_DATABASE_URL=mysql://user:secret@mariadb:3306/db
 ```
 
 !!! tip
-    Consider putting the `GREENLIGHT_DATABASE_URL` in your `.env.local` file, because of the password to the database.
-
+Consider putting the `GREENLIGHT_DATABASE_URL` in your `.env.local` file, because of the password to the database.
 
 Afterwards you need to run the database migration command to set up all the required tables.
 
@@ -248,10 +237,10 @@ This will regularly clean up caches and expired permits etc.
 #### Connect Greenlight Bundle to your infrastructure
 
 !!! tip
-    If you are using **CampusOnline** for storing photos and **LDAP** as your source for identity management, you can install the
-    [Greenlight Connector Bundle for CampusOnline](https://github.com/digital-blueprint/relay-greenlight-connector-campusonline-bundle),
-    which fetches images for [DbpRelayGreenlightBundle](https://github.com/digital-blueprint/relay-greenlight-bundle)
-    from CampusOnline, while retrieving the `co-obfuscated-c-ident` from LDAP
+If you are using **CampusOnline** for storing photos and **LDAP** as your source for identity management, you can install the
+[Greenlight Connector Bundle for CampusOnline](https://github.com/digital-blueprint/relay-greenlight-connector-campusonline-bundle),
+which fetches images for [DbpRelayGreenlightBundle](https://github.com/digital-blueprint/relay-greenlight-bundle)
+from CampusOnline, while retrieving the `co-obfuscated-c-ident` from LDAP
 
     There is a guide at [Greenlight Connector Bundle for CampusOnline and LDAP](../components/api/greenlight-connector-campusonline/config.md),
     that walks you through the steps to set up the CampusOnline connector.
@@ -263,13 +252,12 @@ Afterwards best do a `composer install` to make sure caches are cleared and ever
 You need to implement a service for `PersonProviderInterface` from [Base Person Bundle](https://github.com/digital-blueprint/relay-base-person-bundle).
 
 !!! tip
-    If you are using **LDAP** as your source for identity management, you can install the
-    [BasePerson Connector Bundle for LDAP](https://github.com/digital-blueprint/relay-base-person-connector-ldap-bundle),
-    which allows you to connect the [Base Person Bundle](../components/api/base-person/README.md) to your LDAP server.
+If you are using **LDAP** as your source for identity management, you can install the
+[BasePerson Connector Bundle for LDAP](https://github.com/digital-blueprint/relay-base-person-connector-ldap-bundle),
+which allows you to connect the [Base Person Bundle](../components/api/base-person/README.md) to your LDAP server.
 
     There is a guide at [BasePerson Connector Bundle for LDAP](../components/api/base-person-connector-ldap/config.md),
     that walks you through the steps to set up the LDAP connector.
-
 
 Afterwards best do a `composer install` to make sure caches are cleared and everything is in order.
 

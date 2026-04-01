@@ -7,18 +7,20 @@
 You can override the default translations provided by us in your application at spots that subscribe to the `lang-dir` attribute.
 To override the default translations, a few things have to be done.
 
- * The spot where you want to insert your translation has to support overrides. Thus, it has to subscribe to the `lang-dir` attribute. This should be the case for most components.
- * You have to know which key you want to override, and you need to know the tag name of the parent.
- * You need to write a translation file with your override translations. This is done in `json` format. Since [i18next](https://www.i18next.com/) is used as a translation engine, please have a look at the [i18n json documation](https://www.i18next.com/misc/json-format). You will have to provide a `translation.json` file for each language you want to translate your page into.
- * The translation file has to be located in a defined directory. By default, the translation directory is in `assets/translations/`. Each language needs its own directory with only one file inside which has to be named `translation.json`. Thus, if you want a german and a english translation, you will need the files `assets/translations/de/translation.json` and `assets/translations/en/translation.json`. Currently, only english and german are supported.
- * Translation override files containing all keys and all default translations are already present in the given location. You can simply change the given translations and insert your translations.
+- The spot where you want to insert your translation has to support overrides. Thus, it has to subscribe to the `lang-dir` attribute. This should be the case for most components.
+- You have to know which key you want to override, and you need to know the tag name of the parent.
+- You need to write a translation file with your override translations. This is done in `json` format. Since [i18next](https://www.i18next.com/) is used as a translation engine, please have a look at the [i18n json documation](https://www.i18next.com/misc/json-format). You will have to provide a `translation.json` file for each language you want to translate your page into.
+- The translation file has to be located in a defined directory. By default, the translation directory is in `assets/translations/`. Each language needs its own directory with only one file inside which has to be named `translation.json`. Thus, if you want a german and a english translation, you will need the files `assets/translations/de/translation.json` and `assets/translations/en/translation.json`. Currently, only english and german are supported.
+- Translation override files containing all keys and all default translations are already present in the given location. You can simply change the given translations and insert your translations.
 
- If you want to add new translations and extend the webpage, please have a look at the [translation developer guide](../dev/translations.md).
+If you want to add new translations and extend the webpage, please have a look at the [translation developer guide](../dev/translations.md).
 
 ### Example
+
 Consider the following scenario:
 
 You want to replace the text in a save button in an element with the tag name `dbp-create-3g-ticket`. By default, the button shows the text `Save` but you want to change it to `Submit`. An example override translation file (for english) could look something like this:
+
 ```json
 {
   ...
@@ -30,7 +32,9 @@ You want to replace the text in a save button in an element with the tag name `d
   ...
 }
 ```
+
 To change the translation, you just need to change the value associated with the key.
+
 ```json
 {
   ...
@@ -42,4 +46,5 @@ To change the translation, you just need to change the value associated with the
   ...
 }
 ```
+
 This override will only be applied for the translation `save-btn` in the element `dbp-create-3g-ticket`. All other translations will stay the same.

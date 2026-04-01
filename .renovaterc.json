@@ -1,30 +1,20 @@
 {
-  "extends": [
-    "config:recommended",
-    "group:allNonMajor",
-    "schedule:weekly"
-  ],
-  "ignorePresets": [
-    ":prHourlyLimit2"
-  ],
+  "extends": ["config:recommended", "group:allNonMajor", "schedule:weekly"],
+  "ignorePresets": [":prHourlyLimit2"],
   "rangeStrategy": "update-lockfile",
   "git-submodules": {
     "enabled": true
   },
   "packageRules": [
     {
-      "matchCategories": [
-        "js"
-      ],
+      "matchCategories": ["js"],
       "enabled": false
     },
     {
       "groupName": "git submodules",
       "groupSlug": "git-submodules",
       "automerge": true,
-      "matchDepNames": [
-        "docs/submodules/**"
-      ]
+      "matchDepNames": ["docs/submodules/**"]
     }
   ]
 }

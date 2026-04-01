@@ -9,19 +9,19 @@ The `LangMixin` adds internationalization (i18next) support to your components,
 enabling them to dynamically switch languages and translate content.
 
 ```javascript
-import { LitElement, html } from 'lit';
-import { createI18n } from './i18n/factory.js';
-import { LangMixin } from '@dbp-toolkit/common';
+import { LitElement, html } from "lit";
+import { createI18n } from "./i18n/factory.js";
+import { LangMixin } from "@dbp-toolkit/common";
 
 class MyComponent extends LangMixin(LitElement, createI18n) {
   render() {
     return html`
       <div>
-        <h1>${this._i18n.t('welcome')}</h1>
-        <p>${this._i18n.t('description')}</p>
-        
-        <button @click=${() => this.lang = 'en'}>English</button>
-        <button @click=${() => this.lang = 'de'}>Deutsch</button>
+        <h1>${this._i18n.t("welcome")}</h1>
+        <p>${this._i18n.t("description")}</p>
+
+        <button @click=${() => (this.lang = "en")}>English</button>
+        <button @click=${() => (this.lang = "de")}>Deutsch</button>
       </div>
     `;
   }
@@ -32,11 +32,9 @@ In case the `_i18n` property would conflict with another property, you can
 specify a custom property name:
 
 ```javascript
-class MyComponent extends LangMixin(LitElement, createI18n, '_translator') {
+class MyComponent extends LangMixin(LitElement, createI18n, "_translator") {
   render() {
-    return html`
-      <h1>${this._translator.t('hello')}</h1>
-    `;
+    return html` <h1>${this._translator.t("hello")}</h1> `;
   }
 }
 ```
@@ -64,4 +62,3 @@ t('my-keys.somekey')
 t('my-keys.somekey2')
 */
 ```
-

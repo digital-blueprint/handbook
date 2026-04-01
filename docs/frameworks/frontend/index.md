@@ -64,10 +64,10 @@ Despite our goal to not hard-depend on a specific Javascript framework we use a
 common set of helper libraries which we have found useful. We try to not make
 them leak out any internals so we can switch to different ones in the future.
 
-* [lit](https://lit.dev/): Makes writing web components easier.
+- [lit](https://lit.dev/): Makes writing web components easier.
 
-* [i18next](https://www.i18next.com): Handles translations and
+- [i18next](https://www.i18next.com): Handles translations and
   internationalization.
 
-* [@open-wc/scoped-elements](https://open-wc.org/docs/development/scoped-elements):
+- [@open-wc/scoped-elements](https://open-wc.org/docs/development/scoped-elements):
   Namespaces internal web components so they don't leak out.

@@ -1,11 +1,11 @@
 # Access Control
 
-This section explains how to integrate Relay API [Access Control](../admin/access_control.md) into your application. 
+This section explains how to integrate Relay API [Access Control](../admin/access_control.md) into your application.
 
 ## Policy Configuration
 
-You can add [Access Control Policies](../admin/access_control.md#access-control-policies) and 
-[Access Control Attributes](../admin/access_control.md#access-control-attributes) to your application by 
+You can add [Access Control Policies](../admin/access_control.md#access-control-policies) and
+[Access Control Attributes](../admin/access_control.md#access-control-attributes) to your application by
 appending the respective node definitions to the config tree of your application
 (see [Symfony Documentation](https://symfony.com/doc/current/components/config/definition.html#adding-node-definitions-to-the-tree)
 for details):
@@ -27,44 +27,46 @@ class Configuration implements ConfigurationInterface
               ->addAttribute(self::USER_GROUPS, '[]', 'Returns an array of group IDs the authenticated user is member of')
               ->getNodeDefinition()
         );
-          
+
         return $treeBuilder;
 )
 ```
 
-The ```AuthorizationConfigDefinition``` class is defined in the [Core Bundle](../../../components/api/core/README.md).
+The `AuthorizationConfigDefinition` class is defined in the [Core Bundle](../../../components/api/core/README.md).
 Its provides the following methods:
 
 ```php
 public static function create()
 ```
 
-Creates a new instance of ```AuthorizationConfigDefinition```.
+Creates a new instance of `AuthorizationConfigDefinition`.
 
 ```php
 public function addRole(string $roleName, string $defaultExpression = 'false', string $info = ''): AuthorizationConfigDefinition
-``` 
-Appends a new node definition for the role ```$roleName```, with the default expression ```$defaultExpression``` 
-(```'false'``` meaning that nobody is granted access) and the role description ```$info```.
+```
+
+Appends a new node definition for the role `$roleName`, with the default expression `$defaultExpression`
+(`'false'` meaning that nobody is granted access) and the role description `$info`.
 
 ```php
 public function addResourcePermission(string $resourcePermissionName, string $defaultExpression = 'false', string $info = ''): AuthorizationConfigDefinition
-``` 
-Appends a new node definition for the resource permission ```$resourcePermissionName```, with the default expression ```$defaultExpression```
-(```'false'``` meaning that nobody is granted access) and the policy description ```$info```.
+```
+
+Appends a new node definition for the resource permission `$resourcePermissionName`, with the default expression `$defaultExpression`
+(`'false'` meaning that nobody is granted access) and the policy description `$info`.
 
 ```php
 public function addAttribute(string $attributeName, string $defaultExpression = 'false', string $info = ''): AuthorizationConfigDefinition
 ```
 
-Appends a new node definition for the attribute ```$attributeName```, with the default expression ```$defaultExpression``` and
-the attribute description ```$info```.
+Appends a new node definition for the attribute `$attributeName`, with the default expression `$defaultExpression` and
+the attribute description `$info`.
 
 ```php
 public function getNodeDefinition(): NodeDefinition
 ```
 
-Returns the ```authorization``` config node definition to append to the config tree's root node.
+Returns the `authorization` config node definition to append to the config tree's root node.
 
 The config definition example above yields the following default config:
 
@@ -72,18 +74,18 @@ The config definition example above yields the following default config:
 my_app:
   authorization:
     resource_permissions:
-       MAY_READ_BLOG_POST: 'false'
+      MAY_READ_BLOG_POST: "false"
     roles:
-       MAY_ADD_BLOG_POSTS: 'false'
+      MAY_ADD_BLOG_POSTS: "false"
     attributes:
-       USER_GROUPS: '[]'
+      USER_GROUPS: "[]"
 ```
 
 ## Creating Your Authorization Service
 
-To evaluate your policy and attribute expressions on client requests you need to create a service which derives from the 
-```AbstractAuthorizationService``` class declared in the 
-[Core Bundle](../../../components/api/core/README.md). Let's call it ```MyAuthorizationService```:
+To evaluate your policy and attribute expressions on client requests you need to create a service which derives from the
+`AbstractAuthorizationService` class declared in the
+[Core Bundle](../../../components/api/core/README.md). Let's call it `MyAuthorizationService`:
 
 ```php
 class MyAuthorizationService extends AbstractAuthorizationService
@@ -99,21 +101,21 @@ class MyAppExtension extends ConfigurableExtension
     public function loadInternal(array $mergedConfig, ContainerBuilder $container)
     {
         ...
-        
+
         $definition = $container->getDefinition(MyAuthorizationService::class);
         $definition->addMethodCall('setConfig', [$mergedConfig]);
-        
+
         ...
-    } 
-}       
+    }
+}
 ```
 
-And declare ```MyAuthorizationService``` as a service in your ```services.yaml``` file:
+And declare `MyAuthorizationService` as a service in your `services.yaml` file:
 
 ```yaml
-  MyApp\Authorization\MyAuthorizationService:
-    autowire: true
-    autoconfigure: true
+MyApp\Authorization\MyAuthorizationService:
+  autowire: true
+  autoconfigure: true
 ```
 
 Now you are ready to use your access control policies and attributes at runtime, i.e. on client requests:
@@ -125,7 +127,7 @@ class MyAppController
       private readonly MyAuthorizationService $authorizationService)
    {
    }
-   
+
    /**
    * @throws ApiError throws a 403 'forbidden' exception if the current user is not authorized to add blog posts
    */
@@ -135,10 +137,10 @@ class MyAppController
       // use $this->authorizationService->isGrantedRole(...)
       $this->authorizationService->denyAccessUnlessIsGrantedRole(
          Configuration::MAY_ADD_BLOG_POSTS);
-      
+
       // add the blog post
    }
-   
+
    /**
    * @throws ApiError throws a 403 'forbidden' exception if the current user is not authorized to read $blogPost
    */
@@ -148,10 +150,10 @@ class MyAppController
       // use $this->authorizationService->denyAccessUnlessIsGrantedResourcePermission(...)
       $this->authorizationService->denyAccessUnlessIsGrantedResourcePermission(
          Configuration::MAY_READ_BLOG_POST, $blogPost);
-      
+
       return $blogPost;
    }
-   
+
    public function getUserGroups(): array
    {
       return $this->authorizationService->getAttribute(Configuration::USER_GROUPS);
@@ -159,9 +161,9 @@ class MyAppController
 }
 ```
 
-Note that the ```denyAccessUnlessIsGrantedResourcePermission``` method gets passed the blog post as a parameter.
-It is available in your policy expression as ```resource``` variable
-(see [The Resource Object](../admin/access_control.md#the-resource-object)). 
+Note that the `denyAccessUnlessIsGrantedResourcePermission` method gets passed the blog post as a parameter.
+It is available in your policy expression as `resource` variable
+(see [The Resource Object](../admin/access_control.md#the-resource-object)).
 
 ## Symfony Access Control (Deprecated)
 
@@ -184,8 +186,6 @@ prevent anonymous requests you need to check for a special "role" provided by Sy
 ```
 IS_AUTHENTICATED_FULLY
 ```
-
-
 
 To restrict the access to certain attributes, operations, entities see the
 [API-Platform documentation](https://api-platform.com/docs/core/security/) and

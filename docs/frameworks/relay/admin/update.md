@@ -14,7 +14,7 @@ To convert your project to a Git repository:
 # After "composer create-project" has created the "relay-api" directory.
 > git init . # Creates the .git directory
 Initialized empty Git repository in /home/user/relay-api/.git/
-> git add .  # Stages all files, excluding the ones matching patterns in .gitignore 
+> git add .  # Stages all files, excluding the ones matching patterns in .gitignore
 > git commit -m "Initial commit"  # Creates a commit of all the staged files
 ```
 
@@ -40,8 +40,8 @@ Some packages installed in `vendor` are connected to a so called "recipe". A rec
 
 Some examples:
 
-* `public/.htaccess` is part of the `symfony/apache-pack` package
-* `src/Kernel.php` is part of the `symfony/framework-bundle` package
+- `public/.htaccess` is part of the `symfony/apache-pack` package
+- `src/Kernel.php` is part of the `symfony/framework-bundle` package
 
 These files are not managed by composer and you can change/adjust them as needed. They will also never be updated via composer again once they are installed, so your changes to them persist.
 
@@ -51,8 +51,8 @@ To see the list of installed recipes run:
 
 ```shell
 > composer recipes
- * symfony/requirements-checker 
- * symfony/routing 
+ * symfony/requirements-checker
+ * symfony/routing
  * symfony/security-bundle (update available)
 ...
 ```
@@ -77,8 +77,8 @@ For more details see https://symfony.com/doc/5.4/setup/upgrade_minor.html#3-upda
 
 ## Tips & Tricks
 
-* Always commit your changes after you are done so you can easily revert back if something went wrong.
-* Run the ['Health Checks'](./debugging.md#health-checks) after an update to see if the basics are still working.
-* Test the update in a staging environment before deploying it to production.
+- Always commit your changes after you are done so you can easily revert back if something went wrong.
+- Run the ['Health Checks'](./debugging.md#health-checks) after an update to see if the basics are still working.
+- Test the update in a staging environment before deploying it to production.
 
 See the [FAQs](./faq.md#installation-updates) for common related problems & solutions.

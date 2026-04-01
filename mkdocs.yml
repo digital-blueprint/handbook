@@ -1,18 +1,18 @@
 site_name: digital blueprint handbook
 theme:
-    font: false
-    name: material
-    palette:
-      - scheme: default
-        primary: white
-        accent: indigo
-    logo: cd/assets/logo/dbp_logo_small_on_white.svg
-    favicon: cd/assets/apple-touch-icon.png
-    custom_dir: overrides
-    features:
-      - content.action.edit
-      - content.code.copy
-      - navigation.instant
+  font: false
+  name: material
+  palette:
+    - scheme: default
+      primary: white
+      accent: indigo
+  logo: cd/assets/logo/dbp_logo_small_on_white.svg
+  favicon: cd/assets/apple-touch-icon.png
+  custom_dir: overrides
+  features:
+    - content.action.edit
+    - content.code.copy
+    - navigation.instant
 
 exclude_docs: |
   /submodules/*
@@ -37,309 +37,307 @@ repo_url: https://github.com/digital-blueprint/handbook
 edit_uri: edit/main/docs/
 
 markdown_extensions:
-    - md_in_html
-    - attr_list
-    - codehilite
-    - sane_lists
-    - admonition
-    - pymdownx.tabbed:
-        alternate_style: true
-    - pymdownx.arithmatex
-    - pymdownx.betterem:
-        smart_enable: all
-    - pymdownx.caret
-    - pymdownx.critic
-    - pymdownx.details
-    - pymdownx.emoji:
-        emoji_generator: !!python/name:pymdownx.emoji.to_svg
-    - pymdownx.inlinehilite
-    - pymdownx.magiclink
-    - pymdownx.mark
-    - pymdownx.smartsymbols
-    - pymdownx.superfences:
-        custom_fences:
-          - name: mermaid
-            class: mermaid
-            format: !!python/name:pymdownx.superfences.fence_div_format
-    - pymdownx.highlight:
-        extend_pygments_lang:
-          - name: php
-            lang: php
-            options:
-              startinline: true
-    - pymdownx.tasklist:
-        custom_checkbox: true
-    - pymdownx.tilde
-    - pymdownx.blocks.caption
+  - md_in_html
+  - attr_list
+  - codehilite
+  - sane_lists
+  - admonition
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.highlight:
+      extend_pygments_lang:
+        - name: php
+          lang: php
+          options:
+            startinline: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.blocks.caption
 
 nav:
   - index.md
 
   - Blueprints:
-    - blueprints/index.md
-    - blueprints/esign.md
-    - blueprints/plan.md
-    - blueprints/dispatch.md
-    - blueprints/mono.md
-    - Cabinet:
-      - blueprints/cabinet/introduction.md
-      - blueprints/cabinet/system-overview.md
-      - blueprints/cabinet/admin-manual.md
-      - blueprints/cabinet/user-manual.md
-    - blueprints/sublibrary.md
-    - Archived Blueprints:
-      - blueprints/greenlight.md
-      - blueprints/check-in.md
+      - blueprints/index.md
+      - blueprints/esign.md
+      - blueprints/plan.md
+      - blueprints/dispatch.md
+      - blueprints/mono.md
+      - Cabinet:
+          - blueprints/cabinet/introduction.md
+          - blueprints/cabinet/system-overview.md
+          - blueprints/cabinet/admin-manual.md
+          - blueprints/cabinet/user-manual.md
+      - blueprints/sublibrary.md
+      - Archived Blueprints:
+          - blueprints/greenlight.md
+          - blueprints/check-in.md
 
   - Components:
+      - Apps:
+          - components/app/mono.md
+          - components/app/cabinet.md
 
-    - Apps:
-      - components/app/mono.md
-      - components/app/cabinet.md
+      - API:
+          - Server Template:
+              - components/api/server-template/README.md
+          - Core Bundle:
+              - components/api/core/README.md
+              - components/api/core/config.md
+              - LDAP Connector:
+                  - components/api/core-connector-ldap/README.md
+              - Textfile Connector:
+                  - components/api/core-connector-textfile/README.md
+              - Campusonline Connector:
+                  - components/api/core-connector-campusonline/README.md
+              - OIDC Bundle:
+                  - components/api/core-connector-oidc/README.md
+                  - components/api/core-connector-oidc/config.md
+                  - components/api/core-connector-oidc/roles.md
+          - Authorization Bundle:
+              - Overview: components/api/authorization/README.md
+              - components/api/authorization/getting-started.md
+              - components/api/authorization/setup.md
+              - components/api/authorization/configuration.md
+              - components/api/authorization/php-api.md
+              - components/api/authorization/rest-api.md
+              - components/api/authorization/groups.md
+              - components/api/authorization/resource-action-grants.md
+              - components/api/authorization/events.md
+          - Base Person Bundle:
+              - components/api/base-person/README.md
+              - LDAP Connector:
+                  - components/api/base-person-connector-ldap/README.md
+                  - components/api/base-person-connector-ldap/config.md
+                  - components/api/base-person-connector-ldap/events.md
+                  - components/api/base-person-connector-ldap/examples.md
+          - Blob Bundle:
+              - components/api/blob/overview.md
+              - components/api/blob/configuration.md
+              - components/api/blob/api.md
+              - components/api/blob/examples.md
+              - components/api/blob/sequence-diagrams.md
+              - components/api/blob/stored-data.md
+              - components/api/blob/retention.md
+              - components/api/blob/backup-and-restore.md
+              - components/api/blob/locks.md
+          - Base Organization Bundle:
+              - components/api/base-organization/index.md
+          - Base Publication Bundle:
+              - components/api/base-publication/README.md
+              - PURE Connector:
+                  - components/api/base-publication-connector-pure/README.md
+          - Electronic Signature Bundle:
+              - components/api/esign/README.md
+              - components/api/esign/config.md
+              - components/api/esign/advanced_flow.md
+              - components/api/esign/example_advanced.md
+              - components/api/esign/qualified_flow.md
+              - components/api/esign/example_qualified.md
+              - components/api/esign/example_qualified_batch.md
+              - components/api/esign/positioning.md
+              - components/api/esign/cli_commands.md
+          - Formalize Bundle:
+              - components/api/formalize/README.md
+              - components/api/formalize/setup.md
+              - components/api/formalize/configuration.md
+              - components/api/formalize/form-schema.md
+              - components/api/formalize/authorization.md
+              - components/api/formalize/submission-state-workflow.md
+              - components/api/formalize/rest-api.md
+              - components/api/formalize/events.md
+          - Sublibrary Bundle:
+              - components/api/sublibrary/README.md
+              - components/api/sublibrary/config.md
+              - components/api/sublibrary/authz.md
+          - Mono Bundle:
+              - components/api/mono/README.md
+              - components/api/mono/config.md
+              - components/api/mono/cleanup.md
+              - components/api/mono/logging.md
+              - components/api/mono/misc.md
+              - CAMPUSonline Connector:
+                  - components/api/mono-connector-campusonline/index.md
+                  - components/api/mono-connector-campusonline/config.md
+              - PAYONE Connector:
+                  - components/api/mono-connector-payone/index.md
+                  - components/api/mono-connector-payone/config.md
+              - Generic Connector:
+                  - components/api/mono-connector-generic/index.md
+          - Dispatch Bundle:
+              - components/api/dispatch/README.md
+              - components/api/dispatch/config.md
+              - components/api/dispatch/authz.md
+              - components/api/dispatch/database.md
+              - components/api/dispatch/cli.md
+              - components/api/dispatch/api.md
+          - Cabinet Bundle:
+              - components/api/cabinet/README.md
+              - components/api/cabinet/config.md
+              - components/api/cabinet/database.md
+              - components/api/cabinet/api.md
+              - components/api/cabinet/cli.md
+              - CAMPUSonline Connector:
+                  - components/api/cabinet-connector-campusonline/README.md
+                  - components/api/cabinet-connector-campusonline/config.md
+                  - components/api/cabinet-connector-campusonline/cli-commands.md
+                  - components/api/cabinet-connector-campusonline/co-api.md
+                  - components/api/cabinet-connector-campusonline/data.md
+          - Verity Bundle:
+              - components/api/verity/overview.md
+              - components/api/verity/api.md
+              - components/api/verity/configuration.md
+              - components/api/verity/connectors.md
+              - components/api/verity/events.md
+              - VeraPDF Connector:
+                  - components/api/verity-connector-verapdf/Overview.md
+                  - components/api/verity-connector-verapdf/Configuration.md
+              - ClamAV Connector:
+                  - components/api/verity-connector-clamav/Overview.md
+                  - components/api/verity-connector-clamav/configuration.md
 
-    - API:
-      - Server Template:
-        - components/api/server-template/README.md
-      - Core Bundle:
-        - components/api/core/README.md
-        - components/api/core/config.md
-        - LDAP Connector:
-            - components/api/core-connector-ldap/README.md
-        - Textfile Connector:
-            - components/api/core-connector-textfile/README.md
-        - Campusonline Connector:
-            - components/api/core-connector-campusonline/README.md
-        - OIDC Bundle:
-          - components/api/core-connector-oidc/README.md
-          - components/api/core-connector-oidc/config.md
-          - components/api/core-connector-oidc/roles.md
-      - Authorization Bundle:
-          - Overview: components/api/authorization/README.md
-          - components/api/authorization/getting-started.md
-          - components/api/authorization/setup.md
-          - components/api/authorization/configuration.md
-          - components/api/authorization/php-api.md
-          - components/api/authorization/rest-api.md
-          - components/api/authorization/groups.md
-          - components/api/authorization/resource-action-grants.md
-          - components/api/authorization/events.md
-      - Base Person Bundle:
-        - components/api/base-person/README.md
-        - LDAP Connector:
-          - components/api/base-person-connector-ldap/README.md
-          - components/api/base-person-connector-ldap/config.md
-          - components/api/base-person-connector-ldap/events.md
-          - components/api/base-person-connector-ldap/examples.md
-      - Blob Bundle:
-        - components/api/blob/overview.md
-        - components/api/blob/configuration.md
-        - components/api/blob/api.md
-        - components/api/blob/examples.md
-        - components/api/blob/sequence-diagrams.md
-        - components/api/blob/stored-data.md
-        - components/api/blob/retention.md
-        - components/api/blob/backup-and-restore.md
-        - components/api/blob/locks.md
-      - Base Organization Bundle:
-        - components/api/base-organization/index.md
-      - Base Publication Bundle:
-        - components/api/base-publication/README.md
-        - PURE Connector:
-          - components/api/base-publication-connector-pure/README.md
-      - Electronic Signature Bundle:
-        - components/api/esign/README.md
-        - components/api/esign/config.md
-        - components/api/esign/advanced_flow.md
-        - components/api/esign/example_advanced.md
-        - components/api/esign/qualified_flow.md
-        - components/api/esign/example_qualified.md
-        - components/api/esign/example_qualified_batch.md
-        - components/api/esign/positioning.md
-        - components/api/esign/cli_commands.md
-      - Formalize Bundle:
-        - components/api/formalize/README.md
-        - components/api/formalize/setup.md
-        - components/api/formalize/configuration.md
-        - components/api/formalize/form-schema.md
-        - components/api/formalize/authorization.md
-        - components/api/formalize/submission-state-workflow.md
-        - components/api/formalize/rest-api.md
-        - components/api/formalize/events.md
-      - Sublibrary Bundle:
-        - components/api/sublibrary/README.md
-        - components/api/sublibrary/config.md
-        - components/api/sublibrary/authz.md
-      - Mono Bundle:
-        - components/api/mono/README.md
-        - components/api/mono/config.md
-        - components/api/mono/cleanup.md
-        - components/api/mono/logging.md
-        - components/api/mono/misc.md
-        - CAMPUSonline Connector:
-          - components/api/mono-connector-campusonline/index.md
-          - components/api/mono-connector-campusonline/config.md
-        - PAYONE Connector:
-          - components/api/mono-connector-payone/index.md
-          - components/api/mono-connector-payone/config.md
-        - Generic Connector:
-          - components/api/mono-connector-generic/index.md
-      - Dispatch Bundle:
-        - components/api/dispatch/README.md
-        - components/api/dispatch/config.md
-        - components/api/dispatch/authz.md
-        - components/api/dispatch/database.md
-        - components/api/dispatch/cli.md
-        - components/api/dispatch/api.md
-      - Cabinet Bundle:
-        - components/api/cabinet/README.md
-        - components/api/cabinet/config.md
-        - components/api/cabinet/database.md
-        - components/api/cabinet/api.md
-        - components/api/cabinet/cli.md
-        - CAMPUSonline Connector:
-          - components/api/cabinet-connector-campusonline/README.md
-          - components/api/cabinet-connector-campusonline/config.md
-          - components/api/cabinet-connector-campusonline/cli-commands.md
-          - components/api/cabinet-connector-campusonline/co-api.md
-          - components/api/cabinet-connector-campusonline/data.md
-      - Verity Bundle:
-          - components/api/verity/overview.md
-          - components/api/verity/api.md
-          - components/api/verity/configuration.md
-          - components/api/verity/connectors.md
-          - components/api/verity/events.md
-          - VeraPDF Connector:
-            - components/api/verity-connector-verapdf/Overview.md
-            - components/api/verity-connector-verapdf/Configuration.md
-          - ClamAV Connector:
-              - components/api/verity-connector-clamav/Overview.md
-              - components/api/verity-connector-clamav/configuration.md
+      - Supporting Software:
+          - components/supporting-software/pdf-as.md
 
-    - Supporting Software:
-      - components/supporting-software/pdf-as.md
-
-    - Archived Components:
-      - Greenlight Bundle:
-        - components/api/greenlight/README.md
-        - components/api/greenlight/config.md
-        - components/api/greenlight/api.md
-        - components/api/greenlight/misc.md
-        - CAMPUSonline Connector:
-          - components/api/greenlight-connector-campusonline/README.md
-          - components/api/greenlight-connector-campusonline/config.md
-          - components/api/greenlight-connector-campusonline/events.md
-      - Authentic Documents Bundle:
-          - components/api/authentic-documents/README.md
-      - PayUnity Connector:
-        - components/api/mono-connector-payunity/index.md
-        - components/api/mono-connector-payunity/config.md
-      - Check In Bundle:
-        - components/api/checkin/README.md
+      - Archived Components:
+          - Greenlight Bundle:
+              - components/api/greenlight/README.md
+              - components/api/greenlight/config.md
+              - components/api/greenlight/api.md
+              - components/api/greenlight/misc.md
+              - CAMPUSonline Connector:
+                  - components/api/greenlight-connector-campusonline/README.md
+                  - components/api/greenlight-connector-campusonline/config.md
+                  - components/api/greenlight-connector-campusonline/events.md
+          - Authentic Documents Bundle:
+              - components/api/authentic-documents/README.md
+          - PayUnity Connector:
+              - components/api/mono-connector-payunity/index.md
+              - components/api/mono-connector-payunity/config.md
+          - Check In Bundle:
+              - components/api/checkin/README.md
 
   - Frameworks:
+      - frameworks/index.md
 
-    - frameworks/index.md
+      - Relay API Gateway:
+          - frameworks/relay/index.md
 
-    - Relay API Gateway:
-      - frameworks/relay/index.md
+          - User Guide:
+              - frameworks/relay/user/index.md
+              - frameworks/relay/user/client_credentials.md
+              - frameworks/relay/user/error_handling.md
+              - frameworks/relay/user/pagination.md
+              - frameworks/relay/user/translations.md
 
-      - User Guide:
-        - frameworks/relay/user/index.md
-        - frameworks/relay/user/client_credentials.md
-        - frameworks/relay/user/error_handling.md
-        - frameworks/relay/user/pagination.md
-        - frameworks/relay/user/translations.md
+          - Administration Guide:
+              - frameworks/relay/admin/index.md
+              - frameworks/relay/admin/extending_with_bundles.md
+              - frameworks/relay/admin/production.md
+              - frameworks/relay/admin/config.md
+              - frameworks/relay/admin/access_control.md
+              - frameworks/relay/admin/expression_language.md
+              - frameworks/relay/admin/locks.md
+              - frameworks/relay/admin/queue.md
+              - frameworks/relay/admin/cron.md
+              - frameworks/relay/admin/database.md
+              - frameworks/relay/admin/reverse_proxies.md
+              - frameworks/relay/admin/debugging.md
+              - frameworks/relay/admin/update.md
+              - frameworks/relay/admin/faq.md
 
-      - Administration Guide:
-        - frameworks/relay/admin/index.md
-        - frameworks/relay/admin/extending_with_bundles.md
-        - frameworks/relay/admin/production.md
-        - frameworks/relay/admin/config.md
-        - frameworks/relay/admin/access_control.md
-        - frameworks/relay/admin/expression_language.md
-        - frameworks/relay/admin/locks.md
-        - frameworks/relay/admin/queue.md
-        - frameworks/relay/admin/cron.md
-        - frameworks/relay/admin/database.md
-        - frameworks/relay/admin/reverse_proxies.md
-        - frameworks/relay/admin/debugging.md
-        - frameworks/relay/admin/update.md
-        - frameworks/relay/admin/faq.md
+          - Developer Guide:
+              - frameworks/relay/dev/index.md
+              - frameworks/relay/dev/getting_started.md
+              - frameworks/relay/dev/new_bundle.md
+              - frameworks/relay/dev/bundle_config.md
+              - frameworks/relay/dev/access_control.md
+              - frameworks/relay/dev/cron.md
+              - frameworks/relay/dev/errors.md
+              - frameworks/relay/dev/queue.md
+              - frameworks/relay/dev/logging.md
+              - frameworks/relay/dev/local_data.md
+              - frameworks/relay/dev/locks.md
+              - frameworks/relay/dev/api.md
+              - frameworks/relay/dev/cors_headers.md
+              - frameworks/relay/dev/cli_commands.md
+              - frameworks/relay/dev/health_checks.md
+              - frameworks/relay/dev/naming.md
+              - frameworks/relay/dev/guidelines.md
+              - frameworks/relay/dev/faq.md
+              - frameworks/relay/dev/coding_standard.md
+              - frameworks/relay/dev/ide_integration.md
+              - frameworks/relay/dev/datetime.md
+              - frameworks/relay/dev/pagination.md
+              - frameworks/relay/dev/translations.md
+              - frameworks/relay/dev/base_entities.md
+              - frameworks/relay/dev/hooks.md
+              - frameworks/relay/dev/database.md
+              - frameworks/relay/dev/sysreq_policy.md
 
-      - Developer Guide:
-        - frameworks/relay/dev/index.md
-        - frameworks/relay/dev/getting_started.md
-        - frameworks/relay/dev/new_bundle.md
-        - frameworks/relay/dev/bundle_config.md
-        - frameworks/relay/dev/access_control.md
-        - frameworks/relay/dev/cron.md
-        - frameworks/relay/dev/errors.md
-        - frameworks/relay/dev/queue.md
-        - frameworks/relay/dev/logging.md
-        - frameworks/relay/dev/local_data.md
-        - frameworks/relay/dev/locks.md
-        - frameworks/relay/dev/api.md
-        - frameworks/relay/dev/cors_headers.md
-        - frameworks/relay/dev/cli_commands.md
-        - frameworks/relay/dev/health_checks.md
-        - frameworks/relay/dev/naming.md
-        - frameworks/relay/dev/guidelines.md
-        - frameworks/relay/dev/faq.md
-        - frameworks/relay/dev/coding_standard.md
-        - frameworks/relay/dev/ide_integration.md
-        - frameworks/relay/dev/datetime.md
-        - frameworks/relay/dev/pagination.md
-        - frameworks/relay/dev/translations.md
-        - frameworks/relay/dev/base_entities.md
-        - frameworks/relay/dev/hooks.md
-        - frameworks/relay/dev/database.md
-        - frameworks/relay/dev/sysreq_policy.md
+          - HowTos:
+              - frameworks/relay/howtos/keycloak_scopes.md
+              - frameworks/relay/howtos/keycloak_audience.md
+              - frameworks/relay/howtos/service_account.md
 
-      - HowTos:
-        - frameworks/relay/howtos/keycloak_scopes.md
-        - frameworks/relay/howtos/keycloak_audience.md
-        - frameworks/relay/howtos/service_account.md
+      - Frontend Framework:
+          - frameworks/frontend/index.md
 
-    - Frontend Framework:
-      - frameworks/frontend/index.md
+          - User Guide:
+              - frameworks/frontend/user/index.md
+              - frameworks/frontend/user/fonts.md
+              - frameworks/frontend/user/styling.md
+              - frameworks/frontend/user/icons.md
+              - frameworks/frontend/user/metadata.md
+              - frameworks/frontend/user/content.md
+              - frameworks/frontend/user/translations.md
 
-      - User Guide:
-        - frameworks/frontend/user/index.md
-        - frameworks/frontend/user/fonts.md
-        - frameworks/frontend/user/styling.md
-        - frameworks/frontend/user/icons.md
-        - frameworks/frontend/user/metadata.md
-        - frameworks/frontend/user/content.md
-        - frameworks/frontend/user/translations.md
+          - Developer Guide:
+              - frameworks/frontend/dev/getting_started.md
+              - frameworks/frontend/dev/dev_tools.md
+              - frameworks/frontend/dev/accessibility.md
+              - frameworks/frontend/dev/ui_guideline.md
+              - frameworks/frontend/dev/web_components_guidelines.md
+              - frameworks/frontend/dev/browser_support.md
+              - frameworks/frontend/dev/assets.md
+              - frameworks/frontend/dev/component_metadata.md
+              - frameworks/frontend/dev/translations.md
+              - frameworks/frontend/dev/translation_overrides.md
+              - frameworks/frontend/dev/layout-switcher.md
+              - frameworks/frontend/dev/faq.md
 
-      - Developer Guide:
-        - frameworks/frontend/dev/getting_started.md
-        - frameworks/frontend/dev/dev_tools.md
-        - frameworks/frontend/dev/accessibility.md
-        - frameworks/frontend/dev/ui_guideline.md
-        - frameworks/frontend/dev/web_components_guidelines.md
-        - frameworks/frontend/dev/browser_support.md
-        - frameworks/frontend/dev/assets.md
-        - frameworks/frontend/dev/component_metadata.md
-        - frameworks/frontend/dev/translations.md
-        - frameworks/frontend/dev/translation_overrides.md
-        - frameworks/frontend/dev/layout-switcher.md
-        - frameworks/frontend/dev/faq.md
-
-      - HowTos:
-        - frameworks/frontend/howtos/remote_firefox_debugging.md
-        - frameworks/frontend/howtos/keycloak_integration.md
+          - HowTos:
+              - frameworks/frontend/howtos/remote_firefox_debugging.md
+              - frameworks/frontend/howtos/keycloak_integration.md
 
   - Corporate Design:
-    - cd/logo.md
-    - cd/naming.md
-    - cd/colors.md
-    - cd/fonts.md
-    - cd/secondary-design-elements.md
-    - cd/icons.md
-    - cd/apps.md
+      - cd/logo.md
+      - cd/naming.md
+      - cd/colors.md
+      - cd/fonts.md
+      - cd/secondary-design-elements.md
+      - cd/icons.md
+      - cd/apps.md
   - How-Tos:
-    - howtos/docker.md
+      - howtos/docker.md
 
   - demo_access.md
   - contribute.md

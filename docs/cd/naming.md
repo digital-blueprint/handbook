@@ -2,7 +2,7 @@
 
 ## digital blueprint
 
-The brand name is **digital blueprint**. This phrase must **ALWAYS** be **lowercase**. 
+The brand name is **digital blueprint**. This phrase must **ALWAYS** be **lowercase**.
 
 - E.g. for allowed uses: We are part of the **digital blueprint** project. **digital blueprint** has a great logo.
 - E.g. for not allowed used: **Digital Blueprint**, **Digital blueprint** has a perfect documentation. I like the **digital Blueprint** organisation.

@@ -10,11 +10,11 @@ docs](https://www.keycloak.org/docs/latest/server_admin/#_audience_hardcoded).
 
 Here is a short summary:
 
-* Create a "Client Scope", e.g. `api-gw-audience`
-* Disable "Include In Token Scope" and "Display On Consent Screen" (not strictly
+- Create a "Client Scope", e.g. `api-gw-audience`
+- Disable "Include In Token Scope" and "Display On Consent Screen" (not strictly
   needed, but it's not a real scope)
-* Go to "Mappers" and "Create" a new mapper
-* "Mapper Type" is "Audience", set "Included Custom Audience" to `api-gw`
+- Go to "Mappers" and "Create" a new mapper
+- "Mapper Type" is "Audience", set "Included Custom Audience" to `api-gw`
   and enable "Add to access token"
 
 By adding this client scope to a client the generated tokens will have their

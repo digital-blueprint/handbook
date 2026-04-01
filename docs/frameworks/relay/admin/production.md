@@ -49,16 +49,16 @@ php -r 'echo bin2hex(random_bytes(20))."\n";'
 
 ### On Every Deployment
 
-* `composer install --no-dev --classmap-authoritative` to install only non-dev dependencies and optimize the class loader for static sources.
+- `composer install --no-dev --classmap-authoritative` to install only non-dev dependencies and optimize the class loader for static sources.
 
-* `composer dump-env prod` to write out a `.env.local.php` file constructed from the `.env` file and the `.env.local` file. This avoids parsing the `.env` files in the future.
+- `composer dump-env prod` to write out a `.env.local.php` file constructed from the `.env` file and the `.env.local` file. This avoids parsing the `.env` files in the future.
 
-* `php bin/console cache:clear` to clear the cache and warm it up again
+- `php bin/console cache:clear` to clear the cache and warm it up again
 
-* (optional) `php bin/console dbp:relay:core:queue:restart` in case you have
-   workers running (via supervisor) they need to be stopped, so the next task
-   they execute uses the newly deployed code.
+- (optional) `php bin/console dbp:relay:core:queue:restart` in case you have
+  workers running (via supervisor) they need to be stopped, so the next task
+  they execute uses the newly deployed code.
 
-* (optional) Use [cachetool](https://github.com/gordalina/cachetool) to clear
+- (optional) Use [cachetool](https://github.com/gordalina/cachetool) to clear
   the opcache. This is required if you use php-fpm and don't restart it between
   deployments.

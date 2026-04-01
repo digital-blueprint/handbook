@@ -40,12 +40,12 @@ graph LR
 
 To get you up and running fast we provide two PHP packages that you can use as a starting point:
 
-* **The "API Server Template":** This is a Symfony App skeleton with good
+- **The "API Server Template":** This is a Symfony App skeleton with good
   default settings and integration for CI, testing, linting and so on. You can
   copy this project and use it as a starting point for your own server. →
   https://github.com/digital-blueprint/relay-server-template
 
-* **The "API Example Bundle":** It includes code for all the things a typical
+- **The "API Example Bundle":** It includes code for all the things a typical
   bundle can contain to show what is possible. You can copy this bundle and
   rename it to act as a starting point for your own REST API. →
   https://github.com/digital-blueprint/relay-example-bundle
@@ -54,15 +54,15 @@ To get you up and running fast we provide two PHP packages that you can use as a
 
 Note: This is only tested on Linux so far, but any operating system supporting docker and docker-compose should work.
 
-* docker
-* docker-compose
-* git
+- docker
+- docker-compose
+- git
 
 Optional (In case you want to work outside of docker):
 
-* php8.2+
-* php extensions, see the [Dockerfile](https://github.com/digital-blueprint/relay-server-template/blob/main/docker-dev/php-fpm/Dockerfile) for a list
-* composer 2.x
+- php8.2+
+- php extensions, see the [Dockerfile](https://github.com/digital-blueprint/relay-server-template/blob/main/docker-dev/php-fpm/Dockerfile) for a list
+- composer 2.x
 
 ## Setup API server
 
@@ -87,17 +87,17 @@ Any code changes will be immediately visible on the next request.
 
 In some cases some of the above steps need to be repeated:
 
-* `composer install` to clear caches, or to install new dependencies
-* `./build.sh` in case the Dockerfile has changed
+- `composer install` to clear caches, or to install new dependencies
+- `./build.sh` in case the Dockerfile has changed
 
 ## Next steps
 
 Now you have a working Symfony application. Some potential next steps are:
 
-* Convert your app to a git repository to easily track changes
-* Install existing feature bundles to expose new API and configure them
-* Create your own feature bundle, see [Creating a New Bundle](./new_bundle.md)
-* Deploy your application, see [Running in Production](../admin/production.md)
+- Convert your app to a git repository to easily track changes
+- Install existing feature bundles to expose new API and configure them
+- Create your own feature bundle, see [Creating a New Bundle](./new_bundle.md)
+- Deploy your application, see [Running in Production](../admin/production.md)
 
 ## Docker-Compose Extra Services
 

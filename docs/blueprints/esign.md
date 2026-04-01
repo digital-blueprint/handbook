@@ -1,13 +1,13 @@
 # ESign
 
-Digitally sign one or multiple PDF documents with a freely positioned seal. 
+Digitally sign one or multiple PDF documents with a freely positioned seal.
 
 [Visit ESign Demo](https://dbp-demo.tugraz.at/apps/esign/)
 
 The application has two modes for signing
 
-* **Advanced signatures:** The user signs on behalf of an organization, like a University, by being authorized to do so.
-* **Qualified signatures:** The users signs personally, verifying their identity during the process via a mobile phone.
+- **Advanced signatures:** The user signs on behalf of an organization, like a University, by being authorized to do so.
+- **Qualified signatures:** The users signs personally, verifying their identity during the process via a mobile phone.
 
 Signature verification is currently handled by referring to <https://www.rtr.at/TKP/was_wir_tun/vertrauensdienste/Signatur/signaturpruefung/Pruefung.de.html>
 
@@ -21,12 +21,12 @@ Signature verification is currently handled by referring to <https://www.rtr.at/
 
 - A [**Keycloak**](https://www.keycloak.org/guides) server
 - A **LAMP server** (Linux, Apache, MySQL/MariaDB, PHP>=8.2), but MySQL/MariaDB is not needed in this case
-    - The dependency manager for PHP [Composer 2](https://getcomposer.org/) also needs to be installed
-    - `git` >= 2.25 needs to be installed
-    - In case that the frontend will also be hosted on the same server, then **npm** needs to be installed too
-    - Several **PHP extensions** need to be present: `ext-ctype`, `ext-dom`, `ext-fileinfo`, `ext-filter`, `ext-json`,
-      `ext-ldap`, `ext-libxml`, `ext-mbstring`, `ext-mysql`, `ext-openssl`, `ext-pcre`, `ext-reflection`, `ext-simplexml`, `ext-soap`,
-      `ext-spl`, `ext-tokenizer`, `ext-xml`, `ext-redis`, `ext-curl`, `ext-gmp`
+  - The dependency manager for PHP [Composer 2](https://getcomposer.org/) also needs to be installed
+  - `git` >= 2.25 needs to be installed
+  - In case that the frontend will also be hosted on the same server, then **npm** needs to be installed too
+  - Several **PHP extensions** need to be present: `ext-ctype`, `ext-dom`, `ext-fileinfo`, `ext-filter`, `ext-json`,
+    `ext-ldap`, `ext-libxml`, `ext-mbstring`, `ext-mysql`, `ext-openssl`, `ext-pcre`, `ext-reflection`, `ext-simplexml`, `ext-soap`,
+    `ext-spl`, `ext-tokenizer`, `ext-xml`, `ext-redis`, `ext-curl`, `ext-gmp`
 - **Domains** (or sub-domains) along with the needed **TLS/SSL certificates** for the Relay API web server,
   the frontend web server and the Keycloak server
 
@@ -54,7 +54,7 @@ graph TB
 
 ### Frontend App
 
-You can install the frontend application with a simple command you can find on 
+You can install the frontend application with a simple command you can find on
 [ESign frontend installation](https://github.com/digital-blueprint/esign-app#using-this-app-as-pre-built-package).
 
 The frontend app currently depends on a `default` profile being configured in
@@ -68,8 +68,7 @@ If you want to customize your frontend, please have a look at the [theming and i
 You need to install and set up the Open Source Identity and Access Management [Keycloak](https://www.keycloak.org/).
 
 !!! tip
-    There is small guide about the [Keycloak Client Setup](../frameworks/frontend/howtos/keycloak_integration.md).
-
+There is small guide about the [Keycloak Client Setup](../frameworks/frontend/howtos/keycloak_integration.md).
 
 ### PDF-AS
 
@@ -128,9 +127,8 @@ This should install most of the packages you will need on your webserver (if Apa
     ```
 
 !!! warning
-    Please make sure you have installed **PHP** with at least version **8.2**, **Composer** version **2** and **Git**
-    with at least version **2.25**!
-
+Please make sure you have installed **PHP** with at least version **8.2**, **Composer** version **2** and **Git**
+with at least version **2.25**!
 
 #### Apache Webserver configuration
 
@@ -146,7 +144,7 @@ In your virtual host configuration you need to allow `.htaccess` files and set y
 Note that in this example `/[VHOST-ROOT]/relay-api` will be the path where the PHP application resides.
 
 !!! warning
-    You need to replace `/[VHOST-ROOT]` with the root path of your virtual hosts!
+You need to replace `/[VHOST-ROOT]` with the root path of your virtual hosts!
 
 ```apacheconf
 # Allow .htaccess
@@ -177,8 +175,8 @@ We will use the [DBP API Server Template](https://github.com/digital-blueprint/r
 starting point for our implementation.
 
 !!! tip
-    Keep in mind that your current user needs to have permissions to
-    create files and directories in the `/[VHOST-ROOT]` directory for this example.
+Keep in mind that your current user needs to have permissions to
+create files and directories in the `/[VHOST-ROOT]` directory for this example.
 
 ```bash
 # You need to replace "/[VHOST-ROOT]" with the root path of your virtual hosts!
@@ -188,7 +186,7 @@ cd /[VHOST-ROOT]
 
 # Install the DBP API Server Template (https://github.com/digital-blueprint/relay-server-template)
 # as base Symfony PHP application
-# The relay-api/public directory then is the directory to let the webserver point at 
+# The relay-api/public directory then is the directory to let the webserver point at
 composer create-project dbp/relay-server-template relay-api
 
 # Change to app directory
@@ -205,7 +203,7 @@ composer require dbp/relay-esign-bundle
 ```
 
 !!! tip
-    Executing `composer check-platform-reqs` shows that the required PHP extensions are installed.
+Executing `composer check-platform-reqs` shows that the required PHP extensions are installed.
 
 #### OIDC Bundle config
 

@@ -5,9 +5,9 @@ should tell the user if everything is configured or set up correctly.
 
 They should
 
-* not take too long
-* don't alter any state, be non-destructive
-* communicate to the user what is wrong if they fail
+- not take too long
+- don't alter any state, be non-destructive
+- communicate to the user what is wrong if they fail
 
 You can implement them by creating a service that implements the
 `CheckInterface` interface.

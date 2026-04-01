@@ -18,21 +18,22 @@ Symfony docs on the configuration.
 
 Here is a short summary for the common case:
 
-* Create a `config/packages/framework.yaml` if it's not already there
-* In case your API is only(!) accessible via a reverse proxy then you can just
+- Create a `config/packages/framework.yaml` if it's not already there
+- In case your API is only(!) accessible via a reverse proxy then you can just
   mark any connecting "client" as trusted:
   ```yaml
   framework:
-      trusted_proxies: 'REMOTE_ADDR'
+    trusted_proxies: "REMOTE_ADDR"
   ```
-* Configure the headers managed by your reverse proxy, one ore more of
+- Configure the headers managed by your reverse proxy, one ore more of
   `['x-forwarded-for', 'x-forwarded-port', 'x-forwarded-proto',
-  'x-forwarded-host', 'x-forwarded-prefix']`. Make sure none(!) of them are user
+'x-forwarded-host', 'x-forwarded-prefix']`. Make sure none(!) of them are user
   controlled and that they are properly handled by your reverse proxy, usually
   the following set is enough:
   ```yaml
   framework:
-      trusted_headers: ['x-forwarded-for', 'x-forwarded-port', 'x-forwarded-proto']
+    trusted_headers:
+      ["x-forwarded-for", "x-forwarded-port", "x-forwarded-proto"]
   ```
 
 To make sure that everything is working, you can visit the API website, and

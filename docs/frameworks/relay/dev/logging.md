@@ -9,8 +9,8 @@ See https://symfony.com/doc/current/logging.html#logging-a-message for details.
 
 By default the core bundle injects a global logging processor that:
 
-* Adds various helpful context to each logging record, like the session id, the request id, the route etc.
-* Masks certain values that should not end up in the logs, like the currently logged in user.
+- Adds various helpful context to each logging record, like the session id, the request id, the route etc.
+- Masks certain values that should not end up in the logs, like the currently logged in user.
 
 ## Registering a new Logging Channel
 
@@ -38,13 +38,13 @@ method, or the constructor for example:
 ```yaml
 MyNamespace\MyService:
   tags:
-    - { name: monolog.logger, channel: 'mychannel' }
+    - { name: monolog.logger, channel: "mychannel" }
 
 MyNamespace\MyOtherService:
   calls:
-    - setAuditLogger: ['@monolog.logger.mychannel']
+    - setAuditLogger: ["@monolog.logger.mychannel"]
 
 MyNamespace\AnotherService:
   arguments:
-    $auditLogger: '@monolog.logger.mychannel'
+    $auditLogger: "@monolog.logger.mychannel"
 ```

@@ -64,8 +64,8 @@ function _urlescape() {
 
 To help with converting values to the right format, here are some Javascript helpers for
 
-* converting any text to a quoted value suitable for a `.env` file: <a href="#" onclick="event.preventDefault(); _quote();">Quote Text</a>
-* converting any text to a value suitable for including it in an URL: <a href="#" onclick="event.preventDefault(); _urlescape();">URL Escape</a>
+- converting any text to a quoted value suitable for a `.env` file: <a href="#" onclick="event.preventDefault(); _quote();">Quote Text</a>
+- converting any text to a value suitable for including it in an URL: <a href="#" onclick="event.preventDefault(); _urlescape();">URL Escape</a>
 
 For more info on the syntax see [.env File Syntax](https://symfony.com/doc/current/configuration.html#env-file-syntax)
 
@@ -78,12 +78,12 @@ For example the `dbp_relay_core.yaml`:
 
 ```yaml
 dbp_relay_core:
-  build_info: '%env(CORE_API_BUILDINFO)%'
-  build_info_url: '%env(CORE_API_BUILDINFO_URL)%'
-  docs_title: 'API Gateway'
-  docs_description: '*powered by the Relay API gateway - part of the [Digital Blueprint](https://github.com/digital-blueprint) project*'
-  queue_dsn: 'doctrine://queue_connection'
-  lock_dsn: '%env(CORE_LOCK_DSN)%'
+  build_info: "%env(CORE_API_BUILDINFO)%"
+  build_info_url: "%env(CORE_API_BUILDINFO_URL)%"
+  docs_title: "API Gateway"
+  docs_description: "*powered by the Relay API gateway - part of the [Digital Blueprint](https://github.com/digital-blueprint) project*"
+  queue_dsn: "doctrine://queue_connection"
+  lock_dsn: "%env(CORE_LOCK_DSN)%"
 ```
 
 You can either change the config in there directly or reference environment
@@ -102,19 +102,19 @@ Created via `./bin/console config:dump-reference DbpRelayCoreBundle | sed '/^$/d
 ```yaml
 # Default configuration for "DbpRelayCoreBundle"
 dbp_relay_core:
-    # Some string identifying the current build (commit hash)
-    build_info:           ~ # Example: deadbeef
-    # Some URL identifying the current build (URL to the commit on some git web interface)
-    build_info_url:       ~ # Example: 'https://gitlab.example.com/project/-/commit/deadbeef'
-    # Path to the logo (256x256) of the API frontend
-    logo_path:            ~ # Example: 'bundles/dbprelaycore/logo.png'
-    # The title text of the API docs page
-    docs_title:           'Relay API Gateway'
-    # The description text of the API docs page (supports markdown)
-    docs_description:     '*part of the [Digital Blueprint](https://github.com/digital-blueprint) project*'
-    messenger_transport_dsn: '' # Deprecated (Since dbp/relay-core-bundle 0.1.20: Use "queue_dsn" instead.)
-    # See https://symfony.com/doc/5.3/messenger.html#redis-transport
-    queue_dsn:            '' # Example: 'redis://localhost:6379'
-    # https://symfony.com/doc/5.3/components/lock.html
-    lock_dsn:             '' # Example: 'redis://redis:6379'
+  # Some string identifying the current build (commit hash)
+  build_info: ~ # Example: deadbeef
+  # Some URL identifying the current build (URL to the commit on some git web interface)
+  build_info_url: ~ # Example: 'https://gitlab.example.com/project/-/commit/deadbeef'
+  # Path to the logo (256x256) of the API frontend
+  logo_path: ~ # Example: 'bundles/dbprelaycore/logo.png'
+  # The title text of the API docs page
+  docs_title: "Relay API Gateway"
+  # The description text of the API docs page (supports markdown)
+  docs_description: "*part of the [Digital Blueprint](https://github.com/digital-blueprint) project*"
+  messenger_transport_dsn: "" # Deprecated (Since dbp/relay-core-bundle 0.1.20: Use "queue_dsn" instead.)
+  # See https://symfony.com/doc/5.3/messenger.html#redis-transport
+  queue_dsn: "" # Example: 'redis://localhost:6379'
+  # https://symfony.com/doc/5.3/components/lock.html
+  lock_dsn: "" # Example: 'redis://redis:6379'
 ```

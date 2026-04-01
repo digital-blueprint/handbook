@@ -1,7 +1,7 @@
 # Check-in
 
 !!! warning
-    This blueprint is **no longer maintained** and is kept here for historical purposes only.
+This blueprint is **no longer maintained** and is kept here for historical purposes only.
 
 Handles check-ins to places and contact tracing for warning about COVID-19 cases.
 
@@ -27,7 +27,7 @@ Handles check-ins to places and contact tracing for warning about COVID-19 cases
     `ext-spl`, `ext-tokenizer`, `ext-xml`, `ext-mysql`, `ext-curl`, `ext-gmp`
 - **Domains** (or sub-domains) along with the needed **TLS/SSL certificates** for the Relay API web server,
   the frontend web server, the CampusQR server and the Keycloak server
--  A reverse proxy with ssl-termination for CampusQR
+- A reverse proxy with ssl-termination for CampusQR
 - **Java** JVM >= 11 (LTS)
 
 ## Installation
@@ -72,8 +72,7 @@ You need to install and set up the Open Source Identity and Access Management [K
 which needs to import (sync) your LDAP users.
 
 !!! tip
-    There is small guide about the [Keycloak Client Setup](../frameworks/frontend/howtos/keycloak_integration.md).
-
+There is small guide about the [Keycloak Client Setup](../frameworks/frontend/howtos/keycloak_integration.md).
 
 In addition to the `dbp-frontend` default client scope Check-in also needs a second default client scope called `location-check-in`, where `Include in Token Scope` is enabled and no additional mappers or scopes are set.
 
@@ -82,31 +81,30 @@ In addition to the `dbp-frontend` default client scope Check-in also needs a sec
 You need to install and set up the open source document database system [MongoDB](https://www.mongodb.com/),
 that is used by CampusQR as backend.
 
-* Install MongoDB: <https://docs.mongodb.com/manual/administration/install-on-linux/>
-* Add an admin account: <https://docs.mongodb.com/manual/tutorial/configure-scram-client-authentication/>
+- Install MongoDB: <https://docs.mongodb.com/manual/administration/install-on-linux/>
+- Add an admin account: <https://docs.mongodb.com/manual/tutorial/configure-scram-client-authentication/>
 
 If your database is on a separate server, you will additionally need to install at least a mongodb client on the server that is running CampusQR to enable CampusQR to configure the database.
 
 !!! tip
-    If you dont want to add an admin account, an normal user with the `readWrite` role _should_ work too. Guides on how to [manage users](https://www.mongodb.com/docs/manual/tutorial/manage-users-and-roles/), on [MongoDB privileges](https://www.mongodb.com/docs/manual/reference/privilege-actions/) and [built-in roles](https://www.mongodb.com/docs/manual/reference/built-in-roles/) are linked respectively. However, this was not tested exhaustively and thus may lead to unexpected problems.
+If you dont want to add an admin account, an normal user with the `readWrite` role _should_ work too. Guides on how to [manage users](https://www.mongodb.com/docs/manual/tutorial/manage-users-and-roles/), on [MongoDB privileges](https://www.mongodb.com/docs/manual/reference/privilege-actions/) and [built-in roles](https://www.mongodb.com/docs/manual/reference/built-in-roles/) are linked respectively. However, this was not tested exhaustively and thus may lead to unexpected problems.
 
 ### CampusQR
 
 You need to install and set up the **digital blueprint** fork of [CampusQR](https://github.com/digital-blueprint/campus-qr),
 the open source system for contact tracing at universities.
 
-* Download the latest [build artifact](https://gitlab.tugraz.at/dbp/check-in/campus-qr/-/jobs/artifacts/fork-v3/download?job=build)
-* Copy `env.example.sh` to `env.sh` and fill it out
-* The `CAMPUSQR_API_TOKEN` can be generated using `php -r 'echo bin2hex(random_bytes(20))."\n";'`
-* The specified `CAMPUSQR_API_TOKEN` is the secret used for accessing the
+- Download the latest [build artifact](https://gitlab.tugraz.at/dbp/check-in/campus-qr/-/jobs/artifacts/fork-v3/download?job=build)
+- Copy `env.example.sh` to `env.sh` and fill it out
+- The `CAMPUSQR_API_TOKEN` can be generated using `php -r 'echo bin2hex(random_bytes(20))."\n";'`
+- The specified `CAMPUSQR_API_TOKEN` is the secret used for accessing the
   CampusQR via an API and will be used later on when configuring the PHP
   backend.
-* Run `./run.sh` to start the service.
-* Consider managing it via systemd or supervisor.
+- Run `./run.sh` to start the service.
+- Consider managing it via systemd or supervisor.
 
 !!! tip
-    To increase security make sure that the CampusQR server is only accessible in your internal network. CampusQR and its endpoints do not need to be accessible for everyone.
-
+To increase security make sure that the CampusQR server is only accessible in your internal network. CampusQR and its endpoints do not need to be accessible for everyone.
 
 For supervisor you can use the following example config:
 
@@ -134,8 +132,7 @@ You need to [create a database](https://mariadb.com/kb/en/create-database/), [cr
 This is a guide on how to set up the Relay API for Check-in.
 
 !!! tip
-    You can find an example implementation on [relay-checkin-api](https://gitlab.tugraz.at/dbp/relay/examples/relay-checkin-api).
-
+You can find an example implementation on [relay-checkin-api](https://gitlab.tugraz.at/dbp/relay/examples/relay-checkin-api).
 
 #### Screenshot
 
@@ -191,7 +188,6 @@ This should install most of the packages you will need on your webserver (if Apa
     Please make sure you have installed **PHP** with at least version **8.2**, **Composer** version **2** and **Git**
     with at least version **2.25**!
 
-
 #### Apache Webserver configuration
 
 First you need to enable the Apache Rewrite and Headers modules so all requests can be redirected to the `index.php` with modified headers.
@@ -208,8 +204,7 @@ In your virtual host configuration you need to allow `.htaccess` files and set y
 Note that in this example `/[VHOST-ROOT]/relay-api` will be the path where the PHP application resides.
 
 !!! warning
-    You need to replace `/[VHOST-ROOT]` with the root path of your virtual hosts!
-
+You need to replace `/[VHOST-ROOT]` with the root path of your virtual hosts!
 
 ```apacheconf
 # Allow .htaccess
@@ -240,9 +235,8 @@ We will use the [DBP API Server Template](https://github.com/digital-blueprint/r
 starting point for our implementation.
 
 !!! tip
-    Keep in mind that your current user needs to have permissions to
-    create files and directories in the `/[VHOST-ROOT]` directory for this example.
-
+Keep in mind that your current user needs to have permissions to
+create files and directories in the `/[VHOST-ROOT]` directory for this example.
 
 ```bash
 # You need to replace "/[VHOST-ROOT]" with the root path of your virtual hosts!
@@ -278,8 +272,7 @@ composer require dbp/relay-checkin-bundle
 ```
 
 !!! tip
-    Executing `composer check-platform-reqs` shows that the required PHP extensions are installed.
-
+Executing `composer check-platform-reqs` shows that the required PHP extensions are installed.
 
 #### Core bundle config
 
@@ -294,13 +287,12 @@ You need to have a system in place to run the [message queue workers](../framewo
 Symfony recommends to use [Supervisor](http://supervisord.org/) to do this. You can use the [example configuration](../frameworks/relay/admin/queue.md#manage-workers-with-supervisor) to help you with the setup process.
 
 !!! warning
-    Keep in mind that you need to **restart** the message queue **workers** when you
-    **deploy** Relay API **updates** to your server, so changes to the messaging
-    system can be picked up.
+Keep in mind that you need to **restart** the message queue **workers** when you
+**deploy** Relay API **updates** to your server, so changes to the messaging
+system can be picked up.
 
     You can just stop the workers with `php bin/console
     dbp:relay:core:queue:restart`, then Supervisor will start them again.
-
 
 #### OIDC Bundle config
 
@@ -318,8 +310,8 @@ CAMPUS_QR_URL=https://campusqr.domain
 CAMPUS_QR_TOKEN=
 ```
 
-* `CAMPUS_QR_URL` is the URL where the CampusQR backend is reachable
-* `CAMPUS_QR_TOKEN` is the API secret you have previously specified when setting up CampusQR (`CAMPUSQR_API_TOKEN` in `env.sh`)
+- `CAMPUS_QR_URL` is the URL where the CampusQR backend is reachable
+- `CAMPUS_QR_TOKEN` is the API secret you have previously specified when setting up CampusQR (`CAMPUSQR_API_TOKEN` in `env.sh`)
 
 Best put the `CAMPUS_QR_TOKEN` into an `.env.local` to avoid it being commited to the git repository.
 
@@ -328,13 +320,12 @@ Best put the `CAMPUS_QR_TOKEN` into an `.env.local` to avoid it being commited t
 You need to implement a service for `PersonProviderInterface` from [Base Person Bundle](https://github.com/digital-blueprint/relay-base-person-bundle).
 
 !!! tip
-    If you are using **LDAP** as your source for identity management, you can install the
-    [BasePerson Connector Bundle for LDAP](https://github.com/digital-blueprint/relay-base-person-connector-ldap-bundle),
-    which allows you to connect the [Base Person Bundle](../components/api/base-person/README.md) to your LDAP server.
+If you are using **LDAP** as your source for identity management, you can install the
+[BasePerson Connector Bundle for LDAP](https://github.com/digital-blueprint/relay-base-person-connector-ldap-bundle),
+which allows you to connect the [Base Person Bundle](../components/api/base-person/README.md) to your LDAP server.
 
     There is a guide at [BasePerson Connector Bundle for LDAP](../components/api/base-person-connector-ldap/config.md),
     that walks you through the steps to set up the LDAP connector.
-
 
 Afterwards best do a `composer install` to make sure caches are cleared and everything is in order.
 
@@ -375,14 +366,14 @@ If everything is working it should print something like:
 ```
 
 #### Debugging
+
 You can find an detailed guide on debugging in the [Handbook](../frameworks/relay/admin/debugging.md).
 
 !!! tip
-    Many unspecific or hard to debug errors can be dealt with by clearing the Symfony cache using `./bin/console cache:clear`.
+Many unspecific or hard to debug errors can be dealt with by clearing the Symfony cache using `./bin/console cache:clear`.
 
 !!! warning
-    Never run Symfony in debug mode in production! Debug mode allows clients to freely access all configuration, including all secrets. Never enable it on a publicly accessible server!
-
+Never run Symfony in debug mode in production! Debug mode allows clients to freely access all configuration, including all secrets. Never enable it on a publicly accessible server!
 
 #### Running in Production
 
@@ -390,6 +381,7 @@ When you are done with setting things up please visit [Running in Production](..
 to learn how to run the Relay API in production.
 
 #### Backups
+
 After everything is up and running, you should consider to regularily create backups of your MongoDB and MySQL/MariaDB databases.
 In case of data loss, these backups can be used to restore the databases easily.
 `mysqldump` and `mongodump` are two programs which are widely used for backups.
@@ -397,14 +389,14 @@ Some resources are given here, but note that backups heavily depend on your spec
 
 `mysqldump`:
 
-* <https://mariadb.com/kb/en/making-backups-with-mysqldump/>
-* <https://medium.com/@ClusterEngine/performing-backup-of-a-live-mysql-database-using-mysqldump-4bc159cb75b7>
-* <https://mariadb.com/kb/en/backup-and-restore-overview/>
+- <https://mariadb.com/kb/en/making-backups-with-mysqldump/>
+- <https://medium.com/@ClusterEngine/performing-backup-of-a-live-mysql-database-using-mysqldump-4bc159cb75b7>
+- <https://mariadb.com/kb/en/backup-and-restore-overview/>
 
 `mongodump`:
 
-* <https://www.mongodb.com/docs/manual/tutorial/backup-and-restore-tools/>
-* <https://medium.com/@eboye/mongodb-auto-backup-via-cronjob-737e096c8470>
+- <https://www.mongodb.com/docs/manual/tutorial/backup-and-restore-tools/>
+- <https://medium.com/@eboye/mongodb-auto-backup-via-cronjob-737e096c8470>
 
 It is recommended to create backups frequently, e.g. every day.
 However, the frequency of the backups and how long backups are stored before deleting them depends heavily your privacy policy.

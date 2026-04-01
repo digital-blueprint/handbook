@@ -2,18 +2,18 @@
 
 Recommendations:
 
-* Persist datetimes as UTC, either with timezone, or without and assume UTC when storing/reading it back.
-* Behavior should be independent of the server timezone. For example the API responses should always be UTC.
-* When taking datetimes from external systems always ensure that it has a timezone (either fail when it is missing, make the timezone configurable, or set a fixed timezone if it is documented)
-* Use `DateTimeImmutable` and `DateTimeInterface` over `DateTime`. All operations on `DateTimeImmutable` create a new instance, which makes mutating objects you don't own impossible.
-* Never change the global timezone with `date_default_timezone_set()` except in the very early bootstrap phase of the application and only in code that is always executed.
+- Persist datetimes as UTC, either with timezone, or without and assume UTC when storing/reading it back.
+- Behavior should be independent of the server timezone. For example the API responses should always be UTC.
+- When taking datetimes from external systems always ensure that it has a timezone (either fail when it is missing, make the timezone configurable, or set a fixed timezone if it is documented)
+- Use `DateTimeImmutable` and `DateTimeInterface` over `DateTime`. All operations on `DateTimeImmutable` create a new instance, which makes mutating objects you don't own impossible.
+- Never change the global timezone with `date_default_timezone_set()` except in the very early bootstrap phase of the application and only in code that is always executed.
 
 Open Questions:
 
-* How to handle date times passed from the API clients?
-  * Timezone missing? Assume one or fail?
-  * Incomplete datetime?
-  * Which formats are supported?
+- How to handle date times passed from the API clients?
+  - Timezone missing? Assume one or fail?
+  - Incomplete datetime?
+  - Which formats are supported?
 
 ## Datetime Handling in the API
 
@@ -38,8 +38,8 @@ class Foo {
 The normalizer enforces UTC and strict ISO 8601 with an explicit timezone on
 both input and output:
 
-* **Normalization** always outputs millisecond precision in UTC, e.g. `2024-01-01T12:00:00.000Z`.
-* **Denormalization** accepts ISO 8601 strings with an explicit timezone (`Z` or
+- **Normalization** always outputs millisecond precision in UTC, e.g. `2024-01-01T12:00:00.000Z`.
+- **Denormalization** accepts ISO 8601 strings with an explicit timezone (`Z` or
   `+HH:MM`), with either millisecond or microsecond precision. The parsed value
   is always converted to UTC. Strings without an explicit timezone are rejected.
 
