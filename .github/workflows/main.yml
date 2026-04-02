@@ -22,7 +22,7 @@ jobs:
 
       - name: Install uv
         run: |
-          python3 -m pip install --upgrade uv==0.9.5
+          python3 -m pip install --upgrade uv==0.11.3
 
       - name: Build
         run: |
