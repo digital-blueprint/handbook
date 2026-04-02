@@ -609,10 +609,6 @@ In responsive layouts, the side menu (e.g., the Cabinet filter panel) slides in 
 
 The spinning icon used to indicate loading processes is classified as an animation element. It provides continuous visual feedback during wait times.
 
-### Filter Interaction Animation
-
-In the Cabinet app, when the user selects "Clear filters" from the Reset Filter Option, a spinning icon appears and the link text becomes underlined. This provides visual feedback that the reset action is being processed and confirms that the element is interactive.
-
 ## Colors
 
 DBP apps define colors exclusively via CSS custom properties (CSS variables).
