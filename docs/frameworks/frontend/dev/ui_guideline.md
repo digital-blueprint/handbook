@@ -653,7 +653,7 @@ Heading levels must not be skipped.
 
 ### Typography Size Table
 
-| Element | px    | rem/em | Verwendung                                                                       |
+| Element | px    | rem/em | Usage                                                                            |
 | ------- | ----- | ------ | -------------------------------------------------------------------------------- |
 | H1      | 32    | 2      | Site title only                                                                  |
 | H2      | 24    | 1.5    | Activity names, major section titles, modal titles, hitbox titles                |
