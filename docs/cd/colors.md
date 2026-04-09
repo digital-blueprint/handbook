@@ -60,7 +60,7 @@
 ### Dark Mode
 
 | Name                           | Variable                                        | Color                                                                                                                                                                     |
-| ------------------------------ | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ----------------- |
+| ------------------------------ | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Background                     | `--dbp-override-background`                     | <div style="width: 10px; height: 10px; background: #222120;border: 1px solid black;display: inline-block;margin-right: 10px;"></div> \| `#222120` \| `rgb(34, 33, 32)`    |
 | Content                        | `--dbp-override-content`                        | <div style="width: 10px; height: 10px; background: white;border: 1px solid black;display: inline-block;margin-right: 10px;"></div> \| `#ffffff` \| `rgb(255, 255, 255)`   |
 | Content surface                | `--dbp-override-content-surface`                | `--dbp-override-content`                                                                                                                                                  |
