@@ -631,7 +631,7 @@ enables components to use variables internally without the `override` prefix.
 
 For reference on CSS custom properties, see [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties){:target="\_blank"}.
 
-## Font
+## Heading Hierarchy
 
 The DBP app uses a defined typographic hierarchy. Each heading level has a specific purpose and must be used accordingly. The following rules apply:
 Use semantic HTML elements (`<h1>` through `<h6>` and `<p>`) for correct document structure and [Accessibility](./accessibility.md#fontsize).
@@ -671,9 +671,9 @@ See [[Fig.16]](#fig16) (Data Tables). Semi-bold must also be applied whenever co
 is needed, for example for labeled data in lists in Cabinet App[[Fig.33]](#fig33).
 
 <figure id="fig33" style="width:100%;">
-    <img src="../../assets/ui_images/cabinet_person-modal-list.svg" alt="" style="width:100%; border: 1px solid black;">
+    <img src="../../assets/ui_images/cabinet_person-modal-list.svg" alt="Example of highlighting text header in bold font compared to data" style="width:100%; border: 1px solid black;">
     <figcaption>
-        <b>Fig. 33: </b>
+        <b>Fig. 33: Example of highlighting text header in bold font compared to data</b>
     </figcaption>
 </figure>
 
