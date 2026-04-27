@@ -219,9 +219,6 @@ The document view will display the calculated retention period according to the 
 
 The filter options _Only documents to delete_ and _Only documents to archive_ display all documents that have reached the retention date. This makes it easier to find and select documents that require these specific actions, which can then be conducted using the mutli-selection and multi-actions functionalities.
 
-### How deletion works
-...
-
 
 ### Why not everything is translated to English
 Person data values are stored in CAMPUSonline and only transferred into _cabinet_ in German. Another exception for the translation is manually entered (i.e., user-defined) text string data values. Values that get selected from dropdowns are usually mapped to the respective German and English translations.
