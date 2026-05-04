@@ -27,7 +27,7 @@ The App Shell renders first, providing immediate visual feedback while activity 
 
 The App Shell supports theming via CSS custom properties (CSS variables). All App Shell components use the same variables as the rest of the application to ensure visual consistency.
 
-- A mode toggle <img src="../../assets/ui_images/contrast.svg" alt="Main navigation" style="width:20px;"> in the main navigation is provided for theming
+- A mode toggle <img src="../../frontend/assets/ui_images/contrast.svg" alt="Main navigation" style="width:20px;"> in the main navigation is provided for theming
 - Custom themes are implemented by overriding the CSS variables. See the [theming documentation](../user/styling.md#color-system) for a full list of available variables.
 
 ## Navigation
@@ -35,7 +35,7 @@ The App Shell supports theming via CSS custom properties (CSS variables). All Ap
 ### Top Navigation
 
 <figure id="fig1" style="margin:0;">
-    <img src="../../assets/ui_images/top-nav-bar.svg" alt="Top navigation bar" style="width:100%; border: 1px solid black;">
+    <img src="../../frontend/assets/ui_images/top-nav-bar.svg" alt="Top navigation bar" style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Fig. 1: Top navigation bar</b>
     </figcaption>
@@ -52,7 +52,7 @@ The top navigation [[Fig. 1]](#fig1) is placed in the slot "header" `<header>`. 
 ### Side Menu
 
 <figure id="fig2" style="margin:0; ">
-    <img src="../../assets/ui_images/aside-menu.svg" alt="Listed activities in sidemenu" style="width:50%; border: 1px solid black; margin:0;">
+    <img src="../../frontend/assets/ui_images/aside-menu.svg" alt="Listed activities in sidemenu" style="width:50%; border: 1px solid black; margin:0;">
     <figcaption>
         <b>Fig. 2: Listed activities in sidemenu</b>
     </figcaption>
@@ -71,7 +71,7 @@ The following breakpoints govern responsive navigation behavior:
 - At 490 px and below, the contrast switcher and language switcher move inside the dropdown to free space for the login name in the center [Fig. 3](#fig3).
 
 <figure id="fig3" style="margin:0; ">
-    <img src="../../assets/ui_images/top-navigation-mobile.png" alt="Top navigation on mobile" style="width:50%; border: 1px solid black; margin:0;">
+    <img src="../../frontend/assets/ui_images/top-navigation-mobile.png" alt="Top navigation on mobile" style="width:50%; border: 1px solid black; margin:0;">
     <figcaption style=" text-align: left;">
         <b>Fig. 3: Responsive navigation: side menu as top dropdown with contrast and language controls moved inside</b>
     </figcaption>
@@ -90,14 +90,14 @@ Every activity [[Fig. 4]](#fig4)[[Fig. 5]](#fig5) must follow this fixed structu
 4. Activity content
 
 <figure id="fig4" style="">
-    <img src="../../assets/ui_images/dbp-app-structure_desktop.svg" alt="Standard activity layout (desktop)" style="width:100%; border: 1px solid black;">
+    <img src="../../frontend/assets/ui_images/dbp-app-structure_desktop.svg" alt="Standard activity layout (desktop)" style="width:100%; border: 1px solid black;">
     <figcaption style=" text-align: center;">
         <b>Fig. 4: Standard activity layout (desktop)</b>
     </figcaption>
 </figure>
 
 <figure id="fig5" style="margin:0; text-align:left;">
-    <img src="../../assets/ui_images/dbp-app-structure_mobile.svg" alt="Standard activity layout (mobile)" style="width:55%; border: 1px solid black; margin: 0;">
+    <img src="../../frontend/assets/ui_images/dbp-app-structure_mobile.svg" alt="Standard activity layout (mobile)" style="width:55%; border: 1px solid black; margin: 0;">
       <figcaption style=" text-align: left;">
         <b>Fig. 5: Standard activity layout (mobile)</b>
     </figcaption>
@@ -126,7 +126,7 @@ The DBP app supports two layout types, Standard Layout and Wide Layout, that the
 ### Layout Types
 
 The DBP app supports two different layout types (Standard layout/ wide layout) that users can switch between opening the menu
-<img src="../../assets/ui_images/menu-toggle.svg" alt="Menu button for opening the menu and switching layouts" style="width:6%; border: 1px solid black; margin: 0;">
+<img src="../../frontend/assets/ui_images/menu-toggle.svg" alt="Menu button for opening the menu and switching layouts" style="width:6%; border: 1px solid black; margin: 0;">
 in the main navigation. The menu is opened per default. If the user closes it, or if the viewport width drops below 1100px, the layout automatically switches to the wide layout across all apps.
 
 The app shell stores the selected preference in local storage, ensuring it remains consistent when the browser is reopened.
@@ -139,7 +139,7 @@ The app shell stores the selected preference in local storage, ensuring it remai
 - Optimized for navigation-heavy workflows where frequent access to the side menu is required.
 
 <figure id="fig6" style="width:100%;">
-    <img src="../../assets/ui_images/template_desktop_standard.svg" alt="Standard layout desktop visualization" style="width:100%; border: 1px solid black; margin: auto;">
+    <img src="../../frontend/assets/ui_images/template_desktop_standard.svg" alt="Standard layout desktop visualization" style="width:100%; border: 1px solid black; margin: auto;">
     <figcaption>
         <b>Fig. 6: Standard layout desktop visualization.</b>
     </figcaption>
@@ -153,7 +153,7 @@ The main content area `<main>` spans the full width below the `<aside>` navigati
 Optimized for content-heavy workflows requiring maximum screen space, such as the Cabinet filter view, or for use on small laptop screens.
 
 <figure id="fig7" style="width:100%;">
-    <img src="../../assets/ui_images/template_desktop_wide.svg" alt="Wide layout desktop visualization" style="width:100%; border: 1px solid black; margin: auto;">
+    <img src="../../frontend/assets/ui_images/template_desktop_wide.svg" alt="Wide layout desktop visualization" style="width:100%; border: 1px solid black; margin: auto;">
     <figcaption>
         <b>Fig. 7: Wide layout visualization</b>
     </figcaption>
@@ -197,14 +197,14 @@ Decorative icons are not interactive and are therefore optional. If used, they m
 
 The correct icon for a button is determined by the verb in the button label. For example, a button labeled "Edit mode" uses a pencil icon because the verb is "edit." Once an icon has been assigned to a verb, that icon must be used consistently for the same verb across all apps.
 
-<img src="../../assets/ui_images/dbp_ui_edit-mode.svg" alt="Button for edit mode" style=""> 
+<img src="../../frontend/assets/ui_images/dbp_ui_edit-mode.svg" alt="Button for edit mode" style=""> 
 <figcaption style=" text-align: left; margin:0;">
         <b>Correct: pencil icon assigned to the verb "edit."</b>
 </figcaption>
 
 If two buttons with the same icon would appear near each other, a new, distinct icon must be selected for one of them to avoid ambiguity.
 
-<img src="../../assets/ui_images/dbp_ui_edit-permission.svg" alt="Button for edit permission" style=""> 
+<img src="../../frontend/assets/ui_images/dbp_ui_edit-permission.svg" alt="Button for edit permission" style=""> 
 <figcaption style=" text-align: left; margin:0;">
         <b>Example: "Edit permission" uses a modified pencil icon to distinguish it from the standard "Edit" action.
 </b>
@@ -229,14 +229,14 @@ Inside buttons, icons are 22 x 22 px. When icons appear without a surrounding bu
 - The icon itself must be between 22 x 22 px and 24 x 24 px, depending on the legibility of the symbol.
 
 <figure id="fig8" style="margin:0; text-align:left;">
-    <img src="../../assets/ui_images/icon40x40.png" alt="Touch target size: 40 x 40 px container with icon inside" style="width:55%; border: 1px solid black; margin: 0;">
+    <img src="../../frontend/assets/ui_images/icon40x40.png" alt="Touch target size: 40 x 40 px container with icon inside" style="width:55%; border: 1px solid black; margin: 0;">
       <figcaption style=" text-align: left;">
         <b>Fig. 8: Touch target size: 40 x 40 px container with icon inside</b>
     </figcaption>
 </figure>
 
 <figure id="fig9" style="margin:0; text-align:left;">
-    <img src="../../assets/ui_images/icon20x20.png" alt="Icon size inside the touch target: 24 x 24 px" style="width:55%; border: 1px solid black; margin: 0;">
+    <img src="../../frontend/assets/ui_images/icon20x20.png" alt="Icon size inside the touch target: 24 x 24 px" style="width:55%; border: 1px solid black; margin: 0;">
       <figcaption style=" text-align: left;">
         <b>Fig. 9: Icon size inside the touch target: 24 x 24 px</b>
     </figcaption>
@@ -257,7 +257,7 @@ Button groups may consist of buttons and text elements. Text elements within a b
 When multiple buttons are present, they are distributed evenly across the full width of the section. Buttons with related functions may be combined into a logical group (a single `<div>`). That grouped element is then distributed evenly together with any standalone buttons. [[Fig.10]](#fig10)
 
 <figure id="fig10" style="width:100%;">
-    <img src="../../assets/ui_images/buttongroup_desktop.svg" alt="Buttongroups" style="width:100%; border: 1px solid black;">
+    <img src="../../frontend/assets/ui_images/buttongroup_desktop.svg" alt="Buttongroups" style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Fig. 10: Buttongroups</b>
     </figcaption>
@@ -269,7 +269,7 @@ CSS classes: `"button` and ` is-primary"`. The primary button always marks the n
 call-to-action in the UI flow. In a Click-through flow, the primary button is placed at the far right. [[Fig. 23]](#fig23)
 
 <figure id="fig11" style=" margin:0;">
-    <img src="../../assets/ui_images/dbp_ui_primary.svg" alt="Primary button">
+    <img src="../../frontend/assets/ui_images/dbp_ui_primary.svg" alt="Primary button">
     <figcaption style="text-align: left">
         <b>Fig. 11: Primary button</b>
     </figcaption>
@@ -281,7 +281,7 @@ CSS classes: `button` and `is-secondary`.
 The secondary button is used for all actions that are not required for the main process flow. [[Fig. 10]](#fig10)
 
 <figure id="fig12" style=" margin:0;">
-    <img src="../../assets/ui_images/dbp_ui_secondary.svg" alt="Secondary button">
+    <img src="../../frontend/assets/ui_images/dbp_ui_secondary.svg" alt="Secondary button">
     <figcaption style="text-align: left">
         <b>Fig. 12: Secondary button</b>
     </figcaption>
@@ -293,7 +293,7 @@ CSS classes: `button` and `is-tertiary"`.
 The tertiary button is used for reset or clear actions (e.g., clearing search fields or filters) [[Fig. 13]](#fig13)
 
 <figure id="fig13" style=" margin:0;">
-    <img src="../../assets/ui_images/tertiary-btn.svg" alt="Tertiary button">
+    <img src="../../frontend/assets/ui_images/tertiary-btn.svg" alt="Tertiary button">
     <figcaption style="text-align: left">
         <b>Fig. 13: Tertiary button</b>
     </figcaption>
@@ -321,14 +321,14 @@ In case of a data table [[Fig. 16]](#fig16), the left and right columns are froz
 Tables with fixed content [[Fig. 14]](#fig14) are used when the number and relative weight of columns is known in advance. Because column weights are defined, specific columns can be collapsed on smaller devices [[Fig. 15]](#fig15). Collapsed columns can be expanded again by the user. The collapse/expand control is a chevron icon placed in the first column of the affected row [[Fig. 14]](#fig14).
 
 <figure id="fig14" style="width:100%;">
-    <img src="../../assets/ui_images/fixed-tables_desktop.svg" alt="Table with fix and selectable content (desktop)" style="width:100%; border: 1px solid black;">
+    <img src="../../frontend/assets/ui_images/fixed-tables_desktop.svg" alt="Table with fix and selectable content (desktop)" style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Fig. 14: Table with fix and selectable content (desktop)</b>
     </figcaption>
 </figure>
 
 <figure id="fig15" style="width:50%; margin:0; text-align:left;">
-    <img src="../../assets/ui_images/fixed-tables_mobile.svg" alt="Table with fix and selectable content (mobile)" style="width:55%; border: 1px solid black; margin: 0;">
+    <img src="../../frontend/assets/ui_images/fixed-tables_mobile.svg" alt="Table with fix and selectable content (mobile)" style="width:55%; border: 1px solid black; margin: 0;">
     <figcaption>
         <b>Fig. 15: Table with fix and selectable content (mobile)</b>
     </figcaption>
@@ -340,14 +340,14 @@ Data tables [[Fig. 16]](#fig16), [[Fig. 17]](#fig17) are used when the number or
 The table has a three-column structure: a frozen left column, a scrollable center section, and a frozen right column. The left column always contains a checkbox and a row ID. The right column is always visible and contains an optional column settings icon in the table header and icon-only row action buttons per row. One of the row actions is always a preview icon that opens a detail modal for the selected row.
 
 <figure id="fig16" style="width:100%;">
-    <img src="../../assets/ui_images/data-tables_desktop.svg" alt="Datatable" style="width:100%; border: 1px solid black;">
+    <img src="../../frontend/assets/ui_images/data-tables_desktop.svg" alt="Datatable" style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Fig. 16: Datatable</b>
     </figcaption>
 </figure>
 
 <figure id="fig17" style="width:50%; margin:0; text-align:left;">
-    <img src="../../assets/ui_images/data-tables-mobile.png" alt="Datatable on mobile devices" style="width:55%; border: 1px solid black; margin: 0;">
+    <img src="../../frontend/assets/ui_images/data-tables-mobile.png" alt="Datatable on mobile devices" style="width:55%; border: 1px solid black; margin: 0;">
     <figcaption>
         <b>Fig. 17: Datatable on mobile devices</b>
     </figcaption>
@@ -359,7 +359,7 @@ The table title uses an `<h3>` tag. An `<h2>` heading must appear before it in t
 Table title styling: `font-size: 1.17em; border-bottom: 3px solid var(--dbp-primary)`.
 
 <figure id="" style="width:50%; margin:0; text-align:left;">
-    <img src="../../assets/ui_images/table-title.svg" alt="Table title as rendered: styled with a primary-colored bottom border." style="width:25%;  margin: 0;">
+    <img src="../../frontend/assets/ui_images/table-title.svg" alt="Table title as rendered: styled with a primary-colored bottom border." style="width:25%;  margin: 0;">
     <figcaption>
         <b> Table title as rendered — styled with a primary-colored bottom border.</b>
     </figcaption>
@@ -370,7 +370,7 @@ Table title styling: `font-size: 1.17em; border-bottom: 3px solid var(--dbp-prim
 Table actions are displayed as buttons above the table. Each button opens a dropdown menu listing the available actions [Fig. 18]. Actions apply to the entire table unless one or more rows are selected, in which case the actions apply only to the selected rows.
 
 <figure id="fig18" style="width:50%; margin:0; text-align:left ;">
-    <img src="../../assets/ui_images/dbi-ui-tableTitle_actions-dropdown.png" alt="Table title and action dropdown example for tables" style="width:40%; border: 1px solid black; margin:0;">
+    <img src="../../frontend/assets/ui_images/dbi-ui-tableTitle_actions-dropdown.png" alt="Table title and action dropdown example for tables" style="width:40%; border: 1px solid black; margin:0;">
     <figcaption>
         <b>Fig. 18: Table title and action dropdown example for tables</b>
     </figcaption>
@@ -381,7 +381,7 @@ Table actions are displayed as buttons above the table. Each button opens a drop
 The search bar in the table is a magnifying glass icon that can be expanded to reveal text search and advanced search parameters. The advanced search options allow you to narrow down your search by column name and operators.
 
 <figure id="fig19" style="width:70%; margin:0; " >
-    <img src="../../assets/ui_images/dbp-ui-searchbar.svg" alt="Searchbar" style="width:100%; border: 1px solid black;">
+    <img src="../../frontend/assets/ui_images/dbp-ui-searchbar.svg" alt="Searchbar" style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Fig. 19: Searchbar</b>
     </figcaption>
@@ -392,7 +392,7 @@ The search bar in the table is a magnifying glass icon that can be expanded to r
 An export button is placed at the far right of the table toolbar. It opens a dropdown with available export format options [See Fig.20](#fig20).
 
 <figure id="fig20" style="width:50%; margin:0; text-align:left; ">
-    <img src="../../assets/ui_images/dbp-ui-export-dropdown.png" alt="Export dropdown example for tables " style="width:25%; border: 1px solid black; margin:0;">
+    <img src="../../frontend/assets/ui_images/dbp-ui-export-dropdown.png" alt="Export dropdown example for tables " style="width:25%; border: 1px solid black; margin:0;">
     <figcaption>
         <b>Fig. 20: Export dropdown example for tables 
 </b>
@@ -427,7 +427,7 @@ The <dbp-modal> component provides two header variants:
 - Close icon (X) in the top-right corner
 
 <figure id="fig21" style="width:100%;">
-    <img src="../../assets/ui_images/modal-header-light.svg" alt="Modal Header light" style="width:100%; border: 1px solid black;">
+    <img src="../../frontend/assets/ui_images/modal-header-light.svg" alt="Modal Header light" style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Fig. 21: Modal Header light</b>
     </figcaption>
@@ -439,7 +439,7 @@ The <dbp-modal> component provides two header variants:
 - Close icon (X) in the top-right corner
 
 <figure id="fig22" style="width:100%;">
-    <img src="../../assets/ui_images/modal-header-bold.svg" alt="Modal Header bold" style="width:100%; border: 1px solid black;">
+    <img src="../../frontend/assets/ui_images/modal-header-bold.svg" alt="Modal Header bold" style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Fig. 22: Advanced header, big and bold title</b>
     </figcaption>
@@ -454,7 +454,7 @@ The modal title is in the upper-left corner and the close icon is in the upper-r
 Example usage: [Formalize](https://github.com/digital-blueprint/formalize-app){:target="\_blank"} uses the detail modal to display a complete form submission entry.
 
 <figure id="fig23" style="width:100%;">
-    <img src="../../assets/ui_images/detail-modal-desktop.svg" alt="Detail modal: default header (small light title), scrollable content area, sticky Secondary and Primary buttons at the bottom" style="width:100%; border: 1px solid black;">
+    <img src="../../frontend/assets/ui_images/detail-modal-desktop.svg" alt="Detail modal: default header (small light title), scrollable content area, sticky Secondary and Primary buttons at the bottom" style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Fig. 23: Detail Modal</b>
     </figcaption>
@@ -469,7 +469,7 @@ The modal title indicates the context of the dialog. A close icon is placed in t
 Example usage: [file handling webcomponents](https://github.com/digital-blueprint/toolkit/tree/main/packages/file-handling/src/file-source.js){:target="\_blank"}.
 
 <figure id="fig24" style="width:100%;">
-    <img src="../../assets/ui_images/tab-modal-desktop.svg" alt="Modal with tabs: advanced header (icon + large bold title), vertical tab list on the left (Active tab 1, Tab 2, Tab 3) with scrollable content area to the right
+    <img src="../../frontend/assets/ui_images/tab-modal-desktop.svg" alt="Modal with tabs: advanced header (icon + large bold title), vertical tab list on the left (Active tab 1, Tab 2, Tab 3) with scrollable content area to the right
 " style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Fig. 24: Modal with Tabs</b>
@@ -482,7 +482,7 @@ Subtabs provide a second level of navigation within a tab. Subtabs are placed in
 On mobile, the primary tabs appear above the subtabs to maintain a clear navigation hierarchy.
 
 <figure id="fig25" style="width:100%;">
-    <img src="../../assets/ui_images/subtab-modal-desktop.svg" alt="Modal with Subtabs: advanced header, vertical tab list on the left, horizontal subtabs (Active subtab, Subtab) in the tab content header, scrollable content section below" style="width:100%; border: 1px solid black;">
+    <img src="../../frontend/assets/ui_images/subtab-modal-desktop.svg" alt="Modal with Subtabs: advanced header, vertical tab list on the left, horizontal subtabs (Active subtab, Subtab) in the tab content header, scrollable content section below" style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Fig. 25: Modal with Subtabs</b>
     </figcaption>
@@ -511,20 +511,20 @@ The inactive counterpart uses `font-size: 0.85rem`.
 - Active tabs display colored icons and bold text [[Fig.27]](#fig27). Same applies for active subtabs [[Fig.28]](#fig28).
 
 <figure id="fig26" style=" margin:0;">
-    <img  src="../../assets/ui_images/active-activity.svg" style="margin:0;" alt="Active activity in the side menu: bold text with a red vertical accent line on the left">
+    <img  src="../../frontend/assets/ui_images/active-activity.svg" style="margin:0;" alt="Active activity in the side menu: bold text with a red vertical accent line on the left">
     <figcaption style="text-align: left">
         <b>Fig. 26: Active activity in the side menu: bold text with a red vertical accent line on the left</b>
     </figcaption>
 </figure>
 
 <figure id="fig27" style=" margin:0;">
-    <img  src="../../assets/ui_images/active-tab.svg" style="margin:0; border: 1px solid black;" alt="Active tab vs. two inactive tabs ">
+    <img  src="../../frontend/assets/ui_images/active-tab.svg" style="margin:0; border: 1px solid black;" alt="Active tab vs. two inactive tabs ">
     <figcaption style="text-align: left; margin:20px 0;">
         <b>Fig. 27: Active tab vs. two inactive tabs </b>
     </figcaption>
 </figure>
 <figure id="fig28" style=" margin:0;">
-    <img  src="../../assets/ui_images/active-subtab.svg" style="margin:0; " alt="Active subtab (left) vs. inactive subtab (right)">
+    <img  src="../../frontend/assets/ui_images/active-subtab.svg" style="margin:0; " alt="Active subtab (left) vs. inactive subtab (right)">
     <figcaption style="text-align: left; margin:20px 0;">
         <b>Fig. 28: Active subtab (left) vs. inactive subtab (right)</b>
     </figcaption>
@@ -533,7 +533,7 @@ The inactive counterpart uses `font-size: 0.85rem`.
 Toggle switches are off by default, using the `var(--dbp-muted)` color. When activated, the color changes to `var(--dbp-info)`.
 
 <figure id="29" style=" margin:0;">
-    <img  src="../../assets/ui_images/toggleswitch.png" style="margin:0; width:35%;" alt="Example: Toggle Switch">
+    <img  src="../../frontend/assets/ui_images/toggleswitch.png" style="margin:0; width:35%;" alt="Example: Toggle Switch">
     <figcaption style="text-align: left; margin:20px 0;">
         <b>Fig.29: Toggle Switch</b>
     </figcaption>
@@ -549,7 +549,7 @@ Disabled elements are rendered at `opacity: 0.5`. They remain visually recogniza
 Example: In [Formalize](https://github.com/digital-blueprint/formalize-app){:target="\_blank"}, the submission button remains disabled until all required fields have been completed.
 
 <figure id="fig30" style=" margin:0;">
-    <img  src="../../assets/ui_images/disabled_state.svg" style="margin:0;" alt="disabled state button 50% opacity">
+    <img  src="../../frontend/assets/ui_images/disabled_state.svg" style="margin:0;" alt="disabled state button 50% opacity">
     <figcaption style="text-align: left; margin:20px 0;">
         <b>Fig. 30: Disabled State button at 50% opacity</b>
     </figcaption>
@@ -572,7 +572,7 @@ Notifications can be dismissed manually via an "X" button and may include a coun
 Errors may also be displayed within a notification banner. In this case [[Fig.31]](#fig31), the banner includes a clear error message and the relevant contextual data.
 
 <figure id="fig31" style="width:45%;">
-    <img src="../../assets/ui_images/error-notification.png" alt="Notification banner (error type): bold title "Item deleted", message body with item ID and event ID, countdown progress bar at the bottom, dismiss button (X) top-right" style="width:100%; border: 1px solid black;">
+    <img src="../../frontend/assets/ui_images/error-notification.png" alt="Notification banner (error type): bold title &quot;Item deleted&quot;, message body with item ID and event ID, countdown progress bar at the bottom, dismiss button (X) top-right" style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Fig. 31: Notification banner (error type)</b>
     </figcaption>
@@ -582,7 +582,7 @@ Every error outside of a notification banner must include a meaningful error mes
 in the color `var(--dbp-danger-surface-border-color)`.
 
 <figure id="fig32" style="width:100%;">
-    <img src="../../assets/ui_images/error_handling_esign.png" alt="An highlighted error occurs in the App esign" style="width:100%; border: 1px solid black;">
+    <img src="../../frontend/assets/ui_images/error_handling_esign.png" alt="An highlighted error occurs in the App esign" style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Fig. 32: Highlighted Error in the App "Esign"</b>
     </figcaption>
@@ -671,7 +671,7 @@ See [[Fig.16]](#fig16) (Data Tables). Semi-bold must also be applied whenever co
 is needed, for example for labeled data in lists in Cabinet App[[Fig.33]](#fig33).
 
 <figure id="fig33" style="width:100%;">
-    <img src="../../assets/ui_images/cabinet_person-modal-list.svg" alt="Example of highlighting text header in bold font compared to data" style="width:100%; border: 1px solid black;">
+    <img src="../../frontend/assets/ui_images/cabinet_person-modal-list.svg" alt="Example of highlighting text header in bold font compared to data" style="width:100%; border: 1px solid black;">
     <figcaption>
         <b>Fig. 33: Example of highlighting text header in bold font compared to data</b>
     </figcaption>
