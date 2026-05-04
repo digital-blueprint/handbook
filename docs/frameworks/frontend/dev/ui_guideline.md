@@ -43,7 +43,7 @@ The App Shell supports theming via CSS custom properties (CSS variables). All Ap
 
 The top navigation [[Fig. 1]](#fig1) is placed in the slot "header" `<header>`. It is centered horizontally and contains the following elements:
 
-- Menu toggle — opens the `<aside>` side menu and switches between standard layout and wide layout
+- Menu toggle: opens the `<aside>` side menu and switches between standard layout and wide layout
 - Dark/Light mode switch
 - Language switch (EN / DE)
 - Login / Logged-in user indicator
@@ -121,7 +121,7 @@ See the [Buttons](#buttons) section for placement rules.
 
 ## Layout and Grid System
 
-The DBP app supports two layout types — Standard Layout and Wide Layout — that the user can switch between by opening or closing the side menu. If the user closes the side menu, or if the viewport width drops below 1100 px, the application automatically switches to the wide layout across all activities. The selected preference is stored in local storage and persists across browser sessions.
+The DBP app supports two layout types, Standard Layout and Wide Layout, that the user can switch between by opening or closing the side menu. If the user closes the side menu, or if the viewport width drops below 1100 px, the application automatically switches to the wide layout across all activities. The selected preference is stored in local storage and persists across browser sessions.
 
 ### Layout Types
 
@@ -181,9 +181,9 @@ DBP uses the icon set from https://lineicons.com/, which is license-free.
 
 Icons in the DBP app are classified into three categories based on function and interaction type:
 
-- Decorative icons – visual aids only, no interaction required
-- Interactive icons – standalone clickable elements used only when there is insufficient space for an icon + text button (e.g., in data tables [[Fig.14]](#fig14) or mobile views)
-- Buttons with icon + text — the default and preferred form for all interactive actions
+- Decorative icons: visual aids only, no interaction required
+- Interactive icons: standalone clickable elements used only when there is insufficient space for an icon + text button (e.g., in data tables [[Fig.14]](#fig14) or mobile views)
+- Buttons with icon + text: the default and preferred form for all interactive actions
 
 ### Color of Icons
 
@@ -359,7 +359,7 @@ The table title uses an `<h3>` tag. An `<h2>` heading must appear before it in t
 Table title styling: `font-size: 1.17em; border-bottom: 3px solid var(--dbp-primary)`.
 
 <figure id="" style="width:50%; margin:0; text-align:left;">
-    <img src="../../assets/ui_images/table-title.svg" alt="Table title as rendered — styled with a primary-colored bottom border." style="width:25%;  margin: 0;">
+    <img src="../../assets/ui_images/table-title.svg" alt="Table title as rendered: styled with a primary-colored bottom border." style="width:25%;  margin: 0;">
     <figcaption>
         <b> Table title as rendered — styled with a primary-colored bottom border.</b>
     </figcaption>
@@ -666,7 +666,7 @@ Heading levels must not be skipped.
 ### Typography Styling
 
 All headings in the content area (`<h1>` through `<h6>`) use `font-weight: 300` (Light).
-In modals, all headings — including table headings — must use `font-weight: 600` (Semi-bold).
+In modals, all headings, including table headings, must use `font-weight: 600` (Semi-bold).
 See [[Fig.16]](#fig16) (Data Tables). Semi-bold must also be applied whenever contrast with adjacent body text
 is needed, for example for labeled data in lists in Cabinet App[[Fig.33]](#fig33).
 
