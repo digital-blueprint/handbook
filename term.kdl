@@ -1,0 +1,22 @@
+// https://zellij.dev/documentation/creating-a-layout
+layout {
+  tab name="main" focus=true {
+    pane size=1 borderless=true {
+      plugin location="zellij:tab-bar"
+    }
+    pane split_direction="vertical" size="60%" {
+      pane {
+        command "lazygit"
+        focus true
+      }
+      pane cwd="docker-dev" command="docker" {
+        args "compose" "up"
+        start_suspended false
+      }
+    }
+    pane {}
+    pane size=1 borderless=true {
+      plugin location="zellij:status-bar"
+    }
+  }
+}
