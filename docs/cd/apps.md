@@ -17,15 +17,15 @@ It also should not exceed a maxlength of 30 characters and should have a minimum
 
 The app icon appears at two places in the dbp-branded versions of the apps: in the app shell header and as a PWA icon.
 
-<figure id="fig1" style="width:100%;">
-    <img src="../assets/appicon_example_clean.svg" alt="App icon example" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
+<figure id="fig1" style="width:100%;" markdown>
+![App icon example](./assets/appicon_example_clean.svg){ style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; display:block; margin:auto;" }
     <figcaption>
         <b>Fig. 1: App icon example</b>
     </figcaption>
 </figure>
 
-<figure id="fig2" style="width:100%;">
-    <img src="../assets/appicon_example.svg" alt="App pwa example" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
+<figure id="fig2" style="width:100%;" markdown>
+![App pwa example](./assets/appicon_example.svg){ style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; display:block; margin:auto;" }
     <figcaption>
         <b>Fig. 2: App pwa example</b>
     </figcaption>

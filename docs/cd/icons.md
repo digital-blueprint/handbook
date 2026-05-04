@@ -17,11 +17,11 @@ Our icons have to follow these rules:
 - **Color:** monochromatic black (except [app icons](#app-icon))
 - **Surface:** Generally not filled, expect the surface gets too small, then it should be filled
 
-<figure id="fig1" style="width:100%;">
-    <img src="../assets/source_pacman.svg" alt="Icon example" style="width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
-    <figcaption>
-        <b>Fig. 1: Icon example</b>
-    </figcaption>
+<figure id="fig1" style="width:100%;" markdown>
+![Icon example](./assets/source_pacman.svg){ style="width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;" }
+<figcaption>
+    <b>Fig. 1: Icon example</b>
+</figcaption>
 </figure>
 
 ## Icon libs
@@ -57,15 +57,15 @@ App icons has additional these rules:
 
 For further information see [App icon](./apps.md#app-icon).
 
-<figure id="fig2" style="width:100%;">
-    <img src="../assets/appicon_example_clean.svg" alt="App icon example" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
+<figure id="fig2" style="width:100%;" markdown>
+![App icon example](./assets/appicon_example_clean.svg){ style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; display:block; margin:auto;" }
     <figcaption>
         <b>Fig. 2: App icon example</b>
     </figcaption>
 </figure>
 
-<figure id="fig3" style="width:100%;">
-    <img src="../assets/appicon_example.svg" alt="App icon example with dbp background" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
+<figure id="fig3" style="width:100%;" markdown>
+![App icon example with dbp background](./assets/appicon_example.svg){ style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; display:block; margin:auto;" }
     <figcaption>
         <b>Fig. 3: App icon example as pwa</b>
     </figcaption>
@@ -86,8 +86,8 @@ You need to create the following files: (replace `appname` with the shortname of
 \* The icon should be placed in front of the `dbp_logo_squares_on_white.svg`.
 The icon should be in the middle of the first square. The maximum size can be taken from [fig4](#fig4).
 
-<figure id="fig4" style="width:100%;">
-    <img src="../assets/appicon_example_placement.svg" alt="App icon example with dbp background correct placement" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
+<figure id="fig4" style="width:100%;" markdown>
+![App icon example with dbp background correct placement](./assets/appicon_example_placement.svg){ style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; display:block; margin:auto;" }
     <figcaption>
         <b>Fig. 4: App icon example as pwa with correct placement</b>
     </figcaption>

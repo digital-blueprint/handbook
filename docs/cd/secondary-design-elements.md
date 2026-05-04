@@ -10,15 +10,15 @@ The squares are not allowed to change, nigher the color, the distance, the width
 The correct file depending on the background must be used: _dbp_logo_squares_white.svg_ [[Fig. 1]](#fig1) or _dbp_logo_squares_black.svg_ [[Fig. 2]](#fig2).
 The squares are not allowed to use on a different background than True Black(HEX `#222120` - instead of black) or white.
 
-<figure id="fig1" style="width:100%;">
-    <img src="../assets/logo/dbp_logo_small_on_white.svg" alt="Squares on black background" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
+<figure id="fig1" style="width:100%;" markdown>
+![Squares on black background](./assets/logo/dbp_logo_small_on_white.svg){ style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;" }
     <figcaption>
         <b>Fig. 1: Squares on white background</b>
     </figcaption>
 </figure>
 
-<figure id="fig2" style="width:100%;">
-    <img src="../assets/logo/dbp_logo_small_on_black.svg" alt="Squares on black background" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:#222120; margin:auto;">
+<figure id="fig2" style="width:100%;" markdown>
+![Squares on black background](./assets/logo/dbp_logo_small_on_black.svg){ style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:#222120; margin:auto;" }
     <figcaption>
         <b>Fig. 2: Squares on black background</b>
     </figcaption>
@@ -31,15 +31,15 @@ The square are not allowed to change, nigher the color, the proportions, the opa
 The correct file depending on the background must be used: _dbp_logo_square_on_white.svg_ [[Fig. 3]](#fig3) or _dbp_logo_square_on_black.svg_ [[Fig. 4]](#fig4).
 The square is not allowed to use on a different background than True Black(HEX `#222120` - instead of black) or white.
 
-<figure id="fig3" style="width:100%;"> 
-    <img src="../assets/logo/dbp_logo_square_on_white.svg" alt="Square on white background" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
+<figure id="fig3" style="width:100%;" markdown>
+![Square on white background](./assets/logo/dbp_logo_square_on_white.svg){ style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;" }
     <figcaption>
         <b>Fig. 3: Square on white background</b>
     </figcaption>
 </figure>
 
-<figure id="fig4" style="width:100%;">
-    <img src="../assets/logo/dbp_logo_square_on_black.svg" alt="Square on black background" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:#222120; margin:auto;">
+<figure id="fig4" style="width:100%;" markdown>
+![Square on black background](./assets/logo/dbp_logo_square_on_black.svg){ style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:#222120; margin:auto;" }
     <figcaption>
         <b>Fig. 4: Square on black background</b>
     </figcaption>
@@ -53,15 +53,15 @@ The chevrons have to be used on white background.
 The correct file must be used in each case, if a white background is required then the _dbp_logo_chevrons_white.svg_ [[Fig. 5]](#fig5) must be used and on black background the file _dbp_logo_chevrons_black.svg_ [[Fig. 6]](#fig6) must be used.
 The chevrons are not allowed to use on another background than True Black(HEX `#222120` - instead of black) or white.
 
-<figure id="fig5" style="width:100%;">
-    <img src="../assets/logo/dbp_logo_chevrons_on_white.svg" alt="Chevrons on white background" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;">
+<figure id="fig5" style="width:100%;" markdown>
+![Chevrons on white background](./assets/logo/dbp_logo_chevrons_on_white.svg){ style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:white; margin:auto;" }
     <figcaption>
         <b>Fig. 5: Chevrons on white background</b>
     </figcaption>
 </figure>
 
-<figure id="fig6" style="width:100%;">
-    <img src="../assets/logo/dbp_logo_chevrons_on_black.svg" alt="Chevrons on black background" style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:#222120; margin:auto;">
+<figure id="fig6" style="width:100%;" markdown>
+![Chevrons on black background](./assets/logo/dbp_logo_chevrons_on_black.svg){ style="max-width:200px; box-shadow: 1px 1px 3px grey; background-color:#222120; margin:auto;" }
     <figcaption>
         <b>Fig. 6: Chevrons on black background</b>
     </figcaption>
