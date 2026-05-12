@@ -5,6 +5,8 @@
   "git-submodules": {
     "enabled": true
   },
+  "internalChecksFilter": "strict",
+  "minimumReleaseAge": "5 days",
   "packageRules": [
     {
       "matchCategories": ["js"],
