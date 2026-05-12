@@ -564,7 +564,8 @@ Because no hover state is specified, the primary feedback for user interaction i
 
 ### Error Handling
 
-Notification are built using the `<dbp-notification>` component. They are displayed at the top of the screen by default to communicate information, success, status updates, or errors. The placement can be also changed (Eg. Within a modal)
+Notification are built using the `<dbp-notification>` component. They are displayed at the top of the screen by default to communicate information, success, status updates, or errors. The placement can be also changed (Eg. Within a modal).
+The notification width can be customized per app by setting the --dbp-notification-max-width CSS variable on the dbp-notification host element, e.g. ".my-app dbp-notification { --dbp-notification-max-width: 20rem; }".
 Notifications can be dismissed manually via an "X" button and may include a countdown timer that can be configured as needed.
 Errors may also be displayed within a notification banner. In this case [[Fig.31]](#fig31), the banner includes a clear error message and the relevant contextual data.
 
