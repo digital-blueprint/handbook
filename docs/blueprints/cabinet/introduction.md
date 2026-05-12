@@ -4,14 +4,14 @@ The student records management application _cabinet_ is developed to assist regi
 
 - Manual document upload from the personal computer or directly from the cloud
 - PDF/A validation via the [verity bundle](../../components/api/verity/overview.md)
-- Automatic transfer of externally created documents via the [CAMPUSonline DMS connector](../../components/api/cabinet-connector-campusonline.md)
-- automatic transfer of persons’ data from CAMPUSonline via the [Relay API Gateway](../../frameworks/relay/api-clients.md)
+- Automatic transfer of externally created documents via the [CAMPUSonline DMS connector](../../components/api/cabinet-connector-campusonline/README.md)
+- automatic transfer of persons’ data from CAMPUSonline via the [Relay API Gateway](../../frameworks/relay/index.md)
 - Manual metadata enrichment for documents
 - Document and data storage via [blob](../../components/api/blob/overview.md)
 - presentation of documents and data in the user interface
 - Combinable text search and faceted search across personal and document data
 - Signing documents electronically via [eSign](../esign.md)
-- Hybrid postal delivery of documents via [dispatch](../../components/api/dispatch.md)
+- Hybrid postal delivery of documents via [dispatch](../../components/api/dispatch/README.md)
 - Document and data download
 - Document and data deletion
 - Multi-actions (download of data for persons and documents, deletion of documents)

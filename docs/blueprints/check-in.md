@@ -281,7 +281,7 @@ which contains functionality like error handling, logging, locking and a message
 queue configuration, that is required by all bundles for the DBP Relay project.
 
 There are multiple backends to choose from (MySQL, Redis, ...) on how to persist data,
-see [Core Bundle Check-in Configuration](../components/api/core/README.md#check-in) on how to configure them.
+see [Check-in Bundle Configuration](../components/api/checkin/README.md#bundle-configuration) on how to configure them.
 
 You need to have a system in place to run the [message queue workers](../frameworks/relay/admin/queue.md).
 Symfony recommends to use [Supervisor](http://supervisord.org/) to do this. You can use the [example configuration](../frameworks/relay/admin/queue.md#manage-workers-with-supervisor) to help you with the setup process.

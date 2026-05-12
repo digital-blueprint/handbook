@@ -115,7 +115,7 @@ _cabinet_ has a flexible concept of versions that can be fully controlled by the
 
 If documents are selected for deletion, they stay in the database for an additional agreed-on time and can be found by selecting the radio button _Recycle bin_ in the facets. Only after the expired time will they get irrevocably removed.
 
-To read more about the retention periods and deletion, see the chapters [How to treat retention periods](#how-to-treat-retention-periods) and [How deletion works](#how-deletion-works).
+To read more about the retention periods, see the chapter [How to treat retention periods](#how-to-treat-retention-periods).
 
 #### Downloading
 

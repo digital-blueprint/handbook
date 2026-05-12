@@ -365,7 +365,7 @@ Table title styling: `font-size: 1.17em; border-bottom: 3px solid var(--dbp-prim
 
 #### Table Actions
 
-Table actions are displayed as buttons above the table. Each button opens a dropdown menu listing the available actions [Fig. 18]. Actions apply to the entire table unless one or more rows are selected, in which case the actions apply only to the selected rows.
+Table actions are displayed as buttons above the table. Each button opens a dropdown menu listing the available actions [[Fig. 18]](#fig18). Actions apply to the entire table unless one or more rows are selected, in which case the actions apply only to the selected rows.
 
 <figure id="fig18" style="width:50%; margin:0; text-align:left;" markdown>
 
@@ -418,7 +418,7 @@ Modals with Tabs [[Fig. 24]](#fig24), and Modals with Subtabs [[Fig. 25]](#fig25
 
 The <dbp-modal> component provides two header variants:
 
-**1. Default header** [Fig. 21].
+**1. Default header** [[Fig. 21]](#fig21).
 
 - `<h2>` small (`font-size: 1em`), light-weight title
 - Close icon (X) in the top-right corner
@@ -430,7 +430,7 @@ The <dbp-modal> component provides two header variants:
 <figcaption><b>Fig. 21: Modal Header light</b></figcaption>
 </figure>
 
-**2. Advanced header** [Fig. 22].
+**2. Advanced header** [[Fig. 22]](#fig22).
 
 - Icon + `<h2>` large, bold title
 - Close icon (X) in the top-right corner
