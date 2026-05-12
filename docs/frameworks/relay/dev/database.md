@@ -27,7 +27,7 @@ public function prepend(ContainerBuilder $container)
 Run the following command and replace the entity manager with the one for your bundle
 
 ```bash
-./docker/console doctrine:migrations:diff --em=dbp_relay_mono_connector_payunity_bundle
+./docker/console doctrine:migrations:diff --em=dbp_relay_mono_connector_payone_bundle
 ```
 
 It should create a migration under `Migrations` in your bundle. The migration will contain the required changes, but also changes from other bundles which you need to delete manually.

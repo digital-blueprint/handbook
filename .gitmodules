@@ -16,9 +16,6 @@
 [submodule "submodules/dbp-relay-mono-connector-campusonline-bundle"]
 	path = docs/submodules/dbp-relay-mono-connector-campusonline-bundle
 	url = https://github.com/digital-blueprint/relay-mono-connector-campusonline-bundle.git
-[submodule "submodules/dbp-relay-mono-connector-payunity-bundle"]
-	path = docs/submodules/dbp-relay-mono-connector-payunity-bundle
-	url = https://github.com/digital-blueprint/relay-mono-connector-payunity-bundle.git
 [submodule "submodules/dbp-relay-mono-connector-generic-bundle"]
 	path = docs/submodules/dbp-relay-mono-connector-generic-bundle
 	url = https://github.com/digital-blueprint/relay-mono-connector-generic-bundle.git
