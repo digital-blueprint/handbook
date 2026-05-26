@@ -73,7 +73,7 @@ To manually add a document to a person, users first need to search for that pers
 
     It is important to note that PDF/A (conformance level 2b, 1b, 1a, 2u, and 2a) is the only acceptable file upload format.
 
-The system validates the conformity on upload and rejects non-PDF/A formats in order to ensure long-term preservation. Documents in other formats need to be converted to PDF/A first. This is possible using Adobe Acrobat, even with multiple files at once. For detailed instructions, please visit [Adobe Acrobat](https://www.adobe.com/acrobat/hub/how-to-convert-pdf-to-pdfa.html) or read our chapter [How to create and validate PDF/A files]((#how-to-create-and-validate-pdfa-files).
+The system validates the conformity on upload and rejects non-PDF/A formats in order to ensure long-term preservation. Documents in other formats need to be converted to PDF/A first. This is possible using Adobe Acrobat, even with multiple files at once. For detailed instructions, please visit [Adobe Acrobat](https://www.adobe.com/acrobat/hub/how-to-convert-pdf-to-pdfa.html) or read our chapter [How to create and validate PDF/A files](#how-to-create-and-validate-pdfa-files).
 
 After uploading the file, the user needs to assign a document type (for example, _Personal licence_). Depending on the selected type, there are a number of data fields, of which some are required, and others optional. Additionally, the system automatically saves the upload and update time, as well as the name of the person who last modified it.
 
