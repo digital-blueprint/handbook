@@ -10,7 +10,7 @@ headers if available as long as their source is trusted, otherwise if there
 wasn't a reverse proxy in-between, then any client could fake those headers and
 for example fake their IP.
 
-We require that you configure all ``x-forwarded-*` headers that could be
+We require that you configure all `x-forwarded-*` headers that could be
 relevant in your setup, and which are supported by your proxies.
 
 See https://symfony.com/doc/current/deployment/proxies.html for the detailed

@@ -128,7 +128,7 @@ public function loadInternal(array $mergedConfig, ContainerBuilder $container): 
 ```
 
 Now the mapping between local data attributes and source data attributes can be configured in your connector bundle's config
-(see [Local Data Mapping Config](./base_entities.md/#local-data-mapping-config)):
+(see [Local Data Mapping Config](./base_entities.md#local-data-mapping-config)):
 
 ```yaml
 my_vendor_my_entity_connector_source_system:
@@ -138,4 +138,4 @@ my_vendor_my_entity_connector_source_system:
 ```
 
 Note that local data attribute `foo` will only be available if it is also configured in the entity bundle's config
-(see [Adding Local Data to your Entity Bundle's Configuration](./local_data.md/#adding-local-data-to-your-entity-bundles-configuration)).
+(see [Adding Local Data to your Entity Bundle's Configuration](./local_data.md#adding-local-data-to-your-entity-bundles-configuration)).

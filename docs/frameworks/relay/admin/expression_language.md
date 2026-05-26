@@ -8,7 +8,7 @@ administrators to customize the API behaviour by providing their own expressions
 For further information, see the
 [Symfony Expression Language documentation](https://symfony.com/doc/current/components/expression_language.html).
 
-The Relay API Gateway currently uses configurable expressions for [Access Control](access_control.md), where
+The Relay API Gateway currently uses configurable expressions for [Access Control](./access_control.md), where
 administrators can grant or deny access to API users by customizing conditional expressions (_Access Control Policies_).
 
 The Symfony Expression Language can be extended by adding custom functions. To facilitate writing expressions,
