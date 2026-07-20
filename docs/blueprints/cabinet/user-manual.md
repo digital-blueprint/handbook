@@ -81,7 +81,7 @@ Unlike documents that need uploading, documents generated in CAMPUSonline are be
 
 ### Search for a specific document
 
-The best way to find a document file in _cabinet_ would be to search for a person first and then use the button _Focus_, which excludes all other persons and their documents from the search results. The listed documents can be further limited by applying filters of either the _Person properties_ or the _Document properties_, or both in combination.
+The best way to find a document file in _cabinet_ would be to search for a person first and then use the button _Focus_, which excludes all other persons and their documents from the search results. This view now represents a student's registry. The listed documents can be further limited by applying the _Document properties_ filters.
 
 Documents can also be found using the search bar. This can especially be practical if the data field _Registry number_ is filled out consistently, which makes it possible to quickly see all documents that belong to a certain registry case. Other data fields that match the entered search bar string are the person's name, last name, matriculation number, CAMPUSonline identifier, and birthdate, as well as the document type.
 
