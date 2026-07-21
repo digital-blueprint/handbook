@@ -91,3 +91,6 @@
 [submodule "submodules/relay-authorization-bundle"]
 	path = docs/submodules/relay-authorization-bundle
 	url = https://github.com/digital-blueprint/relay-authorization-bundle
+[submodule "docs/submodules/relay-blob-connector-campusonline-dms-bundle"]
+	path = docs/submodules/relay-blob-connector-campusonline-dms-bundle
+	url = https://github.com/digital-blueprint/relay-blob-connector-campusonline-dms-bundle

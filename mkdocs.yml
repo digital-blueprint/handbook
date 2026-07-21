@@ -139,6 +139,11 @@ nav:
               - components/api/blob/retention.md
               - components/api/blob/backup-and-restore.md
               - components/api/blob/locks.md
+              - Campusonline DMS Connector:
+                  - components/api/blob-connector-campusonline-dms/README.md
+                  - components/api/blob-connector-campusonline-dms/config.md
+                  - components/api/blob-connector-campusonline-dms/api.md
+                  - components/api/blob-connector-campusonline-dms/storage.md
           - Base Organization Bundle:
               - components/api/base-organization/index.md
           - Base Publication Bundle:
