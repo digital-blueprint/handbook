@@ -24,4 +24,4 @@ If you are a technician interested in implementing _cabinet_ into your system, i
 
 If you are employed in a students administration department and would like to know how to use the _cabinet_ application in your work, you can skip to the chapter [User manual](./user-manual.md).
 
-For more assistance and feedback, feel free to contact us at hello@digital-blueprint.org.
+For more assistance and feedback, feel free to contact us at digital-blueprint@tugraz.at.

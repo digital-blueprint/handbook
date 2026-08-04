@@ -1,6 +1,6 @@
 # Contact & Legal Notice
 
-Contact: hello@digital-blueprint.org
+Contact: digital-blueprint@tugraz.at
 
 Legal Notice: https://www.digital-blueprint.org/imprint.html
 
