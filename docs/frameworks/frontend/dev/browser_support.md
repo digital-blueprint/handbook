@@ -29,7 +29,7 @@ These version requirements are derived from requiring the following features:
 
 We use extra tooling/pollyfills:
 
-- [babel](https://babeljs.io/docs/en/babel-preset-env) for translating newer
+- [oxc](https://oxc.rs/docs/guide/usage/transformer/lowering.html) for translating newer
   Javascript to something the above mentioned versions can run and to work
   around bugs in those versions.
 - [@webcomponents/scoped-custom-element-registry](https://www.npmjs.com/package/@webcomponents/scoped-custom-element-registry) for Scoped Custom Element Registries, for all browsers.
