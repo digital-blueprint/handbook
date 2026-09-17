@@ -2,11 +2,6 @@
 
 set -e
 
-rm -Rf ../docs/assets/js/mermaid
-mkdir -p ../docs/assets/js/mermaid/chunks/mermaid.esm.min
-cp -R node_modules/mermaid/dist/mermaid.esm.min.mjs ../docs/assets/js/mermaid
-cp -R node_modules/mermaid/dist/chunks/mermaid.esm.min/*.mjs ../docs/assets/js/mermaid/chunks/mermaid.esm.min
-
 rm -Rf ../overrides/fonts/*
 
 # See ../docs/assets/styles/fonts.css for which files are needed

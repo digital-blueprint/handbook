@@ -28,10 +28,6 @@ extra_css:
   - assets/styles/extra.css
   - assets/styles/fonts.css
 
-extra_javascript:
-  - assets/js/mermaid/mermaid.esm.min.mjs
-  - assets/js/main.mjs
-
 site_url: https://handbook.digital-blueprint.org
 repo_url: https://github.com/digital-blueprint/handbook
 edit_uri: edit/main/docs/
@@ -58,9 +54,9 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.superfences:
       custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_div_format
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight:
       extend_pygments_lang:
         - name: php

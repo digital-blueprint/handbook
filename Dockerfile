@@ -10,6 +10,7 @@ COPY . /app
 WORKDIR /app
 ENV TZ=UTC
 RUN uv run zensical build
+RUN uv run ./localize_cdn.py
 
 FROM nginx:stable-alpine
 
