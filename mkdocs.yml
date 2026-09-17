@@ -3,6 +3,10 @@ theme:
   font: false
   name: material
   palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
     - scheme: default
       media: "(prefers-color-scheme: light)"
       toggle:
@@ -17,10 +21,6 @@ theme:
           name: Switch to light mode
       primary: white
       accent: indigo
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
   logo: cd/assets/logo/dbp_logo_small_on_white.svg
   favicon: cd/assets/apple-touch-icon.png
   custom_dir: overrides
