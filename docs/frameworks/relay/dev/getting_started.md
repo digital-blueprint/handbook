@@ -45,11 +45,6 @@ To get you up and running fast we provide two PHP packages that you can use as a
   copy this project and use it as a starting point for your own server. →
   https://github.com/digital-blueprint/relay-server-template
 
-- **The "API Example Bundle":** It includes code for all the things a typical
-  bundle can contain to show what is possible. You can copy this bundle and
-  rename it to act as a starting point for your own REST API. →
-  https://github.com/digital-blueprint/relay-example-bundle
-
 ## Prerequisites
 
 Note: This is only tested on Linux so far, but any operating system supporting docker and docker-compose should work.
