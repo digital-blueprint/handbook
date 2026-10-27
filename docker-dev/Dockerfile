@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y \
   && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /docs
-RUN pipx install uv==0.11.16
+RUN pipx install uv==0.13.6
 ENV PATH="/root/.local/bin:$PATH"
 COPY uv.lock /docs/
 COPY pyproject.toml /docs/

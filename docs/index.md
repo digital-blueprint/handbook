@@ -3,13 +3,13 @@
 The Digital Blueprint project consists of blueprints. Each blueprint consists of several components, such as front-end applications, back-end APIs, existing software projects with extensions, or other supporting software. Together they provide a service for your users.
 
 ```mermaid
-flowchart TB
+flowchart LR
     style blueprint_a stroke:#338555,color:#338555
     style blueprint_b stroke:#9e1e4d,color:#9e1e4d
     style blueprint_c stroke:#336885,color:#336885
 
-    subgraph " "
-      direction TB
+    subgraph outer [" "]
+      direction LR
 
       subgraph blueprint_c ["Blueprint C"]
           direction LR
@@ -30,6 +30,7 @@ flowchart TB
           component_2["API Component"]
       end
 
+      blueprint_c ~~~ blueprint_b ~~~ blueprint_a
     end
 ```
 

@@ -4,13 +4,12 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
   pipx \
   && rm -rf /var/lib/apt/lists/*
 
-RUN pipx install uv==0.11.16
+RUN pipx install uv==0.13.6
 ENV PATH="/root/.local/bin:$PATH"
 COPY . /app
 WORKDIR /app
 ENV TZ=UTC
 RUN uv run zensical build
-RUN uv run ./localize_cdn.py
 
 FROM nginx:stable-alpine
 

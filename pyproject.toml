@@ -10,4 +10,6 @@ dev = ["zensical>=0.0.29", "mkdocs-redirects>=1.2.0,<2"]
 
 [tool.uv]
 package = false
-exclude-newer = "5 days"
+exclude-newer = "4 days"
+
+exclude-newer-package = { zensical = "1 days" }
