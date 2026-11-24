@@ -43,8 +43,8 @@ https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html
 
 It's recommended to use VSCode as your editor, with the following plugins:
 
-* https://marketplace.visualstudio.com/items?itemName=oxc.oxc-vscode
-* https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.native-preview
+- https://marketplace.visualstudio.com/items?itemName=oxc.oxc-vscode
+- https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.native-preview
 
 ### Prettier Pitfalls
 
