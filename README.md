@@ -16,11 +16,15 @@ Using uv:
 - `uv run zensical serve --dev-addr 127.0.0.1:8011`
 - <http://127.0.0.1:8011>
 
-Using docker-compose:
+Using Docker Compose:
 
 - `cd docker-dev`
-- `docker compose up`
+- `docker compose up --build`
 - <http://127.0.0.1:8011>
+
+Keep `--build` when starting after pulling updates. Compose mounts the current
+checkout into the container, and an older image may have a `uv` version that
+cannot read the updated `pyproject.toml` or `uv.lock`.
 
 ## Update the submodules
 
